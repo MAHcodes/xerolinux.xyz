@@ -17,7 +17,19 @@ const StyledButton = styled.button`
   border-color: rgb(var(--bg));
   border-style: solid;
   white-space: nowrap;
-
+  cursor: pointer;
+  transition: var(--transition-duration) ease-in-out;
+    
+  &:hover,
+  &:focus {
+    box-shadow: 3px 4px 0 0px rgba(var(--black), 55%);
+    transform: translate(-1px, -2px);
+  }
+  &:active {
+    box-shadow: 1px 2px 0 0px rgba(var(--black), 55%);
+    transform: translate(0, 0);
+  }
+   
   ${(props) =>
     props.primary &&
     props.themed &&
@@ -35,6 +47,7 @@ const StyledButton = styled.button`
       color: rgb(var(--important));
     `}
   }}
+
 `;
 
 export default Button;
