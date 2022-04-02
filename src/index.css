@@ -2,12 +2,15 @@
   --border: 2px;
   --border-radius: 10px;
   --white: 250, 244, 249;
+  --black: 10, 10, 25;
   --fz-1: 4rem;
   --fz-2: 2.25rem;
   --fz-3: 1.625rem;
   --fz-4: 1.5rem;
   --fz-5: 1.25rem;
   --fz-6: 1.125rem;
+  --transition-duration: 200ms;
+  --transition-timing-function: ease-in-out;
 }
 
 body.light {
