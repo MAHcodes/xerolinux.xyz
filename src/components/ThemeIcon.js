@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import { useEffect, useState } from "react";
 import sun from "../assets/images/sun.svg";
 import moon from "../assets/images/moon.svg";
@@ -19,10 +19,18 @@ const ThemeIcon = () => {
   );
 };
 
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+    transform: scale(.5) rotate(90deg);
+  }
+`;
+
 const Icon = styled.img`
   width: 36px;
   object-fit: contain;
   cursor: pointer;
+  animation: ${fadeIn} 0.75s var(--transition-timing-function);
 `;
 
 export default ThemeIcon;

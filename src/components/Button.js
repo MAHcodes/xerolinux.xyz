@@ -1,29 +1,46 @@
 import styled, { css } from "styled-components";
 
-const Button = ({ text, action, primary, themed }) => {
+const Button = ({ text, action, primary, themed, padding, fz, clr }) => {
   return (
-    <StyledButton primary={primary} themed={themed} onClick={action}>
+    <StyledButton
+      primary={primary}
+      themed={themed}
+      padding={padding || ".5em 1em"}
+      clr={clr}
+      fz={fz}
+      onClick={action}
+    >
       {text}
     </StyledButton>
   );
 };
 
 const StyledButton = styled.button`
-  padding: .5em 1em;
   border-radius: var(--border-radius);
   background-color: transparent;
-  color: rgb(var(--bg));
   border-width: var(--border);
-  border-color: rgb(var(--bg));
   border-style: solid;
   white-space: nowrap;
   cursor: pointer;
   transition: var(--transition-duration) ease-in-out;
+  }}
+  padding: ${(props) => props.padding};
+  font-size: ${(props) => props.fz};
+  border-color: ${(props) => props.clr || "rgb(var(--bg))"};
+  user-select: none;
+
+  & + & {
+  margin-inline-start: 1rem;
+  }
+
+  &:focus{
+    box-shadow: 3px 4px 0 0px rgba(var(--black), 55%);
+  }
     
-  &:hover,
-  &:focus {
+  &:hover{
     box-shadow: 3px 4px 0 0px rgba(var(--black), 55%);
     transform: translate(-1px, -2px);
+  z-index: 1;
   }
   &:active {
     box-shadow: 1px 2px 0 0px rgba(var(--black), 55%);
@@ -46,8 +63,8 @@ const StyledButton = styled.button`
       border-color: rgb(var(--white));
       color: rgb(var(--important));
     `}
-  }}
 
-`;
+  color: ${(props) => props.clr};
+  `;
 
 export default Button;
