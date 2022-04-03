@@ -11,6 +11,7 @@
   --fz-5: 1.25rem;
   --fz-6: 1.125rem;
   --transition-duration: 200ms;
+  --delay-duration: 80ms;
   --transition-timing-function: ease-in-out;
 }
 

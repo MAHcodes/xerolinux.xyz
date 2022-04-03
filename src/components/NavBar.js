@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 
 const NavBar = () => {
   return (
@@ -26,7 +26,13 @@ const NavBar = () => {
         <a href="https://forum.xerolinux.xyz/" target="_blank" rel="noreferrer">
           <Li>
             Forum
-            <svg width="30" height="30" viewBox="0 0 38 38" fill="none">
+            <svg
+              style={{ marginLeft: "4px" }}
+              width="30"
+              height="30"
+              viewBox="0 0 38 38"
+              fill="none"
+            >
               <g id="link">
                 <path
                   id="Vector"
@@ -74,24 +80,60 @@ const Li = styled.li`
   }
 `;
 
+const inAnimation = keyframes`
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+`;
+
 const StyledNav = styled.nav`
   color: rgb(var(--white));
   font-size: var(--fz-6);
   text-align: center;
 
   & ul {
-    @media (max-width: 600px) {
-      padding-block: 1rem;
-    }
-
+    padding-block: 0.5rem;
     & a:focus li {
       border-bottom: 2px solid rgb(var(--white));
       font-weight: bold;
     }
+
     @media (min-width: 600px) {
       display: flex;
       align-items: stretch;
       justify-content: space-between;
+      padding-block: 0;
+    }
+    & > * {
+      display: block;
+      @media (max-width: 600px) {
+        transform: translateY(-20px);
+      }
+      opacity: 0;
+      animation: ${inAnimation} var(--transition-duration)
+        var(--transition-timing-function) forwards;
+    }
+    & > *:nth-child(2) {
+      animation-delay: var(--delay-duration);
+    }
+    & > *:nth-child(3) {
+      animation-delay: calc(var(--delay-duration) * 2);
+    }
+    & > *:nth-child(4) {
+      animation-delay: calc(var(--delay-duration) * 3);
+    }
+    & > *:nth-child(5) {
+      animation-delay: calc(var(--delay-duration) * 4);
+    }
+    & > *:nth-child(6) {
+      animation-delay: calc(var(--delay-duration) * 5);
+    }
+    & > *:nth-child(7) {
+      animation-delay: calc(var(--delay-duration) * 6);
+    }
+    & > *:nth-child(8) {
+      animation-delay: calc(var(--delay-duration) * 7);
     }
     & li {
       padding: 1rem;
