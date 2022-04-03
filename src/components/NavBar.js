@@ -16,7 +16,7 @@ const NavBar = () => {
         <a href="#Customiztion">
           <li>Customiztion</li>
         </a>
-        <Break></Break>
+        <Break />
         <a href="#Videos">
           <li>Videos</li>
         </a>
@@ -92,6 +92,10 @@ const StyledNav = styled.nav`
   color: rgb(var(--white));
   font-size: var(--fz-6);
   text-align: center;
+  @media (max-width: 675px) {
+    order: 1;
+    flex-basis: 100%;
+  }
 
   & ul {
     padding-block: 0.5rem;
