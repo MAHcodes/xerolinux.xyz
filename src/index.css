@@ -54,6 +54,12 @@ body {
   background: rgb(var(--bg));
 }
 
+* {
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function);
+}
+
 .App {
   min-height: 200vh;
   position: relative;

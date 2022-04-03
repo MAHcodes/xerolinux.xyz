@@ -3,6 +3,7 @@ import logo from "../assets/images/logo.svg";
 import HamburgerMenu from "./HamburgerMenu";
 import NavBar from "./NavBar";
 import { useLayoutEffect, useState } from "react";
+import ThemeIcon from "./ThemeIcon";
 
 const Header = () => {
   const [menu, setMenu] = useState(true);
@@ -34,6 +35,7 @@ const Header = () => {
           <HamburgerMenu menu={menu} setMenu={setMenu} />
         </Wrapper>
         {menu && <NavBar />}
+        <ThemeIcon />
       </div>
     </StyledHeader>
   );
@@ -47,16 +49,19 @@ const StyledHeader = styled.header`
     display: flex;
     align-items: stretch;
     justify-content: space-between;
-    flex-direction: column;
+    flex-direction: row;
     gap: 0.5rem;
+    flex-wrap: wrap;
     @media (min-width: 675px) {
       flex-direction: row;
+      flex-wrap: nowrap;
     }
   }
 `;
 
 const Wrapper = styled.div`
   display: flex;
+  flex-grow: 1;
   align-items: center;
   justify-content: space-between;
   @media (max-width: 675px) {
@@ -80,6 +85,7 @@ const Brand = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  order: -1;
 `;
 
 export default Header;
