@@ -22,14 +22,14 @@ const Hero = () => {
                 text="Downlaod"
                 action=""
                 primary
-                padding=".75em 1.25em"
+                padding=".75em 1.5em"
                 fz="var(--fz-5)"
                 clr="rgb(var(--black))"
               />
               <Button
                 text="Disclaimer"
                 action=""
-                padding=".75em 1.25em"
+                padding=".75em 1.5em"
                 fz="var(--fz-5)"
                 clr="rgb(var(--white))"
               />
