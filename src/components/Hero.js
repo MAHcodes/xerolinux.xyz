@@ -1,4 +1,4 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import laptop from "../assets/images/laptop.png";
 import Button from "./Button";
 import leb from "../assets/images/leb.svg";
