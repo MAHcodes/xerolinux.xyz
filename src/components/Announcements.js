@@ -18,7 +18,7 @@ const Announcements = () => {
 
 const Div = styled.div`
   background-color: rgb(var(--important));
-  padding: 1rem;
+  padding: 0.75rem;
 
   & .container {
     display: flex;

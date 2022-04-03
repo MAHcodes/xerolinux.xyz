@@ -3,6 +3,7 @@
   --border-radius: 10px;
   --white: 250, 244, 249;
   --black: 10, 10, 25;
+  --bar: 30, 43, 86;
   --fz-1: 4rem;
   --fz-2: 2.25rem;
   --fz-3: 1.625rem;
@@ -14,7 +15,6 @@
 }
 
 body.light {
-  --bar: 30, 43, 86, 50;
   --bg: 250, 244, 249;
   --bg2: 255, 207, 242;
   --fg: 105, 110, 194;
@@ -23,7 +23,6 @@ body.light {
 }
 
 body.dark {
-  --bar: 30, 43, 86, 50;
   --important: 253, 114, 154;
   --bg: 45, 48, 84;
   --fg: 255, 207, 242;
@@ -47,8 +46,20 @@ body.dark {
 html {
   font-family: Poppins, serif;
   font-weight: 400;
+  scroll-behavior: smooth;
 }
 
 body {
   background: rgb(var(--bg));
+}
+
+.App {
+  min-height: 200vh;
+  position: relative;
+}
+
+.container {
+  max-width: 1720px;
+  padding-inline: 1rem;
+  margin-inline: auto;
 }
