@@ -9,7 +9,7 @@ const Header = () => {
 
   useLayoutEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 600) {
+      if (window.innerWidth < 675) {
         setMenu(false);
       } else {
         setMenu(true);
@@ -48,7 +48,8 @@ const StyledHeader = styled.header`
     align-items: stretch;
     justify-content: space-between;
     flex-direction: column;
-    @media (min-width: 600px) {
+    gap: 0.5rem;
+    @media (min-width: 675px) {
       flex-direction: row;
     }
   }
@@ -58,7 +59,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 600px) {
+  @media (max-width: 675px) {
     padding-block: 0.75rem;
   }
 `;
@@ -72,12 +73,13 @@ const P = styled.p`
 const Logo = styled.img`
   width: 46px;
   object-fit: contain;
+  max-width: unset;
 `;
 
 const Brand = styled.a`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 `;
 
 export default Header;

@@ -16,6 +16,7 @@ const NavBar = () => {
         <a href="#Customiztion">
           <li>Customiztion</li>
         </a>
+        <Break></Break>
         <a href="#Videos">
           <li>Videos</li>
         </a>
@@ -60,7 +61,7 @@ const Li = styled.li`
 
   & #Vector,
   & #arrow {
-    transition: var(--transition-duration);
+    delay: var(--delay-duration);
     transform: scale(0.85);
     transform-origin: center;
   }
@@ -99,15 +100,16 @@ const StyledNav = styled.nav`
       font-weight: bold;
     }
 
-    @media (min-width: 600px) {
+    @media (min-width: 675px) {
       display: flex;
       align-items: stretch;
       justify-content: space-between;
+      flex-wrap: wrap;
       padding-block: 0;
     }
     & > * {
       display: block;
-      @media (max-width: 600px) {
+      @media (max-width: 675px) {
         transform: translateY(-20px);
       }
       opacity: 0;
@@ -123,16 +125,16 @@ const StyledNav = styled.nav`
     & > *:nth-child(4) {
       animation-delay: calc(var(--delay-duration) * 3);
     }
-    & > *:nth-child(5) {
+    & > *:nth-child(6) {
       animation-delay: calc(var(--delay-duration) * 4);
     }
-    & > *:nth-child(6) {
+    & > *:nth-child(7) {
       animation-delay: calc(var(--delay-duration) * 5);
     }
-    & > *:nth-child(7) {
+    & > *:nth-child(8) {
       animation-delay: calc(var(--delay-duration) * 6);
     }
-    & > *:nth-child(8) {
+    & > *:nth-child(9) {
       animation-delay: calc(var(--delay-duration) * 7);
     }
     & li {
@@ -140,17 +142,17 @@ const StyledNav = styled.nav`
       height: 100%;
       cursor: pointer;
       white-space: nowrap;
-      transition: var(--transition-duration) var(--transition-timing-function);
+      delay: var(--delay-duration) var(--delay-timing-function);
       border-bottom: 2px solid transparent;
 
       &.active {
-        @media (min-width: 600px) {
+        @media (min-width: 675px) {
           border-bottom: 2px solid rgb(var(--white));
           font-weight: bold;
         }
       }
 
-      @media (max-width: 600px) {
+      @media (max-width: 675px) {
         border-radius: var(--border-radius);
       }
 
@@ -158,6 +160,12 @@ const StyledNav = styled.nav`
         background-color: rgba(var(--bar), 30%);
       }
     }
+  }
+`;
+
+const Break = styled.div`
+  @media (max-width: 1100px) {
+    flex-basis: 100%;
   }
 `;
 
