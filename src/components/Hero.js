@@ -59,11 +59,11 @@ const HeroSection = styled.section`
   height: 100vh;
 `;
 
-const ContentIn = keyframes`
-  from {
-    transform: translateX(-)
-  }
-`;
+//const ContentIn = keyframes`
+//from {
+//transform: translateX(-)
+//}
+//`;
 
 const Content = styled.div`
   flex: 0.5;
