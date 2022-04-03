@@ -16,7 +16,6 @@ const NavBar = () => {
         <a href="#Customiztion">
           <li>Customiztion</li>
         </a>
-        <Break />
         <a href="#Videos">
           <li>Videos</li>
         </a>
@@ -83,7 +82,7 @@ const Li = styled.li`
 
 const inAnimation = keyframes`
   to {
-    transform: translateY(0px);
+    transform: translate(0, 0);
     opacity: 1;
   }
 `;
@@ -108,14 +107,11 @@ const StyledNav = styled.nav`
       display: flex;
       align-items: stretch;
       justify-content: space-between;
-      flex-wrap: wrap;
       padding-block: 0;
     }
     & > * {
       display: block;
-      @media (max-width: 675px) {
-        transform: translateY(-20px);
-      }
+      transform: translateY(-20px);
       opacity: 0;
       animation: ${inAnimation} var(--transition-duration)
         var(--transition-timing-function) forwards;
@@ -129,16 +125,16 @@ const StyledNav = styled.nav`
     & > *:nth-child(4) {
       animation-delay: calc(var(--delay-duration) * 3);
     }
-    & > *:nth-child(6) {
+    & > *:nth-child(5) {
       animation-delay: calc(var(--delay-duration) * 4);
     }
-    & > *:nth-child(7) {
+    & > *:nth-child(6) {
       animation-delay: calc(var(--delay-duration) * 5);
     }
-    & > *:nth-child(8) {
+    & > *:nth-child(7) {
       animation-delay: calc(var(--delay-duration) * 6);
     }
-    & > *:nth-child(9) {
+    & > *:nth-child(8) {
       animation-delay: calc(var(--delay-duration) * 7);
     }
     & li {
@@ -164,12 +160,6 @@ const StyledNav = styled.nav`
         background-color: rgba(var(--bar), 30%);
       }
     }
-  }
-`;
-
-const Break = styled.div`
-  @media (max-width: 1100px) {
-    flex-basis: 100%;
   }
 `;
 

@@ -42,7 +42,7 @@ const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background-color: rgba(var(--bar), 50%);
+  background-color: rgba(var(--bar), 70%);
   color: rgb(var(--whtie));
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   & .container {
@@ -50,7 +50,7 @@ const StyledHeader = styled.header`
     align-items: stretch;
     justify-content: space-between;
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 1.5rem;
     flex-wrap: wrap;
     @media (min-width: 675px) {
       flex-direction: row;
