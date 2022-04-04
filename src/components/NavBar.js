@@ -91,7 +91,7 @@ const StyledNav = styled.nav`
   color: rgb(var(--white));
   font-size: var(--fz-6);
   text-align: center;
-  @media (max-width: 675px) {
+  @media (max-width: 800px) {
     order: 1;
     flex-basis: 100%;
   }
@@ -103,10 +103,19 @@ const StyledNav = styled.nav`
       font-weight: bold;
     }
 
-    @media (min-width: 675px) {
-      display: flex;
-      align-items: stretch;
-      justify-content: space-between;
+    display: grid;
+    place-items: center;
+    justify-items: stretch;
+
+    @media (min-width: 800px) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    @media (min-width: 800px) {
       padding-block: 0;
     }
     & > * {
@@ -146,13 +155,13 @@ const StyledNav = styled.nav`
       border-bottom: 2px solid transparent;
 
       &.active {
-        @media (min-width: 675px) {
+        @media (min-width: 800px) {
           border-bottom: 2px solid rgb(var(--white));
           font-weight: bold;
         }
       }
 
-      @media (max-width: 675px) {
+      @media (max-width: 800px) {
         border-radius: var(--border-radius);
       }
 

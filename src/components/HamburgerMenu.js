@@ -24,7 +24,7 @@ const Hamburger = styled.div`
   border-radius: var(--border-radius);
   cursor: pointer;
 
-  @media (min-width: 675px) {
+  @media (min-width: 800px) {
     display: none;
   }
 
