@@ -62,16 +62,15 @@ const Hero = ({ hdr }) => {
 
 const HeroSection = styled.section`
   padding-block: calc(${(props) => props.height}px + 5rem);
-  border: 5px solid red;
   min-height: 80vh;
 
   display: grid;
   place-items: center;
 
   background-image: url(${bg});
-  background-position: top;
+  background-position: bottom;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 `;
 
 //const ContentIn = keyframes`
