@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import styled from "styled-components";
 import Hero from "./components/Hero";
 import { useRef } from "react";
+import SocialLinks from "./components/SocialLinks";
 
 const App = () => {
   const wrapperRef = useRef();
@@ -13,6 +14,7 @@ const App = () => {
         <Header />
       </Wrapper>
       <Hero hdr={wrapperRef} />
+      <SocialLinks />
     </div>
   );
 };
