@@ -2,10 +2,24 @@ import styled from "styled-components";
 import laptop from "../assets/images/laptop.png";
 import Button from "./Button";
 import leb from "../assets/images/leb.svg";
+import { useEffect, useState } from "react";
+import bg from "../assets/images/herobg.png";
 
-const Hero = () => {
+const Hero = ({ hdr }) => {
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    const updateHeight = () => {
+      setHeight(hdr.current.clientHeight);
+    };
+    updateHeight();
+
+    window.addEventListener("resize", updateHeight);
+    return () => window.removeEventListener("resize", updateHeight);
+  }, [hdr]);
+
   return (
-    <HeroSection id="Home">
+    <HeroSection height={height} id="Home">
       <div className="container">
         <Flex>
           <Content>
@@ -20,7 +34,6 @@ const Hero = () => {
             <Buttons>
               <Button
                 text="Downlaod"
-                action=""
                 primary
                 padding=".75em 1.5em"
                 fz="var(--fz-5)"
@@ -28,7 +41,6 @@ const Hero = () => {
               />
               <Button
                 text="Disclaimer"
-                action=""
                 padding=".75em 1.5em"
                 fz="var(--fz-5)"
                 clr="rgb(var(--white))"
@@ -49,14 +61,17 @@ const Hero = () => {
 };
 
 const HeroSection = styled.section`
-  padding-block: 15%;
-  @media (max-width: 675px) {
-    padding-block: 40vh;
-  }
-  @media (max-width: 1100px) {
-    padding-block: 25%;
-  }
-  height: 100vh;
+  padding-block: calc(${(props) => props.height}px + 5rem);
+  border: 5px solid red;
+  min-height: 80vh;
+
+  display: grid;
+  place-items: center;
+
+  background-image: url(${bg});
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
 `;
 
 //const ContentIn = keyframes`
@@ -115,7 +130,7 @@ const Flex = styled.div`
   justify-content: space-between;
   gap: 4rem;
 
-  @media (max-width: 1100px) {
+  @media (max-width: 1200px) {
     flex-direction: column;
   }
 `;
