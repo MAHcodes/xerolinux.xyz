@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { keyframes } from "styled-components";
 import laptop from "../assets/images/laptop.png";
 import Button from "./Button";
 import leb from "../assets/images/leb.svg";
@@ -73,14 +73,23 @@ const HeroSection = styled.section`
   background-size: cover;
 `;
 
-//const ContentIn = keyframes`
-//from {
-//transform: translateX(-)
-//}
-//`;
+const ContentIn = keyframes`
+from {
+  opacity: 0;
+  transform: translateX(-3rem);
+}
+`;
+
+const ImgIn = keyframes`
+from {
+  opacity: 0;
+  transform: translateX(3rem);
+}
+`;
 
 const Content = styled.div`
   flex: 0.5;
+  animation: ${ContentIn} 0.5s var(--transition-timing-function);
 `;
 
 const Origin = styled.div`
@@ -102,6 +111,7 @@ const ImgContainer = styled.div`
   display: flex;
   align-items: cener;
   justify-content: center;
+  animation: ${ImgIn} 0.5s var(--transition-timing-function);
   & img {
     object-fit: contain;
     width: 80%;
