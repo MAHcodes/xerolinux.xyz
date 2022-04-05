@@ -33,7 +33,7 @@ const Div = styled.div`
 const P = styled.p`
   margin-inline-end: 1em;
   color: rgb(var(--white));
-  font-size: var(--fz-6);
+  font-size: var(--fz-5);
 `;
 
 export default Announcements;
