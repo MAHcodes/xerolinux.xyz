@@ -76,9 +76,8 @@ const P = styled.p`
 `;
 
 const Logo = styled.img`
-  width: 46px;
+  width: 2rem;
   object-fit: contain;
-  max-width: unset;
 `;
 
 const Brand = styled.a`

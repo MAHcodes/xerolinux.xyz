@@ -27,7 +27,7 @@ const fadeIn = keyframes`
 `;
 
 const Icon = styled.img`
-  width: 36px;
+  width: 1.5rem;
   object-fit: contain;
   cursor: pointer;
   animation: ${fadeIn} 0.75s var(--transition-timing-function);
