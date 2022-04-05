@@ -11,11 +11,10 @@ const Card = ({ title, icon, text }) => {
 };
 
 const Div = styled.div`
-  color: rgb(var(--fg));
   text-align: center;
 
   & > svg {
-    width: 6rem;
+    width: 5rem;
   }
 
   & > svg > path {
@@ -24,11 +23,14 @@ const Div = styled.div`
 `;
 
 const H2 = styled.h2`
+  color: rgb(var(--fg));
   font-size: var(--fz-2);
   font-weight: bold;
   margin-block: 1em;
 `;
 
-const P = styled.p``;
+const P = styled.p`
+  color: rgba(var(--fg), 90%);
+`;
 
 export default Card;

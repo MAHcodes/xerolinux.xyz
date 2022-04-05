@@ -17,7 +17,7 @@ const Header = () => {
       }
     };
     window.addEventListener("resize", handleResize);
-    handleResize();
+    window.addEventListener("load", handleResize);
 
     return () => {
       window.removeEventListener("resize", handleResize);

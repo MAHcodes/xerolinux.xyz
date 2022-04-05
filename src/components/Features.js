@@ -90,9 +90,9 @@ const FeaturesSection = styled.div`
 const Cards = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   flex-direction: column;
-  gap: 2rem;
+  gap: 5rem;
   padding: 2rem;
 
   @media (min-width: 1100px) {
