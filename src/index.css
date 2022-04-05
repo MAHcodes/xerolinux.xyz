@@ -13,7 +13,7 @@
   --transition-duration: 200ms;
   --delay-duration: 75ms;
   --transition-timing-function: ease-in-out;
-  --padding-section: 5rem;
+  --padding-section: 4rem;
 }
 
 body.light {

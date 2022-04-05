@@ -25,11 +25,14 @@ const Hero = ({ hdr }) => {
           <Content>
             <H1>XeroLinux</H1>
             <P>
-              A Hobbyist Arch-Based Distro, built using ArcoLinux's ALCI build
-              scripts. It uses the awesome, and highly customizable Dektop
+              A Hobbyist Arch-Based Distro, built using{" "}
+              <a href="https://alci.online/" target="_blank" rel="noreferrer">
+                ArcoLinux's ALCI
+              </a>{" "}
+              build scripts. It uses the awesome, and highly customizable Dektop
               Environment, known as KDE Plasma. It brings a good balance between
-              Stability and Performance. Oh and it looks so damn sexy too ! I
-              hope you enjoy it as much as I have creating it ;)
+              Stability and Performance. Oh and it looks so damn sexy too !
+              <br />I hope you enjoy it as much as I have creating it ;)
             </P>
             <Buttons>
               <Button
@@ -126,6 +129,9 @@ const H1 = styled.h1`
 const P = styled.p`
   font-size: var(--fz-5);
   margin-block: 1em;
+  & > a {
+    text-decoration: underline;
+  }
 `;
 
 const Buttons = styled.div`

@@ -6,7 +6,6 @@ import { ThemeContext } from "../hooks/ThemeContext";
 
 const Box = (props) => {
   const { theme } = useContext(ThemeContext);
-  console.log(theme, darkbg);
   return <Div theme={theme}>{props.children}</Div>;
 };
 
