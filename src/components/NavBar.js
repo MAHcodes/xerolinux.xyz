@@ -58,6 +58,11 @@ const Li = styled.li`
   align-items: center;
   justify-content: center;
 
+  & svg {
+    width: var(--fz-4);
+    object-fit: contian;
+  }
+
   & #Vector,
   & #arrow {
     delay: var(--delay-duration);
@@ -104,7 +109,7 @@ const StyledNav = styled.nav`
     }
 
     display: grid;
-    place-items: center;
+    align-items: stretch;
     justify-items: stretch;
 
     @media (min-width: 800px) {
@@ -122,6 +127,7 @@ const StyledNav = styled.nav`
       display: block;
       transform: translateY(-20px);
       opacity: 0;
+      line-height: 2;
       animation: ${inAnimation} var(--transition-duration)
         var(--transition-timing-function) forwards;
     }
@@ -147,7 +153,7 @@ const StyledNav = styled.nav`
       animation-delay: calc(var(--delay-duration) * 7);
     }
     & li {
-      padding: 1rem;
+      padding: 1em;
       height: 100%;
       cursor: pointer;
       white-space: nowrap;
