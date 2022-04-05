@@ -49,7 +49,7 @@ html {
   font-family: Poppins, serif;
   font-weight: 400;
   scroll-behavior: smooth;
-  font-size: clamp(0.6rem, 2.5vmin, 1.25rem);
+  font-size: clamp(0.65rem, 2.5vmin, 1.25rem);
 }
 
 *::selection {

@@ -1,21 +1,23 @@
 import styled, { keyframes } from "styled-components";
 import { useEffect, useState } from "react";
+import { useContext } from "react";
+import { ThemeContext } from "../hooks/ThemeContext";
 import sun from "../assets/images/sun.svg";
 import moon from "../assets/images/moon.svg";
 
 const ThemeIcon = () => {
-  const [light, setLight] = useState(true);
+  const { theme, setTheme } = useContext(ThemeContext);
 
-  const toggleLight = () => {
-    setLight(!light);
+  const toggleTheme = () => {
+    setTheme(!theme);
   };
 
   useEffect(() => {
-    document.body.classList = light ? "light" : "dark";
-  }, [light]);
+    document.body.classList = theme ? "light" : "dark";
+  }, [theme]);
 
   return (
-    <Icon src={light ? sun : moon} alt="toggle theme" onClick={toggleLight} />
+    <Icon src={theme ? sun : moon} alt="toggle theme" onClick={toggleTheme} />
   );
 };
 
