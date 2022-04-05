@@ -1,19 +1,19 @@
 :root {
-  --border: 2px;
+  --border: 0.125rem;
   --border-radius: 10px;
   --white: 250, 244, 249;
   --black: 10, 10, 25;
   --bar: 30, 43, 86;
-  --fz-1: 3rem;
-  --fz-2: 2.25rem;
-  --fz-3: 1.625rem;
-  --fz-4: 1.5rem;
-  --fz-5: 1.25rem;
-  --fz-6: 1.125rem;
+  --fz-1: 2rem;
+  --fz-2: 1.5rem;
+  --fz-3: 1.25rem;
+  --fz-4: 1.125rem;
+  --fz-5: 1rem;
+  --fz-6: 0.8rem;
   --transition-duration: 200ms;
   --delay-duration: 75ms;
   --transition-timing-function: ease-in-out;
-  --padding-section: 4rem;
+  --padding-section: 5rem;
 }
 
 body.light {
@@ -49,7 +49,7 @@ html {
   font-family: Poppins, serif;
   font-weight: 400;
   scroll-behavior: smooth;
-  scroll-padding-top: 8rem;
+  font-size: clamp(0.5rem, 2.5vmin, 1.25rem);
 }
 
 *::selection {
