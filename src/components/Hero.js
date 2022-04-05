@@ -61,8 +61,8 @@ const Hero = ({ hdr }) => {
 };
 
 const HeroSection = styled.section`
-  padding-block: calc(${(props) => props.height}px + 5rem);
-  min-height: 80vh;
+  padding-block: calc(${(props) => props.height}px + var(--padding-section));
+  min-height: min(80vh, 100vw);
 
   display: grid;
   place-items: center;
@@ -130,6 +130,15 @@ const P = styled.p`
 
 const Buttons = styled.div`
   margin-block: 2rem;
+  display: flex;
+  align-items: stretch;
+  justify-conetent: center;
+  gap: 1rem;
+  text-align: center;
+
+  @media (max-width: 800px) {
+    flex-direction: column;
+  }
 `;
 
 const Flex = styled.div`

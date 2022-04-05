@@ -6,11 +6,11 @@ import { useLayoutEffect, useState } from "react";
 import ThemeIcon from "./ThemeIcon";
 
 const Header = () => {
-  const [menu, setMenu] = useState(true);
+  const [menu, setMenu] = useState(false);
 
   useLayoutEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth < 675) {
+      if (window.innerWidth < 800) {
         setMenu(false);
       } else {
         setMenu(true);

@@ -89,7 +89,7 @@ const SocialLinks = ({ invert }) => {
         </svg>
       </a>
       <a href="https://github.com/XeroLinux" target="_blank" rel="noreferrer">
-        <svg width="31" height="31" viewBox="0 0 31 31" fill="none">
+        <svg width="31" height="31" viewBox="0 0 32 32" fill="none">
           <g clip-path="url(#clip0_82_22)">
             <path
               fill-rule="evenodd"
@@ -127,8 +127,17 @@ const Wrapper = styled.div`
     justify-content: center;
     border-radius: 50%;
 
+    & > svg {
+      width: 1.5rem;
+      height: 1.5rem;
+      transition: transform var(--transition-duration)
+        var(--transition-timing-function);
+    }
+
     &:hover {
-      background-
+      & > svg {
+        transform: scale(1.25);
+      }
     }
   }
 

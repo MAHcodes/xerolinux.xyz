@@ -10,7 +10,7 @@ const Announcements = () => {
     <Div>
       <div className="container">
         <P>Major Project Announcements</P>
-        <Button primary text="read more" action={announce} />
+        <Button fz="var(--fz-6)" primary text="read more" action={announce} />
       </div>
     </Div>
   );

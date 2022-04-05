@@ -7,7 +7,7 @@ const Button = ({ text, action, primary, themed, padding, fz, clr }) => {
       themed={themed}
       padding={padding || ".5em 1em"}
       clr={clr}
-      fz={fz}
+      fz={fz || ".75rem"}
       onClick={action}
     >
       {text}
@@ -28,10 +28,6 @@ const StyledButton = styled.button`
   font-size: ${(props) => props.fz};
   border-color: ${(props) => props.clr || "rgb(var(--bg))"};
   user-select: none;
-
-  & + & {
-  margin-inline-start: 1rem;
-  }
 
   &:focus{
     box-shadow: 3px 4px 0 0px rgba(var(--black), 55%);
