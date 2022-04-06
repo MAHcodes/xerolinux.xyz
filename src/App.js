@@ -6,6 +6,7 @@ import { useRef } from "react";
 import SocialLinks from "./components/SocialLinks";
 import Features from "./components/Features";
 import Download from "./components/Download";
+import Credit from "./components/Credit";
 
 const App = () => {
   const wrapperRef = useRef();
@@ -19,6 +20,7 @@ const App = () => {
       <SocialLinks />
       <Features />
       <Download />
+      <Credit />
     </div>
   );
 };

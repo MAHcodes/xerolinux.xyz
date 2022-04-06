@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-const Button = ({ text, action, primary, themed, padding, fz, clr }) => {
+const Button = ({ text, action, primary, themed, padding, fz, clr, icon }) => {
   return (
     <StyledButton
       primary={primary}
@@ -10,6 +10,7 @@ const Button = ({ text, action, primary, themed, padding, fz, clr }) => {
       fz={fz || ".75rem"}
       onClick={action}
     >
+      {icon && icon}
       {text}
     </StyledButton>
   );
@@ -28,6 +29,18 @@ const StyledButton = styled.button`
   font-size: ${(props) => props.fz};
   border-color: ${(props) => props.clr || "rgb(var(--bg))"};
   user-select: none;
+  display: flex;
+  align-items: center;
+  justify-conten: space-between;
+
+  & svg {
+      margin-inline-end: .5em;
+      width: 2rem;
+      object-fit: contain;
+      & path {
+        fill: rgb(var(--bg));
+        }
+  }
 
   &:focus{
     box-shadow: 3px 4px 0 0px rgba(var(--black), 55%);
