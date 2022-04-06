@@ -37,7 +37,7 @@ const Hero = ({ hdr }) => {
             </P>
             <Buttons>
               <Button
-                text="Downlaod"
+                text="Download"
                 primary
                 padding=".75em 1.5em"
                 fz="var(--fz-5)"

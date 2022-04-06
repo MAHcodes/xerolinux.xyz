@@ -7,6 +7,7 @@ const Button = ({ text, action, primary, themed, padding, fz, clr, icon }) => {
       themed={themed}
       padding={padding || ".5em 1em"}
       clr={clr}
+      icon={icon}
       fz={fz || ".75rem"}
       onClick={action}
     >
@@ -29,9 +30,14 @@ const StyledButton = styled.button`
   font-size: ${(props) => props.fz};
   border-color: ${(props) => props.clr || "rgb(var(--bg))"};
   user-select: none;
-  display: flex;
-  align-items: center;
-  justify-conten: space-between;
+
+  ${(props) =>
+    props.icon &&
+    css`
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    `}
 
   & svg {
       margin-inline-end: .5em;
