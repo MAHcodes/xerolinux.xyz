@@ -11,6 +11,7 @@ const Div = styled.div`
   justify-conetent: center;
   gap: 1rem;
   text-align: center;
+  flex-wrap: wrap;
 
   @media (max-width: 800px) {
     flex-direction: column;

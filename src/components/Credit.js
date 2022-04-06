@@ -89,7 +89,11 @@ const Credit = () => {
                 }
               />
             </a>
-            <a href="https://t.me/RoyMarkham" target="blank" rel="noreferrer">
+            <a
+              href="https://twitch.tv/ripl3yplays"
+              target="blank"
+              rel="noreferrer"
+            >
               <Button
                 text="Ripl3yPlays"
                 primary
@@ -136,11 +140,21 @@ const Div = styled.div`
 
 const Content = styled.div`
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
   flex-direction: column;
   gap: 1rem;
   padding: 1rem 1rem 0;
+
+  @media (min-width: 800px) {
+    align-items: center;
+  }
+
+  & button {
+    @media (max-width: 800px) {
+      width: 100%;
+    }
+  }
 `;
 
 export default Credit;

@@ -8,7 +8,7 @@ const H1 = styled.h1`
   font-size: var(--fz-1);
   font-weight: bold;
   color: rgb(var(--fg2));
-  text-align: center;
+  //text-align: center;
   margin-block-end: 1em;
 `;
 

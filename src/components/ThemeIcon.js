@@ -17,7 +17,7 @@ const ThemeIcon = () => {
   }, [theme]);
 
   return (
-    <Icon src={theme ? sun : moon} alt="toggle theme" onClick={toggleTheme} />
+    <Icon src={theme ? moon : sun} alt="toggle theme" onClick={toggleTheme} />
   );
 };
 

@@ -95,7 +95,6 @@ const Video = styled.div`
   justify-content: center;
   flex-direction: column;
   flex: 0.35;
-  z-index: -1;
 
   & > iframe {
     width: 100%;
