@@ -8,11 +8,20 @@ import XeroLayan from "../assets/images/XeroLayan.jpg";
 import XeroSweet from "../assets/images/XeroSweet.jpg";
 import XeroNord from "../assets/images/XeroNord.jpg";
 import Button from "./Button";
+import DraftPunk from "../assets/images/DraftPunk.png";
+import TRON from "../assets/images/TRON.png";
+import StarWars from "../assets/images/StarWars.png";
+import XeroNordGrub from "../assets/images/XeroNordGrub.png";
+import XeroComp from "../assets/images/XeroComp.png";
 
 const Customization = () => {
   const [rice, setRice] = useState({
     name: "XeroCherry",
     url: "https://github.com/xerolinux/xero-cherry-git",
+  });
+
+  const [grub, setGrub] = useState({
+    name: "",
   });
 
   return (
@@ -22,6 +31,7 @@ const Customization = () => {
       <Container ltr>
         <List ltr>
           <li
+            className={rice.name === "XeroCherry" && "active"}
             onClick={() =>
               setRice({
                 name: "XeroCherry",
@@ -32,6 +42,7 @@ const Customization = () => {
             XeroCherry
           </li>
           <li
+            className={rice.name === "XeroDracul" && "active"}
             onClick={() =>
               setRice({
                 name: "XeroDracul",
@@ -42,6 +53,7 @@ const Customization = () => {
             XeroDracul
           </li>
           <li
+            className={rice.name === "XeroLayan" && "active"}
             onClick={() =>
               setRice({
                 name: "XeroLayan",
@@ -52,6 +64,7 @@ const Customization = () => {
             XeroLayan
           </li>
           <li
+            className={rice.name === "XeroSweet" && "active"}
             onClick={() =>
               setRice({
                 name: "XeroSweet",
@@ -62,6 +75,7 @@ const Customization = () => {
             XeroSweet
           </li>
           <li
+            className={rice.name === "XeroNord" && "active"}
             onClick={() =>
               setRice({
                 name: "XeroNord",
@@ -73,7 +87,7 @@ const Customization = () => {
           </li>
         </List>
         <Box>
-          <Content>
+          <Content ltr>
             <ImgWrapper>
               {rice.name === "XeroCherry" && (
                 <img src={XeroCherry} alt="XeroCherry Preview" />
@@ -154,6 +168,135 @@ const Customization = () => {
           </Content>
         </Box>
       </Container>
+
+      <Title sec text="GRUB Themes" />
+      <Container>
+        <List>
+          <li
+            className={grub.name === "Draft Punk" && "active"}
+            onClick={() =>
+              setGrub({
+                name: "Draft Punk",
+                url: "https://github.com/TechXero/DaftGrub.git",
+              })
+            }
+          >
+            Draft Punk
+          </li>
+          <li
+            className={grub.name === "T-R-O-N" && "active"}
+            onClick={() =>
+              setGrub({
+                name: "T-R-O-N",
+                url: "https://github.com/TechXero/TronGrub.git",
+              })
+            }
+          >
+            T-R-O-N
+          </li>
+          <li
+            className={grub.name === "Star Wars" && "active"}
+            onClick={() =>
+              setGrub({
+                name: "Star Wars",
+                url: "https://github.com/TechXero/StarWarsGrub.git",
+              })
+            }
+          >
+            Star Wars
+          </li>
+          <li
+            className={grub.name === "XeroNord" && "active"}
+            onClick={() =>
+              setGrub({
+                name: "XeroNord",
+                url: "https://github.com/TechXero/XeroNord-Grub.git",
+              })
+            }
+          >
+            XeroNord
+          </li>
+          <li
+            className={grub.name === "XeroCompromise" && "active"}
+            onClick={() =>
+              setGrub({
+                name: "XeroCompromise",
+                url: "https://github.com/TechXero/XeroComp.git",
+              })
+            }
+          >
+            XeroCompromise
+          </li>
+        </List>
+        <Box>
+          <Content>
+            <ImgWrapper>
+              {grub.name === "Draft Punk" && (
+                <img src={DraftPunk} alt="Draft Punk Preview" />
+              )}
+              {grub.name === "T-R-O-N" && (
+                <img src={TRON} alt="T-R-O-N Preview" />
+              )}
+              {grub.name === "Star Wars" && (
+                <img src={StarWars} alt="Star Wars Preview" />
+              )}
+              {grub.name === "XeroNord" && (
+                <img src={XeroNordGrub} alt="XeroNord Preview" />
+              )}
+              {grub.name === "XeroCompromise" && (
+                <img src={XeroComp} alt="XeroCompromise Preview" />
+              )}
+            </ImgWrapper>
+            <ContentWrapper>
+              {grub.name === "Draft Punk" && (
+                <P>
+                  This is where Daft Punk inspired Grub Theme will be.
+                  Constantly updated so keep coming back. I included a script
+                  that makes installing much easier, just follow steps below :
+                </P>
+              )}
+              {grub.name === "T-R-O-N" && (
+                <P>
+                  This is where TRON: Legacy inspired Grub Theme will be.
+                  Constantly updated so keep coming back. I included a script
+                  that makes installing much easier, just follow steps below :
+                </P>
+              )}
+              {grub.name === "Star Wars" && (
+                <P>
+                  This is where Star Wars: The Last Jedi inspired Grub Theme
+                  will be. Constantly updated so keep coming back. I included a
+                  script that makes installing much easier, just follow steps
+                  below :
+                </P>
+              )}
+              {grub.name === "XeroNord" && (
+                <P>
+                  This is where XeroNord Grub Theme will be. Constantly updated
+                  so keep coming back. I included a script that makes installing
+                  much easier, just follow steps below :
+                </P>
+              )}
+              {grub.name === "XeroCompromise" && (
+                <P>
+                  This is where Xero-Compromise Grub Theme will be. Constantly
+                  updated so keep coming back. I included a script that makes
+                  installing much easier, just follow steps below :
+                </P>
+              )}
+              <a href={grub.url} target="_blank" rel="noreferrer">
+                <Button
+                  text="Installation Guide"
+                  primary
+                  themed
+                  fz="var(--fz-6)"
+                  padding=".75em 1.5em"
+                />
+              </a>
+            </ContentWrapper>
+          </Content>
+        </Box>
+      </Container>
     </div>
   );
 };
@@ -167,6 +310,9 @@ const Container = styled.div`
   align-items: stretch;
   justify-content: center;
   border: var(--border) solid rgb(var(--fg));
+  margin-block-end: 2rem;
+
+  flex-direction: ${(props) => !props.ltr && "row-reverse"};
 
   background-color: rgb(var(--fg));
 
@@ -189,7 +335,7 @@ const List = styled.ul`
         : "0 var(--border-radius) var(--border-radius) 0"};
   }
 
-  & > li:hover {
+  & > li.active {
     background-color: rgb(var(--bg2));
     color: rgb(var(--fg));
   }
@@ -207,6 +353,7 @@ const Content = styled.div`
   justify-content: center;
   padding: 1rem;
   gap: 2rem;
+  flex-direction: ${(props) => !props.ltr && "row-reverse"};
 
   @media (max-width: 1100px) {
     flex-direction: column;
