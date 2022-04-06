@@ -54,7 +54,7 @@ html {
   font-weight: 400;
   scroll-behavior: smooth;
   scroll-padding-top: var(--padding-section);
-  font-size: clamp(0.65rem, 2.5vmin, 1.25rem);
+  font-size: clamp(0.7rem, 2.5vmin, 1.25rem);
 }
 
 *::selection {

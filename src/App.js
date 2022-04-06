@@ -7,6 +7,7 @@ import SocialLinks from "./components/SocialLinks";
 import Features from "./components/Features";
 import Download from "./components/Download";
 import Credit from "./components/Credit";
+import Customization from "./components/Customization";
 
 const App = () => {
   const wrapperRef = useRef();
@@ -21,6 +22,7 @@ const App = () => {
       <Features />
       <Download />
       <Credit />
+      <Customization />
     </div>
   );
 };
