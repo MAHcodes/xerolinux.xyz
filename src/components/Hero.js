@@ -4,6 +4,7 @@ import Button from "./Button";
 import leb from "../assets/images/leb.svg";
 import { useEffect, useState } from "react";
 import bg from "../assets/images/herobg.png";
+import Buttons from "./Buttons";
 
 const Hero = ({ hdr }) => {
   const [height, setHeight] = useState(0);
@@ -131,19 +132,6 @@ const P = styled.p`
   margin-block: 1em;
   & > a {
     text-decoration: underline;
-  }
-`;
-
-const Buttons = styled.div`
-  margin-block: 2rem;
-  display: flex;
-  align-items: stretch;
-  justify-conetent: center;
-  gap: 1rem;
-  text-align: center;
-
-  @media (max-width: 800px) {
-    flex-direction: column;
   }
 `;
 

@@ -22,6 +22,8 @@ body.light {
   --fg: 105, 110, 194;
   --fg2: 45, 48, 84;
   --important: var(--fg);
+  --high: var(--white);
+  --low: var(--black);
 }
 
 body.dark {
@@ -30,6 +32,8 @@ body.dark {
   --fg: 255, 207, 242;
   --bg2: 105, 110, 194;
   --fg2: 250, 244, 249;
+  --high: var(--black);
+  --low: var(--white);
 }
 
 @font-face {
@@ -49,6 +53,7 @@ html {
   font-family: Poppins, serif;
   font-weight: 400;
   scroll-behavior: smooth;
+  scroll-padding-top: var(--padding-section);
   font-size: clamp(0.65rem, 2.5vmin, 1.25rem);
 }
 

@@ -47,9 +47,9 @@ const StyledButton = styled.button`
     props.primary &&
     props.themed &&
     css`
-      background-color: rgb(var(--bg2));
-      border-color: rgb(var(--bg2));
-      color: rgb(var(--fg));
+      background-color: rgb(var(--fg));
+      border-color: rgb(var(--fg));
+      color: rgb(var(--high));
     `}
   ${(props) =>
     props.primary &&

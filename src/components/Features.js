@@ -92,7 +92,7 @@ const Cards = styled.div`
   align-items: center;
   justify-content: space-between;
   flex-direction: column;
-  gap: 5rem;
+  gap: 4rem;
   padding: 2rem;
 
   @media (min-width: 1100px) {
