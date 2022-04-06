@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useContext } from "react";
 import { ThemeContext } from "../hooks/ThemeContext";
 import sun from "../assets/images/sun.svg";
