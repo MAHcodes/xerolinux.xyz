@@ -69,7 +69,8 @@ body {
 * {
   transition: background-color var(--transition-duration)
       var(--transition-timing-function),
-    color var(--transition-duration) var(--transition-timing-function);
+    color var(--transition-duration) var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
 }
 
 img {

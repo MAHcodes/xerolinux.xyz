@@ -3,7 +3,9 @@ import { createContext, useState } from "react";
 export const ThemeContext = createContext(null);
 
 const ThemeContextProvider = (props) => {
-  const [theme, setTheme] = useState(false);
+  const savedTheme = JSON.parse(localStorage.getItem("theme"));
+  const [theme, setTheme] = useState(savedTheme);
+
   return (
     <ThemeContext.Provider value={{ theme, setTheme }}>
       {props.children}

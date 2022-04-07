@@ -21,17 +21,18 @@ const Customization = () => {
   });
 
   const [grub, setGrub] = useState({
-    name: "",
+    name: "Draft Punk",
+    url: "https://github.com/TechXero/DaftGrub.git",
   });
 
   return (
-    <div className="container">
+    <Div id="Customization" className="container">
       <Title text="Customization" />
       <Title sec text="Rices/Themes" />
       <Container ltr>
         <List ltr>
           <li
-            className={rice.name === "XeroCherry" && "active"}
+            className={rice.name === "XeroCherry" ? "active" : undefined}
             onClick={() =>
               setRice({
                 name: "XeroCherry",
@@ -42,7 +43,7 @@ const Customization = () => {
             XeroCherry
           </li>
           <li
-            className={rice.name === "XeroDracul" && "active"}
+            className={rice.name === "XeroDracul" ? "active" : undefined}
             onClick={() =>
               setRice({
                 name: "XeroDracul",
@@ -53,7 +54,7 @@ const Customization = () => {
             XeroDracul
           </li>
           <li
-            className={rice.name === "XeroLayan" && "active"}
+            className={rice.name === "XeroLayan" ? "active" : undefined}
             onClick={() =>
               setRice({
                 name: "XeroLayan",
@@ -64,7 +65,7 @@ const Customization = () => {
             XeroLayan
           </li>
           <li
-            className={rice.name === "XeroSweet" && "active"}
+            className={rice.name === "XeroSweet" ? "active" : undefined}
             onClick={() =>
               setRice({
                 name: "XeroSweet",
@@ -75,7 +76,7 @@ const Customization = () => {
             XeroSweet
           </li>
           <li
-            className={rice.name === "XeroNord" && "active"}
+            className={rice.name === "XeroNord" ? "active" : undefined}
             onClick={() =>
               setRice({
                 name: "XeroNord",
@@ -173,7 +174,7 @@ const Customization = () => {
       <Container>
         <List>
           <li
-            className={grub.name === "Draft Punk" && "active"}
+            className={grub.name === "Draft Punk" ? "active" : undefined}
             onClick={() =>
               setGrub({
                 name: "Draft Punk",
@@ -184,7 +185,7 @@ const Customization = () => {
             Draft Punk
           </li>
           <li
-            className={grub.name === "T-R-O-N" && "active"}
+            className={grub.name === "T-R-O-N" ? "active" : undefined}
             onClick={() =>
               setGrub({
                 name: "T-R-O-N",
@@ -195,7 +196,7 @@ const Customization = () => {
             T-R-O-N
           </li>
           <li
-            className={grub.name === "Star Wars" && "active"}
+            className={grub.name === "Star Wars" ? "active" : undefined}
             onClick={() =>
               setGrub({
                 name: "Star Wars",
@@ -206,7 +207,7 @@ const Customization = () => {
             Star Wars
           </li>
           <li
-            className={grub.name === "XeroNord" && "active"}
+            className={grub.name === "XeroNord" ? "active" : undefined}
             onClick={() =>
               setGrub({
                 name: "XeroNord",
@@ -217,7 +218,7 @@ const Customization = () => {
             XeroNord
           </li>
           <li
-            className={grub.name === "XeroCompromise" && "active"}
+            className={grub.name === "XeroCompromise" ? "active" : undefined}
             onClick={() =>
               setGrub({
                 name: "XeroCompromise",
@@ -297,9 +298,13 @@ const Customization = () => {
           </Content>
         </Box>
       </Container>
-    </div>
+    </Div>
   );
 };
+
+const Div = styled.div`
+  padding-block: var(--padding-section);
+`;
 
 const A = styled.a`
   text-decoration: underline;
@@ -329,15 +334,22 @@ const List = styled.ul`
   & > li {
     cursor: pointer;
     padding: 0.75em 1.25em;
+    transition: background-color var(--transition-duration)
+      var(--transition-timing-function);
     border-radius: ${(props) =>
       props.ltr
         ? "var(--border-radius) 0 0 var(--border-radius)"
         : "0 var(--border-radius) var(--border-radius) 0"};
   }
 
+  & > li:hover {
+    background-color: rgb(var(--fg2));
+  }
+
   & > li.active {
     background-color: rgb(var(--bg2));
     color: rgb(var(--fg));
+    font-weight: bold;
   }
 `;
 
@@ -362,7 +374,7 @@ const Content = styled.div`
 
 const ImgWrapper = styled.div`
   overflow: hidden;
-  flex: 0.4;
+  flex: 0.3;
 
   & > img {
     width: 100%;
@@ -384,7 +396,7 @@ const ContentWrapper = styled.div`
   align-items: end;
   justify-content: space-between;
   flex-direction: column;
-  flex: 0.6;
+  flex: 0.7;
 `;
 
 export default Customization;
