@@ -132,6 +132,7 @@ const P = styled.p`
   margin-block: 1em;
   & > a {
     text-decoration: underline;
+    font-weight: bold;
   }
 `;
 

@@ -14,6 +14,7 @@ const ThemeIcon = () => {
 
   useEffect(() => {
     document.body.classList = theme ? "light" : "dark";
+    localStorage.setItem("theme", JSON.stringify(theme));
   }, [theme]);
 
   return (
