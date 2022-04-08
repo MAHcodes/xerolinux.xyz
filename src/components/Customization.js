@@ -43,17 +43,6 @@ const Customization = () => {
             XeroCherry
           </li>
           <li
-            className={rice.name === "XeroDracul" ? "active" : undefined}
-            onClick={() =>
-              setRice({
-                name: "XeroDracul",
-                url: "https://github.com/xerolinux/xero-dracul-git",
-              })
-            }
-          >
-            XeroDracul
-          </li>
-          <li
             className={rice.name === "XeroLayan" ? "active" : undefined}
             onClick={() =>
               setRice({
@@ -63,6 +52,17 @@ const Customization = () => {
             }
           >
             XeroLayan
+          </li>
+          <li
+            className={rice.name === "XeroNord" ? "active" : undefined}
+            onClick={() =>
+              setRice({
+                name: "XeroNord",
+                url: "https://github.com/xerolinux/xero-nord-git",
+              })
+            }
+          >
+            XeroNord
           </li>
           <li
             className={rice.name === "XeroSweet" ? "active" : undefined}
@@ -76,15 +76,15 @@ const Customization = () => {
             XeroSweet
           </li>
           <li
-            className={rice.name === "XeroNord" ? "active" : undefined}
+            className={rice.name === "XeroDracul" ? "active" : undefined}
             onClick={() =>
               setRice({
-                name: "XeroNord",
-                url: "https://github.com/xerolinux/xero-nord-git",
+                name: "XeroDracul",
+                url: "https://github.com/xerolinux/xero-dracul-git",
               })
             }
           >
-            XeroNord
+            XeroDracul
           </li>
         </List>
         <Box>
@@ -136,10 +136,11 @@ const Customization = () => {
               )}
               {rice.name === "XeroLayan" && (
                 <P>
-                  This rice is the main one used on my Distro, uses Latte for
-                  both Panels & Dock. It is intended to be mainly used on
-                  XeroLinux. I made scripts to install on "Debian" (KDENeon) and
-                  "Fedora KDE Spin"... Test it out and let me know...
+                  This rice was the main one used on Xero for a while, uses
+                  Latte for both Panels & Dock. It is intended to be mainly used
+                  on XeroLinux. <br />
+                  <br />
+                  Test it out and let me know...
                 </P>
               )}
               {rice.name === "XeroSweet" && (
@@ -303,7 +304,7 @@ const Customization = () => {
 };
 
 const Div = styled.div`
-  padding-block: var(--padding-section);
+  //padding-block: var(--padding-section);
 `;
 
 const A = styled.a`

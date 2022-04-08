@@ -8,6 +8,7 @@ import Features from "./components/Features";
 import Download from "./components/Download";
 import Credit from "./components/Credit";
 import Customization from "./components/Customization";
+import Videos from "./components/Videos";
 
 const App = () => {
   const wrapperRef = useRef();
@@ -23,6 +24,14 @@ const App = () => {
       <Download />
       <Credit />
       <Customization />
+      <Videos
+        title="XeroLinux Videos"
+        urls={[
+          "https://www.youtube.com/embed/eSo0V0ns4HQ",
+          "https://www.youtube.com/embed/9Mtuo0DDgCI",
+          "https://www.youtube.com/embed/bU2-UdmrJWg",
+        ]}
+      />
     </div>
   );
 };
