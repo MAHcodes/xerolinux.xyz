@@ -4,9 +4,12 @@ import "./reset.css";
 import "./index.css";
 import App from "./App";
 import ThemeContextProvider from "./hooks/ThemeContext";
+import PopUpContextProvider from "./hooks/PopUpContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ThemeContextProvider>
-    <App />
+    <PopUpContextProvider>
+      <App />
+    </PopUpContextProvider>
   </ThemeContextProvider>
 );

@@ -38,7 +38,7 @@ const Container = styled.div`
   }
 
   & p {
-    padding: 0.75rem;
+    padding-block: 0.75rem;
   }
 
   & a {

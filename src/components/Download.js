@@ -6,7 +6,6 @@ import Title from "./Title";
 const Download = () => {
   return (
     <DownloadSection id="Download" className="container">
-      <Title ml="-4.5em" text="Download" />
       <Wrapper>
         <Video>
           <svg width="634" height="27" viewBox="0 0 634 27" fill="none">
@@ -37,6 +36,7 @@ const Download = () => {
           </svg>
         </Video>
         <Content>
+          <Title alignLeft text="Download" />
           <p>
             This is XeroLinux - an Arch-based Distro, a personal project I am
             working on that I thought I would share, in case someone out there

@@ -3,7 +3,7 @@ import { createContext, useState } from "react";
 export const ThemeContext = createContext(null);
 
 const ThemeContextProvider = (props) => {
-  const savedTheme = JSON.parse(localStorage.getItem("theme"));
+  const savedTheme = JSON.parse(localStorage.getItem("theme") || false);
   const [theme, setTheme] = useState(savedTheme);
 
   return (
