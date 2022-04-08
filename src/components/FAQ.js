@@ -20,8 +20,8 @@ const FAQ = ({ faqs }) => {
       <Title text="FAQ" />
       <Wrapper>
         {faqs.map((faq, i) => (
-          <>
-            <Box noBR key={i}>
+          <div key={i}>
+            <Box noBR>
               <Question
                 className={openedQ === i ? "active" : undefined}
                 onClick={() => handleClick(i)}
@@ -43,7 +43,7 @@ const FAQ = ({ faqs }) => {
                 <Button primary themed text="read more" />
               </a>
             </Answer>
-          </>
+          </div>
         ))}
       </Wrapper>
     </Div>
@@ -94,17 +94,22 @@ const Answer = styled.div`
 
   & > p {
     margin-block-end: 1rem;
+    opacity: 0;
+    transition: opacity var(--transition-duration)
+      var(--transition-timing-function);
   }
 
   & > a {
-    display: block;
-    text-align: right;
+    float: right;
   }
 
   &.active {
     height: auto;
     padding-block: 2rem;
     border-block: var(--border) solid rgb(var(--fg));
+    & p {
+      opacity: 1;
+    }
   }
 
   &:last-of-type {

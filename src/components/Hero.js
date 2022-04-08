@@ -34,7 +34,7 @@ const Hero = ({ hdr }) => {
               Environment, known as KDE Plasma. It brings a good balance between
               Stability and Performance. Oh and it looks so damn sexy too !
               <br />
-              <br />I hope you enjoy it as much as I have creating it ;)
+              <br />I hope you enjoy using it as much as I have creating it ;)
             </P>
             <Buttons>
               <Button

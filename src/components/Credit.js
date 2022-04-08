@@ -13,7 +13,11 @@ const Credit = () => {
             help & input from
           </P>
           <Buttons mb="1rem">
-            <a href="https:/discrod.com/" target="blank" rel="noreferrer">
+            <a
+              href="https://www.youtube.com/channel/UCd25qu9gyUpzE8GcjmgeAPQ"
+              target="blank"
+              rel="noreferrer"
+            >
               <Button
                 text="GamerKing64"
                 primary
