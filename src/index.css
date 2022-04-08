@@ -13,7 +13,7 @@
   --transition-duration: 200ms;
   --delay-duration: 75ms;
   --transition-timing-function: ease-in-out;
-  --padding-section: 4rem;
+  --padding-section: 3rem;
 }
 
 body.light {
@@ -53,7 +53,7 @@ html {
   font-family: Poppins, serif;
   font-weight: 400;
   scroll-behavior: smooth;
-  scroll-padding-top: var(--padding-section);
+  scroll-padding-top: calc(var(--padding-section) + 2rem);
   font-size: clamp(0.7rem, 2.5vmin, 1.25rem);
 }
 

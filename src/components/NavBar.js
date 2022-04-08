@@ -13,7 +13,7 @@ const NavBar = () => {
         <a href="#Download">
           <li>Download</li>
         </a>
-        <a href="#Customiztion">
+        <a href="#Customization">
           <li>Customiztion</li>
         </a>
         <a href="#Videos">

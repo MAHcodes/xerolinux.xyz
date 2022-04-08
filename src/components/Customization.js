@@ -304,7 +304,7 @@ const Customization = () => {
 };
 
 const Div = styled.div`
-  //padding-block: var(--padding-section);
+  padding-block: var(--padding-section);
 `;
 
 const A = styled.a`

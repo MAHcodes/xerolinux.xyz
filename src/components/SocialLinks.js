@@ -128,7 +128,7 @@ const Wrapper = styled.div`
     border-radius: 50%;
 
     & > svg {
-      width: 1.5rem;
+      width: 1.45rem;
       height: 1.5rem;
       transition: transform var(--transition-duration)
         var(--transition-timing-function);

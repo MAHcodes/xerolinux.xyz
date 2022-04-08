@@ -3,7 +3,7 @@ import Title from "./Title";
 
 const Videos = ({ title, urls }) => {
   return (
-    <Section className="container">
+    <Section id="Videos" className="container">
       <Title text={title} />
       <VideosWrapper>
         <Svg width="188" height="44" viewBox="0 0 188 44" fill="none">
@@ -41,6 +41,7 @@ const Videos = ({ title, urls }) => {
 
         <IframesWrapper>
           <iframe
+            loading="lazy"
             width="560"
             height="315"
             src={urls[0]}
@@ -79,6 +80,7 @@ const Videos = ({ title, urls }) => {
           </Svg>
 
           <iframe
+            loading="lazy"
             width="560"
             height="315"
             src={urls[1]}
@@ -118,6 +120,7 @@ const Videos = ({ title, urls }) => {
           </Svg>
 
           <iframe
+            loading="lazy"
             width="560"
             height="315"
             src={urls[2]}

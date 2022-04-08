@@ -6,7 +6,7 @@ import Title from "./Title";
 const Download = () => {
   return (
     <DownloadSection id="Download" className="container">
-      <Title ml="-4.75em" text="Download" />
+      <Title ml="-4.5em" text="Download" />
       <Wrapper>
         <Video>
           <svg width="634" height="27" viewBox="0 0 634 27" fill="none">
@@ -18,6 +18,7 @@ const Download = () => {
             />
           </svg>
           <iframe
+            loading="lazy"
             width="560"
             height="315"
             src="https://www.youtube.com/embed/sqUzODS_p38"
