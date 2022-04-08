@@ -6,12 +6,17 @@ import { ThemeContext } from "../hooks/ThemeContext";
 
 const Box = (props) => {
   const { theme } = useContext(ThemeContext);
-  return <Div theme={theme}>{props.children}</Div>;
+  return (
+    <Div noBR={props.noBR} theme={theme}>
+      {props.children}
+    </Div>
+  );
 };
 
 const Div = styled.div`
   background-color: rgb(var(--bg2));
-  border-radius: var(--border-radius);
+  border-radius: ${(props) =>
+    props.noBR === true ? "0" : "var(--border-radius)"};
   padding: 1rem;
   background-image: url(${(props) =>
     props.theme === true ? lightbg : darkbg});
