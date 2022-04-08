@@ -6,7 +6,7 @@ import Title from "./Title";
 const Download = () => {
   return (
     <DownloadSection id="Download" className="container">
-      <Title text="Download" />
+      <Title ml="-4.75em" text="Download" />
       <Wrapper>
         <Video>
           <svg width="634" height="27" viewBox="0 0 634 27" fill="none">
@@ -58,13 +58,13 @@ const Download = () => {
               padding=".75em 1.5em"
               fz="var(--fz-5)"
             />
-            <Button
+            {/* <Button
               text="Changelog"
               themed
               padding=".75em 1.5em"
               fz="var(--fz-5)"
               clr="rgb(var(--fg))"
-            />
+            /> */}
           </Buttons>
         </Content>
       </Wrapper>
