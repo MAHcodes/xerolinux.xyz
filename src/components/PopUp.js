@@ -107,7 +107,8 @@ const Div = styled.div`
   background-color: rgb(var(--bg));
   width: 85%;
   max-width: 1000px;
-  height: 90%;
+  height: fit-content;
+  max-height: 90%;
   inset: 0;
   margin: auto;
   z-index: 10000;

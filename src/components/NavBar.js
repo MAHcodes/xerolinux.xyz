@@ -96,7 +96,6 @@ const StyledNav = styled.nav`
   color: rgb(var(--white));
   font-size: var(--fz-6);
   text-align: center;
-  backdrop-filter: blur(50px);
   @media (max-width: 800px) {
     order: 1;
     flex-basis: 100%;
