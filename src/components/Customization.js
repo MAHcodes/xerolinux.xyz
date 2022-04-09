@@ -227,7 +227,7 @@ const Customization = () => {
               })
             }
           >
-            XeroCompromise
+            XeroComp
           </li>
         </List>
         <Box>
