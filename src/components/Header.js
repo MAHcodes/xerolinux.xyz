@@ -46,6 +46,7 @@ const StyledHeader = styled.header`
   color: rgb(var(--whtie));
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   position: relative;
+  backdrop-filter: blur(15px);
 
   &::before {
     content: "";
