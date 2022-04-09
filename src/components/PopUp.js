@@ -5,6 +5,7 @@ import { useContext } from "react";
 import { PopUpContext } from "../hooks/PopUpContext";
 import Close from "./Close";
 import Button from "./Button";
+import AnnouncementsPopUP from "./AnnouncementsPopUp";
 
 const PopUp = () => {
   const { popUp, setPopUp } = useContext(PopUpContext);
@@ -25,14 +26,19 @@ const PopUp = () => {
             <ThemeIcon dark />
             <Close action={closePopup} />
           </Panel>
-          <Content>{popUp === "Disclaimer" && <Disclaimer />}</Content>
+          <Content>
+            {popUp === "Disclaimer" && <Disclaimer />}
+            {popUp === "Announcements" && <AnnouncementsPopUP />}
+          </Content>
           <Actions>
-            <Button
-              action={neverShow}
-              primary
-              themed
-              text="Close and never show again"
-            />
+            {popUp === "Disclaimer" && (
+              <Button
+                action={neverShow}
+                primary
+                themed
+                text="Close and never show again"
+              />
+            )}
           </Actions>
         </Wrapper>
       </Div>
