@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import laptop from "../assets/images/laptop.png";
 import Button from "./Button";
 import leb from "../assets/images/leb.svg";
-import { useEffect, useState } from "react";
+import { useLayoutEffect, useState } from "react";
 import bg from "../assets/images/herobg.png";
 import Buttons from "./Buttons";
 import { useContext } from "react";
@@ -12,13 +12,16 @@ const Hero = ({ hdr }) => {
   const { setPopUp } = useContext(PopUpContext);
   const [height, setHeight] = useState(0);
 
-  useEffect(() => {
+  useLayoutEffect(() => {
     const updateHeight = () => {
       setHeight(hdr.current.clientHeight);
+      setTimeout(() => {
+        setHeight(hdr.current.clientHeight);
+      }, 100);
     };
-    updateHeight();
 
     window.addEventListener("resize", updateHeight);
+    window.addEventListener("load", updateHeight);
     return () => window.removeEventListener("resize", updateHeight);
   }, [hdr]);
 
