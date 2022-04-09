@@ -5,8 +5,11 @@ import leb from "../assets/images/leb.svg";
 import { useEffect, useState } from "react";
 import bg from "../assets/images/herobg.png";
 import Buttons from "./Buttons";
+import { useContext } from "react";
+import { PopUpContext } from "../hooks/PopUpContext";
 
 const Hero = ({ hdr }) => {
+  const { setPopUp } = useContext(PopUpContext);
   const [height, setHeight] = useState(0);
 
   useEffect(() => {
@@ -49,6 +52,7 @@ const Hero = ({ hdr }) => {
                 padding=".75em 1.5em"
                 fz="var(--fz-5)"
                 clr="rgb(var(--white))"
+                action={() => setPopUp("Disclaimer")}
               />
             </Buttons>
             <Origin>
