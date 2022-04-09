@@ -10,6 +10,10 @@ const H1 = styled.h1`
   color: rgb(var(--fg2));
   text-align: ${(props) => (props.al ? "left" : "center")};
   margin-block-end: ${(props) => (props.al ? ".25em" : "1em")};
+
+  @media (max-width: 800px) {
+    --fz-1: 1.75rem;
+  }
 `;
 
 const H2 = styled.h2`
