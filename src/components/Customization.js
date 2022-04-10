@@ -13,6 +13,7 @@ import TRON from "../assets/images/TRON.png";
 import StarWars from "../assets/images/StarWars.png";
 import XeroNordGrub from "../assets/images/XeroNordGrub.png";
 import XeroComp from "../assets/images/XeroComp.png";
+import Img from "./Img";
 
 const Customization = () => {
   const [rice, setRice] = useState({
@@ -91,19 +92,19 @@ const Customization = () => {
           <Content ltr>
             <ImgWrapper>
               {rice.name === "XeroCherry" && (
-                <img src={XeroCherry} alt="XeroCherry Preview" />
+                <Img src={XeroCherry} alt="XeroCherry Preview" />
               )}
               {rice.name === "XeroDracul" && (
-                <img src={XeroDracul} alt="XeroDracul Preview" />
+                <Img src={XeroDracul} alt="XeroDracul Preview" />
               )}
               {rice.name === "XeroLayan" && (
-                <img src={XeroLayan} alt="XeroLayan Preview" />
+                <Img src={XeroLayan} alt="XeroLayan Preview" />
               )}
               {rice.name === "XeroSweet" && (
-                <img src={XeroSweet} alt="XeroSweet Preview" />
+                <Img src={XeroSweet} alt="XeroSweet Preview" />
               )}
               {rice.name === "XeroNord" && (
-                <img src={XeroNord} alt="XeroNord Preview" />
+                <Img src={XeroNord} alt="XeroNord Preview" />
               )}
             </ImgWrapper>
             <ContentWrapper>
@@ -234,19 +235,19 @@ const Customization = () => {
           <Content>
             <ImgWrapper>
               {grub.name === "Draft Punk" && (
-                <img src={DraftPunk} alt="Draft Punk Preview" />
+                <Img src={DraftPunk} alt="Draft Punk Preview" />
               )}
               {grub.name === "T-R-O-N" && (
-                <img src={TRON} alt="T-R-O-N Preview" />
+                <Img src={TRON} alt="T-R-O-N Preview" />
               )}
               {grub.name === "Star Wars" && (
-                <img src={StarWars} alt="Star Wars Preview" />
+                <Img src={StarWars} alt="Star Wars Preview" />
               )}
               {grub.name === "XeroNord" && (
-                <img src={XeroNordGrub} alt="XeroNord Preview" />
+                <Img src={XeroNordGrub} alt="XeroNord Preview" />
               )}
               {grub.name === "XeroCompromise" && (
-                <img src={XeroComp} alt="XeroCompromise Preview" />
+                <Img src={XeroComp} alt="XeroCompromise Preview" />
               )}
             </ImgWrapper>
             <ContentWrapper>
@@ -378,9 +379,6 @@ const ImgWrapper = styled.div`
   flex: 0.3;
 
   & > img {
-    width: 100%;
-    border-radius: var(--border-radius);
-    border: var(--border) solid rgb(var(--fg));
     animation: ${fadeIn} 500ms var(--transition-timing-function);
   }
 `;

@@ -1,12 +1,13 @@
 import PCimg from "../assets/images/pcbuild.jpg";
 import styled from "styled-components";
 import Title from "./Title";
+import Img from "./Img";
 
 const PCBuild = () => {
   return (
     <div>
-      <Title text="My PC Build" />
-      <Img src={PCimg} alt="My PC Build" />
+      <Title noMT text="My PC Build" />
+      <Img maxWidth="85%" src={PCimg} alt="My PC Build" />
       <P>
         That PC is my main one acting as my everyday system. I do all my gaming
         on it. I have recently built it and all parts came from Amazon UK. It's
@@ -39,16 +40,6 @@ const PCBuild = () => {
 
 const P = styled.p`
   margin-bottom: 2em;
-`;
-
-const Img = styled.img`
-  border: var(--border) solid rgb(var(--fg));
-  border-radius: var(--border-radius);
-  max-width: 85%;
-  object-fit: contain;
-  margin-inline: auto;
-  margin-block-end: 2rem;
-  display: block;
 `;
 
 export default PCBuild;

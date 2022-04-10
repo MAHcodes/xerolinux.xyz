@@ -78,7 +78,7 @@ const Content = styled.div`
   background-color: rgb(var(--bg));
   overflow: hidden auto;
   flex-grow: 2;
-  padding: 1rem;
+  padding: 0 1rem 1rem;
 `;
 
 const overIn = keyframes`
