@@ -1,6 +1,13 @@
 import styled, { keyframes } from "styled-components";
+import { PopUpContext } from "../hooks/PopUpContext";
+import { useContext } from "react";
 
 const NavBar = () => {
+  const { setPopUp } = useContext(PopUpContext);
+  const popUpPcBuild = () => {
+    setPopUp("PCBuild");
+  };
+
   return (
     <StyledNav>
       <ul>
@@ -22,7 +29,7 @@ const NavBar = () => {
         <a href="#FAQ">
           <li>FAQ</li>
         </a>
-        <li>My Pc Build</li>
+        <li onClick={popUpPcBuild}>My Pc Build</li>
         <a href="https://forum.xerolinux.xyz/" target="_blank" rel="noreferrer">
           <Li>
             Forum

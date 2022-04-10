@@ -10,7 +10,7 @@ import { PopUpContext } from "../hooks/PopUpContext";
 
 const Hero = ({ hdr }) => {
   const { setPopUp } = useContext(PopUpContext);
-  const [height, setHeight] = useState(0);
+  const [height, setHeight] = useState(100);
 
   useLayoutEffect(() => {
     const updateHeight = () => {
@@ -43,13 +43,19 @@ const Hero = ({ hdr }) => {
               <br />I hope you enjoy using it as much as I have creating it ;)
             </P>
             <Buttons>
-              <Button
-                text="Download"
-                primary
-                padding=".75em 1.5em"
-                fz="var(--fz-5)"
-                clr="rgb(var(--black))"
-              />
+              <a
+                href="https://sourceforge.net/projects/xerolinux/files/Releases/Main/xerolinux-main-x86_64.iso/download"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  text="Download"
+                  primary
+                  padding=".75em 1.5em"
+                  fz="var(--fz-5)"
+                  clr="rgb(var(--black))"
+                />
+              </a>
               <Button
                 text="Disclaimer"
                 padding=".75em 1.5em"

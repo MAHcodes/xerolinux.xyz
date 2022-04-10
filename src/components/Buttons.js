@@ -13,6 +13,10 @@ const Div = styled.div`
   text-align: center;
   flex-wrap: wrap;
 
+  & > a > button {
+    width: 100%;
+  }
+
   @media (max-width: 800px) {
     flex-direction: column;
   }
