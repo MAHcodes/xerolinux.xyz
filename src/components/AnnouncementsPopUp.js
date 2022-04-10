@@ -1,16 +1,16 @@
-import Title from "./Title";
 import styled from "styled-components";
+import Title from "./Title";
 
 const AnnouncementsPopUP = () => {
   return (
     <Div>
-      <Title alignLeft text="Dear XeroLinux users," />
+      <Title fz2 alignLeft text="Dear XeroLinux users," />
       <P>
         Kindly find the latest news & announcements below… Read carefully. Keep
         coming back as the list will be constantly updated…
       </P>
 
-      <Title alignLeft text="XFCE & GNOME Discontinued :" />
+      <Title fz2 alignLeft text="XFCE & GNOME Discontinued :" />
       <P>
         It's with a heavy heart that I say this. But after considerable back and
         forth, I have decided that, starting May 25th, moving forward, there
@@ -20,7 +20,7 @@ const AnnouncementsPopUP = () => {
         other <Span>DE</Span> in the future.
       </P>
 
-      <Title text="Repos Have been moved  :" alignLeft />
+      <Title fz2 text="Repos Have been moved  :" alignLeft />
       <P>
         Since switching away from <Span>"ArcoLinux"</Span> repositories, and
         moving our own from one server to another, that, caused issues for some
@@ -40,7 +40,7 @@ const AnnouncementsPopUP = () => {
         .
       </P>
 
-      <Title text="The future of XeroLinux  :" alignLeft />
+      <Title fz2 text="The future of XeroLinux  :" alignLeft />
       <p>
         I want to concentrate on one DE, <Span>KDE</Span> in my case, making it
         the best it could be and more. Many Distros only have a single DE and

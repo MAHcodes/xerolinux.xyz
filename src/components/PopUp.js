@@ -6,16 +6,12 @@ import { PopUpContext } from "../hooks/PopUpContext";
 import Close from "./Close";
 import Button from "./Button";
 import AnnouncementsPopUP from "./AnnouncementsPopUp";
+import PCBuild from "./PCBuild";
 
 const PopUp = () => {
   const { popUp, setPopUp } = useContext(PopUpContext);
   const closePopup = () => {
     setPopUp("");
-  };
-
-  const neverShow = () => {
-    closePopup();
-    localStorage.setItem("popupclosed", JSON.stringify("true"));
   };
 
   return (
@@ -29,15 +25,19 @@ const PopUp = () => {
           <Content>
             {popUp === "Disclaimer" && <Disclaimer />}
             {popUp === "Announcements" && <AnnouncementsPopUP />}
+            {popUp === "PCBuild" && <PCBuild />}
           </Content>
           <Actions>
-            {popUp === "Disclaimer" && (
-              <Button
-                action={neverShow}
-                primary
-                themed
-                text="Close and never show again"
-              />
+            {popUp === "PCBuild" ? (
+              <a
+                href="https://pcpartpicker.com/user/TechXero/saved/QCtmgs"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button text="learn more" primary themed />
+              </a>
+            ) : (
+              <Button action={closePopup} primary themed text="Close" />
             )}
           </Actions>
         </Wrapper>
@@ -63,11 +63,12 @@ const Panel = styled.div`
 
 const Actions = styled.div`
   padding: 0.5rem 1rem 1rem;
+  align-self: end;
 `;
 
 const Wrapper = styled.div`
   display: flex;
-  align-items: end;
+  align-items: stretch;
   justify-content: space-between;
   flex-direction: column;
   height: 100%;

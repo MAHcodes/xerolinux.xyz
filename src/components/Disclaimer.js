@@ -4,7 +4,7 @@ import Title from "./Title";
 const Disclaimer = () => {
   return (
     <div>
-      <Title text="⚠️ XeroLinux Disclaimer ⚠️" />
+      <Title fz2 text="⚠️ XeroLinux Disclaimer ⚠️" />
       <P>
         Please read this carefully to understand more about what this project is
         and what it entails.
@@ -15,7 +15,7 @@ const Disclaimer = () => {
         currently own...
       </P>
 
-      <Title alignLeft text="What does it mean for you ?" />
+      <Title fz2 alignLeft text="What does it mean for you ?" />
       <P>
         When it comes to issues related to your specific hardware config, you
         better be ready to do your own research using the awesome knowledge
@@ -27,21 +27,21 @@ const Disclaimer = () => {
         lot of patience as I am one man doing this, not a team.
       </P>
 
-      <Title alignLeft text="No DE Requests Accepted" />
+      <Title fz2 alignLeft text="No DE Requests Accepted" />
       <P>
         I won't be adding other DEs, KDE is and forever will be only one moving
         forward. I won't be accepting requests for any. I cannot stretch myself
         too thin. I am doing it for the fun of learning.
       </P>
 
-      <Title alignLeft text="AUR Packages on Xero Repos" />
+      <Title fz2 alignLeft text="AUR Packages on Xero Repos" />
       <P>
         While you can request packages from AUR to be built and added to our
         repos, but if they depend on any other DE than KDE they will be
         rejected.
       </P>
 
-      <Title alignLeft text="What will NOT be supported" />
+      <Title fz2 alignLeft text="What will NOT be supported" />
       <P>
         We will NOT provide support for the following scenarios, please take
         that however you want, just as long as you are good with it.
