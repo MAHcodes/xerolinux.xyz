@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import eye from "../assets/images/leb.svg";
+import eye from "../assets/images/eye.svg";
 import { useState } from "react";
 
 const Img = ({ src, alt, maxWidth }) => {
@@ -87,10 +87,11 @@ const Div = styled.div`
     opacity: 0;
     z-index: 10000;
     pointer-events: none;
+    transform: scale(1.5);
     transition: var(--transition-duration) var(--transition-timing-function);
   }
   &:hover::before {
-    opacity: 1;
+    opacity: 0.85;
     background-color: rgba(var(--black), 70%);
   }
 `;

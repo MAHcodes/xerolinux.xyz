@@ -17,7 +17,7 @@ const PCBuild = () => {
         At this point in time, this beast is running Windows 11 Pro / XeroLinux
         in Dual-Boot, until I decide otherwise.
       </P>
-      <P>
+      <P center small>
         This build @ a glimpse
         <br /> <br />
         ASUS ROG Swift PG279Q Monitor
@@ -40,6 +40,8 @@ const PCBuild = () => {
 
 const P = styled.p`
   margin-bottom: 2em;
+  text-align: ${(props) => props.center && "center"};
+  font-size: ${(props) => props.small && "var(--fz-6)"};
 `;
 
 export default PCBuild;
