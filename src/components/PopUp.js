@@ -84,6 +84,17 @@ const Content = styled.div`
 
   & p {
     margin-bottom: 2em;
+
+    &.bg {
+      background-color: rgb(var(--fg));
+      color: rgb(var(--bg));
+      border-radius: var(--border);
+      padding: 1em;
+
+      & span {
+        color: rgba(var(--bg2), 85%);
+      }
+    }
   }
 
   & ul {

@@ -64,20 +64,20 @@ const Changelog = () => {
           one.
         </li>
         <li>
-          <span>X11</span> Session is the default post install.**
+          <span>X11</span> Session is the default post install.***
         </li>
       </ul>
-      <details>
+      <details open>
         <summary>Notes Please read...</summary>
-        <p>
+        <p className="bg">
           * : Make sure to watch the new{" "}
           <span>“Complete XeroLinux Install Guide” </span>
           video attached in the “Download” section for more detail on that &
           more….
         </p>
-        <p>
+        <p className="bg">
           ** : Make sure to go over the new <span>BTRFS-Assistant</span> &
-          <span> Snapper tool</span>
+          <span> Snapper tool </span>
           thread for more information on that over on the ={">"}
           <a
             href="https://forum.xerolinux.xyz/thread-80.html"
@@ -87,7 +87,7 @@ const Changelog = () => {
             <span> XeroLinux Forums…</span>
           </a>
         </p>
-        <p>
+        <p className="bg">
           *** : After a few reboots <span>Wayland</span> resets as the default
           session. Be careful with that. It’s out of our hands. It’s how it
           behaves unfortunately. If it works for you, keep it, otherwise, on the
