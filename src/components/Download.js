@@ -2,8 +2,17 @@ import styled from "styled-components";
 import Button from "../components/Button";
 import Buttons from "./Buttons";
 import Title from "./Title";
+import { PopUpContext } from "../hooks/PopUpContext";
+import { useContext } from "react";
 
 const Download = () => {
+  const { setPopUp } = useContext(PopUpContext);
+
+  const openChangeLogPopup = () => {
+    console.log("HELLO?");
+    setPopUp("Changelog");
+  };
+
   return (
     <DownloadSection id="Download" className="container">
       <Wrapper>
@@ -71,6 +80,7 @@ const Download = () => {
               padding=".75em 1.5em"
               fz="var(--fz-5)"
               clr="rgb(var(--fg))"
+              action={openChangeLogPopup}
             />
           </Buttons>
         </Content>

@@ -39,7 +39,6 @@ const PCBuild = () => {
 };
 
 const P = styled.p`
-  margin-bottom: 2em;
   text-align: ${(props) => props.center && "center"};
   font-size: ${(props) => props.small && "var(--fz-6)"};
 `;

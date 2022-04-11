@@ -7,6 +7,7 @@ import Close from "./Close";
 import Button from "./Button";
 import AnnouncementsPopUP from "./AnnouncementsPopUp";
 import PCBuild from "./PCBuild";
+import Changelog from "./Changelog";
 
 const PopUp = () => {
   const { popUp, setPopUp } = useContext(PopUpContext);
@@ -26,6 +27,7 @@ const PopUp = () => {
             {popUp === "Disclaimer" && <Disclaimer />}
             {popUp === "Announcements" && <AnnouncementsPopUP />}
             {popUp === "PCBuild" && <PCBuild />}
+            {popUp === "Changelog" && <Changelog />}
           </Content>
           <Actions>
             {popUp === "PCBuild" ? (
@@ -79,6 +81,36 @@ const Content = styled.div`
   overflow: hidden auto;
   flex-grow: 2;
   padding: 0 1rem 1rem;
+
+  & p {
+    margin-bottom: 2em;
+  }
+
+  & ul {
+    list-style-type: disc;
+    margin-inline-start: 1rem;
+    margin-bottom: 2em;
+    line-height: 1.7;
+  }
+
+  & span {
+    font-weight: bold;
+    color: rgba(var(--fg2), 85%);
+  }
+
+  & a {
+    text-decoration: underline;
+    margin-inline-start: 1rem;
+  }
+
+  & summary {
+    text-decoration: underline;
+    margin-inline-start: 1rem;
+    margin-block-end: 1rem;
+    cursor: pointer;
+    list-style: revert;
+    font-weight: bold;
+  }
 `;
 
 const overIn = keyframes`
