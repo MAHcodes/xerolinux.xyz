@@ -71,20 +71,20 @@ const Changelog = () => {
         <summary>Notes Please read...</summary>
         <p>
           * : Make sure to watch the new{" "}
-          <span>“Complete XeroLinux Install Guide”</span>
+          <span>“Complete XeroLinux Install Guide” </span>
           video attached in the “Download” section for more detail on that &
           more….
         </p>
         <p>
           ** : Make sure to go over the new <span>BTRFS-Assistant</span> &
           <span> Snapper tool</span>
-          thread for more information on that over on the ={">"}{" "}
+          thread for more information on that over on the ={">"}
           <a
             href="https://forum.xerolinux.xyz/thread-80.html"
             target="_blank"
             rel="noreferrer"
           >
-            <span>XeroLinux Forums…</span>
+            <span> XeroLinux Forums…</span>
           </a>
         </p>
         <p>
