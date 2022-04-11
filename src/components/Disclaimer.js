@@ -1,11 +1,10 @@
-import styled from "styled-components";
 import Title from "./Title";
 
 const Disclaimer = () => {
   return (
     <div>
       <Title fz2 text="⚠️ XeroLinux Disclaimer ⚠️" />
-      <P>
+      <p>
         Please read this carefully to understand more about what this project is
         and what it entails.
         <br /> <br />
@@ -13,10 +12,10 @@ const Disclaimer = () => {
         and foremost, as a hobby, in my spare time, to learn the inner workings
         of Linux, which means it's mainly compatible with the hardware I
         currently own...
-      </P>
+      </p>
 
       <Title fz2 alignLeft text="What does it mean for you ?" />
-      <P>
+      <p>
         When it comes to issues related to your specific hardware config, you
         better be ready to do your own research using the awesome knowledge
         found on ArchWiki and/or the Web. You can help others by sharing
@@ -25,49 +24,39 @@ const Disclaimer = () => {
         Otherwise, we will do best we can to assist you. If not myself, other
         users might be able to chime in if and when they can. All I ask for is a
         lot of patience as I am one man doing this, not a team.
-      </P>
+      </p>
 
       <Title fz2 alignLeft text="No DE Requests Accepted" />
-      <P>
+      <p>
         I won't be adding other DEs, KDE is and forever will be only one moving
         forward. I won't be accepting requests for any. I cannot stretch myself
         too thin. I am doing it for the fun of learning.
-      </P>
+      </p>
 
       <Title fz2 alignLeft text="AUR Packages on Xero Repos" />
-      <P>
+      <p>
         While you can request packages from AUR to be built and added to our
         repos, but if they depend on any other DE than KDE they will be
         rejected.
-      </P>
+      </p>
 
       <Title fz2 alignLeft text="What will NOT be supported" />
-      <P>
+      <p>
         We will NOT provide support for the following scenarios, please take
         that however you want, just as long as you are good with it.
-      </P>
-      <Ul>
+      </p>
+      <ul>
         <li>Hack Installs.</li>
         <li>Cloud Server Installs. </li>
         <li>Installs on Apple devices.</li>
         <li>Other Installed DEs or WMs.</li>
         <li>Custom/Other Kernels **!!!Danger Zone!!!**</li>
         <li>Installs on Tablets and other Touch devices</li>
-      </Ul>
-      <P>I hope this clarifies the matter once and for all..</P>
-      <P>XeroLinux Admin/Creator.</P>
+      </ul>
+      <p>I hope this clarifies the matter once and for all..</p>
+      <p>XeroLinux Admin/Creator.</p>
     </div>
   );
 };
-
-const P = styled.p`
-  margin-bottom: 2em;
-`;
-
-const Ul = styled.ul`
-  list-style-type: disc;
-  margin-inline-start: 1rem;
-  margin-bottom: 2em;
-`;
 
 export default Disclaimer;
