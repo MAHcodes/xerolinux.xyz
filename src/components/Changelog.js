@@ -67,9 +67,8 @@ const Changelog = () => {
           <span>X11</span> Session is the default post install.**
         </li>
       </ul>
-      <br />
       <details>
-        <summary>notes:</summary>
+        <summary>Notes Please read...</summary>
         <p>
           * : Make sure to watch the new{" "}
           <span>“Complete XeroLinux Install Guide”</span>
