@@ -100,7 +100,6 @@ const Content = styled.div`
 
   & a {
     text-decoration: underline;
-    margin-inline-start: 1rem;
   }
 
   & summary {
