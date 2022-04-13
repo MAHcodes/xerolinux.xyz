@@ -33,7 +33,7 @@ const StyledHeader = styled.div`
 
   &:hover {
     box-shadow: 0 0 30px -5px rgb(var(--black));
-    width: 13.25rem;
+    width: 11.25rem;
   }
   & > * {
     width: fit-content;

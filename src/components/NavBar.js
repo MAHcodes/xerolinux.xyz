@@ -90,7 +90,7 @@ const Li = styled.li`
 
   & > p {
     line-height: var(--icon-size);
-    font-size: var(--fz-4);
+    font-size: var(--fz-6);
     margin-inline-start: 1rem;
   }
   & > svg {
