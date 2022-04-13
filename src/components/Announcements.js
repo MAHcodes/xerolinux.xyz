@@ -14,7 +14,13 @@ const Announcements = () => {
     <Div>
       <div className="container">
         <P>Major Project Announcements</P>
-        <Button fz="var(--fz-6)" primary text="read more" action={announce} />
+        <Button
+          fz="var(--fz-6)"
+          padding=".5em 1em"
+          primary
+          text="read more"
+          action={announce}
+        />
       </div>
     </Div>
   );
@@ -22,7 +28,8 @@ const Announcements = () => {
 
 const Div = styled.div`
   background-color: rgb(var(--important));
-  padding: 0.75rem;
+  padding-block: 0.4rem;
+  box-shadow: 0 0 12px -7px rgb(var(--black));
 
   & .container {
     display: flex;

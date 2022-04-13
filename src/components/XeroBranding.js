@@ -38,7 +38,7 @@ const A = styled.a`
 `;
 
 const H2 = styled.h2`
-  font-size: var(--fz-2);
+  font-size: var(--fz-3);
   margin-inline-start: 1rem;
 `;
 
