@@ -80,7 +80,7 @@ const Li = styled.li`
   transition: var(--transition-duration) var(--transition-timing-function);
 
   &:hover {
-    padding-block: 1.5rem;
+    padding-block: 1.3rem;
     border-block: var(--border) solid rgba(var(--fg), 35%);
   }
 
@@ -89,7 +89,7 @@ const Li = styled.li`
   }
 
   & > p {
-    line-height: 2rem;
+    line-height: var(--icon-size);
     font-size: var(--fz-3);
     margin-inline-start: 1rem;
   }

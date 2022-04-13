@@ -28,8 +28,8 @@ const A = styled.a`
   }
 
   & svg {
-    width: 2rem;
-    height: 2rem;
+    width: var(--icon-size);
+    height: var(--icon-size);
 
     & path {
       fill: rgb(var(--low));

@@ -17,7 +17,7 @@ const StyledHeader = styled.div`
   position: fixed;
   inset: 0 auto 0 0;
   z-index: 9999999;
-  width: 4rem;
+  width: calc(var(--icon-size) + 2rem);
   background-color: rgb(var(--bg));
   overflow: hidden;
   padding: 1rem;
