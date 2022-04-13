@@ -31,11 +31,8 @@ const Svg = styled.svg`
     transform: scale(1.125);
   }
 
-  &.light path {
-    fill: rgb(var(--white));
-  }
-  &.dark path {
-    fill: rgb(var(--dark));
+  & path {
+    fill: rgb(var(--low));
   }
 `;
 

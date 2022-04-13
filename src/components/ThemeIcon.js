@@ -76,12 +76,12 @@ const fadeIn = keyframes`
 `;
 
 const Svg = styled.svg`
-  width: 1.5rem;
-  object-fit: contain;
+  width: var(--icon-size);
+  height: var(--icon-size);
   cursor: pointer;
   animation: ${fadeIn} 0.75s var(--transition-timing-function);
   &.dark path {
-    fill: rgb(var(--black)) !important;
+    fill: rgb(var(--low)) !important;
   }
 `;
 
