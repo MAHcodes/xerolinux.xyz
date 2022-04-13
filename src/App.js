@@ -45,7 +45,7 @@ const App = () => {
 const Wrapper = styled.div`
   position: fixed;
   inset: 0 0 auto;
-  z-index: 999;
+  z-index: 10008;
 `;
 
 export default App;

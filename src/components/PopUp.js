@@ -133,7 +133,7 @@ const Overlay = styled.div`
   position: fixed;
   inset: 0;
   background-color: rgba(var(--black), 90%);
-  z-index: 9999;
+  z-index: 10090;
   animation: ${overIn} var(--transition-duration)
     var(--transition-timing-function);
 `;
@@ -153,7 +153,7 @@ const Div = styled.div`
   height: 90%;
   inset: 0;
   margin: auto;
-  z-index: 10000;
+  z-index: 10099;
   border-radius: var(--border-radius);
   border: var(--border) solid rgb(var(--fg));
   color: rgb(var(--fg));

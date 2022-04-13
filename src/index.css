@@ -14,16 +14,17 @@
   --delay-duration: 75ms;
   --transition-timing-function: ease-in-out;
   --padding-section: 3rem;
+  --icon-size: 2rem;
 }
 
 body.light {
   --bg: 250, 244, 249;
   --bg2: 255, 207, 242;
   --fg: 105, 110, 194;
-  --fg2: 45, 48, 84;
+  --fg2: 67, 69, 113;
   --important: var(--fg);
   --high: var(--white);
-  --low: var(--black);
+  --low: var(--fg2);
 }
 
 body.dark {
@@ -84,6 +85,6 @@ img {
 
 .container {
   max-width: 1720px;
-  padding-inline: 3rem;
+  padding: 0 3rem 0 7rem;
   margin-inline: auto;
 }

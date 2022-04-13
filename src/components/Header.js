@@ -1,104 +1,43 @@
 import styled from "styled-components";
-import logo from "../assets/images/logo.svg";
-import HamburgerMenu from "./HamburgerMenu";
 import NavBar from "./NavBar";
-import { useLayoutEffect, useState } from "react";
 import ThemeIcon from "./ThemeIcon";
+import XeroBranding from "./XeroBranding";
 
 const Header = () => {
-  const [menu, setMenu] = useState(false);
-
-  useLayoutEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 800) {
-        setMenu(false);
-      } else {
-        setMenu(true);
-      }
-    };
-    window.addEventListener("resize", handleResize);
-    window.addEventListener("load", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
-
   return (
     <StyledHeader>
-      <div className="container">
-        <Wrapper>
-          <Brand href="#Home">
-            <Logo src={logo} alt="XeroLinux Logo" />
-            <P>XeroLinux</P>
-          </Brand>
-          <HamburgerMenu menu={menu} setMenu={setMenu} />
-        </Wrapper>
-        {menu && <NavBar />}
-        <ThemeIcon />
-      </div>
+      <XeroBranding />
+      <NavBar />
+      <ThemeIcon dark />
     </StyledHeader>
   );
 };
 
-const StyledHeader = styled.header`
-  background-color: rgba(var(--bar), 50%);
-  color: rgb(var(--whtie));
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
-  position: relative;
-  backdrop-filter: blur(15px);
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: inherit;
-    box-shadow: inset 0 0 0 3000px rgba(250, 250, 250, 0.15);
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
-    filter: blur(5px);
-    z-index: -1;
-  }
-
-  & .container {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    @media (min-width: 800px) {
-      flex-direction: row;
-      flex-wrap: nowrap;
-    }
-  }
-`;
-
-const Wrapper = styled.div`
+const StyledHeader = styled.div`
+  position: fixed;
+  inset: 0 auto 0 0;
+  z-index: 9999999;
+  width: 4rem;
+  background-color: rgb(var(--bg));
+  overflow: hidden;
+  padding: 1rem;
   display: flex;
-  flex-grow: 1;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
   justify-content: space-between;
-  @media (max-width: 800px) {
-    padding-block: 0.75rem;
+  color: rgb(var(--fg));
+  white-space: nowrap;
+  flex-wrap: wrap;
+  transition: all var(--transition-duration) var(--transition-timing-function);
+  border-right: var(--border) solid rgb(var(--fg));
+
+  &:hover {
+    box-shadow: 0 0 30px -5px rgb(var(--black));
+    width: 14.5rem;
   }
-`;
-
-const P = styled.p`
-  font-size: var(--fz-4);
-  color: rgb(var(--white));
-  font-weight: bold;
-`;
-
-const Logo = styled.img`
-  width: 2rem;
-  object-fit: contain;
-`;
-
-const Brand = styled.a`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  order: -1;
+  & > * {
+    width: fit-content;
+  }
 `;
 
 export default Header;
