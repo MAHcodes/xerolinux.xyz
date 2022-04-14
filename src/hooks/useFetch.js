@@ -1,12 +1,37 @@
-import { useState } from "react";
-import axios from "axios";
+import { useState, useEffect } from "react";
 
-const useFetch = ({ URL }) => {
+const useFetch = (configObj) => {
+  const { axiosInstance, method, url, config = {} } = configObj;
+
   const [resData, setResData] = useState(null);
-  const [error, setError] = useState(null);
-  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
+  const [loading, setLoading] = useState(true);
 
-  return <div>useFetch</div>;
+  useEffect(() => {
+    const controller = new AbortController();
+
+    (async () => {
+      try {
+        const res = await axiosInstance[method.toLowerCase()](url, {
+          ...config,
+          signal: controller.signal,
+        });
+        console.log(res); // TODO
+        setResData(res);
+      } catch (err) {
+        console.log(err); // TODO
+        setError(err);
+      } finally {
+        setLoading(false);
+      }
+    })();
+
+    return () => {
+      controller.abort();
+    };
+  }, []);
+
+  return { resData, error, loading };
 };
 
 export default useFetch;
