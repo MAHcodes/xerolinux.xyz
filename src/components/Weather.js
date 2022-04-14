@@ -1,8 +1,18 @@
-import { useState } from "react";
+import axios from "../api/weather";
+import useFetch from "../hooks/useFetch";
 
 const Weather = () => {
-  const API_KEY = process.env.REACT_APP_API_KEY;
-  const [weather, setWeather] = useState({});
+  const { resData, loading, error } = useFetch({
+    axiosInstance: axios,
+    url: "data/2.5/weather",
+    method: "GET",
+    config: {
+      params: {
+        lat: "33.3496274",
+        lon: "35.4753414",
+      },
+    },
+  });
 
   const fetchWeather = () => {
     navigator.geolocation.getCurrentPosition((p) => {
@@ -10,7 +20,8 @@ const Weather = () => {
       console.log(p.coords.longitude);
     });
   };
-  return <div onClick={fetchWeather}>Weather</div>;
+
+  return <div onClick={fetchWeather}></div>;
 };
 
 export default Weather;
