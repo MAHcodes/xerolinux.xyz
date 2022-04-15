@@ -8,7 +8,6 @@ const Weather = () => {
   const [locationState, setLocationState] = useState(true);
 
   useEffect(() => {
-    const dateInstance = new Date();
     const months = [
       "Jan",
       "Feb",
@@ -25,6 +24,7 @@ const Weather = () => {
     ];
     const updateDateId = setInterval(
       (() => {
+        const dateInstance = new Date();
         const timeString = `${dateInstance.getDate()}/${
           months[dateInstance.getMonth() + 1]
         }/${dateInstance.getFullYear()}  |  ${(
