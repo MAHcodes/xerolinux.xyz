@@ -23,7 +23,7 @@ const Weather = () => {
       "Dec",
     ];
     const updateDateId = setInterval(
-      (() => {
+      (function updateDate() {
         const dateInstance = new Date();
         const timeString = `${dateInstance.getDate()}/${
           months[dateInstance.getMonth() + 1]
@@ -31,9 +31,10 @@ const Weather = () => {
           "0" + dateInstance.getHours()
         ).substr(-2)}:${("0" + dateInstance.getMinutes()).substr(-2)} |`;
         setCurrentTime(timeString);
+        return updateDate;
       })(),
-      60 * 1000
-    ); // 1 min
+      30 * 1000
+    );
 
     return () => {
       clearTimeout(updateDateId);
