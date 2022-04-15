@@ -9,27 +9,36 @@ const Weather = () => {
 
   useEffect(() => {
     const months = [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
+      "January",
+      "February",
+      "March",
+      "April",
       "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
+    ];
+    const days = [
+      "Sunday",
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
     ];
     const updateDateId = setInterval(
       (function updateDate() {
         const dateInstance = new Date();
-        const timeString = `${dateInstance.getDate()}/${
-          months[dateInstance.getMonth() + 1]
-        }/${dateInstance.getFullYear()}  |  ${(
+        const timeString = `${days[dateInstance.getDay()]}, ${
+          months[dateInstance.getMonth()]
+        } ${dateInstance.getDay()}, ${dateInstance.getFullYear()} | ${(
           "0" + dateInstance.getHours()
-        ).substr(-2)}:${("0" + dateInstance.getMinutes()).substr(-2)} |`;
+        ).substr(-2)}:${("0" + dateInstance.getMinutes()).substr(-2)}`;
         setCurrentTime(timeString);
         return updateDate;
       })(),
@@ -59,6 +68,7 @@ const Weather = () => {
   });
 
   const fetchWeather = () => {
+    if (geolocation.lat && geolocation.lon) return;
     navigator.geolocation.getCurrentPosition(
       (p) => {
         setLocationState(true);
@@ -72,6 +82,22 @@ const Weather = () => {
       }
     );
   };
+
+  useEffect(() => {
+    if (geolocation.lat && geolocation.lon) return;
+    navigator.geolocation.getCurrentPosition(
+      (p) => {
+        setLocationState(true);
+        setGeolocation({
+          lat: p.coords.latitude,
+          lon: p.coords.longitude,
+        });
+      },
+      () => {
+        setLocationState(false);
+      }
+    );
+  }, [geolocation.lat, geolocation.lon]);
 
   return (
     <Div onClick={fetchWeather}>
