@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import NavBar from "./NavBar";
 import ThemeIcon from "./ThemeIcon";
-import Weather from "./Weather";
 import XeroBranding from "./XeroBranding";
 
 const Header = () => {
@@ -9,10 +8,7 @@ const Header = () => {
     <StyledHeader>
       <XeroBranding />
       <NavBar />
-      <Icons>
-        <ThemeIcon dark />
-        <Weather />
-      </Icons>
+      <ThemeIcon dark />
     </StyledHeader>
   );
 };
@@ -43,7 +39,5 @@ const StyledHeader = styled.div`
     width: fit-content;
   }
 `;
-
-const Icons = styled.div``;
 
 export default Header;

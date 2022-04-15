@@ -5,13 +5,14 @@ const useFetch = (configObj) => {
 
   const [resData, setResData] = useState(null);
   const [error, setError] = useState("");
-  const [loading, setLoading] = useState(true);
+  const [loading, setLoading] = useState(false);
   const configString = JSON.stringify(config);
 
   useEffect(() => {
     const controller = new AbortController();
 
     (async () => {
+      setLoading(true);
       try {
         const res = await axiosInstance[method.toLowerCase()](url, {
           ...JSON.parse(configString),
@@ -19,8 +20,9 @@ const useFetch = (configObj) => {
         });
         console.log(res.data); // TODO
         setResData(res.data);
+        setError("");
       } catch (err) {
-        console.log(err); // TODO
+        console.log(err);
         setError(err);
       } finally {
         setLoading(false);
