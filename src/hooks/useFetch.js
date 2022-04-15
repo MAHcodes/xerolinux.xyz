@@ -6,6 +6,7 @@ const useFetch = (configObj) => {
   const [resData, setResData] = useState(null);
   const [error, setError] = useState("");
   const [loading, setLoading] = useState(true);
+  const configString = JSON.stringify(config);
 
   useEffect(() => {
     const controller = new AbortController();
@@ -13,11 +14,11 @@ const useFetch = (configObj) => {
     (async () => {
       try {
         const res = await axiosInstance[method.toLowerCase()](url, {
-          ...config,
+          ...JSON.parse(configString),
           signal: controller.signal,
         });
-        console.log(res); // TODO
-        setResData(res);
+        console.log(res.data); // TODO
+        setResData(res.data);
       } catch (err) {
         console.log(err); // TODO
         setError(err);
@@ -29,7 +30,7 @@ const useFetch = (configObj) => {
     return () => {
       controller.abort();
     };
-  }, []);
+  }, [axiosInstance, method, url, configString]);
 
   return { resData, error, loading };
 };
