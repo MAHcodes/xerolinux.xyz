@@ -5,6 +5,7 @@ import useFetch from "../hooks/useFetch";
 
 const Weather = () => {
   const [currentTime, setCurrentTime] = useState("");
+  const [locationState, setLocationState] = useState(true);
 
   useEffect(() => {
     const dateInstance = new Date();
@@ -57,12 +58,18 @@ const Weather = () => {
   });
 
   const fetchWeather = () => {
-    navigator.geolocation.getCurrentPosition((p) => {
-      setGeolocation({
-        lat: p.coords.latitude,
-        lon: p.coords.longitude,
-      });
-    });
+    navigator.geolocation.getCurrentPosition(
+      (p) => {
+        setLocationState(true);
+        setGeolocation({
+          lat: p.coords.latitude,
+          lon: p.coords.longitude,
+        });
+      },
+      () => {
+        setLocationState(false);
+      }
+    );
   };
 
   return (
@@ -78,7 +85,11 @@ const Weather = () => {
       {loading && <P>Loading...</P>}
       {resData && <P>{resData.weather[0].description}</P>}
       {error && !geolocation.lat && !geolocation.lon && (
-        <P className="u">click to get weather info</P>
+        <P className="u">
+          {locationState
+            ? "click to get weather info"
+            : "location access blocked"}
+        </P>
       )}
       {error && !loading && geolocation.lat && geolocation.lon && <P>Error</P>}
     </Div>
