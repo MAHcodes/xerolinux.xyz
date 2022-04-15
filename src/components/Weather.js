@@ -36,7 +36,7 @@ const Weather = () => {
         const dateInstance = new Date();
         const timeString = `${days[dateInstance.getDay()]}, ${
           months[dateInstance.getMonth()]
-        } ${dateInstance.getDay()}, ${dateInstance.getFullYear()} | ${(
+        } ${dateInstance.getDate()}, ${dateInstance.getFullYear()} | ${(
           "0" + dateInstance.getHours()
         ).substr(-2)}:${("0" + dateInstance.getMinutes()).substr(-2)}`;
         setCurrentTime(timeString);
