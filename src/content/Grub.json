@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Draft Punk",
+    "guide_url": "https://github.com/TechXero/DaftGrub.git",
+    "description": "This is where Daft Punk inspired Grub Theme will be. Constantly updated so keep coming back. I included a script that makes installing much easier, just follow steps below :",
+    "img_url": "https://imgur.com/B4ADBzY.png"
+  },
+  {
+    "name": "T-R-O-N",
+    "guide_url": "https://github.com/TechXero/TronGrub.git",
+    "description": "This is where TRON: Legacy inspired Grub Theme will be. Constantly updated so keep coming back. I included a script that makes installing much easier, just follow steps below : ",
+    "img_url": "https://imgur.com/VD2q8NZ.png"
+  },
+  {
+    "name": "Star Wars",
+    "guide_url": "https://github.com/TechXero/StarWarsGrub.git",
+    "description": "This is where Star Wars: The Last Jedi inspired Grub Theme will be. Constantly updated so keep coming back. I included a script that makes installing much easier, just follow steps below :",
+    "img_url": "https://imgur.com/EIRgHE3.png"
+  },
+  {
+    "name": "XeroNord",
+    "guide_url": "https://github.com/TechXero/XeroNord-Grub.git",
+    "description": "This is where XeroNord Grub Theme will be. Constantly updated so keep coming back. I included a script that makes installing much easier, just follow steps below :",
+    "img_url": "https://imgur.com/Lz1FxQ1.png"
+  },
+  {
+    "name": "XeroComp",
+    "guide_url": "https://github.com/TechXero/XeroComp.git",
+    "description": "This is where Xero-Compromise Grub Theme will be. Constantly updated so keep coming back. I included a script that makes installing much easier, just follow steps below :",
+    "img_url": "https://imgur.com/nMC2QPJ.png"
+  }
+]

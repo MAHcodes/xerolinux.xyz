@@ -1,0 +1,32 @@
+[
+  {
+    "name": "XeroCherry",
+    "guide_url": "https://github.com/xerolinux/xero-cherry-git",
+    "description": "This is our latest Rice. Proudly created by 2 guys from Lebanon, me and \"GamerKing64\". We are very proud of this one as it is the lightest yet. <br /> <br /> it's so light on resources, your machine will fly ! we love the color scheme used. credit to  <A href=\"https://github.com/nullxception/cherry-kde-theme\" target=\"_blank\" rel=\"noreferrer\" > NullXception </A> for creating such an awesome theme for us to use.. We hope you like it too 😉\" ",
+    "img_url": "https://imgur.com/3ezALV0.png"
+  },
+  {
+    "name": "XeroLayan",
+    "guide_url": "https://github.com/xerolinux/xero-layan-git",
+    "description": "This rice was the main one used on Xero for a while, uses Latte for both Panels & Dock. It is intended to be mainly used on XeroLinux. <br /> <br /> Test it out and let me know... ",
+    "img_url": "https://imgur.com/ccvUVtv.jpg"
+  },
+  {
+    "name": "XeroNord",
+    "guide_url": "https://github.com/TechXero/XeroNord-Grub.git",
+    "description": "This is where XeroNord Grub Theme will be. Constantly updated so keep coming back. I included a script that makes installing much easier, just follow steps below : ",
+    "img_url": "https://imgur.com/VwvRKXU.jpg"
+  },
+  {
+    "name": "XeroSweet",
+    "guide_url": "https://github.com/xerolinux/xero-sweet-git",
+    "description": "This rice is super simple, based on the SweetKDE theme with Candy Icons, not very complex easy on resources. It is intended to be mainly used on XeroLinux. Have fun. ",
+    "img_url": "https://imgur.com/YYO5zIF.jpg"
+  },
+  {
+    "name": "XeroDracul",
+    "guide_url": "https://github.com/xerolinux/xero-dracul-git",
+    "description": "This rice is a bit complex, uses Latte for everything including side bars. It is intended to be mainly used on XeroLinux. Also is based on the Dracula Theme hence the name. Have fun.",
+    "img_url": "https://imgur.com/zlm3F0E.jpg"
+  }
+]
