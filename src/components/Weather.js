@@ -120,6 +120,7 @@ const Flex = styled.div`
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
+  white-space: no-wrap;
 `;
 
 const Div = styled.div`
@@ -134,6 +135,7 @@ const Div = styled.div`
   width: fit-content;
   margin-block: auto;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
+  opacity: 0.9;
 
   position: absolute;
   inset: 0;

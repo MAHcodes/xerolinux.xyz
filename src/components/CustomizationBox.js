@@ -33,7 +33,11 @@ const CustomizationBox = ({ content, ltr }) => {
           </ImgWrapper>
           <ContentWrapper>
             <P dangerouslySetInnerHTML={createMarkup()} />
-            <a href={content[themeIndex].url} target="_blank" rel="noreferrer">
+            <a
+              href={content[themeIndex].guide_url}
+              target="_blank"
+              rel="noreferrer"
+            >
               <Button
                 text="Installation Guide"
                 primary
