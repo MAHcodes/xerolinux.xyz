@@ -9,8 +9,8 @@ const Header = () => {
   const [menu, setMenu] = useState(false);
 
   return (
-    <StyledHeader>
-      <div className="container">
+    <Div className="container">
+      <StyledHeader>
         <Wrapper>
           <Brand href="#Home">
             <Logo src={logo} alt="XeroLinux Logo" />
@@ -20,32 +20,35 @@ const Header = () => {
         </Wrapper>
         <NavBar menu={menu} />
         <ThemeIcon />
-      </div>
-    </StyledHeader>
+      </StyledHeader>
+    </Div>
   );
 };
 
-const StyledHeader = styled.header`
-  background-color: rgba(var(--bar), 70%);
-  color: rgb(var(--whtie));
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
+const Div = styled.div`
   position: sticky;
   z-index: 10008;
-
   top: 0;
-  backdrop-filter: blur(15px);
+`;
 
-  & .container {
-    display: flex;
-    align-items: stretch;
-    justify-content: space-between;
+const StyledHeader = styled.header`
+  background-color: rgba(var(--bar), 60%);
+  color: rgb(var(--whtie));
+  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  position: relative;
+  padding-inline: 1.5rem;
+
+  backdrop-filter: blur(1rem);
+
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  @media (min-width: 1200px) {
     flex-direction: row;
-    gap: 1.5rem;
-    flex-wrap: wrap;
-    @media (min-width: 1200px) {
-      flex-direction: row;
-      flex-wrap: nowrap;
-    }
+    flex-wrap: nowrap;
   }
 `;
 

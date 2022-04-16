@@ -6,14 +6,12 @@ import bg from "../assets/images/herobg.png";
 import Buttons from "./Buttons";
 import { useContext } from "react";
 import { PopUpContext } from "../hooks/PopUpContext";
-import Weather from "./Weather";
 
 const Hero = () => {
   const { setPopUp } = useContext(PopUpContext);
 
   return (
     <HeroSection id="Home">
-      <Weather />
       <div className="container">
         <Flex>
           <Content>
@@ -30,11 +28,7 @@ const Hero = () => {
               <br />I hope you enjoy using it as much as I have creating it ;)
             </P>
             <Buttons>
-              <a
-                href="https://sourceforge.net/projects/xerolinux/files/Releases/Main/xerolinux-main-x86_64.iso/download"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="#Download">
                 <Button
                   text="Download"
                   primary
@@ -69,9 +63,10 @@ const HeroSection = styled.section`
   padding-block: var(--padding-section);
   min-height: min(80vh, 100vw);
   position: relative;
+  margin-top: -3.5rem;
 
   @media (max-width: 1200px) {
-    padding-block: calc(var(--padding-section) * 2.5);
+    padding-block: calc(var(--padding-section) * 1.5);
   }
 
   display: grid;
