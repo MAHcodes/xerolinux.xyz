@@ -1,32 +1,32 @@
 [
   {
-    "name": "Layan",
+    "name": "XeroCherry",
+    "guide_url": "https://github.com/xerolinux/xero-cherry-git",
+    "description": "This is our latest Rice. Proudly created by 2 guys from Lebanon, me and \"GamerKing64\". We are very proud of this one as it is the lightest yet. <br /> <br /> it's so light on resources, your machine will fly ! we love the color scheme used. credit to  <A href=\"https://github.com/nullxception/cherry-kde-theme\" target=\"_blank\" rel=\"noreferrer\" > NullXception </A> for creating such an awesome theme for us to use.. We hope you like it too 😉\" ",
+    "img_url": "https://imgur.com/3ezALV0.png"
+  },
+  {
+    "name": "XeroLayan",
     "guide_url": "https://github.com/xerolinux/xero-layan-git",
-    "description": "This rice was the main one used on Xero for a while, uses Latte for both Panels & Dock. It is intended to be mainly used on XeroLinux. NOT intended for low-end systems !",
-    "img_url": "https://i.imgur.com/pkJa46J.png"
+    "description": "This rice was the main one used on Xero for a while, uses Latte for both Panels & Dock. It is intended to be mainly used on XeroLinux. <br /> <br /> Test it out and let me know... ",
+    "img_url": "https://imgur.com/ccvUVtv.jpg"
   },
   {
-    "name": "Nord",
-    "guide_url": "https://github.com/xerolinux/xero-nord-git",
-    "description": "This is a Nordic themed rice. Uses the Nord theme with Latte-Dock for panels as well as Dock. Separated into multiple zones. NOT intended for low-end systems. Very heavy on resources !",
-    "img_url": "https://i.imgur.com/uBb4HyP.png"
+    "name": "XeroNord",
+    "guide_url": "https://github.com/TechXero/XeroNord-Grub.git",
+    "description": "This is where XeroNord Grub Theme will be. Constantly updated so keep coming back. I included a script that makes installing much easier, just follow steps below : ",
+    "img_url": "https://imgur.com/VwvRKXU.jpg"
   },
   {
-    "name": "Sweet",
+    "name": "XeroSweet",
     "guide_url": "https://github.com/xerolinux/xero-sweet-git",
-    "description": "This rice is super simple, based on the SweetKDE theme with Candy Icons, not very Busy. It is intended to be mainly used on XeroLinux. Have fun. NOT intended for low-end systems !",
-    "img_url": "https://i.imgur.com/j2DtIrN.jpeg"
+    "description": "This rice is super simple, based on the SweetKDE theme with Candy Icons, not very complex easy on resources. It is intended to be mainly used on XeroLinux. Have fun. ",
+    "img_url": "https://imgur.com/YYO5zIF.jpg"
   },
   {
-    "name": "Dunes",
-    "guide_url": "https://github.com/xerolinux/xero-dunes-git",
-    "description": "This one was fully created by \"GamerKing64\". After a long time spent learning the structure of KDE Plasma this rice was born. We are very proud of him for graduating to full-time ricer status.😉\" ",
-    "img_url": "https://i.imgur.com/ORPvbdg.png"
-  },
-  {
-    "name": "Catppuccin",
-    "guide_url": "https://github.com/xerolinux/xero-catppuccin-git",
-    "description": "This one was created by \"TeddyBearKilla\" & I. After a long time spent optimizing it, this rice was born. We are very proud of it. NOT intended for low-end systems ! 😉\" ",
-    "img_url": "https://i.imgur.com/qJTPsZ5.png"
+    "name": "XeroDracul",
+    "guide_url": "https://github.com/xerolinux/xero-dracul-git",
+    "description": "This rice is a bit complex, uses Latte for everything including side bars. It is intended to be mainly used on XeroLinux. Also is based on the Dracula Theme hence the name. Have fun.",
+    "img_url": "https://imgur.com/zlm3F0E.jpg"
   }
 ]

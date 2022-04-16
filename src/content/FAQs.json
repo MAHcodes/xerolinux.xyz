@@ -1,18 +1,13 @@
 [
   {
-    "q": "Want to build ISO from Source ?",
-    "a": "Some of you, are LiNux Nerds that might want to build ISO from source to benefit from latest changes, if any, before anyone else. That's why, I have written a guide on how to do just that. Make sure to follow it exactly. Customize it to your liking if need be. Just note that I will not be providing any help adding other DEs/WMs.",
-    "more": "https://forum.xerolinux.xyz/thread-118.html"
-  },
-    {
-    "q": "Having Unbootable Grub Issues ?",
-    "a": "After updating Grub many users reported that their machines could fail to boot or booted directly into the BIOS or another OS.. Are you one of those users ? If so solution below...",
-    "more": "https://forum.xerolinux.xyz/thread-164.html"
+    "q": "Installing for 1st time ?",
+    "a": "One thing is clear, not everyone is familiar with Linux, at least not enough to feel comfortable to install a Custom Distro like XeroLinux without knowing how it works, that's why I have written, and created a step by step guide. Kindly pay close attention to every part, that is all I ask...",
+    "more": "https://forum.xerolinux.xyz/thread-38.html"
   },
   {
-    "q": "Want your Flatpaks to use System theme ?",
-    "a": "One of the reasons why some users avoid installing Flatpak apps is that most Flatpak apps don’t change their appearance as per the current system theme. This makes the applications look out of the place in your otherwise beautiful set up..",
-    "more": "https://forum.xerolinux.xyz/thread-152.html"
+    "q": "Having Hardware specific issues ?",
+    "a": "Since not everyone has the same hardware config, some issues related to them might arise, as with every OS. And knowing I cannot test every single one myself, I have curated a list with potential solutions below. Hope it helps you out...",
+    "more": "https://forum.xerolinux.xyz/thread-28.html"
   },
   {
     "q": "Want to auto mount drives on startup ?",
@@ -21,13 +16,23 @@
   },
   {
     "q": "Want to DualBoot with Windows ?",
-    "a": "Not everyone can completely switch to Linux, ditching Windows. I do understand that it can still be needed for some stuff for, say, school or work. That is why, I posted video guides below by Erik Dubois that show you how to Dual-Boot Linux+Windows in both same drive and separate ones...",
+    "a": "Not everyone can completely switch to Linux, ditching Windows. I do understand that it can still be needed for some stuff related for, say, school or work. That is why, I posted video guides below by Erik Dubois that shouw you how to Dual-Boot Linux+Windows in both same drive or separate ones...",
     "more": "https://forum.xerolinux.xyz/thread-5.html"
   },
   {
-    "q": "Want to learn how to Rice KDE Plasma ?",
-    "a": "Some of you have asked me many times how I made KDE look so damn good. Well I followed this guide and did a lot of testing. So without further delay, click the button below to teleport to the forum thread I created regarding this...",
-    "more": "https://forum.xerolinux.xyz/thread-144.html"
+    "q": "Own \"Legacy\" nVidia GPU ?",
+    "a": "This one is very important that you follow super closely. In case you own a what is called \"Legacy\" nVidia GPU, some special steps have to be followed since they kinda dropped support for those in their latest Driver Stack.. Below is everything I did to remedy the situation. Just know come May this will change, will update as necessary...",
+    "more": "https://forum.xerolinux.xyz/thread-7.html"
+  },
+  {
+    "q": "Wanna learn more about Snapper ?",
+    "a": "Snapper, in case you didn't know, is a great method to take quick snapshots of a working system when using the BTRFS FileSystem, should something go wrong easy to restore back to a working one.. Below are guides of it working with a tool called BTRFS-Assistant...",
+    "more": "https://forum.xerolinux.xyz/thread-80.html"
+  },
+  {
+    "q": "Learn my terminal Aliases here",
+    "a": "You don't like to remember complex Terminal commands ? Well I have created a list of \"Aliases\" that are easy to remember that you will find below. List will constantly be updated with new ones making Terminal use a breeze ;)",
+    "more": "https://forum.xerolinux.xyz/thread-19.html"
   },
   {
     "q": "Stuck with vmlinuz-linux not found ? Fix below.",
@@ -36,17 +41,12 @@
   },
   {
     "q": "Issues updating due to failed mirrors (404)?",
-    "a": "Ok, sometimes I have to move my Repo(s) around, it happens, which might cause updates to fail, heck even a fresh install of the Distro might fail due to them moving around.. Below are the steps to remedy that situation...",
+    "a": "Ok, sometimes I have to move my Repo(s) around, yeah it happens, which might cause updates to fail, heck even fresh installs of the Distro due to them moving around.. Below are the steps to remedy that sitation, and soon in my tool come May 25th release...",
     "more": "https://forum.xerolinux.xyz/thread-87.html"
-  },
-    {
-    "q": "Issues with Pacman Backend ?",
-    "a": "Sometimes Pacman refuses to behave. Mainly with issues related to Keys. Other times with corrupt packages and so on... Below is a link to a thread with a video by DistroTube going over them with potential fixes...",
-    "more": "https://forum.xerolinux.xyz/thread-115.html"
   },
   {
     "q": "Want To Downgrade A Package ?",
-    "a": "Not all updates on Arch go smoothly, in rare occasions an update might break the app or system, nice thing about Arch is its flexibility, and ability to downgrade broken packages to a previous version. Below is a guide on how to do just that...",
+    "a": "Not all updates on Arch go smoothly, in rare occasions an update breaks the app or system, nice thing about Arch is its flexibility, and ability to downgrade broken package to a previous version. Below is a guide on how to do just that...",
     "more": "https://forum.xerolinux.xyz/thread-37.html"
   }
 ]
