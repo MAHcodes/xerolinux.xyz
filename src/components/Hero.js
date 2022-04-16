@@ -64,7 +64,7 @@ const Hero = () => {
 };
 
 const HeroSection = styled.section`
-  padding-block: calc(var(--padding-section) + 3rem);
+  padding-block: var(--padding-section));
   min-height: min(80vh, 100vw);
 
   display: grid;

@@ -9,14 +9,14 @@ import { MdOutlineQuestionAnswer } from "react-icons/md";
 import { GiComputerFan } from "react-icons/gi";
 import {} from "react-icons/fa";
 
-const NavBar = () => {
+const NavBar = ({ menu }) => {
   const { setPopUp } = useContext(PopUpContext);
   const popUpPcBuild = () => {
     setPopUp("PCBuild");
   };
 
   return (
-    <StyledNav>
+    <StyledNav className={menu ? undefined : "close"}>
       <ul>
         <a href="#Home">
           <Li>
@@ -84,24 +84,82 @@ const Li = styled.li`
     border-block: var(--border) solid rgba(var(--fg), 35%);
   }
 
-  &.button {
-    cursor: pointer;
+  & #Vector,
+  & #arrow {
+    delay: var(--delay-duration);
+    transform: scale(0.85);
+    transform-origin: center;
+  }
+  &:hover #arrow {
+    transform: translate(2px, -2px) scale(0.9);
+  }
+  &: active #arrow {
+    transform: translate(3px, -3px);
+  }
+  &:hover #Vector {
+    transform: scale(0.75);
+    transform-origin: center;
+  }
+  & img {
+    width: 1.15rem;
+    object-fit: contain;
+  }
+`;
+
+const StyledNav = styled.nav`
+  color: rgb(var(--white));
+  font-size: var(--fz-6);
+  text-align: center;
+  @media (max-width: 1200px) {
+    order: 1;
+    flex-basis: 100%;
+    &.close {
+      display: none;
+    }
   }
 
-  & > p {
-    line-height: var(--icon-size);
-    font-size: var(--fz-6);
-    margin-inline-start: 1rem;
-  }
-  & > svg {
-    width: var(--icon-size);
-    height: var(--icon-size);
-  }
-  &:not(.nofill) > svg path {
-    fill: rgb(var(--low));
-  }
-  &.nofill > svg path + path {
-    fill: rgb(var(--low));
+  & ul {
+    padding-block: 0.5rem;
+    & a:focus li {
+      border-bottom: 2px solid rgb(var(--white));
+      font-weight: bold;
+    }
+
+    display: grid;
+    align-items: stretch;
+    justify-items: stretch;
+
+    @media (min-width: 1200px) {
+      grid-template-columns: repeat(8, 1fr);
+      padding-block: 0;
+    }
+
+    & > * {
+      display: block;
+      line-height: 2;
+    }
+    & li {
+      padding: 1em;
+      height: 100%;
+      cursor: pointer;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent;
+
+      &.active {
+        @media (min-width: 1200px) {
+          border-bottom: 2px solid rgb(var(--white));
+          font-weight: bold;
+        }
+      }
+
+      @media (max-width: 1200px) {
+        border-radius: var(--border-radius);
+      }
+
+      &:hover {
+        background-color: rgba(var(--bar), 30%);
+      }
+    }
   }
 `;
 
