@@ -6,12 +6,14 @@ import bg from "../assets/images/herobg.png";
 import Buttons from "./Buttons";
 import { useContext } from "react";
 import { PopUpContext } from "../hooks/PopUpContext";
+import Weather from "./Weather";
 
 const Hero = () => {
   const { setPopUp } = useContext(PopUpContext);
 
   return (
     <HeroSection id="Home">
+      <Weather />
       <div className="container">
         <Flex>
           <Content>
@@ -64,8 +66,13 @@ const Hero = () => {
 };
 
 const HeroSection = styled.section`
-  padding-block: var(--padding-section));
+  padding-block: var(--padding-section);
   min-height: min(80vh, 100vw);
+  position: relative;
+
+  @media (max-width: 1200px) {
+    padding-block: calc(var(--padding-section) * 2.5);
+  }
 
   display: grid;
   place-items: center;

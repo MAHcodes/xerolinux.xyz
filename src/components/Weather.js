@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import styled from "styled-components";
 import axios from "../api/weather";
 import useFetch from "../hooks/useFetch";
@@ -67,23 +67,7 @@ const Weather = () => {
     },
   });
 
-  const fetchWeather = () => {
-    if (geolocation.lat && geolocation.lon) return;
-    navigator.geolocation.getCurrentPosition(
-      (p) => {
-        setLocationState(true);
-        setGeolocation({
-          lat: p.coords.latitude,
-          lon: p.coords.longitude,
-        });
-      },
-      () => {
-        setLocationState(false);
-      }
-    );
-  };
-
-  useEffect(() => {
+  const fetchWeather = useCallback(() => {
     if (geolocation.lat && geolocation.lon) return;
     navigator.geolocation.getCurrentPosition(
       (p) => {
@@ -98,6 +82,10 @@ const Weather = () => {
       }
     );
   }, [geolocation.lat, geolocation.lon]);
+
+  useEffect(() => {
+    fetchWeather();
+  }, [fetchWeather]);
 
   return (
     <Div onClick={fetchWeather}>
@@ -133,8 +121,11 @@ const Div = styled.div`
   color: rgb(var(--white));
   padding: 0.5rem 1.5rem;
   width: fit-content;
-  margin: 0 auto;
+  margin-block: auto;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
+
+  position: absolute;
+  top: 0;
 
   & > img {
     width: var(--icon-size);
