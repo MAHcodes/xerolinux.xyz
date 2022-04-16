@@ -26,7 +26,7 @@ const Header = () => {
 };
 
 const StyledHeader = styled.header`
-  background-color: rgba(var(--bar), 50%);
+  background-color: rgba(var(--bar), 70%);
   color: rgb(var(--whtie));
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   position: sticky;
