@@ -96,7 +96,7 @@ const Weather = () => {
         }.png`}
         alt=""
       />
-      {resData && <P>{`${resData.main?.temp - 273.15} °C`}</P>}
+      {resData && <P>{`${(resData.main?.temp - 273.15).toFixed(1)} °C`}</P>}
       {loading && <P>Loading...</P>}
       {resData && <P>{resData.weather[0].description}</P>}
       {error && !geolocation.lat && !geolocation.lon && (
