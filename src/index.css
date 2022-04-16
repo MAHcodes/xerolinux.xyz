@@ -85,6 +85,6 @@ img {
 
 .container {
   max-width: 1720px;
-  padding: 0 3rem 0 7rem;
+  padding: 0 3rem;
   margin-inline: auto;
 }
