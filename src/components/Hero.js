@@ -6,6 +6,7 @@ import bg from "../assets/images/herobg.png";
 import Buttons from "./Buttons";
 import { useContext } from "react";
 import { PopUpContext } from "../hooks/PopUpContext";
+import Weather from "./Weather";
 
 const Hero = () => {
   const { setPopUp } = useContext(PopUpContext);
@@ -51,6 +52,7 @@ const Hero = () => {
             </Origin>
           </Content>
           <ImgContainer>
+            <Weather />
             <img src={laptop} alt="XeroLinux" />
           </ImgContainer>
         </Flex>
@@ -116,6 +118,7 @@ const ImgContainer = styled.div`
   display: flex;
   align-items: cener;
   justify-content: center;
+  position: relative;
   animation: ${ImgIn} 0.5s var(--transition-timing-function);
   & img {
     object-fit: contain;
