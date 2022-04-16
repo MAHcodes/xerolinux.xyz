@@ -29,6 +29,8 @@ const StyledHeader = styled.header`
   color: rgb(var(--whtie));
   border-radius: 0 0 var(--border-radius) var(--border-radius);
   position: sticky;
+  z-index: 10008;
+
   top: 0;
   backdrop-filter: blur(15px);
 
