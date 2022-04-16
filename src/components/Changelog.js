@@ -66,6 +66,9 @@ const Changelog = () => {
         <li>
           <span>X11</span> Session is the default post install.***
         </li>
+        <li>
+          Pamac <span>GUI</span> replaced by <span>Bauh</span> GUI
+        </li>
       </ul>
       <details open>
         <summary>Notes Please read...</summary>
