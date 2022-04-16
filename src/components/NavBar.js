@@ -17,9 +17,6 @@ const NavBar = ({ menu }) => {
         <a href="#Features">
           <li>Features</li>
         </a>
-        <a href="#Download">
-          <li>Download</li>
-        </a>
         <a href="#Customization">
           <li>Customiztion</li>
         </a>
@@ -96,9 +93,14 @@ const StyledNav = styled.nav`
   color: rgb(var(--white));
   font-size: var(--fz-6);
   text-align: center;
+  border-radius: var(--border-radius);
+  backdrop-filter: blur(15px);
   @media (max-width: 1200px) {
     order: 1;
     flex-basis: 100%;
+    position: absolute;
+    inset: calc(100% + 1rem) 0 auto 0;
+    background-color: rgba(var(--bar), 60%);
     &.close {
       display: none;
     }
@@ -108,7 +110,9 @@ const StyledNav = styled.nav`
     padding-block: 0.5rem;
     & a:focus li {
       border-bottom: 2px solid rgb(var(--white));
-      font-weight: bold;
+    }
+    @media (max-width: 1200px) {
+      margin: auto;
     }
 
     display: grid;
@@ -116,7 +120,7 @@ const StyledNav = styled.nav`
     justify-items: stretch;
 
     @media (min-width: 1200px) {
-      grid-template-columns: repeat(8, 1fr);
+      grid-template-columns: repeat(7, 1fr);
       padding-block: 0;
     }
 
@@ -131,10 +135,9 @@ const StyledNav = styled.nav`
       white-space: nowrap;
       border-bottom: 2px solid transparent;
 
-      &.active {
+      &:hover {
         @media (min-width: 1200px) {
           border-bottom: 2px solid rgb(var(--white));
-          font-weight: bold;
         }
       }
 
