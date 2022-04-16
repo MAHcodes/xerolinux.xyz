@@ -2,31 +2,16 @@ import styled, { keyframes } from "styled-components";
 import laptop from "../assets/images/laptop.png";
 import Button from "./Button";
 import leb from "../assets/images/leb.svg";
-import { useLayoutEffect, useState } from "react";
 import bg from "../assets/images/herobg.png";
 import Buttons from "./Buttons";
 import { useContext } from "react";
 import { PopUpContext } from "../hooks/PopUpContext";
 
-const Hero = ({ hdr }) => {
+const Hero = () => {
   const { setPopUp } = useContext(PopUpContext);
-  const [height, setHeight] = useState(100);
-
-  useLayoutEffect(() => {
-    const updateHeight = () => {
-      setHeight(hdr.current.clientHeight);
-      setTimeout(() => {
-        setHeight(hdr.current.clientHeight);
-      }, 100);
-    };
-
-    window.addEventListener("resize", updateHeight);
-    window.addEventListener("load", updateHeight);
-    return () => window.removeEventListener("resize", updateHeight);
-  }, [hdr]);
 
   return (
-    <HeroSection height={height} id="Home">
+    <HeroSection id="Home">
       <div className="container">
         <Flex>
           <Content>
@@ -79,7 +64,7 @@ const Hero = ({ hdr }) => {
 };
 
 const HeroSection = styled.section`
-  padding-block: calc(${(props) => props.height}px + var(--padding-section));
+  padding-block: var(--padding-section));
   min-height: min(80vh, 100vw);
 
   display: grid;

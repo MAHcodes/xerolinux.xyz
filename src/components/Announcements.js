@@ -22,7 +22,7 @@ const Announcements = () => {
 
 const Div = styled.div`
   background-color: rgb(var(--important));
-  padding: 0.75rem;
+  padding: 0.5rem;
 
   & .container {
     display: flex;

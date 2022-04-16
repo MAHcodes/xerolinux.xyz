@@ -1,8 +1,6 @@
 import Announcements from "./components/Announcements";
 import Header from "./components/Header";
-import styled from "styled-components";
 import Hero from "./components/Hero";
-import { useRef } from "react";
 import SocialLinks from "./components/SocialLinks";
 import Features from "./components/Features";
 import Download from "./components/Download";
@@ -19,16 +17,13 @@ import PopUp from "./components/PopUp";
 
 const App = () => {
   const { popUp } = useContext(PopUpContext);
-  const wrapperRef = useRef();
 
   return (
     <div className="App">
       {popUp && <PopUp popUp={popUp} />}
-      <Wrapper ref={wrapperRef}>
-        <Announcements />
-        <Header />
-      </Wrapper>
-      <Hero hdr={wrapperRef} />
+      <Announcements />
+      <Header />
+      <Hero />
       <SocialLinks />
       <Features />
       <Download />
@@ -41,11 +36,5 @@ const App = () => {
     </div>
   );
 };
-
-const Wrapper = styled.div`
-  position: fixed;
-  inset: 0 0 auto;
-  z-index: 999;
-`;
 
 export default App;

@@ -2,27 +2,11 @@ import styled from "styled-components";
 import logo from "../assets/images/logo.svg";
 import HamburgerMenu from "./HamburgerMenu";
 import NavBar from "./NavBar";
-import { useLayoutEffect, useState } from "react";
+import { useState } from "react";
 import ThemeIcon from "./ThemeIcon";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
-
-  useLayoutEffect(() => {
-    const handleResize = () => {
-      if (window.innerWidth < 800) {
-        setMenu(false);
-      } else {
-        setMenu(true);
-      }
-    };
-    window.addEventListener("resize", handleResize);
-    window.addEventListener("load", handleResize);
-
-    return () => {
-      window.removeEventListener("resize", handleResize);
-    };
-  }, []);
 
   return (
     <StyledHeader>
@@ -34,7 +18,7 @@ const Header = () => {
           </Brand>
           <HamburgerMenu menu={menu} setMenu={setMenu} />
         </Wrapper>
-        {menu && <NavBar />}
+        <NavBar menu={menu} />
         <ThemeIcon />
       </div>
     </StyledHeader>
@@ -45,19 +29,9 @@ const StyledHeader = styled.header`
   background-color: rgba(var(--bar), 50%);
   color: rgb(var(--whtie));
   border-radius: 0 0 var(--border-radius) var(--border-radius);
-  position: relative;
+  position: sticky;
+  top: 0;
   backdrop-filter: blur(15px);
-
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-color: inherit;
-    box-shadow: inset 0 0 0 3000px rgba(250, 250, 250, 0.15);
-    border-radius: 0 0 var(--border-radius) var(--border-radius);
-    filter: blur(5px);
-    z-index: -1;
-  }
 
   & .container {
     display: flex;
@@ -66,7 +40,7 @@ const StyledHeader = styled.header`
     flex-direction: row;
     gap: 1.5rem;
     flex-wrap: wrap;
-    @media (min-width: 800px) {
+    @media (min-width: 1200px) {
       flex-direction: row;
       flex-wrap: nowrap;
     }
@@ -78,7 +52,7 @@ const Wrapper = styled.div`
   flex-grow: 1;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     padding-block: 0.75rem;
   }
 `;

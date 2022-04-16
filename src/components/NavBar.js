@@ -1,15 +1,15 @@
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 import { PopUpContext } from "../hooks/PopUpContext";
 import { useContext } from "react";
 
-const NavBar = () => {
+const NavBar = ({ menu }) => {
   const { setPopUp } = useContext(PopUpContext);
   const popUpPcBuild = () => {
     setPopUp("PCBuild");
   };
 
   return (
-    <StyledNav>
+    <StyledNav className={menu ? undefined : "close"}>
       <ul>
         <a href="#Home">
           <li>Home</li>
@@ -92,20 +92,16 @@ const Li = styled.li`
   }
 `;
 
-const inAnimation = keyframes`
-  to {
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-`;
-
 const StyledNav = styled.nav`
   color: rgb(var(--white));
   font-size: var(--fz-6);
   text-align: center;
-  @media (max-width: 800px) {
+  @media (max-width: 1200px) {
     order: 1;
     flex-basis: 100%;
+    &.close {
+      display: none;
+    }
   }
 
   & ul {
@@ -119,62 +115,30 @@ const StyledNav = styled.nav`
     align-items: stretch;
     justify-items: stretch;
 
-    @media (min-width: 800px) {
-      grid-template-columns: repeat(4, 1fr);
-    }
-
     @media (min-width: 1200px) {
       grid-template-columns: repeat(8, 1fr);
-    }
-
-    @media (min-width: 800px) {
       padding-block: 0;
     }
+
     & > * {
       display: block;
-      transform: translateY(-20px);
-      opacity: 0;
       line-height: 2;
-      animation: ${inAnimation} var(--transition-duration)
-        var(--transition-timing-function) forwards;
-    }
-    & > *:nth-child(2) {
-      animation-delay: var(--delay-duration);
-    }
-    & > *:nth-child(3) {
-      animation-delay: calc(var(--delay-duration) * 2);
-    }
-    & > *:nth-child(4) {
-      animation-delay: calc(var(--delay-duration) * 3);
-    }
-    & > *:nth-child(5) {
-      animation-delay: calc(var(--delay-duration) * 4);
-    }
-    & > *:nth-child(6) {
-      animation-delay: calc(var(--delay-duration) * 5);
-    }
-    & > *:nth-child(7) {
-      animation-delay: calc(var(--delay-duration) * 6);
-    }
-    & > *:nth-child(8) {
-      animation-delay: calc(var(--delay-duration) * 7);
     }
     & li {
       padding: 1em;
       height: 100%;
       cursor: pointer;
       white-space: nowrap;
-      delay: var(--delay-duration) var(--delay-timing-function);
       border-bottom: 2px solid transparent;
 
       &.active {
-        @media (min-width: 800px) {
+        @media (min-width: 1200px) {
           border-bottom: 2px solid rgb(var(--white));
           font-weight: bold;
         }
       }
 
-      @media (max-width: 800px) {
+      @media (max-width: 1200px) {
         border-radius: var(--border-radius);
       }
 
