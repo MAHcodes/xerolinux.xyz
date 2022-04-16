@@ -14,7 +14,6 @@ import vidsJSON from "./YoutubeVideos.json";
 import { useContext } from "react";
 import { PopUpContext } from "./hooks/PopUpContext";
 import PopUp from "./components/PopUp";
-import Weather from "./components/Weather";
 
 const App = () => {
   const { popUp } = useContext(PopUpContext);

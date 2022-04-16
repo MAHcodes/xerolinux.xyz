@@ -69,8 +69,6 @@ const NavBar = ({ menu }) => {
   );
 };
 
-const StyledNav = styled.div``;
-
 const Li = styled.li`
   display: flex;
   aling-items: center;
