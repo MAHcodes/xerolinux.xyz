@@ -120,7 +120,6 @@ const ImgContainer = styled.div`
   justify-content: center;
   position: relative;
   animation: ${ImgIn} 0.5s var(--transition-timing-function);
-  break-word: no-wrap;
   & img {
     object-fit: contain;
     width: 80%;
