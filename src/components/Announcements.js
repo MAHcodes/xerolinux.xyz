@@ -28,8 +28,7 @@ const Announcements = () => {
 
 const Div = styled.div`
   background-color: rgb(var(--important));
-  padding-block: 0.4rem;
-  box-shadow: 0 0 12px -7px rgb(var(--black));
+  padding: 0.5rem;
 
   & .container {
     display: flex;
