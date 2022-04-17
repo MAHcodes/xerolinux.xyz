@@ -174,7 +174,6 @@ const Overlay = styled.div`
   inset: 0;
   background-color: rgba(var(--black), 80%);
   z-index: 10090;
-  pointer-events: none;
   backdrop-filter: blur(1rem);
   animation: ${overIn} var(--transition-duration)
     var(--transition-timing-function);
