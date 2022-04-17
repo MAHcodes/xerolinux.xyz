@@ -120,7 +120,6 @@ const Flex = styled.div`
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  white-space: no-wrap;
 `;
 
 const Div = styled.div`
@@ -149,6 +148,7 @@ const Div = styled.div`
 
 const P = styled.p`
   font-size: var(--fz-5);
+  white-space: nowrap;
   &.u {
     text-decoration: underline;
   }

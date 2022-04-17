@@ -1,6 +1,12 @@
 import styled from "styled-components";
 import { PopUpContext } from "../hooks/PopUpContext";
 import { useContext } from "react";
+import { GoHome } from "react-icons/go";
+import { RiContactsLine } from "react-icons/ri";
+import { FaTheaterMasks, FaForumbee } from "react-icons/fa";
+import { AiOutlineYoutube } from "react-icons/ai";
+import { MdOutlineQuestionAnswer } from "react-icons/md";
+import { GiComputerFan } from "react-icons/gi";
 
 const NavBar = ({ menu }) => {
   const { setPopUp } = useContext(PopUpContext);
@@ -12,24 +18,43 @@ const NavBar = ({ menu }) => {
     <StyledNav className={menu ? undefined : "close"}>
       <ul>
         <a href="#Home">
-          <li>Home</li>
+          <li>
+            <GoHome />
+            <p>Home</p>
+          </li>
         </a>
         <a href="#Features">
-          <li>Features</li>
+          <li>
+            <RiContactsLine />
+            <p>Features</p>
+          </li>
         </a>
         <a href="#Customization">
-          <li>Customiztion</li>
+          <li>
+            <FaTheaterMasks />
+            <p>Customiztion</p>
+          </li>
         </a>
         <a href="#Videos">
-          <li>Videos</li>
+          <li>
+            <AiOutlineYoutube />
+            <p>Videos</p>
+          </li>
         </a>
         <a href="#FAQ">
-          <li>FAQ</li>
+          <li>
+            <MdOutlineQuestionAnswer />
+            <p>FAQ</p>
+          </li>
         </a>
-        <li onClick={popUpPcBuild}>My Pc Build</li>
+        <li onClick={popUpPcBuild}>
+          <GiComputerFan />
+          <p>My Pc Build</p>
+        </li>
         <a href="https://forum.xerolinux.xyz/" target="_blank" rel="noreferrer">
           <Li>
-            Forum
+            <FaForumbee />
+            <p>Forum</p>
             <svg
               style={{ marginLeft: "4px" }}
               width="30"
@@ -95,7 +120,7 @@ const StyledNav = styled.nav`
   text-align: center;
   border-radius: var(--border-radius);
   backdrop-filter: blur(15px);
-  @media (max-width: 1200px) {
+  @media (max-width: 1400px) {
     order: 1;
     flex-basis: 100%;
     position: absolute;
@@ -108,10 +133,11 @@ const StyledNav = styled.nav`
 
   & ul {
     padding-block: 0.5rem;
-    & a:focus li {
+
+    & a:hover li {
       border-bottom: 2px solid rgb(var(--white));
     }
-    @media (max-width: 1200px) {
+    @media (max-width: 1400px) {
       margin: auto;
     }
 
@@ -119,7 +145,7 @@ const StyledNav = styled.nav`
     align-items: stretch;
     justify-items: stretch;
 
-    @media (min-width: 1200px) {
+    @media (min-width: 1400px) {
       grid-template-columns: repeat(7, 1fr);
       padding-block: 0;
     }
@@ -134,14 +160,18 @@ const StyledNav = styled.nav`
       cursor: pointer;
       white-space: nowrap;
       border-bottom: 2px solid transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 1rem;
 
       &:hover {
-        @media (min-width: 1200px) {
+        @media (min-width: 1400px) {
           border-bottom: 2px solid rgb(var(--white));
         }
       }
 
-      @media (max-width: 1200px) {
+      @media (max-width: 1400px) {
         border-radius: var(--border-radius);
       }
 

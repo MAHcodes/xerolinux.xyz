@@ -46,7 +46,7 @@ const StyledHeader = styled.header`
   flex-direction: row;
   gap: 1.5rem;
   flex-wrap: wrap;
-  @media (min-width: 1200px) {
+  @media (min-width: 1400px) {
     flex-direction: row;
     flex-wrap: nowrap;
   }
@@ -57,7 +57,7 @@ const Wrapper = styled.div`
   flex-grow: 1;
   align-items: center;
   justify-content: space-between;
-  @media (max-width: 1200px) {
+  @media (max-width: 1400px) {
     padding-block: 0.75rem;
   }
 `;
