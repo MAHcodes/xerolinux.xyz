@@ -131,10 +131,14 @@ const Div = styled.div`
   gap: 1rem;
   color: rgb(var(--white));
   padding: 0.5rem 1.5rem;
-  width: fit-content;
   margin-block: auto;
-  border-radius: 0 0 var(--border-radius) var(--border-radius);
+  border-radius: var(--border-radius);
   opacity: 0.9;
+  height: fit-content;
+  width: fit-content;
+  background-color: rgba(var(--bar), 50%);
+  backdrop-filter: blur(1rem);
+  box-shadow: 0 0 12px -5px rgb(var(--black));
 
   position: absolute;
   inset: 0;
