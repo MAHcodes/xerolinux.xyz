@@ -90,48 +90,65 @@ const Weather = () => {
   return (
     <Div onClick={fetchWeather}>
       <P>{currentTime}</P>
-      <img
-        src={`http://openweathermap.org/img/w/${
-          resData?.weather[0].icon || "02d"
-        }.png`}
-        alt=""
-      />
-      {resData && <P>{`${Math.floor(resData.main?.temp - 273.15)} °C`}</P>}
-      {loading && <P>Loading...</P>}
-      {resData && <P>{resData.weather[0].description}</P>}
-      {error && !geolocation.lat && !geolocation.lon && (
-        <P className="u">
-          {locationState
-            ? "click to get weather info"
-            : "location access blocked"}
-        </P>
-      )}
-      {error && !loading && geolocation.lat && geolocation.lon && <P>Error</P>}
+      <Flex>
+        <img
+          src={`http://openweathermap.org/img/w/${
+            resData?.weather[0].icon || "02d"
+          }.png`}
+          alt=""
+        />
+        {resData && <P>{`${(resData.main?.temp - 273.15).toFixed(1)} °C`}</P>}
+        {loading && <P>Loading...</P>}
+        {resData && <P>{resData.weather[0].description}</P>}
+        {error && !geolocation.lat && !geolocation.lon && (
+          <P className="u">
+            {locationState
+              ? "click to get weather info"
+              : "location access blocked"}
+          </P>
+        )}
+        {error && !loading && geolocation.lat && geolocation.lon && (
+          <P>Error</P>
+        )}
+      </Flex>
     </Div>
   );
 };
+
+const Flex = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+`;
 
 const Div = styled.div`
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 1rem;
-  background-color: rgba(var(--bar), 50%);
   color: rgb(var(--white));
   padding: 0.5rem 1.5rem;
   width: fit-content;
-  margin: 0 auto;
+  margin-block: auto;
   border-radius: 0 0 var(--border-radius) var(--border-radius);
+  opacity: 0.9;
 
-  & > img {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+
+  & img {
     width: var(--icon-size);
     height: var(--icon-size);
   }
 `;
 
 const P = styled.p`
-  font-size: var(--fz-6);
+  font-size: var(--fz-5);
+  white-space: nowrap;
   &.u {
     text-decoration: underline;
   }

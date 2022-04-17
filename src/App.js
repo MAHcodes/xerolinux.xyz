@@ -16,7 +16,6 @@ import vidsJSON from "./YoutubeVideos.json";
 import { useContext } from "react";
 import { PopUpContext } from "./hooks/PopUpContext";
 import PopUp from "./components/PopUp";
-import Weather from "./components/Weather";
 
 const App = () => {
   const { popUp } = useContext(PopUpContext);
@@ -27,7 +26,6 @@ const App = () => {
       {popUp && <PopUp popUp={popUp} />}
       <Wrapper ref={wrapperRef}>
         <Announcements />
-        <Weather />
         <Header />
       </Wrapper>
       <Hero />

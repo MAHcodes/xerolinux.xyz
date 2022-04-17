@@ -6,6 +6,7 @@ import bg from "../assets/images/herobg.png";
 import Buttons from "./Buttons";
 import { useContext } from "react";
 import { PopUpContext } from "../hooks/PopUpContext";
+import Weather from "./Weather";
 
 const Hero = () => {
   const { setPopUp } = useContext(PopUpContext);
@@ -28,11 +29,7 @@ const Hero = () => {
               <br />I hope you enjoy using it as much as I have creating it ;)
             </P>
             <Buttons>
-              <a
-                href="https://sourceforge.net/projects/xerolinux/files/Releases/Main/xerolinux-main-x86_64.iso/download"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="#Download">
                 <Button
                   text="Download"
                   primary
@@ -55,6 +52,7 @@ const Hero = () => {
             </Origin>
           </Content>
           <ImgContainer>
+            <Weather />
             <img src={laptop} alt="XeroLinux" />
           </ImgContainer>
         </Flex>
@@ -64,8 +62,9 @@ const Hero = () => {
 };
 
 const HeroSection = styled.section`
-  padding-block: calc(var(--padding-section) + 3rem);
+  padding-block: var(--padding-section);
   min-height: min(80vh, 100vw);
+  position: relative;
 
   display: grid;
   place-items: center;
@@ -114,6 +113,7 @@ const ImgContainer = styled.div`
   display: flex;
   align-items: cener;
   justify-content: center;
+  position: relative;
   animation: ${ImgIn} 0.5s var(--transition-timing-function);
   & img {
     object-fit: contain;
