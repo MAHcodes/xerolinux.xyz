@@ -69,12 +69,30 @@ body {
 }
 
 * {
+  scrollbar-width: auto;
+  scrollbar-color: rgb(var(--fg2)) rgb(var(--bg2));
   transition: background-color var(--transition-duration)
       var(--transition-timing-function),
     color var(--transition-duration) var(--transition-timing-function),
     fill var(--transition-duration) var(--transition-timing-function);
 }
-
+*::-webkit-scrollbar {
+  width: 1rem;
+}
+*::-webkit-scrollbar-track {
+  background: rgb(var(--bg2));
+}
+*::-webkit-scrollbar-track:hover {
+  background: rgba(var(--bg2), 75%);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--fg2));
+  border-radius: var(--border-radius);
+  border: 0.25rem solid rgb(var(--bg2));
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(var(--fg));
+}
 img {
   user-select: none;
 }
