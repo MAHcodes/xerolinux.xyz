@@ -15,7 +15,7 @@ const Footer = () => {
             Mhmd Ali Hsen
           </a>
         </p>
-        <p>XeroLinux all rights reserved &copy; 2022</p>
+        <p>XeroLinux all rights reserved &copy; {new Date().getFullYear()}</p>
         <SocialLinks />
       </Container>
     </Div>

@@ -18,7 +18,6 @@ const useFetch = (configObj) => {
           ...JSON.parse(configString),
           signal: controller.signal,
         });
-        console.log(res.data); // TODO
         setResData(res.data);
         setError("");
       } catch (err) {
