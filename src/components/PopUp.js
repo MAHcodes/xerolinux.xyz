@@ -82,6 +82,10 @@ const Content = styled.div`
   flex-grow: 2;
   padding: 0 1rem 1rem;
 
+  & center {
+    text-align: center;
+  }
+
   & p {
     margin-bottom: 2em;
   }
