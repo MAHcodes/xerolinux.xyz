@@ -44,7 +44,7 @@ const Videos = ({ title, urls }) => {
             loading="lazy"
             width="560"
             height="315"
-            src={urls[0]}
+            src={`https://www.youtube.com/embed/${urls[0]}`}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -83,7 +83,7 @@ const Videos = ({ title, urls }) => {
             loading="lazy"
             width="560"
             height="315"
-            src={urls[1]}
+            src={`https://www.youtube.com/embed/${urls[1]}`}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -123,7 +123,7 @@ const Videos = ({ title, urls }) => {
             loading="lazy"
             width="560"
             height="315"
-            src={urls[2]}
+            src={`https://www.youtube.com/embed/${urls[2]}`}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"

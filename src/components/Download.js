@@ -4,6 +4,7 @@ import Buttons from "./Buttons";
 import Title from "./Title";
 import { PopUpContext } from "../hooks/PopUpContext";
 import { useContext } from "react";
+import YTVideos from "../content/YoutubeVideos.json";
 
 const Download = () => {
   const { setPopUp } = useContext(PopUpContext);
@@ -29,7 +30,7 @@ const Download = () => {
             loading="lazy"
             width="560"
             height="315"
-            src="https://www.youtube.com/embed/sqUzODS_p38"
+            src={`https://www.youtube.com/embed/${YTVideos.Installation_Guide_Video}`}
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
