@@ -30,10 +30,9 @@ feature, keep coming back here or join our <strong>Discord/Telegram</strong>
 <li>Tons of under-the-hood tweaks &amp; optimizations.</li>
 <li>Tweaked the default Rice making it better.</li>
 <li>New Aliases added to both .bashrc &amp; .zshrc.</li>
-<li><strong>YaY</strong> added alongside <strong>Paru</strong>. Use the preferred
-one.</li>
-<li><strong>X11</strong> Session is the default post install.***</li>
-<li>Pamac <strong>GUI</strong> replaced by <strong>Bauh</strong> GUI</li>
+<li><strong>YaY</strong> added alongside <strong>Paru</strong>.</li>
+<li><strong>X11</strong> Session is the default post install.</li>
+<li><strong>Pamac GUI</strong> replaced by <strong>Bauh GUI</strong></li>
 </ul>
 <details open>
 <summary>Notes Please read...</summary>
@@ -54,13 +53,6 @@ rel="noreferrer"
 >
 <span> XeroLinux Forums…</span>
 </a>
-</p>
-<p class="bg">
-*** : After a few reboots <span>Wayland</span> resets as the default
-session. Be careful with that. It’s out of our hands. It’s how it
-behaves unfortunately. If it works for you, keep it, otherwise, on the
-login screen, <span>SDDM</span>, top left corner, switch back to
-<span> X11</span>…
 </p>
 </details>
 
