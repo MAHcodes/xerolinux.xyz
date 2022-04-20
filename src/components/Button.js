@@ -1,0 +1,85 @@
+import styled, { css } from "styled-components";
+
+const Button = ({ text, action, primary, themed, padding, fz, clr, icon }) => {
+  return (
+    <StyledButton
+      primary={primary}
+      themed={themed}
+      padding={padding || ".5em 1em"}
+      clr={clr}
+      icon={icon}
+      fz={fz || ".75rem"}
+      onClick={action}
+    >
+      {icon && icon}
+      {text}
+    </StyledButton>
+  );
+};
+
+const StyledButton = styled.button`
+  border-radius: var(--border-radius);
+  background-color: transparent;
+  border-width: var(--border);
+  border-style: solid;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: var(--transition-duration) ease-in-out;
+  }}
+  padding: ${(props) => props.padding};
+  font-size: ${(props) => props.fz};
+  border-color: ${(props) => props.clr || "rgb(var(--bg))"};
+  user-select: none;
+
+  ${(props) =>
+    props.icon &&
+    css`
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    `}
+
+  & svg {
+      margin-inline-end: .5em;
+      width: 2rem;
+      object-fit: contain;
+      & path {
+        fill: rgb(var(--bg));
+        }
+  }
+
+  &:focus{
+    box-shadow: 3px 4px 0 0px rgba(var(--black), 55%);
+  }
+    
+  &:hover{
+    box-shadow: 3px 4px 0 0px rgba(var(--black), 55%);
+    transform: translate(-1px, -2px);
+  z-index: 1;
+  }
+  &:active {
+    box-shadow: 1px 2px 0 0px rgba(var(--black), 55%);
+    transform: translate(0, 0);
+  }
+   
+  ${(props) =>
+    props.primary &&
+    props.themed &&
+    css`
+      background-color: rgb(var(--fg));
+      border-color: rgb(var(--fg));
+      color: rgb(var(--high));
+    `}
+  ${(props) =>
+    props.primary &&
+    !props.themed &&
+    css`
+      background-color: rgb(var(--white));
+      border-color: rgb(var(--white));
+      color: rgb(var(--important));
+    `}
+
+  color: ${(props) => props.clr};
+  `;
+
+export default Button;

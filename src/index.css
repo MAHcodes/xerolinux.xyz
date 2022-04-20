@@ -1,0 +1,108 @@
+:root {
+  --border: 0.125rem;
+  --border-radius: 10px;
+  --white: 250, 244, 249;
+  --black: 10, 10, 25;
+  --bar: 30, 43, 86;
+  --fz-1: 2rem;
+  --fz-2: 1.5rem;
+  --fz-3: 1.25rem;
+  --fz-4: 1.125rem;
+  --fz-5: 1rem;
+  --fz-6: 0.85rem;
+  --transition-duration: 200ms;
+  --delay-duration: 75ms;
+  --transition-timing-function: ease-in-out;
+  --padding-section: 3rem;
+  --icon-size: 1.5rem;
+}
+
+body.light {
+  --bg: 250, 244, 249;
+  --bg2: 255, 207, 242;
+  --fg: 105, 110, 194;
+  --fg2: 67, 69, 113;
+  --important: var(--fg);
+  --high: var(--white);
+  --low: var(--fg2);
+}
+
+body.dark {
+  --important: 253, 114, 154;
+  --bg: 45, 48, 84;
+  --fg: 255, 207, 242;
+  --bg2: 105, 110, 194;
+  --fg2: 250, 244, 249;
+  --high: var(--black);
+  --low: var(--white);
+}
+
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"),
+    url(./assets/fonts/Poppins-Regular.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: 800;
+  src: local("Poppins"),
+    url(./assets/fonts/Poppins-SemiBold.ttf) format("truetype");
+}
+
+html {
+  font-family: Poppins, serif;
+  font-weight: 400;
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--padding-section) + 2rem);
+  font-size: clamp(0.7rem, 2.5vmin, 1.25rem);
+  text-size-adjust: none;
+}
+
+*::selection {
+  color: rgb(var(--bg));
+  background-color: rgb(var(--fg));
+}
+
+body {
+  background: rgb(var(--bg));
+}
+
+* {
+  scrollbar-width: auto;
+  scrollbar-color: rgb(var(--fg2)) rgb(var(--bg2));
+  transition: background-color var(--transition-duration)
+      var(--transition-timing-function),
+    color var(--transition-duration) var(--transition-timing-function),
+    fill var(--transition-duration) var(--transition-timing-function);
+}
+*::-webkit-scrollbar {
+  width: 1rem;
+}
+*::-webkit-scrollbar-track {
+  background: rgb(var(--bg2));
+}
+*::-webkit-scrollbar-track:hover {
+  background: rgba(var(--bg2), 75%);
+}
+*::-webkit-scrollbar-thumb {
+  background-color: rgb(var(--fg2));
+  border-radius: var(--border-radius);
+  border: 0.25rem solid rgb(var(--bg2));
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: rgb(var(--fg));
+}
+img {
+  user-select: none;
+}
+
+.App {
+  position: relative;
+}
+
+.container {
+  max-width: 1720px;
+  padding: 0 3rem;
+  margin-inline: auto;
+}
