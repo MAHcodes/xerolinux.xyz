@@ -105,7 +105,6 @@ const Content = styled.div`
   & h5 & h6 {
     font-weight: bold;
     color: rgb(var(--fg2));
-    text-align: center;
   }
 
   & h1 {
