@@ -1,9 +1,6 @@
 
         export const html = `
             <div>
-            <h1 id="xerolinux-disclaimer"><center>XeroLinux Disclaimer</center></h1>
-<br />
-
 <p>please read this carefully to understand more about what this project is and what it entails.</p>
 <p>This Distro is a private project that I have created for myself first and foremost, as a hobby, in my spare time, to learn the inner workings of Linux, which means it&#39;s mainly compatible with the hardware I currently own...</p>
 <h1 id="what-does-it-mean-for-you-"><center>What does it mean for you ?</center></h1>
