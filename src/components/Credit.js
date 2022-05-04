@@ -14,7 +14,7 @@ const Credit = () => {
           </P>
           <Buttons mb="1rem">
             <a
-              href="https://www.youtube.com/channel/UCd25qu9gyUpzE8GcjmgeAPQ"
+              href="https://github.com/gamerking64"
               target="blank"
               rel="noreferrer"
             >
