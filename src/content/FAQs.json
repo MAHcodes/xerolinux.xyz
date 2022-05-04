@@ -1,8 +1,13 @@
 [
   {
     "q": "Installing for 1st time ?",
-    "a": "One thing is clear, not everyone is familiar with Linux, at least not enough to feel comfortable to install a Custom Distro like XeroLinux without knowing how it works, that's why I have written, and created a step by step guide. Kindly pay close attention to every part, that is all I ask...",
+    "a": "One thing is clear, not everyone is familiar with Linux, at least not enough to feel comfortable to install a Custom Distro like XeroLinux without knowing how it works, that's why I have written a step by step guide. Kindly pay close attention to every part, that is all I ask...",
     "more": "https://forum.xerolinux.xyz/thread-38.html"
+  },
+    {
+    "q": "Wanna learn more about XeroTool ?",
+    "a": "One of the best things that comes included in XeroLinux, is a small, yet powerful tool, labeled XertoTool. With it you can configure many aspects of the Distro. From ricing, to tweaking, to installing a variety of useful tools...",
+    "more": "https://forum.xerolinux.xyz/thread-79.html"
   },
   {
     "q": "Having Hardware specific issues ?",
@@ -20,19 +25,9 @@
     "more": "https://forum.xerolinux.xyz/thread-5.html"
   },
   {
-    "q": "Own \"Legacy\" nVidia GPU ?",
-    "a": "This one is very important that you follow super closely. In case you own a what is called \"Legacy\" nVidia GPU, some special steps have to be followed since they kinda dropped support for those in their latest Driver Stack.. Below is everything I did to remedy the situation. Just know come May this will change, will update as necessary...",
-    "more": "https://forum.xerolinux.xyz/thread-7.html"
-  },
-  {
     "q": "Wanna learn more about Snapper ?",
     "a": "Snapper, in case you didn't know, is a great method to take quick snapshots of a working system when using the BTRFS FileSystem, should something go wrong easy to restore back to a working one.. Below are guides of it working with a tool called BTRFS-Assistant...",
     "more": "https://forum.xerolinux.xyz/thread-80.html"
-  },
-  {
-    "q": "Learn my terminal Aliases here",
-    "a": "You don't like to remember complex Terminal commands ? Well I have created a list of \"Aliases\" that are easy to remember that you will find below. List will constantly be updated with new ones making Terminal use a breeze ;)",
-    "more": "https://forum.xerolinux.xyz/thread-19.html"
   },
   {
     "q": "Stuck with vmlinuz-linux not found ? Fix below.",
@@ -43,6 +38,11 @@
     "q": "Issues updating due to failed mirrors (404)?",
     "a": "Ok, sometimes I have to move my Repo(s) around, yeah it happens, which might cause updates to fail, heck even fresh installs of the Distro due to them moving around.. Below are the steps to remedy that sitation, and soon in my tool come May 25th release...",
     "more": "https://forum.xerolinux.xyz/thread-87.html"
+  },
+    {
+    "q": "Issues with Pacman Backend ?",
+    "a": "Sometimes Pacman refuses to behave. Mainly with issues related to Keys. Other times with corrupt packages and so on... Below is a link to a thread where I embedded a video by DistroTube going over them with potential fixes...",
+    "more": "https://forum.xerolinux.xyz/thread-115.html"
   },
   {
     "q": "Want To Downgrade A Package ?",
