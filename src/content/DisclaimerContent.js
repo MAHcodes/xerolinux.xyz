@@ -1,10 +1,9 @@
 
         export const html = `
             <div>
-            <h1 id="xerolinux-disclaimer"><center>XeroLinux Disclaimer</center></h1><br />
 <p>Please read this carefully to understand more about what this project is and what it entails.</p>
 <p>This Distro is a <strong>private</strong> project that I have created for myself first and foremost, as a hobby, in my spare time, to learn the inner workings of Linux, which means it&#39;s mainly compatible with the hardware I currently own...</p>
-<p>It was never intended to be everything for everyone. Consider it as a solid, well optimized &amp; great looking base to build on top of, that&#39;s what makes <strong>Linux</strong> so damn awesome !</p>
+<p>It was never intended to be everything for everyone. Consider it as a solid, well optimized &amp; great looking Arch/KDE base to build on top of, that&#39;s what makes <strong>Linux</strong> so damn awesome !</p>
 <h4 id="target-audience">- Target Audience.</h4><br />
 <p>Do you love <strong>Arch BTW</strong> &amp; <strong>KDE</strong> as much as I do ? Are you a Linux <strong>Nerd</strong> like me ? And do you love to learn and teach ? If yes, then this Distro is for you.</p>
 <h4 id="troubleshooting">- Troubleshooting.</h4><br />
