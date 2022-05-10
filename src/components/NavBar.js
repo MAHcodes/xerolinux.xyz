@@ -7,6 +7,7 @@ import { FaTheaterMasks, FaForumbee } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { MdOutlineQuestionAnswer } from "react-icons/md";
 import { GiComputerFan } from "react-icons/gi";
+import darkbg from "../assets/images/darkbg.png";
 
 const NavBar = ({ menu }) => {
   const { setPopUp } = useContext(PopUpContext);
@@ -16,6 +17,7 @@ const NavBar = ({ menu }) => {
 
   return (
     <StyledNav className={menu ? undefined : "close"}>
+      <Blur />
       <ul>
         <a href="#Home">
           <li>
@@ -122,12 +124,26 @@ const Li = styled.li`
   }
 `;
 
+const Blur = styled.div`
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: url(${darkbg});
+
+  @media (min-width: 1400px) {
+    display: none;
+  }
+`;
+
 const StyledNav = styled.nav`
   color: rgb(var(--white));
   font-size: var(--fz-6);
   text-align: center;
   border-radius: var(--border-radius);
+  position: relative;
+  overflow: hidden;
   @media (max-width: 1400px) {
+    border: 2px solid rgb(255, 207, 242);
     order: 1;
     flex-basis: 100%;
     position: absolute;
@@ -147,6 +163,9 @@ const StyledNav = styled.nav`
     }
     @media (max-width: 1400px) {
       margin: auto;
+      & a:hover li {
+        border-bottom: 2px solid transparent;
+      }
     }
 
     display: grid;
