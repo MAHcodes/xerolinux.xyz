@@ -18,7 +18,6 @@ const Hamburger = styled.div`
   color: rgb(var(--white));
   font-size: 0;
   cursor: pointer;
-
   &:before,
   &:after {
     content: '';
@@ -30,21 +29,17 @@ const Hamburger = styled.div`
     background: currentColor;
     transform: translateY(-50%);
     transition: transform var(--transition-duration) var(--transition-timing-function);
-  } 
-
+  }
   &.active {
     border-color: transparent;
-
       &:before {
         transform: translateY(-50%) rotate(45deg);
       }
-
       &:after {
         transform: translateY(-50%) rotate(-45deg);
       }
     }
   }
-
   @media (min-width: 1400px) {
     display: none;
   }

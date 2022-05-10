@@ -46,7 +46,7 @@ const NavBar = ({ menu }) => {
         <a href="#FAQ">
           <li>
             <MdOutlineQuestionAnswer />
-            <p>FAQ</p>
+            <p>F.A.Q</p>
           </li>
         </a>
         <li onClick={popUpPcBuild}>
@@ -96,12 +96,10 @@ const Li = styled.li`
   display: flex;
   align-items: center;
   justify-content: center;
-
   & svg {
     width: var(--fz-4);
     object-fit: contian;
   }
-
   & #Vector,
   & #arrow {
     delay: var(--delay-duration);
@@ -128,8 +126,8 @@ const Blur = styled.div`
   position: absolute;
   inset: 0;
   z-index: -1;
+  opacity: 0.75;
   background: url(${darkbg});
-
   @media (min-width: 1400px) {
     display: none;
   }
@@ -143,7 +141,7 @@ const StyledNav = styled.nav`
   position: relative;
   overflow: hidden;
   @media (max-width: 1400px) {
-    border: 2px solid rgb(255, 207, 242);
+    border: 1px solid rgb(255, 175, 200);
     order: 1;
     flex-basis: 100%;
     position: absolute;
@@ -154,10 +152,8 @@ const StyledNav = styled.nav`
       display: none;
     }
   }
-
   & ul {
     padding-block: 0.5rem;
-
     & a:hover li {
       border-bottom: 2px solid rgb(var(--white));
     }
@@ -167,16 +163,13 @@ const StyledNav = styled.nav`
         border-bottom: 2px solid transparent;
       }
     }
-
     display: grid;
     align-items: stretch;
     justify-items: stretch;
-
     @media (min-width: 1400px) {
       grid-template-columns: repeat(7, 1fr);
       padding-block: 0;
     }
-
     & > * {
       display: block;
       line-height: 2;
@@ -191,17 +184,14 @@ const StyledNav = styled.nav`
       align-items: center;
       justify-content: center;
       gap: 1rem;
-
       &:hover {
         @media (min-width: 1400px) {
           border-bottom: 2px solid rgb(var(--white));
         }
       }
-
       @media (max-width: 1400px) {
         border-radius: var(--border-radius);
       }
-
       &:hover {
         background-color: rgba(var(--bar), 30%);
       }

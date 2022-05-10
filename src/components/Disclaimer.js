@@ -34,7 +34,7 @@ const Svg = styled.svg`
 `;
 
 const Title = styled.div`
-  position: relative;  
+  position: relative;
   padding: 1rem;
   margin: 0 auto 2em;
   width: fit-content;
