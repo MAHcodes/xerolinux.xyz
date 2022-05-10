@@ -17,7 +17,7 @@ const FAQ = ({ faqs }) => {
 
   return (
     <Div id="FAQ" className="container">
-      <Title text="FAQ" />
+      <Title text="F.A.Q" />
       <Wrapper>
         {faqs.map((faq, i) => (
           <div key={i}>

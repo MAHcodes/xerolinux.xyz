@@ -48,14 +48,13 @@ const Download = () => {
         <Content>
           <Title alignLeft text="Download" />
           <p>
-            This is XeroLinux - an Arch-based Distro, a personal project I am
-            working on that I thought I would share, in case someone out there
+            This is XeroLinux - an Arch-based Distro, a personal project I have
+            been working on that I thought I would share, in case someone out there
             shares my passion for building Linux.
             <br />
             <br />
-            I have created it for myself first and foremost, as a hobby, in my
-            spare time, to learn the inner workings of Linux, which means it's
-            mainly compatible with the hardware I currently own.
+            I have created it for myself as a hobby, in my spare time,
+            to learn the inner workings of Linux, Arch and KDE in my case.
             <br />
             <br />
             The beauty of Linux is, you can fix various issues yourself, with

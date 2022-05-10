@@ -29,7 +29,7 @@ keep using it with no interruptions.
 <li>Tons of under-the-hood tweaks &amp; optimizations.</li>
 <li>Tweaked the default Rice making it better.</li>
 <li>New Aliases added to both .bashrc &amp; .zshrc.</li>
-<li><strong>X11</strong> Session is the default post install.</li>
+<li><strong>Wayland</strong> Session removed from ISO.***</li>
 <li><strong>Snaps</strong> Support removed from <strong>Pamac.</strong></li>
 <li><strong>AutoComposer</strong> added for better gaming experience.<br>
 Thanks to <strong><i>GamerKing64</i></strong> for the suggestion.</li>
@@ -49,11 +49,22 @@ rel="noreferrer"
 </a>
 </p>
 <p class="bg">
-** : Make sure to watch the new
+** : Make sure to go over the new
 <span> “Complete XeroLinux Install Guide” </span>
-video attached in the “Download” section for more detail on that &
-more….
+thread on the => <a
+href="https://forum.xerolinux.xyz/thread-38.html"
+target="_blank"
+rel="noreferrer"
+>
+<span> XeroLinux Forums…</span>
+</a>.
 </p>
+<p class="bg">
+*** : You will be able to add
+<span> “Wayland Support” </span>
+via the <span> “XeroLinux Tool” </span>. Only recommended if you are using
+<span>AMD GPU</span>. If you are on <span>nVidia</span> I would recommend you wait
+for support to get better...</p>
 </details>
 
 <p>That’s it for now.. Hope you enjoy our latest release of
