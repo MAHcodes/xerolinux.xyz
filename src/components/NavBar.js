@@ -159,6 +159,7 @@ const StyledNav = styled.nav`
     }
     @media (max-width: 1400px) {
       margin: auto;
+      flex-direction: column;
       & a:hover li {
         border-bottom: 2px solid transparent;
       }
