@@ -28,11 +28,10 @@ keep using it with no interruptions.
 <li>New <strong>Rice Switcher</strong> via the new <strong>XeroTool</strong>.</li>
 <li>Tons of under-the-hood tweaks &amp; optimizations.</li>
 <li>Tweaked the default Rice making it better.</li>
-<li>New Aliases added to both .bashrc &amp; .zshrc.</li>
 <li><strong>Wayland</strong> Session removed from ISO.***</li>
 <li><strong>Snaps</strong> Support removed from <strong>Pamac.</strong></li>
 <li><strong>AutoComposer</strong> added for better gaming experience.<br>
-Thanks to <strong><i>GamerKing64</i></strong> for the suggestion.</li>
+Thanks to <strong><i>GamerKing</i></strong> for the suggestion.</li>
 </ul>
 <details open>
 <summary>Notes Please read...</summary>
