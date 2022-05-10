@@ -5,50 +5,48 @@ const HamburgerMenu = ({ menu, setMenu }) => {
     setMenu(!menu);
   };
   return (
-    <Hamburger className={menu && "active"} onClick={toggleMenu}>
-      <span></span>
-      <span></span>
-      <span></span>
-    </Hamburger>
+    <Hamburger className={menu && "active"} onClick={toggleMenu}></Hamburger>
   );
 };
 
 const Hamburger = styled.div`
+  position: ralative;
   width: 1.25rem;
-  min-width: 1.25rem;
-  aspect-ratio: 1;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  border-radius: var(--border-radius);
+  height: 1.25rem;
+  border-top: 2px solid;
+  border-bottom: 2px solid;
+  color: rgb(var(--white));
+  font-size: 0;
   cursor: pointer;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 1.25rem;
+    height: 2px;
+    top: 50%;
+    background: currentColor;
+    transform: translateY(-50%);
+    transition: transform var(--transition-duration) var(--transition-timing-function);
+  } 
+
+  &.active {
+    border-color: transparent;
+
+      &:before {
+        transform: translateY(-50%) rotate(45deg);
+      }
+
+      &:after {
+        transform: translateY(-50%) rotate(-45deg);
+      }
+    }
+  }
 
   @media (min-width: 1400px) {
     display: none;
-  }
-
-  & span {
-    display: inline-block;
-    width: 100%;
-    height: 0.175rem;
-    background-color: rgb(var(--white));
-    border-radius: var(--border-radius);
-    transition: var(--transition-duration) var(--transition-timing-function);
-    transform-origin: center;
-  }
-
-  &.active {
-    & span:nth-child(1) {
-      transform: translateY(0.5rem) rotate(-45deg);
-    }
-    & span:nth-child(2) {
-      transform: scale(0);
-      opacity: 0;
-    }
-    & span:nth-child(3) {
-      transform: rotate(45deg) translate(-0.35rem, -0.35rem);
-    }
   }
 `;
 
