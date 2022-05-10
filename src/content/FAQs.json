@@ -10,9 +10,9 @@
     "more": "https://forum.xerolinux.xyz/thread-79.html"
   },
   {
-    "q": "Having Hardware specific issues ?",
-    "a": "Since not everyone has the same hardware config, some issues related to them might arise, as with every OS. And knowing I cannot test every single one myself, I have curated a list with potential solutions below. Hope it helps you out...",
-    "more": "https://forum.xerolinux.xyz/thread-28.html"
+    "q": "Want to build ISO from Source ?",
+    "a": "Some of you might want to build ISO from source to benefit from latest changes, if any, before anyone else. That's why, I have written a guide on how to do just that. Make sure to follow it exactly. Customize it to your liking if need be. Just note that I will not be providing any help with other DEs/WMs.",
+    "more": "https://forum.xerolinux.xyz/thread-118.html"
   },
   {
     "q": "Want to auto mount drives on startup ?",
