@@ -32,7 +32,7 @@ const NavBar = ({ menu }) => {
           </li>
         </a>
         <a href="#Customization">
-          <li>
+          <li className="padPlus">
             <FaTheaterMasks />
             <p>Customiztion</p>
           </li>
@@ -49,7 +49,7 @@ const NavBar = ({ menu }) => {
             <p>F.A.Q</p>
           </li>
         </a>
-        <li onClick={popUpPcBuild}>
+        <li onClick={popUpPcBuild} className="padPlus">
           <GiComputerFan />
           <p>My Pc Build</p>
         </li>
@@ -163,11 +163,11 @@ const StyledNav = styled.nav`
         border-bottom: 2px solid transparent;
       }
     }
-    display: grid;
+    display: flex;
     align-items: stretch;
-    justify-items: stretch;
+    justify-content: center;
+     
     @media (min-width: 1400px) {
-      grid-template-columns: repeat(7, 1fr);
       padding-block: 0;
     }
     & > * {
@@ -175,7 +175,7 @@ const StyledNav = styled.nav`
       line-height: 2;
     }
     & li {
-      padding: 1em;
+      padding: 1em 1.5em;
       height: 100%;
       cursor: pointer;
       white-space: nowrap;
@@ -196,6 +196,9 @@ const StyledNav = styled.nav`
         background-color: rgba(var(--bar), 30%);
       }
     }
+    & li.padPlus {
+      padding: 1em 2em;
+    }  
   }
 `;
 
