@@ -4,17 +4,9 @@ import Button from "./Button";
 import leb from "../assets/images/leb.svg";
 import bg from "../assets/images/herobg.png";
 import Buttons from "./Buttons";
-import { useContext } from "react";
-import { PopUpContext } from "../contexts/PopUpContext";
 import Weather from "./Weather";
 
 const Hero = () => {
-  const { setPopUp } = useContext(PopUpContext);
-
-  const openChangeLogPopup = () => {
-    setPopUp("Changelog");
-  };
-
   return (
     <HeroSection id="Home">
       <div className="container">
@@ -42,14 +34,19 @@ const Hero = () => {
                   clr="rgb(var(--black))"
                 />
               </a>
-            <Button
-              text="Changelog"
-              themed
-              padding=".75em 1.5em"
-              fz="var(--fz-5)"
-              clr="rgb(var(--white))"
-              action={openChangeLogPopup}
-            />
+              <a
+                href="https://forum.xerolinux.xyz/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  text="Forum"
+                  themed
+                  padding=".75em 1.5em"
+                  fz="var(--fz-5)"
+                  clr="rgb(var(--white))"
+                />
+              </a>
             </Buttons>
             <Origin>
               <img src={leb} alt="Lebanon Flag" />
