@@ -1,10 +1,12 @@
 import styled from "styled-components"
+import Title from "./Title";
 
 const ReleaseCountdown = ({countdown}) => {
   return (
     <Div>
       <div className="container">
-        <H1>New Release in</H1>
+        <H1></H1>
+        <Title text="New Release in" />
         <Wrapper>
         <p>{countdown.days}<br />days</p>
         <p>{countdown.hours}<br />hours</p>

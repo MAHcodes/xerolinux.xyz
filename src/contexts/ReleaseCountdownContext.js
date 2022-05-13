@@ -6,8 +6,7 @@ const ReleaseCountdownContextProvider = ( props ) => {
   const [countdown, setCountdown] = useState(0);
 
   useEffect(() => {
-    // const releaseDate = new Date("May 25, 2022 00:00:00").getTime();
-    const releaseDate = new Date("May 12, 2022 00:00:00").getTime();
+    const releaseDate = new Date("May 25, 2022 00:00:00").getTime();
 
     const getCountdown = setInterval(() => {
       const now = new Date();
