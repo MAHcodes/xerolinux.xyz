@@ -73,10 +73,10 @@ const StyledNav = styled.nav`
   color: rgb(var(--white));
   font-size: var(--fz-6);
   text-align: center;
-  border-radius: var(--border-radius);
   position: relative;
   overflow: hidden;
   @media (max-width: 1400px) {
+    border-radius: var(--border-radius);
     border: 1px solid rgb(255, 175, 200);
     order: 1;
     flex-basis: 100%;
