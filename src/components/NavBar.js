@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { PopUpContext } from "../hooks/PopUpContext";
+import { PopUpContext } from "../contexts/PopUpContext";
 import { useContext } from "react";
 import { GoHome } from "react-icons/go";
 import { RiContactsLine } from "react-icons/ri";

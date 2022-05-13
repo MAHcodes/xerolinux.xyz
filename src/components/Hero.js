@@ -5,7 +5,7 @@ import leb from "../assets/images/leb.svg";
 import bg from "../assets/images/herobg.png";
 import Buttons from "./Buttons";
 import { useContext } from "react";
-import { PopUpContext } from "../hooks/PopUpContext";
+import { PopUpContext } from "../contexts/PopUpContext";
 import Weather from "./Weather";
 
 const Hero = () => {

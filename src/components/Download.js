@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Button from "../components/Button";
 import Buttons from "./Buttons";
 import Title from "./Title";
-import { PopUpContext } from "../hooks/PopUpContext";
+import { PopUpContext } from "../contexts/PopUpContext";
 import { useContext } from "react";
 import YTVideos from "../content/YoutubeVideos.json";
 
