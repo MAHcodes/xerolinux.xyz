@@ -42,7 +42,7 @@ const Hero = () => {
                 <Button
                   text="Forum"
                   themed
-                  padding=".75em 1.5em"
+                  padding=".75em 2.35em"
                   fz="var(--fz-5)"
                   clr="rgb(var(--white))"
                 />
