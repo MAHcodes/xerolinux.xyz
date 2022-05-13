@@ -36,26 +36,39 @@ const PopUp = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <Button text="learn more" primary themed />
+                <Button float="right" text="learn more" primary themed />
               </a>
             ) : popUp === "UserAgreement" ? (
               <>
                 <Button
                   text="Disagree"
-                  clr="rgb(var(--white))"
+                  clr="rgb(var(--fg))"
+                  padding=".75em 2em"
+                  fz="var(--fz-5)"
                   action={() => setPopUp("")}
-                  m
                 />
                 <A
                   href="https://sourceforge.net/projects/xerolinux/files/Releases/Main/xerolinux-main-x86_64.iso/download"
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <Button text="I agree" primary themed />
+                  <Button
+                    padding=".75em 2em"
+                    fz="var(--fz-5)"
+                    text="I agree"
+                    primary
+                    themed
+                  />
                 </A>
               </>
             ) : (
-              <Button action={closePopup} primary themed text="Close" />
+              <Button
+                action={closePopup}
+                float="right"
+                primary
+                themed
+                text="Close"
+              />
             )}
           </Actions>
         </Wrapper>
@@ -82,6 +95,7 @@ const Panel = styled.div`
 const Actions = styled.div`
   padding: 0.5rem 1rem 1rem;
   align-self: end;
+  width: 100%;
 `;
 
 const Wrapper = styled.div`
@@ -199,9 +213,8 @@ const Overlay = styled.div`
 `;
 
 const A = styled.a`
-  margin-inline-start: 1rem;
-  display: inline-block;
-`
+  float: right;
+`;
 
 const popIn = keyframes`
   from {

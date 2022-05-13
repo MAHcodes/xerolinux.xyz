@@ -31,7 +31,6 @@ const ReleaseCountdownContextProvider = ( props ) => {
 
   return <ReleaseCountdownContext.Provider value={countdown}>
     {props.children}
-    {console.log(countdown)}
   </ReleaseCountdownContext.Provider>
 }
 
