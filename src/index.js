@@ -5,11 +5,14 @@ import "./index.css";
 import App from "./App";
 import ThemeContextProvider from "./contexts/ThemeContext";
 import PopUpContextProvider from "./contexts/PopUpContext";
+import ReleaseCountdownContextProvider from "./contexts/ReleaseCountdownContext";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <ThemeContextProvider>
     <PopUpContextProvider>
-      <App />
+      <ReleaseCountdownContextProvider>
+        <App />
+      </ReleaseCountdownContextProvider>
     </PopUpContextProvider>
   </ThemeContextProvider>
 );
