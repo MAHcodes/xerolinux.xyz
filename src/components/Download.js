@@ -4,10 +4,14 @@ import Title from "./Title";
 import { PopUpContext } from "../contexts/PopUpContext";
 import { useContext } from "react";
 import YTVideos from "../content/YoutubeVideos.json";
+import Buttons from "./Buttons";
 
 const Download = () => {
   const { setPopUp } = useContext(PopUpContext);
 
+  const openChangeLogPopup = () => {
+    setPopUp("Changelog");
+  };
   const openUserAgreement = () => {
     setPopUp("UserAgreement");
   }
@@ -58,7 +62,15 @@ const Download = () => {
             The beauty of Linux is, you can fix various issues yourself, with
             enough knowledge.
           </p>
-          <ButtonWrapper>
+          <Buttons justify="flex-end">
+      <Button
+              text="Changelog"
+              themed
+              padding=".75em 1.5em"
+              fz="var(--fz-5)"
+              clr="rgb(var(--fg))"
+              action={openChangeLogPopup}
+            />
             <Button
               text="Download"
               primary
@@ -68,7 +80,7 @@ const Download = () => {
               action={openUserAgreement}
               float="right"
             />
-          </ButtonWrapper>
+          </Buttons>
         </Content>
       </Wrapper>
     </DownloadSection>
@@ -91,17 +103,6 @@ const Wrapper = styled.div`
     flex-direction: row;
   }
 `;
-
-const ButtonWrapper = styled.div`
-  margin-block: 2rem;
-  & button {
-    float: right;
-    @media(max-width: 800px) {
-      width: 100%;
-      text-align: center;
-    }
-  }
-`
 
 const Video = styled.div`
   display: flex;
