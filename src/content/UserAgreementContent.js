@@ -2,15 +2,15 @@
         export const html = `
             <div>
 <p>Please read this carefully to understand more about what this project is and what it entails.</p>
-<p>This Distro is a <strong>private</strong> project that I have created for myself first and foremost, as a hobby, in my spare time, to learn the inner workings of Linux, which means it&#39;s mainly compatible with the hardware I currently own...</p>
-<p>It was never intended to be everything for everyone. Consider it as a solid, well optimized &amp; great looking Arch/KDE base to build on top of, that&#39;s what makes <strong>Linux</strong> so damn awesome !</p>
-<h4 id="target-audience">- Target Audience.</h4><br />
-<p>Do you love <strong>Arch BTW</strong> &amp; <strong>KDE</strong> as much as I do ? Are you a Linux <strong>Nerd</strong> like me ? And do you love to learn and teach ? If yes, then this Distro is for you.</p>
+<h1 id="-eol-"><center>~~~~~~~~~~~~ S.O.F ~~~~~~~~~~~~</center></h1>
+<h4 id="troubleshooting">- Main Points.</h4><br />
+<p><strong>(1)</strong> This is a <strong>Hobby distribution</strong>, official support not guaranteed.</p>
+<p><strong>(2)</strong> Provides third-party repositories and packages for functionality.</p>
+<p><strong>(3)</strong> No companies involved in creation of Distro-specific packages and tweaks.</p>
 <h4 id="troubleshooting">- Troubleshooting.</h4><br />
-<p>When it comes to issues related to your specific hardware config, you better be ready to do your own research using the awesome knowledge found on <a href="https://wiki.archlinux.org/"><strong>ArchWiki</strong></a> and/or the Web. You can also help others by sharing solutions, that&#39;s the power of the community.</p>
-<p>Otherwise, we will do best we can to assist you. If not myself, other users might be able to chime in if and when they can. All I ask for is a lot of patience as I am one man doing this, not a team.</p>
-<h1 id="-eol-"><center>~~~~~~~~~~~~ E.O.L ~~~~~~~~~~~~</center></h1>
+<p>When it comes to issues related to your specific hardware config, use the awesome knowledge found on <a href="https://wiki.archlinux.org/"><strong>ArchWiki</strong></a>.</p>
+<p>We cannot be held responsible in case of Data-Loss/Corruption. Do your research, test in a VM before taking the plunge on real metal.</p>
+<h1 id="-eol-"><center>~~~~~~~~~~~~ E.O.F ~~~~~~~~~~~~</center></h1>
 
             </div>
         `
-    

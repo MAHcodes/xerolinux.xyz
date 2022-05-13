@@ -17,7 +17,7 @@ keep using it with no interruptions.
 <li>New <strong>XeroLinux XL</strong> Repo for larger packages.</li>
 <li>No more <strong>ArcoLinux</strong> Repos. Just ours.</li>
 <li><strong>PipeWire</strong> is now the default Audio Server.</li>
-<li>Added <strong>nVidia-Prime</strong> Drivers to Calamares under Optimus-Manager.</li>
+<li>Added <strong>nVidia-Prime</strong> Drivers to Calamares.</li>
 <li>Default FileSystem is now <strong>XFS</strong> vs <strong>BTRFS.</strong></li>
 <li>No more Package Selection In <strong>Calamares</strong>.</li>
 <li>New <strong>BTRFS/Snapper</strong> tools in case you use that FS.*</li>
