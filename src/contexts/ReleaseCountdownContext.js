@@ -1,0 +1,29 @@
+import { createContext, useState, useEffect } from "react";
+
+export const ReleaseCountdownContext = createContext(null);
+
+const ReleaseCountdownContextProvider = ( props ) => {
+  const [countdown, setCountdown] = useState(0);
+
+  useEffect(() => {
+    const releaseDate = new Date("May 25, 2022 00:00:00").getTime();
+    const now = new Date();
+    const dateDiff = releaseDate - now;
+    if (dateDiff <= 0) {
+      setCountdown(0)
+    } else {
+      const days = Math.floor(dateDiff / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((dateDiff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((dateDiff % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((dateDiff % (1000 * 60)) / 1000);
+      setCountdown({days, hours, minutes, seconds});
+    }
+  }, []);
+
+  return <ReleaseCountdownContext.Provider value={countdown}>
+    {props.children}
+    { console.log(countdown) }
+  </ReleaseCountdownContext.Provider>
+}
+
+export default ReleaseCountdownContextProvider;
