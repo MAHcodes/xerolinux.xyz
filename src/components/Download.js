@@ -13,10 +13,6 @@ const Download = () => {
     setPopUp("UserAgreement");
   }
 
-  const openChangeLogPopup = () => {
-    setPopUp("Changelog");
-  };
-
   return (
     <DownloadSection id="Download" className="container">
       <Wrapper>
@@ -63,7 +59,7 @@ const Download = () => {
             The beauty of Linux is, you can fix various issues yourself, with
             enough knowledge.
           </p>
-          <Buttons>
+          <ButtonWrapper>
             <Button
               text="Download"
               primary
@@ -71,16 +67,9 @@ const Download = () => {
               padding=".75em 1.5em"
               fz="var(--fz-5)"
               action={openUserAgreement}
+              float="right"
             />
-            <Button
-              text="Changelog"
-              themed
-              padding=".75em 1.5em"
-              fz="var(--fz-5)"
-              clr="rgb(var(--fg))"
-              action={openChangeLogPopup}
-            />
-          </Buttons>
+          </ButtonWrapper>
         </Content>
       </Wrapper>
     </DownloadSection>
@@ -103,6 +92,17 @@ const Wrapper = styled.div`
     flex-direction: row;
   }
 `;
+
+const ButtonWrapper = styled.div`
+  margin-block: 2rem;
+  & button {
+    float: right;
+    @media(max-width: 800px) {
+      width: 100%;
+      text-align: center;
+    }
+  }
+`
 
 const Video = styled.div`
   display: flex;

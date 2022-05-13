@@ -11,6 +11,10 @@ import Weather from "./Weather";
 const Hero = () => {
   const { setPopUp } = useContext(PopUpContext);
 
+  const openChangeLogPopup = () => {
+    setPopUp("Changelog");
+  };
+
   return (
     <HeroSection id="Home">
       <div className="container">
@@ -38,13 +42,14 @@ const Hero = () => {
                   clr="rgb(var(--black))"
                 />
               </a>
-              <Button
-                text="Disclaimer"
-                padding=".75em 1.5em"
-                fz="var(--fz-5)"
-                clr="rgb(var(--white))"
-                action={() => setPopUp("Disclaimer")}
-              />
+            <Button
+              text="Changelog"
+              themed
+              padding=".75em 1.5em"
+              fz="var(--fz-5)"
+              clr="rgb(var(--white))"
+              action={openChangeLogPopup}
+            />
             </Buttons>
             <Origin>
               <img src={leb} alt="Lebanon Flag" />

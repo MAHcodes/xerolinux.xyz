@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-const Button = ({ text, action, primary, themed, padding, fz, clr, icon }) => {
+const Button = ({ text, action, primary, themed, padding, fz, clr, icon, float }) => {
   return (
     <StyledButton
       primary={primary}
@@ -10,6 +10,7 @@ const Button = ({ text, action, primary, themed, padding, fz, clr, icon }) => {
       icon={icon}
       fz={fz || ".75rem"}
       onClick={action}
+      float={float}
     >
       {icon && icon}
       {text}
@@ -25,7 +26,7 @@ const StyledButton = styled.button`
   white-space: nowrap;
   cursor: pointer;
   transition: var(--transition-duration) ease-in-out;
-  }}
+  float: ${(props) => props.float};
   padding: ${(props) => props.padding};
   font-size: ${(props) => props.fz};
   border-color: ${(props) => props.clr || "rgb(var(--bg))"};
