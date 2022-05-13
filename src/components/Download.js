@@ -9,8 +9,11 @@ import YTVideos from "../content/YoutubeVideos.json";
 const Download = () => {
   const { setPopUp } = useContext(PopUpContext);
 
+  const openUserAgreement = () => {
+    setPopUp("UserAgreement");
+  }
+
   const openChangeLogPopup = () => {
-    console.log("HELLO?");
     setPopUp("Changelog");
   };
 
@@ -61,19 +64,14 @@ const Download = () => {
             enough knowledge.
           </p>
           <Buttons>
-            <a
-              href="https://sourceforge.net/projects/xerolinux/files/Releases/Main/xerolinux-main-x86_64.iso/download"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <Button
-                text="Download"
-                primary
-                themed
-                padding=".75em 1.5em"
-                fz="var(--fz-5)"
-              />
-            </a>
+            <Button
+              text="Download"
+              primary
+              themed
+              padding=".75em 1.5em"
+              fz="var(--fz-5)"
+              action={openUserAgreement}
+            />
             <Button
               text="Changelog"
               themed
