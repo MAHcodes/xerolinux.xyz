@@ -9,7 +9,7 @@
 <p><strong>(3)</strong> No companies involved in creation of Distro-specific packages and tweaks.</p>
 <h4 id="troubleshooting">- Troubleshooting.</h4><br />
 <p>When it comes to issues related to your specific hardware config, use the awesome knowledge found on <a href="https://wiki.archlinux.org/"><strong>ArchWiki</strong></a>.</p>
-<p>Otherwise, we will do best we can to assist you. If not myself, other users might be able to chime in if and when they can. </p>
+<p>We cannot be held responsible in case of Data-Loss/Corruption. Do your research, test in a VM before taking the plunge on real metal.</p>
 <h1 id="-eol-"><center>~~~~~~~~~~~~ E.O.F ~~~~~~~~~~~~</center></h1>
 
             </div>
