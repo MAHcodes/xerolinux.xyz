@@ -12,7 +12,7 @@ import Footer from "./components/Footer";
 import faqsJSON from "./content/FAQs.json";
 import vidsJSON from "./content/YoutubeVideos.json";
 import { useContext } from "react";
-import { PopUpContext } from "./hooks/PopUpContext";
+import { PopUpContext } from "./contexts/PopUpContext";
 import PopUp from "./components/PopUp";
 
 const App = () => {

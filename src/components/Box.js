@@ -2,7 +2,7 @@ import styled from "styled-components";
 import lightbg from "../assets/images/lightbg.png";
 import darkbg from "../assets/images/darkbg.png";
 import { useContext } from "react";
-import { ThemeContext } from "../hooks/ThemeContext";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const Box = (props) => {
   const { theme } = useContext(ThemeContext);

@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { useEffect } from "react";
 import { useContext } from "react";
-import { ThemeContext } from "../hooks/ThemeContext";
+import { ThemeContext } from "../contexts/ThemeContext";
 
 const ThemeIcon = ({ dark }) => {
   const { theme, setTheme } = useContext(ThemeContext);

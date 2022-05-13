@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 import Disclaimer from "./Disclaimer";
 import ThemeIcon from "./ThemeIcon";
 import { useContext } from "react";
-import { PopUpContext } from "../hooks/PopUpContext";
+import { PopUpContext } from "../contexts/PopUpContext";
 import Close from "./Close";
 import Button from "./Button";
 import AnnouncementsPopUP from "./AnnouncementsPopUp";

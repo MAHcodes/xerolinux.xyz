@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import Button from "./Button";
 import { useContext } from "react";
-import { PopUpContext } from "../hooks/PopUpContext";
+import { PopUpContext } from "../contexts/PopUpContext";
 
 const Announcements = () => {
   const { setPopUp } = useContext(PopUpContext);
