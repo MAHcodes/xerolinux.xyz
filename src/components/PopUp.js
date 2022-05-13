@@ -8,7 +8,6 @@ import Button from "./Button";
 import AnnouncementsPopUP from "./AnnouncementsPopUp";
 import PCBuild from "./PCBuild";
 import Changelog from "./Changelog";
-import Buttons from "./Buttons";
 
 const PopUp = () => {
   const { popUp, setPopUp } = useContext(PopUpContext);
