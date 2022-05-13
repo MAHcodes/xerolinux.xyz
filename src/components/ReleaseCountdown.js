@@ -1,41 +1,38 @@
 import styled from "styled-components"
 
-const ReleaseCountdown = () => {
+const ReleaseCountdown = ({countdown}) => {
   return (
     <Div>
-      <P>New release in <br /> x days</P>
-      <Svg width="420" height="73" viewBox="0 0 420 73" fill="none">
-        <path d="M378.5 70.5H140L96.5 27H141.5L167.5 53H396L378.5 70.5Z" fill="#FFCFF2"/>
-        <path d="M15 58.5L71.5 2L96.5 27M419 30L396 53M396 53L378.5 70.5H140L96.5 27M396 53H167.5L141.5 27H96.5" stroke="#FFCFF2" strokeWidth="2" strokeLinecap="round"/>
-        <circle cx="9" cy="64" r="9" fill="#FFCFF2"/>
-      </Svg>
+      <div className="container">
+        <H1>New Release in</H1>
+        <Wrapper>
+        <p>{countdown.days}<br />days</p>
+        <p>{countdown.hours}<br />hours</p>
+        <p>{countdown.minutes}<br />minutes</p>
+        <p>{countdown.seconds}<br />seconds</p>
+        </Wrapper>
+      </div>
     </Div>
   )
 }
 
 const Div = styled.div`
-  position: fixed;
-  inset: auto auto 10% 0;
-  z-index: 8000;
-`
-
-const Svg = styled.svg`
-  position: absolute; 
-  inset: auto auto 0 0;
-  width: 100%;
-  & path:first-of-type {
-    fill: rgb(var(--fg));
-  }
-  & path:nth-of-type(2) {
-    stroke: rgb(var(--fg));
-  }
-`
-
-const P = styled.p`
   color: rgb(var(--fg));
-  text-align: right;
-  min-width: 16rem;
-  padding: 2rem;
+  text-align: center;
+  padding-block: var(--padding-section);
+`
+
+const H1 = styled.h1`
+  font-size: var(--fz-2);
+  font-weight: bold;
+  margin-block: 1em;
+`
+
+const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
 `
 
 export default ReleaseCountdown

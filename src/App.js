@@ -14,9 +14,12 @@ import vidsJSON from "./content/YoutubeVideos.json";
 import { useContext } from "react";
 import { PopUpContext } from "./contexts/PopUpContext";
 import PopUp from "./components/PopUp";
+import { ReleaseCountdownContext } from "./contexts/ReleaseCountdownContext";
+import ReleaseCountdown from "./components/ReleaseCountdown";
 
 const App = () => {
   const { popUp } = useContext(PopUpContext);
+  const countdown = useContext(ReleaseCountdownContext);
 
   return (
     <div className="App">
@@ -26,7 +29,7 @@ const App = () => {
       <Hero />
       <SocialLinks />
       <Features />
-      <Download />
+      { countdown ? <ReleaseCountdown countdown={countdown} /> : <Download />}
       <Credit />
       <Customization />
       <Videos title="XeroLinux Videos" urls={vidsJSON.XeroLinux_Videos} />
