@@ -1,5 +1,5 @@
 import styled, { keyframes } from "styled-components";
-import Disclaimer from "./Disclaimer";
+import UserAgreement from "./UserAgreement";
 import ThemeIcon from "./ThemeIcon";
 import { useContext } from "react";
 import { PopUpContext } from "../contexts/PopUpContext";
@@ -8,6 +8,7 @@ import Button from "./Button";
 import AnnouncementsPopUP from "./AnnouncementsPopUp";
 import PCBuild from "./PCBuild";
 import Changelog from "./Changelog";
+import Buttons from "./Buttons";
 
 const PopUp = () => {
   const { popUp, setPopUp } = useContext(PopUpContext);
@@ -24,7 +25,7 @@ const PopUp = () => {
             <Close action={closePopup} />
           </Panel>
           <Content>
-            {popUp === "Disclaimer" && <Disclaimer />}
+            {popUp === "UserAgreement" && <UserAgreement />}
             {popUp === "Announcements" && <AnnouncementsPopUP />}
             {popUp === "PCBuild" && <PCBuild />}
             {popUp === "Changelog" && <Changelog />}
@@ -38,6 +39,22 @@ const PopUp = () => {
               >
                 <Button text="learn more" primary themed />
               </a>
+            ) : popUp === "UserAgreement" ? (
+              <>
+                <Button
+                  text="Disagree"
+                  clr="rgb(var(--white))"
+                  action={() => setPopUp("")}
+                  m
+                />
+                <A
+                  href="https://sourceforge.net/projects/xerolinux/files/Releases/Main/xerolinux-main-x86_64.iso/download"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button text="I agree" primary themed />
+                </A>
+              </>
             ) : (
               <Button action={closePopup} primary themed text="Close" />
             )}
@@ -181,6 +198,11 @@ const Overlay = styled.div`
   animation: ${overIn} var(--transition-duration)
     var(--transition-timing-function);
 `;
+
+const A = styled.a`
+  margin-inline-start: 1rem;
+  display: inline-block;
+`
 
 const popIn = keyframes`
   from {
