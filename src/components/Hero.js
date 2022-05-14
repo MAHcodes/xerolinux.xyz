@@ -6,7 +6,7 @@ import bg from "../assets/images/herobg.png";
 import Buttons from "./Buttons";
 import Weather from "./Weather";
 
-const Hero = () => {
+const Hero = ({countdown}) => {
   return (
     <HeroSection id="Home">
       <div className="container">
@@ -25,9 +25,9 @@ const Hero = () => {
               <br />I hope you enjoy using it as much as I have creating it ;)
             </P>
             <Buttons>
-              <a href="#Download">
+              <a href={countdown ? "#Countdown" : "#Download"}>
                 <Button
-                  text="Download"
+                  text={countdown ? "New Release!" : "Download"}
                   primary
                   padding=".75em 1.5em"
                   fz="var(--fz-5)"

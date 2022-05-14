@@ -26,10 +26,11 @@ const App = () => {
       {popUp && <PopUp popUp={popUp} />}
       <Announcements />
       <Header />
-      <Hero />
-      <SocialLinks />
+      <Hero countdown={countdown} />
+       <SocialLinks />
+      { countdown && <ReleaseCountdown countdown={countdown} />}
       <Features />
-      { countdown ? <ReleaseCountdown countdown={countdown} /> : <Download />}
+      { !countdown && <Download />}
       <Credit />
       <Customization />
       <Videos title="XeroLinux Videos" urls={vidsJSON.XeroLinux_Videos} />
