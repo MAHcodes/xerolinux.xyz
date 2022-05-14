@@ -1,40 +1,106 @@
-import styled from "styled-components"
+import styled from "styled-components";
 import Title from "./Title";
 
-const ReleaseCountdown = ({countdown}) => {
+const ReleaseCountdown = ({ countdown }) => {
   return (
     <Div>
       <div className="container">
         <H1></H1>
         <Title text="New Release in" />
         <Wrapper>
-        <p>{countdown.days}<br />days</p>
-        <p>{countdown.hours}<br />hours</p>
-        <p>{countdown.minutes}<br />minutes</p>
-        <p>{countdown.seconds}<br />seconds</p>
+          <p>
+            <span>
+            {`${countdown.days}`.padStart(2, "0")}
+            </span>
+            <br />
+            days
+          </p>
+          <p>
+            <span>
+            {`${countdown.hours}`.padStart(2, "0")}
+            </span>
+            <br />
+            hours
+          </p>
+          <p>
+            <span>
+            {`${countdown.minutes}`.padStart(2, "0")}
+            </span>
+            <br />
+            minutes
+          </p>
+          <p>
+            <span>
+            {`${countdown.seconds}`.padStart(2, "0")}
+            </span>
+            <br />
+            seconds
+          </p>
+
+          <Svg width="884" height="224" viewBox="0 0 884 224" fill="none">
+            <path
+              d="M255.292 221.723L222.545 188.957V134.125L240.589 152.179V184.277L259.302 203H495.218L513.931 221.723H255.292Z"
+              fill="#FFCFF2"
+            />
+            <path
+              d="M124.302 222H60.8119L2 163.155V60.845L60.8119 2H163.733L222.545 60.845V134.125M882 199.657H835.218L813.163 221.723H513.931M513.931 221.723H255.292L222.545 188.957V134.125M513.931 221.723L495.218 203H259.302L240.589 184.277V152.179L222.545 134.125"
+              stroke="#FFCFF2"
+              stroke-width="4"
+              stroke-linecap="round"
+            />
+          </Svg>
         </Wrapper>
       </div>
     </Div>
-  )
-}
+  );
+};
 
 const Div = styled.div`
   color: rgb(var(--fg));
   text-align: center;
   padding-block: var(--padding-section);
-`
+`;
 
 const H1 = styled.h1`
   font-size: var(--fz-2);
   font-weight: bold;
   margin-block: 1em;
-`
+`;
 
 const Wrapper = styled.div`
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
+  position: relative;
+  font-size: var(--fz-4);
+  margin-block: var(--padding-section);
   gap: 2rem;
+
+  @media (min-width: 800px) {
+    gap: 3rem;
+  }
+
+  & p:nth-of-type(2) {
+    margin-inline-start: 3rem;
+  }
+
+  & p > span {
+    font-size: var(--fz-1);
+    font-weight: bold;
+  }
+`;
+
+const Svg = styled.svg`
+  width: 120%;
+  position: absolute;
+  inset: 0 0 0 -10%;
+  transform: translateY(-32%);
+  & path:nth-of-type(1) {
+    fill: rgb(var(--fg));
+  }
+  & path:nth-of-type(2) {
+    stroke: rgb(var(--fg));
+  }
 `
 
-export default ReleaseCountdown
+export default ReleaseCountdown;
