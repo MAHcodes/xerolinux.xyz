@@ -66,6 +66,7 @@ const Wrapper = styled.div`
   }
 
   & p:nth-of-type(1) {
+    color: rgb(var(--fg2));
   position: relative;
   }
 
@@ -74,7 +75,6 @@ const Wrapper = styled.div`
   }
 
   & p > span {
-    color: rgb(var(--fg2));
     font-size: var(--fz-1);
     font-weight: bold;
   }
