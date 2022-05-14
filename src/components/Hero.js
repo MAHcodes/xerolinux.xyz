@@ -5,8 +5,21 @@ import leb from "../assets/images/leb.svg";
 import bg from "../assets/images/herobg.png";
 import Buttons from "./Buttons";
 import Weather from "./Weather";
+import { PopUpContext } from "../contexts/PopUpContext";
+import { useContext } from "react";
+import SocialLinks from "./SocialLinks";
 
-const Hero = ({countdown}) => {
+const Hero = ({ countdown }) => {
+  const { setPopUp } = useContext(PopUpContext);
+
+  const openChangeLogPopup = () => {
+    setPopUp("Changelog");
+  };
+
+  const openUserAgreement = () => {
+    setPopUp("UserAgreement");
+  };
+
   return (
     <HeroSection id="Home">
       <div className="container">
@@ -25,38 +38,49 @@ const Hero = ({countdown}) => {
               <br />I hope you enjoy using it as much as I have creating it ;)
             </P>
             <Buttons>
-              <a href={countdown ? "#Countdown" : "#Download"}>
+              {countdown ? (
+                <a href="#Countdown">
+                  <Button
+                    text="New Release!"
+                    primary
+                    clr="rgb(var(--black))"
+                    padding=".75em 1.5em"
+                    fz="var(--fz-5)"
+                    float="right"
+                  />
+                </a>
+              ) : (
                 <Button
-                  text={countdown ? "New Release!" : "Download"}
+                  text="Download"
                   primary
-                  padding=".75em 1.5em"
-                  fz="var(--fz-5)"
                   clr="rgb(var(--black))"
-                />
-              </a>
-              <a
-                href="https://forum.xerolinux.xyz/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button
-                  text="Forum"
-                  themed
-                  padding=".75em 2.35em"
+                  padding=".75em 1.75em"
                   fz="var(--fz-5)"
-                  clr="rgb(var(--white))"
+                  action={openUserAgreement}
+                  float="right"
                 />
-              </a>
+              )}
+              <Button
+                text="Changelog"
+                themed
+                padding=".75em 1.65em"
+                fz="var(--fz-5)"
+                clr="rgb(var(--white))"
+                action={openChangeLogPopup}
+              />
             </Buttons>
             <Origin>
               <img src={leb} alt="Lebanon Flag" />
               <p>Proudly Made in Lebanon</p>
             </Origin>
           </Content>
-          <ImgContainer>
-            <Weather />
-            <img src={laptop} alt="XeroLinux" />
-          </ImgContainer>
+          <MoreWrapper>
+            <ImgContainer>
+              <Weather />
+              <img src={laptop} alt="XeroLinux" />
+            </ImgContainer>
+            <SocialLinks />
+          </MoreWrapper>
         </Flex>
       </div>
     </HeroSection>
@@ -115,12 +139,16 @@ const Origin = styled.div`
   }
 `;
 
-const ImgContainer = styled.div`
+const MoreWrapper = styled.div`
   flex: 0.5;
+`
+
+const ImgContainer = styled.div`
   display: flex;
   align-items: cener;
   justify-content: center;
   position: relative;
+  margin-block-end: 2rem;
   animation: ${ImgIn} 0.5s var(--transition-timing-function);
   & img {
     object-fit: contain;
