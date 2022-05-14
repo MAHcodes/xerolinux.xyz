@@ -34,7 +34,7 @@ const NavBar = ({ menu }) => {
         <a href="#Customization">
           <li className="padPlus">
             <FaTheaterMasks />
-            <p>Customiztion</p>
+            <p>Customization</p>
           </li>
         </a>
         <a href="#Videos">
