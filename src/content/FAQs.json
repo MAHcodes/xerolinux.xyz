@@ -36,7 +36,7 @@
   },
   {
     "q": "Issues updating due to failed mirrors (404)?",
-    "a": "Ok, sometimes I have to move my Repo(s) around, yeah it happens, which might cause updates to fail, heck even fresh installs of the Distro fails due to them moving around.. Below are the steps to remedy that situation...",
+    "a": "Ok, sometimes I have to move my Repo(s) around, yeah it happens, which might cause updates to fail, heck even fresh install of the Distro fails due to them moving around.. Below are the steps to remedy that situation...",
     "more": "https://forum.xerolinux.xyz/thread-87.html"
   },
     {
