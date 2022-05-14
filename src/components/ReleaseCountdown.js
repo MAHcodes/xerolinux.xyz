@@ -3,10 +3,9 @@ import Title from "./Title";
 
 const ReleaseCountdown = ({ countdown }) => {
   return (
-    <Div>
+    <Div id="Countdown">
       <div className="container">
-        <H1></H1>
-        <Title text="New Release in" />
+        <Title text="Download Available in:" />
         <Wrapper>
           <p>
             <span>{`${countdown.days}`.padStart(2, "0")}</span>
@@ -52,12 +51,6 @@ const Div = styled.div`
   color: rgb(var(--fg));
   text-align: center;
   padding-block: var(--padding-section);
-`;
-
-const H1 = styled.h1`
-  font-size: var(--fz-2);
-  font-weight: bold;
-  margin-block: 1em;
 `;
 
 const Wrapper = styled.div`
