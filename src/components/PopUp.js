@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import UserAgreement from "./UserAgreement";
 import ThemeIcon from "./ThemeIcon";
-import { useContext } from "react";
+import { useContext, useEffect } from "react";
 import { PopUpContext } from "../contexts/PopUpContext";
 import Close from "./Close";
 import Button from "./Button";
@@ -14,6 +14,20 @@ const PopUp = () => {
   const closePopup = () => {
     setPopUp("");
   };
+
+  useEffect(() => {
+    const handleKeyup = e => {
+      if (e.keyCode === 27 || e.key === "Escape") {
+        setPopUp("");
+      }
+    }
+
+    document.documentElement.addEventListener("keyup", handleKeyup);
+
+    return () => {
+      document.documentElement.removeEventListener("keyup", handleKeyup);
+    }
+  }, [setPopUp])
 
   return (
     <>
