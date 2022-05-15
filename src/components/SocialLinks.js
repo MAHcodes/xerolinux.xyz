@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
-const SocialLinks = ({ invert }) => {
+const SocialLinks = ({ clr }) => {
   return (
-    <Wrapper invert={invert}>
+    <Wrapper clr={clr}>
       <a href="https://t.me/XeroLinux" target="_blank" rel="noreferrer">
         <svg width="31" height="31" viewBox="0 0 31 31" fill="none">
           <path
@@ -122,11 +122,11 @@ const SocialLinks = ({ invert }) => {
 const Wrapper = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 0.5rem;
+  justify-content: start;
+  gap: 2rem;
+  padding-block: .5rem;
 
   & > * {
-    padding: 0.75rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -147,7 +147,7 @@ const Wrapper = styled.div`
   }
 
   & path {
-    fill: rgb(var(${(props) => (props.invert ? "--bg" : "--fg")}));
+    fill: ${props => props.clr || "rgb(var(--fg))"};
   }
 `;
 
