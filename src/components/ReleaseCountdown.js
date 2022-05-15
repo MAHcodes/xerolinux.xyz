@@ -51,6 +51,7 @@ const Div = styled.div`
   color: rgb(var(--fg));
   text-align: center;
   padding-block: var(--padding-section);
+  overflow-x: hidden;
 `;
 
 const Wrapper = styled.div`

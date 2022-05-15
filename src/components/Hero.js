@@ -114,6 +114,7 @@ const HeroSection = styled.section`
   min-height: min(80vh, 100vw);
   position: relative;
   margin-top: -3.5rem;
+  overflow-x: hidden;
 
   @media (max-width: 1200px) {
     padding-block: calc(var(--padding-section) * 1.5);
