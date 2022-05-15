@@ -1,20 +1,12 @@
 import styled from "styled-components";
-import { PopUpContext } from "../contexts/PopUpContext";
-import { useContext } from "react";
 import { GoHome } from "react-icons/go";
 import { RiContactsLine } from "react-icons/ri";
 import { FaTheaterMasks, FaForumbee } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { MdOutlineQuestionAnswer } from "react-icons/md";
-import { GiComputerFan } from "react-icons/gi";
 import darkbg from "../assets/images/darkbg.png";
 
 const NavBar = ({ menu }) => {
-  const { setPopUp } = useContext(PopUpContext);
-  const popUpPcBuild = () => {
-    setPopUp("PCBuild");
-  };
-
   return (
     <StyledNav className={menu ? undefined : "close"}>
       <Blur />
@@ -49,10 +41,6 @@ const NavBar = ({ menu }) => {
             <p>F.A.Q</p>
           </li>
         </a>
-        <li onClick={popUpPcBuild} className="padPlus">
-          <GiComputerFan />
-          <p>My Pc Build</p>
-        </li>
         <a href="https://forum.xerolinux.xyz/" target="_blank" rel="noreferrer">
           <Li>
             <FaForumbee />
@@ -198,7 +186,7 @@ const StyledNav = styled.nav`
       }
     }
     & li.padPlus {
-      padding: 1em 2em;
+      padding: 1em 1.5em;
     }  
   }
 `;
