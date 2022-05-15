@@ -77,40 +77,25 @@ const Hero = ({ countdown }) => {
               <img src={leb} alt="Lebanon Flag" />
               <p>Proudly Made in Lebanon</p>
             </Origin>
-            <SocialWrapper>
-              <p>We can be found on</p>
-              <SocialLinks clr="rgb(var(--white))"/>
-            </SocialWrapper>
+            <SocialLinks clr="rgb(var(--white))" />
           </Content>
           <MoreWrapper>
+              <Button
+                text="My PC Build"
+                action={popUpPcBuild}
+                clr="rgb(var(--white))"
+                padding=".75em 1.25em"
+              />
             <ImgContainer>
               <Weather />
               <img src={laptop} alt="XeroLinux" />
             </ImgContainer>
-            <PCBuild onClick={popUpPcBuild}>
-              <p>My Pc Build</p>
-            </PCBuild>
           </MoreWrapper>
         </Flex>
       </div>
     </HeroSection>
   );
 };
-
-const SocialWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  flex-direction: column;
-  padding-block-start: 2rem;
-  @media(min-width:800px ) {
-    align-items: start;
-  }
-  & p {
-    font-weight: bold;
-    margin-block-end: 1rem;
-  }
-`
 
 const HeroSection = styled.section`
   padding-block: var(--padding-section);
@@ -129,18 +114,6 @@ const HeroSection = styled.section`
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
-`;
-
-const PCBuild = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-  width: fit-content;
-  margin-inline: auto;
-  color: rgb(var(--fg));
-  cursor: pointer;
-  text-decoration: underline;
 `;
 
 const ContentIn = keyframes`
@@ -169,6 +142,7 @@ const Origin = styled.div`
   justify-content: cetner;
   font-size: var(--fz-5);
   gap: 0.5rem;
+  margin-block-end: 1.5rem;
 
   & img {
     width: 1.5rem;
@@ -178,6 +152,10 @@ const Origin = styled.div`
 
 const MoreWrapper = styled.div`
   flex: 0.5;
+  & button {
+    display: inline-block;
+    margin: 1rem auto ;
+  }
 `;
 
 const ImgContainer = styled.div`
