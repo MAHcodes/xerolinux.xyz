@@ -30,12 +30,12 @@ const Div = styled.div`
   white-space: nowrap;
 
   & a {
-    color: rgb(var(--fg));
+    color: rgb(var(--fg2));
     font-size: var(--fz-5);
   }
 
   & span {
-    margin-inline-end: 0.5rem;
+    margin-inline-end: 0.75rem;
   }
 
   & span > svg {
@@ -49,6 +49,19 @@ const Svg = styled.svg`
   inset: -0.75rem -2rem auto auto;
   width: 175%;
   height: 175%;
+
+  & > path {
+    stroke: rgb(var(--fg));
+    transition: fill var(--transition-duration) var(--transition-timing-function),
+       stroke var(--transition-duration) var(--transition-timing-function);
+  }
+
+  &:hover {
+    & > path {
+      stroke: rgb(var(--fg2));
+      fill: rgba(var(--bg2), 25%);
+    }
+  }
 `;
 
 export default CreditButton;
