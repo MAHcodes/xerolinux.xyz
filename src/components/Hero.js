@@ -153,8 +153,8 @@ const Origin = styled.div`
 const MoreWrapper = styled.div`
   flex: 0.5;
   & button {
-    display: inline-block;
-    margin: 1rem auto ;
+    display: block;
+    margin: 1rem auto;
   }
 `;
 
