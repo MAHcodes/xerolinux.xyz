@@ -6,11 +6,11 @@ import { AiOutlineYoutube } from "react-icons/ai";
 import { MdOutlineQuestionAnswer } from "react-icons/md";
 import darkbg from "../assets/images/darkbg.png";
 
-const NavBar = ({ menu }) => {
+const NavBar = ({ menu, setMenu }) => {
   return (
     <StyledNav className={menu ? undefined : "close"}>
       <Blur />
-      <ul>
+      <ul onClick={() => {setMenu(0)}}>
         <a href="#Home">
           <li>
             <GoHome />

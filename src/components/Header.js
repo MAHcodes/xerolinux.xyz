@@ -18,7 +18,7 @@ const Header = () => {
           </Brand>
           <HamburgerMenu menu={menu} setMenu={setMenu} />
         </Wrapper>
-        <NavBar menu={menu} />
+        <NavBar menu={menu} setMenu={setMenu} />
         <ThemeIcon />
       </StyledHeader>
     </Div>
