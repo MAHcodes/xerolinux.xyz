@@ -156,7 +156,7 @@ const PCBuild = styled.div`
     margin-inline: auto;
     width: fit-content;
     top: -2.5rem;
-    left: 35%;
+    left: 25%;
   }
 
   svg {
