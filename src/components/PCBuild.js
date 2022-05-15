@@ -6,7 +6,7 @@ import Img from "./Img";
 const PCBuild = () => {
   return (
     <div>
-      <Title noMT text="My PC Build" />
+      <Title noMT text="StationXero AkA The Linux Machine" />
       <Img maxWidth="85%" src={PCimg} alt="My PC Build" />
       <P>
         That PC is my main one acting as my everyday system. I do all my gaming
