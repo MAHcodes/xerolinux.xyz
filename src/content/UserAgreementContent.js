@@ -4,7 +4,7 @@
 <p>Please read this carefully to understand more about what this project is and what it entails.</p>
 <h1 id="-eol-"><center>~~~~~~~~~~~~ S.O.F ~~~~~~~~~~~~</center></h1>
 <h4 id="troubleshooting">- Main Points.</h4><br />
-<p><strong>(1)</strong> This is a <strong>Hobby distribution</strong>, official support not guaranteed.</p>
+<p><strong>(1)</strong> This is a <strong>Hobby distribution</strong>, issue resolution not always guaranteed.</p>
 <p><strong>(2)</strong> Provides third-party repositories and packages for functionality.</p>
 <p><strong>(3)</strong> No companies involved in creation of Distro-specific packages and tweaks.</p>
 <h4 id="troubleshooting">- Troubleshooting.</h4><br />
