@@ -95,10 +95,14 @@ const Div = styled.div`
 
 const Content = styled.div`
   display: flex;
-  align-items: start;
+  align-items: center;
   justify-content: center;
   gap: .75rem;
   padding: 1rem 1rem 0;
+
+  @media(max-width: 800px) {
+    align-items: start;
+  }
 }
 `;
 
@@ -108,41 +112,29 @@ const CreditButtons = styled.div`
   justify-content: center;
   grid-template-columns: repeat(1, 1fr);
   gap: 3rem 0;
+  border-inline-start: 2px solid rgb(var(--fg));
+  position: relative;
 
-  @media (max-width: 1400px) {
-    flex-direction: column;
-    align-items: start;
-    border-inline-start: 2px solid rgb(var(--fg));
-    position: relative;
-    margin-top: 2rem;
-
-    &::after,
-    &::before {
-      content: "";
-      position: absolute;
-      width: 1rem;
-      height: 1rem;
-      border: 2px solid rgb(var(--fg));
-      border-radius: 50%;
-    }
-    &::before {
-      inset: 0 0 auto 0;
-      transform: translate(-60%, -90%);
-    }
-    &::after {
-      inset: auto 0 0;
-      transform: translate(-60%, 90%);
-    }
+  &::after,
+  &::before {
+    content: "";
+    position: absolute;
+    width: 0.75rem;
+    height: 0.75rem;
+    border: 2px solid rgb(var(--fg));
+    border-radius: 50%;
+  }
+  &::before {
+    inset: 0 0 auto 0;
+    transform: translate(-60%, -90%);
+  }
+  &::after {
+    inset: auto 0 0;
+    transform: translate(-60%, 90%);
   }
 
-  @media(min-width: 800px) {
-    flex-direction: row;
-    flex-wrap: wrap;
+  @media (min-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (min-width: 1400px) {
-    grid-template-columns: repeat(4, 1fr) !important;
   }
 `;
 
