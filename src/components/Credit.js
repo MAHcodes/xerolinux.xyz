@@ -96,16 +96,17 @@ const Div = styled.div`
 const Content = styled.div`
   display: flex;
   align-items: start;
-  justify-content: stretch;
+  justify-content: center;
   gap: .75rem;
   padding: 1rem 1rem 0;
 }
 `;
 
 const CreditButtons = styled.div`
-  display: flex;
+  display: grid;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  grid-template-columns: repeat(1, 1fr);
   gap: 3rem;
 
   @media (max-width: 1400px) {
@@ -137,6 +138,11 @@ const CreditButtons = styled.div`
   @media(min-width: 800px) {
     flex-direction: row;
     flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (min-width: 1400px) {
+    grid-template-columns: repeat(4, 1fr) !important;
   }
 `;
 
