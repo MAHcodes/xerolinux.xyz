@@ -107,7 +107,7 @@ const CreditButtons = styled.div`
   align-items: center;
   justify-content: center;
   grid-template-columns: repeat(1, 1fr);
-  gap: 3rem;
+  gap: 3rem 0;
 
   @media (max-width: 1400px) {
     flex-direction: column;
