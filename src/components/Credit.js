@@ -44,6 +44,7 @@ const Credit = () => {
           </svg>
           Credit
         </P>
+        <Connector />
         <CreditButtons>
           <CreditButton
             icon={discordIcon()}
@@ -77,7 +78,20 @@ const P = styled.p`
   font-weight: bold;
   font-size: var(--fz-2);
   position: relative;
-  margin-inline-end: 5rem;
+  margin-inline-end: 2.35rem;
+
+  &::before {
+    content: "";
+    height: 2rem;
+    position: absolute;
+    inset: 0 -48% 0 auto;
+    transform: translateX(100%);
+    min-width: 3.5rem;
+    width: 16vw;
+    @media (min-width: 800px) {
+      width: 3.5rem;
+    }
+  }
 
   & > svg {
     position: absolute;
@@ -85,6 +99,13 @@ const P = styled.p`
     height: 250%;
     width: 250%;
   }
+`;
+
+const Connector = styled.div`
+  border-block: 2px solid rgb(var(--fg));
+  height: 2rem;
+  flex: 1;
+  min-width: 2rem;
 `;
 
 const Div = styled.div`
@@ -97,12 +118,9 @@ const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  gap: .75rem;
   padding: 1rem 1rem 0;
-
-  @media(max-width: 800px) {
-    align-items: start;
-  }
+  max-width: 80%;
+  margin-inline: auto;
 }
 `;
 
@@ -112,7 +130,6 @@ const CreditButtons = styled.div`
   justify-content: center;
   grid-template-columns: repeat(1, 1fr);
   gap: 3rem 0;
-  border-inline-start: 2px solid rgb(var(--fg));
   position: relative;
 
   &::after,
@@ -121,7 +138,6 @@ const CreditButtons = styled.div`
     position: absolute;
     width: 0.75rem;
     height: 0.75rem;
-    border: 2px solid rgb(var(--fg));
     border-radius: 50%;
   }
   &::before {
@@ -133,9 +149,57 @@ const CreditButtons = styled.div`
     transform: translate(-60%, 90%);
   }
 
+  & > div:nth-child(1)::after,
+  & > div:nth-child(3)::after,
+  & > div::before,
+  & > div::before {
+    content: "";
+    height: 3px;
+    background-color: rgb(var(--fg));
+    position: absolute;
+  }
+
+  & > div::before,
+  & > div::before {
+    width: 2rem;
+    inset: 35% 0 auto -.3rem ;
+    transform: translate(-235%, -50%);
+  }
+
   @media (min-width: 800px) {
     grid-template-columns: repeat(2, 1fr);
+    & > div:nth-child(2)::before,
+    & > div:nth-child(4)::before {
+      display: none;
+    }
+
+    & > div:nth-child(1)::after,
+    & > div:nth-child(3)::after {
+      width: 1.75rem;
+      inset: 35% -.3rem 0 auto;
+      transform: translate(100%, -50%);
+    }
   }
+
+  border-inline-start: 2px solid rgb(var(--fg));
+   &::after,
+      &::before {
+        content: "";
+        position: absolute;
+        width: .75rem;
+        height: .75rem;
+        border: 2px solid rgb(var(--fg));
+        border-radius: 50%;
+      }
+      &::before {
+        inset: 0 0 auto 0;
+        transform: translate(-60%, -90%);
+      }
+      &::after {
+        inset: auto 0 0;
+        transform: translate(-60%, 90%);
+      }
+    }
 `;
 
 export default Credit;
