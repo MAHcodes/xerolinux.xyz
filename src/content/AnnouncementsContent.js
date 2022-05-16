@@ -3,7 +3,7 @@
             <div>
             <h1 id="dear-xerolinux-users">Dear XeroLinux users,</h1><br />
 <p>Kindly find the latest news &amp; announcements below… Read carefully.</p>
-<h4 id="xfce--gnome-discontinued-">- One DE to rulethem All :</h4><br />
+<h4 id="xfce--gnome-discontinued-">- One DE to rule them All :</h4><br />
 <p>Starting May 25th, moving forward, there will only be <strong>KDE</strong> version. </p>
 <h4 id="repos-have-been-moved-">- Repos Have been moved :</h4><br />
 <p>We have switched away from <strong>&quot;ArcoLinux&quot;</strong> repositories to our own...</p>
