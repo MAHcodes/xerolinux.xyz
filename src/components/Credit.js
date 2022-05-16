@@ -77,7 +77,7 @@ const P = styled.p`
   font-weight: bold;
   font-size: var(--fz-2);
   position: relative;
-  margin-inline-end: 3rem;
+  margin-inline-end: 5rem;
 
   & > svg {
     position: absolute;
@@ -96,7 +96,7 @@ const Div = styled.div`
 const Content = styled.div`
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   gap: .75rem;
   padding: 1rem 1rem 0;
 
