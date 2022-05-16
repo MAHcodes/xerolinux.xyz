@@ -21,7 +21,7 @@ keep using it with no interruptions.
 <li>Default FileSystem is now <strong>XFS</strong> vs <strong>BTRFS.</strong></li>
 <li>No more Package Selection In <strong>Calamares</strong>.</li>
 <li>New <strong>BTRFS/Snapper</strong> tools in case you use that FS.*</li>
-<li>New Post Install Package Installer (WiP).</li>
+<li>New Post Install Package Installer (via tool).</li>
 <li>Tweaked <strong>SDDM</strong> Config for Optimus users.</li>
 <li>New Button in <strong>Calamares</strong> to follow along during install.</li>
 <li>All <strong>GPU</strong> Drivers moved to Calamares no longer on ISO.**</li>
@@ -29,10 +29,11 @@ keep using it with no interruptions.
 <li>New <strong>Rice Switcher</strong> via the new <strong>XeroTool</strong>.</li>
 <li>Tons of under-the-hood tweaks &amp; optimizations.</li>
 <li>Tweaked the default Rice making it better.</li>
+<li>New simple <strong>Grub</strong> theme included.</li>
 <li><strong>Wayland</strong> Session removed from ISO.***</li>
 <li><strong>Snaps</strong> Support removed from <strong>Pamac.</strong></li>
-<li><strong>AutoComposer</strong> added for better gaming experience.<br>
-Thanks to <strong><i>GamerKing</i></strong> for the suggestion.</li>
+<li><strong>AutoComposer</strong> added for better gaming experience.<br></li>
+<li>Added <strong>XeroTool</strong> icon to System Tray for easy access.</li>
 </ul>
 <details open>
 <summary>Notes Please read...</summary>
