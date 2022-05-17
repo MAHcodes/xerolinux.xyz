@@ -25,7 +25,7 @@ const App = () => {
       <Announcements />
       <Header />
       <Hero countdown={countdown} />
-      { countdown && <ReleaseCountdown countdown={countdown} />}
+      { countdown ? <ReleaseCountdown countdown={countdown} /> : undefined}
       <Features />
       <Credit />
       <Customization />
