@@ -11,7 +11,7 @@ keep using it with no interruptions.
 <h4>- Changelog 25/05/2022 :</h4>
 <br />
 <ul>
-<li><strong>Calamares</strong> updated to version 3.2.58.</li>
+<li><strong>Calamares</strong> updated to version 3.2.57.</li>
 <li><strong>YaY</strong> added alongside <strong>Paru</strong>.</li>
 <li>New revamped tool now called <strong>XeroTool</strong>.</li>
 <li>New <strong>XeroLinux XL</strong> Repo for larger packages.</li>
