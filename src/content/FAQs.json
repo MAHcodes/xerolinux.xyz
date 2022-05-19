@@ -25,9 +25,9 @@
     "more": "https://forum.xerolinux.xyz/thread-5.html"
   },
   {
-    "q": "Wanna learn more about Snapper ?",
-    "a": "Snapper, in case you didn't know, is a great method to take quick snapshots of a working system when using the BTRFS FileSystem, should something go wrong easy to restore back to a working one.. Below are guides of it working with a tool called BTRFS-Assistant...",
-    "more": "https://forum.xerolinux.xyz/thread-80.html"
+    "q": "Issues with latest nVidia-dkms ?",
+    "a": "Recently, the nVidia-dkms drivers for the 900 Series onwards were updated to the 515 Branch, which is currently in Beta, thus causing issues with games not launching via Steam among other issues. Click the button to head on over to Arch Issue tracker, and subscribe for potential fix.. I can't do anything on my end, we have to wait...",
+    "more": "https://bugs.archlinux.org/task/74738"
   },
   {
     "q": "Stuck with vmlinuz-linux not found ? Fix below.",
