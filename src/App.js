@@ -30,8 +30,8 @@ const App = () => {
       <Features />
       <Credit />
       <Customization />
-      <Videos title="XeroLinux Videos" urls={vidsJSON.XeroLinux_Videos} />
-      <Videos title="XeroLinux Reviews" urls={vidsJSON.XeroLinux_Reviews} />
+      <Videos title="XeroLinux Official Videos" urls={vidsJSON.XeroLinux_Videos} />
+      <Videos title="XeroLinux Previews" urls={vidsJSON.XeroLinux_Previews} />
       <FAQ faqs={faqsJSON} />
       <Footer />
     </div>
