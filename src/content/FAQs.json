@@ -26,8 +26,8 @@
   },
   {
     "q": "Issues with latest nVidia-dkms ?",
-    "a": "Recently, the nVidia-dkms drivers for the 900 Series onwards were updated to the 515 Branch, which is currently in Beta, thus causing issues with games not launching via Steam among other issues. Click the button to head on over to Arch Issue tracker, and subscribe for potential fix.. I can't do anything on my end, we have to wait...",
-    "more": "https://bugs.archlinux.org/task/74738"
+    "a": "Recently, the nVidia-dkms drivers for the 900 Series onwards were updated to the 515 Branch, which is currently in Beta, thus causing issues with games not launching via Steam among other issues. Click the button below to head on over to the FroggingFamily thread I created a while ago, try building & installing latest 510 Drivers. Or wait for a more official fix...",
+    "more": "https://forum.xerolinux.xyz/thread-17.html"
   },
   {
     "q": "Stuck with vmlinuz-linux not found ? Fix below.",
