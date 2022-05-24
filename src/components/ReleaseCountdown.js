@@ -42,6 +42,7 @@ const ReleaseCountdown = ({ countdown }) => {
             seconds
           </p>
         </Wrapper>
+        <P>According to Lebanon timezone (GMT+3)</P>
       </div>
     </Div>
   );
@@ -80,6 +81,10 @@ const Wrapper = styled.div`
     font-weight: bold;
   }
 `;
+
+const P = styled.p`
+  margin-block-start: 1rem;
+`
 
 const Svg = styled.svg`
   height: 170%;
