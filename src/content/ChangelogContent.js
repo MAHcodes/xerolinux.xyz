@@ -20,9 +20,10 @@ keep using it with no interruptions.
 <li>Added <strong>nVidia-Prime</strong> Drivers to Calamares.</li>
 <li>Default FileSystem is now <strong>XFS</strong> vs <strong>BTRFS.</strong></li>
 <li>No more Package Selection In <strong>Calamares</strong>.</li>
-<li>New <strong>BTRFS/Snapper</strong> tools in case you use that FS.*</li>
+<li>New <strong>BTRFS/Snapper</strong> tools in case you use that FS.</li>
 <li>New Post Install Package Installer (via tool).</li>
 <li>Tweaked <strong>SDDM</strong> Config for Optimus users.</li>
+<li><strong>nVidia-510-tkg</strong> Driver Stack used instead of latest.(*)</li>
 <li>New Button in <strong>Calamares</strong> to follow along during install.</li>
 <li>All <strong>GPU</strong> Drivers moved to Calamares no longer on ISO.**</li>
 <li>Less boot options on <strong>USB Boot</strong>, no more confusion.</li>
@@ -38,15 +39,15 @@ keep using it with no interruptions.
 <details open>
 <summary>Notes Please read...</summary>
 <p class="bg">
-* : Make sure to go over the new <span>BTRFS-Assistant</span> &
-<span> Snapper tool </span>
-thread for more information on that over on the =>
+* : Current Drivers available on official Arch Repositories are using 515 Branch,
+which is currently in Beta on nVidia's official site. As a result, this caused
+a MAJOR hit on system performance, and a lot of games not launching from steam. Check link for proof.
 <a
-href="https://forum.xerolinux.xyz/thread-80.html"
+href="https://www.nvidia.com/download/driverResults.aspx/187826/en-us"
 target="_blank"
 rel="noreferrer"
 >
-<span> XeroLinux Forums…</span>
+<span> nVidia Linux 515 Driver</span>
 </a>
 </p>
 <p class="bg">
