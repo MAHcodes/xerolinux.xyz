@@ -11,14 +11,14 @@ keep using it with no interruptions.
 <h4>- Changelog 25/05/2022 :</h4>
 <br />
 <ul>
-<li><strong>Calamares</strong> updated to version 3.2.58.2.</li>
-<li><strong>YaY</strong> added alongside <strong>Paru</strong>.</li>
+<li><strong>Calamares</strong> updated to latest.</li>
+<li><strong>YaY</strong> added alongside <strong>Paru</strong> for Y'all.</li>
 <li>New revamped tool now called <strong>XeroTool</strong>.</li>
 <li>New <strong>XeroLinux XL</strong> Repo for larger packages.</li>
 <li>No more <strong>ArcoLinux</strong> Repos. Just ours.</li>
 <li><strong>PipeWire</strong> is now the default Audio Server.</li>
 <li>Added <strong>nVidia-Prime</strong> Drivers to Calamares.</li>
-<li>Default FileSystem is now <strong>XFS</strong> vs <strong>BTRFS.</strong></li>
+<li>Default FileSystem selection is now <strong>XFS</strong>.</li>
 <li>No more Package Selection In <strong>Calamares</strong>.</li>
 <li>New <strong>BTRFS/Snapper</strong> tools in case you use that FS.</li>
 <li>New Post Install Package Installer (via tool).</li>
@@ -41,9 +41,9 @@ keep using it with no interruptions.
 <p class="bg">
 * : Current Drivers available on official Arch Repositories are using 515 Branch,
 which is currently in Beta on nVidia's official site. As a result, this caused
-a MAJOR hit on system performance, and a lot of games not launching from steam. Check link for proof.
+a MAJOR hit on system performance, and a lot of games not launching from steam. Check link for Arch Bug Report.
 <a
-href="https://www.nvidia.com/download/driverResults.aspx/187826/en-us"
+href="https://bugs.archlinux.org/task/74738"
 target="_blank"
 rel="noreferrer"
 >
