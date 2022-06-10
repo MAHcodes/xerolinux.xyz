@@ -22,11 +22,5 @@
     "guide_url": "https://github.com/xerolinux/xero-sweet-git",
     "description": "This rice is super simple, based on the SweetKDE theme with Candy Icons, not very complex easy on resources. It is intended to be mainly used on XeroLinux. Have fun. ",
     "img_url": "https://imgur.com/YYO5zIF.jpg"
-  },
-  {
-    "name": "XeroDracul",
-    "guide_url": "https://github.com/xerolinux/xero-dracul-git",
-    "description": "This rice is a bit complex, uses Latte for everything including side bars. It is intended to be mainly used on XeroLinux. Also is based on the Dracula Theme hence the name. Have fun.",
-    "img_url": "https://imgur.com/zlm3F0E.jpg"
   }
 ]
