@@ -26,7 +26,7 @@
   },
   {
     "q": "Issues with nVidia GPUs ?",
-    "a": "Recently, the nVidia-dkms drivers for the 900 Series onwards were updated to the 515 Branch, which is currently in Beta, thus causing issues with games not launching via Steam among other issues. Click the button below to head on over to the thread I created covering potential fixes, Or wait for a more official fix...",
+    "a": "Recently, the nVidia-dkms drivers for the 900 Series onwards were updated to the 515 Branch, in case you are weird issues, click the button below to head on over to the thread I created covering potential fixes...",
     "more": "https://forum.xerolinux.xyz/thread-124.html"
   },
   {
