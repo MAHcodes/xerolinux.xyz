@@ -23,7 +23,7 @@ keep using it with no interruptions.
 <li>New <strong>BTRFS/Snapper</strong> tools in case you use that FS.</li>
 <li>New Post Install Package Installer (via tool).</li>
 <li>Tweaked <strong>SDDM</strong> Config for Optimus users.</li>
-<li><strong>nVidia-510-tkg</strong> Driver Stack used instead of latest.(*)</li>
+<li><strong>nVidia-dkms-tkg</strong> Driver Stack used instead of Official.(*)</li>
 <li>New Button in <strong>Calamares</strong> to follow along during install.</li>
 <li>All <strong>GPU</strong> Drivers moved to Calamares no longer on ISO.**</li>
 <li>Less boot options on <strong>USB Boot</strong>, no more confusion.</li>
@@ -39,15 +39,13 @@ keep using it with no interruptions.
 <details open>
 <summary>Notes Please read...</summary>
 <p class="bg">
-* : Current Drivers available on official Arch Repositories are using 515 Branch,
-which is currently in Beta on nVidia's official site. As a result, this caused
-a MAJOR hit on system performance, and a lot of games not launching from steam. Check link for Arch Bug Report.
+* : We opted to use the <span>TKG</span> patched versions of the 515 nVidia driver stack. We will stick with those from here on in, as they preform better & are more stable than the Official ones. Available from our new <span>nVidia Repo</span>.
 <a
 href="https://bugs.archlinux.org/task/74738"
 target="_blank"
 rel="noreferrer"
 >
-<span> nVidia Linux 515 Driver</span>
+<span> nVidia Driver Troubleshooting</span>
 </a>
 </p>
 <p class="bg">
