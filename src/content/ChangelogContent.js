@@ -41,7 +41,7 @@ keep using it with no interruptions.
 <p class="bg">
 * : We opted to use the <span>TKG</span> patched versions of the 515 nVidia driver stack. We will stick with those from here on in, as they preform better & are more stable than the Official ones. Available from our new <span>nVidia Repo</span>.
 <a
-href="https://bugs.archlinux.org/task/74738"
+href="https://forum.xerolinux.xyz/thread-124.html"
 target="_blank"
 rel="noreferrer"
 >
