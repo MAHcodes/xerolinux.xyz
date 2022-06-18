@@ -1,33 +1,36 @@
 import styled, { keyframes } from "styled-components";
 import UserAgreement from "./UserAgreement";
 import ThemeIcon from "./ThemeIcon";
-import { useContext, useEffect } from "react";
+import { useContext, useEffect, useState } from "react";
 import { PopUpContext } from "../contexts/PopUpContext";
 import Close from "./Close";
 import Button from "./Button";
 import AnnouncementsPopUP from "./AnnouncementsPopUp";
 import PCBuild from "./PCBuild";
 import Changelog from "./Changelog";
+import AgreedOptions from "./AgreedOptions";
 
 const PopUp = () => {
+  const [agreed, setAgreed] = useState(false);
+
   const { popUp, setPopUp } = useContext(PopUpContext);
   const closePopup = () => {
     setPopUp("");
   };
 
   useEffect(() => {
-    const handleKeyup = e => {
+    const handleKeyup = (e) => {
       if (e.keyCode === 27 || e.key === "Escape") {
         setPopUp("");
       }
-    }
+    };
 
     document.documentElement.addEventListener("keyup", handleKeyup);
 
     return () => {
       document.documentElement.removeEventListener("keyup", handleKeyup);
-    }
-  }, [setPopUp])
+    };
+  }, [setPopUp]);
 
   return (
     <>
@@ -54,6 +57,7 @@ const PopUp = () => {
               </a>
             ) : popUp === "UserAgreement" ? (
               <>
+                <AgreedOptions agreed={agreed} />
                 <Button
                   text="Disagree"
                   clr="rgb(var(--fg))"
@@ -61,19 +65,15 @@ const PopUp = () => {
                   fz="var(--fz-5)"
                   action={() => setPopUp("")}
                 />
-                <A
-                  href="https://sourceforge.net/projects/xerolinux/files/Releases/Main/xerolinux-main-x86_64.iso/download"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button
-                    padding=".75em 2em"
-                    fz="var(--fz-5)"
-                    text="I agree"
-                    primary
-                    themed
-                  />
-                </A>
+                <Button
+                  padding=".75em 2em"
+                  fz="var(--fz-5)"
+                  text="I agree"
+                  float="right"
+                  primary
+                  themed
+                  action={() => setAgreed(!agreed)}
+                />
               </>
             ) : (
               <Button
@@ -224,10 +224,6 @@ const Overlay = styled.div`
   backdrop-filter: blur(1rem);
   animation: ${overIn} var(--transition-duration)
     var(--transition-timing-function);
-`;
-
-const A = styled.a`
-  float: right;
 `;
 
 const popIn = keyframes`
