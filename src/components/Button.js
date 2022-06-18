@@ -1,16 +1,28 @@
 import styled, { css } from "styled-components";
 
-const Button = ({ text, action, primary, themed, padding, fz, clr, icon, float }) => {
+const Button = ({
+  text,
+  action,
+  primary,
+  themed,
+  padding,
+  fz,
+  clr,
+  icon,
+  float,
+  bg
+}) => {
   return (
     <StyledButton
       primary={primary}
-      themed={themed}
+      theme={themed}
       padding={padding || ".5em 1em"}
       clr={clr}
       icon={icon}
       fz={fz || ".75rem"}
       onClick={action}
       float={float}
+      bg={bg}
     >
       {icon && icon}
       {text}
@@ -41,39 +53,39 @@ const StyledButton = styled.button`
     `}
 
   & svg {
-      margin-inline-end: .5em;
-      width: 2rem;
-      object-fit: contain;
-      & path {
-        fill: rgb(var(--bg));
-        }
+    margin-inline-end: 0.5em;
+    width: 2rem;
+    object-fit: contain;
+    & path {
+      fill: rgb(var(--bg));
+    }
   }
 
-  &:focus{
+  &:focus {
     box-shadow: 3px 4px 0 0px rgba(var(--black), 55%);
   }
-    
-  &:hover{
+
+  &:hover {
     box-shadow: 3px 4px 0 0px rgba(var(--black), 55%);
     transform: translate(-1px, -2px);
-  z-index: 1;
+    z-index: 1;
   }
   &:active {
     box-shadow: 1px 2px 0 0px rgba(var(--black), 55%);
     transform: translate(0, 0);
   }
-   
+
   ${(props) =>
     props.primary &&
-    props.themed &&
+    props.theme &&
     css`
-      background-color: rgb(var(--fg));
-      border-color: rgb(var(--fg));
+      background-color: ${props.bg || "rgb(var(--fg))"};
+      border-color: ${props.bg || "rgb(var(--fg))"};
       color: rgb(var(--high));
     `}
   ${(props) =>
     props.primary &&
-    !props.themed &&
+    !props.theme &&
     css`
       background-color: rgb(var(--white));
       border-color: rgb(var(--white));
@@ -81,6 +93,6 @@ const StyledButton = styled.button`
     `}
 
   color: ${(props) => props.clr};
-  `;
+`;
 
 export default Button;

@@ -64,7 +64,7 @@ const StyledImg = styled.img`
     position: fixed;
     z-index: 98999;
     inset: 0;
-    width 80%;
+    width: 80%;
     max-height: 100%;
     margin: auto;
   }
