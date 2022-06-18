@@ -58,19 +58,20 @@ const PopUp = () => {
             ) : popUp === "UserAgreement" ? (
               <>
                 <AgreedOptions agreed={agreed} />
-                <Button
+                  {!agreed && <Button
                   text="Disagree"
                   clr="rgb(var(--fg))"
                   padding=".75em 2em"
                   fz="var(--fz-5)"
                   action={() => setPopUp("")}
-                />
+                />}
                 <Button
                   padding=".75em 2em"
                   fz="var(--fz-5)"
-                  text="I agree"
+                  text={agreed ? "Close" : "I agree"}
                   float="right"
-                  primary
+                  primary={!agreed}
+                  clr={agreed ? "inherit" : "rgb(var(--bg))"}
                   themed
                   action={() => setAgreed(!agreed)}
                 />
