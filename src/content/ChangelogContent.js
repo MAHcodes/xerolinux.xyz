@@ -4,10 +4,20 @@
             <h1 id="-xerolinux-changelog-"><center>.:: XeroLinux Changelog ::.</center></h1>
 <br />
 
-<p>Below is a list of changes since the last release. This one will require a <strong>Fresh Install</strong> to benefit from all the latest &amp; greatest updates. However, if you are not interested in any of them, and you are currently happy with your current <strong>XeroLinux</strong> setup, you can
-keep using it with no interruptions.
+<p>Below is a list of changes. Fresh install is no longer needed if you are already on 25/05 ISO, just run the <strong>upall</strong> command and you should be good to go.</p>
+
+<p>If you on 25/05 release, once updated, to enable new <strong>Floating Panel</strong>, just right click on it "Edit > More Options > Floating".
 <br />
 </p>
+<h4>- Changelog 16/06/2022 :</h4>
+<br />
+<ul>
+<li><strong>KDE Plasma</strong> updated to 5.25.0 initial release expect bugs.</li>
+<li><strong>KDE Frameworks</strong> updated to 5.95 including all packages.</li>
+<li>New <strong>QT6 Libraries</strong> added and <strong>QT5 Libraries</strong> updated to latest.</li>
+<li><strong>Floating Panel</strong> enabled by default. Will be applied to all rices soon.</li>
+<li>All included packages updated to latest available as of ISO release/upload.</li>
+</ul>
 <h4>- Changelog 25/05/2022 :</h4>
 <br />
 <ul>
