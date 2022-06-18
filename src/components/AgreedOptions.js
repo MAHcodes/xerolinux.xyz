@@ -51,8 +51,7 @@ const AgreedOptions = ({ agreed }) => {
                   fz="var(--fz-5)"
                   primary
                   themed
-                  bg="rgb(var(--bg2))"
-                  clr="rgb(var(--fg2))"
+                  bg="rgb(var(--fg))"
                 />
               </a>
             </Buttons>
