@@ -20,7 +20,7 @@ const AgreedOptions = ({ agreed }) => {
                 rel="noreferrer"
               >
                 <Button
-                  text="SourceForge"
+                  text="Download"
                   padding=".75em 2em"
                   fz="var(--fz-5)"
                   primary
@@ -46,7 +46,7 @@ const AgreedOptions = ({ agreed }) => {
                 rel="noreferrer"
               >
                 <Button
-                  text="Funami"
+                  text="Download"
                   padding=".75em 2em"
                   fz="var(--fz-5)"
                   primary
