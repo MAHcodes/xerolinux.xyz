@@ -35,7 +35,7 @@ const AgreedOptions = ({ agreed }) => {
               </a>
             </Buttons>
           </Center>
-          <Img><img src="https://i.imgur.com/FcxQ32b.png" width="200" alt="Download img" /></Img>
+          <Img><img src="https://i.imgur.com/FcxQ32b.png" alt="Download Icon" /></Img>
           <Center>
             <P>
               Provided By{" "}
@@ -93,7 +93,7 @@ const Div = styled.div`
 const Wrapper = styled.div`
   display: flex;
   align-items: stretch;
-  justify-content: space-around;
+  justify-content: space-evenly;
   gap: 0.5rem;
 
   @media (max-width: 800px) {
@@ -124,7 +124,15 @@ const P = styled.p`
 
 const Img = styled.div`
  margin-inline: auto;
- width: 30%;
+ width: 25%;
+ object-fit: contain;
+ display: flex;
+ margin-block: 1.5rem;
+
+ & > img {
+   margin: auto;
+   width: 100%;
+ }
 `
 
 export default AgreedOptions;
