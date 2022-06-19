@@ -8,11 +8,15 @@ const AgreedOptions = ({ agreed }) => {
   return (
     <Div agreed={agreed}>
       <Box>
-        <Title text="Choose Source" />
+        <Title text=".: Pick a Download Source :." />
 
         <Wrapper>
           <Center>
-            <P>Provided by SourceForge</P>
+            <P>Provided By{" "}
+              <a href="http://sf.net" target="_blank" rel="noreferrer">
+                SourceForge<br />
+              </a>
+            <sub>(Multi-Location)</sub></P>
             <Buttons mb="1rem">
               <a
                 href="https://sourceforge.net/projects/xerolinux/files/Releases/Main/xerolinux-main-x86_64.iso/download"
@@ -25,12 +29,12 @@ const AgreedOptions = ({ agreed }) => {
                   fz="var(--fz-5)"
                   primary
                   themed
-                  bg={"#3cae48"}
+                  bg={"#00cc00"}
                 />
               </a>
             </Buttons>
           </Center>
-
+          <center><img src="https://i.imgur.com/FcxQ32b.png" width="200"></img></center>
           <Center>
             <P>
               Provided By{" "}
@@ -51,7 +55,7 @@ const AgreedOptions = ({ agreed }) => {
                   fz="var(--fz-5)"
                   primary
                   themed
-                  bg="rgb(var(--fg))"
+                  bg={"#aa00ff"}
                 />
               </a>
             </Buttons>
