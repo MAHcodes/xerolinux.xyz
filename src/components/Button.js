@@ -10,7 +10,7 @@ const Button = ({
   clr,
   icon,
   float,
-  bg
+  bg,
 }) => {
   return (
     <StyledButton
@@ -82,14 +82,6 @@ const StyledButton = styled.button`
       background-color: ${props.bg || "rgb(var(--fg))"};
       border-color: ${props.bg || "rgb(var(--fg))"};
       color: rgb(var(--high));
-    `}
-  ${(props) =>
-    props.primary &&
-    !props.theme &&
-    css`
-      background-color: rgb(var(--white));
-      border-color: rgb(var(--white));
-      color: rgb(var(--important));
     `}
 
   color: ${(props) => props.clr};

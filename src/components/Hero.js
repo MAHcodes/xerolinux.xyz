@@ -62,6 +62,7 @@ const Hero = ({ countdown }) => {
                   fz="var(--fz-5)"
                   action={openUserAgreement}
                   float="right"
+                  bg={"rgb(var(--white))"}
                 />
               )}
               <Button
