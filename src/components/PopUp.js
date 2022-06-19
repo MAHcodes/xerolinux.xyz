@@ -9,6 +9,7 @@ import AnnouncementsPopUP from "./AnnouncementsPopUp";
 import PCBuild from "./PCBuild";
 import Changelog from "./Changelog";
 import AgreedOptions from "./AgreedOptions";
+import Buttons from "./Buttons";
 
 const PopUp = () => {
   const [agreed, setAgreed] = useState(false);
@@ -58,6 +59,7 @@ const PopUp = () => {
             ) : popUp === "UserAgreement" ? (
               <>
                 <AgreedOptions agreed={agreed} />
+                  <Buttons justify="space-between" mb="0">
                   {!agreed && <Button
                   text="Disagree"
                   clr="rgb(var(--fg))"
@@ -75,6 +77,7 @@ const PopUp = () => {
                   themed
                   action={() => setAgreed(!agreed)}
                 />
+              </Buttons>
               </>
             ) : (
               <Button
