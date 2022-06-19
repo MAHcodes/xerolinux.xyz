@@ -124,10 +124,10 @@ const P = styled.p`
 
 const Img = styled.div`
  margin-inline: auto;
- width: 25%;
+ width: 20%;
  object-fit: contain;
  display: flex;
- margin-block: 1.5rem;
+ margin-block: 1rem;
 
  & > img {
    margin: auto;
