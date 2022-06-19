@@ -20,6 +20,8 @@ const Announcements = () => {
           primary
           text="read more"
           action={announce}
+          bg="rgb(var(--white))"
+          clr="rgb(var(--black))"
         />
       </div>
     </Div>
