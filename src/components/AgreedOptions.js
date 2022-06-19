@@ -29,12 +29,13 @@ const AgreedOptions = ({ agreed }) => {
                   fz="var(--fz-5)"
                   primary
                   themed
-                  bg={"#00cc00"}
+                  bg="#00cc00"
+                  clr="rgb(var(--black))"
                 />
               </a>
             </Buttons>
           </Center>
-          <center><img src="https://i.imgur.com/FcxQ32b.png" width="200"></img></center>
+          <Img><img src="https://i.imgur.com/FcxQ32b.png" width="200" alt="Download img" /></Img>
           <Center>
             <P>
               Provided By{" "}
@@ -55,7 +56,8 @@ const AgreedOptions = ({ agreed }) => {
                   fz="var(--fz-5)"
                   primary
                   themed
-                  bg={"#aa00ff"}
+                  bg="#aa00ff"
+                  clr="rgb(var(--white))"
                 />
               </a>
             </Buttons>
@@ -119,5 +121,10 @@ const P = styled.p`
     text-decoration: underline;
   }
 `;
+
+const Img = styled.div`
+ margin-inline: auto;
+ width: 30%;
+`
 
 export default AgreedOptions;
