@@ -1,8 +1,14 @@
 [
   {
+    "name": "XeroDunes",
+    "guide_url": "https://github.com/xerolinux/xero-dunes-git",
+    "description": "This one was fully created by \"GamerKing64\". After a long time spent learning the structure of KDE Plasma this rice was born. We are very proud of him for graduating to full-time ricer status. <br /> <br /> it's very light on resources, your machine will fly ! We have opted to use the <A href=\"https://draculatheme.com\" target=\"_blank\" rel=\"noreferrer\" > Dracula Theme </A> this time around, as it looks so clean and is easy on the eyes. We hope you like it... 😉\" ",
+    "img_url": "https://imgur.com/pFR3xuG.png"
+  },
+  {
     "name": "XeroCherry",
     "guide_url": "https://github.com/xerolinux/xero-cherry-git",
-    "description": "This is our latest Rice. Proudly created by 2 guys from Lebanon, me and \"GamerKing64\". We are very proud of this one as it is the lightest yet. <br /> <br /> it's so light on resources, your machine will fly ! we love the color scheme used. credit to  <A href=\"https://github.com/nullxception/cherry-kde-theme\" target=\"_blank\" rel=\"noreferrer\" > NullXception </A> for creating such an awesome theme for us to use.. We hope you like it too 😉\" ",
+    "description": "This is one of our favourite Rices. Proudly created by 2 guys from Lebanon, me and \"GamerKing64\". We are very proud of this one as it is the lightest yet. <br /> <br /> it's so light on resources, your machine will fly ! we love the color scheme used. credit to  <A href=\"https://github.com/nullxception/cherry-kde-theme\" target=\"_blank\" rel=\"noreferrer\" > NullXception </A> for creating such an awesome theme for us to use.. We hope you like it too 😉\" ",
     "img_url": "https://imgur.com/3ezALV0.png"
   },
   {
