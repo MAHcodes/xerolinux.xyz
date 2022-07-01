@@ -11,6 +11,8 @@
 <p>We are now aiming more towards <span>Stability</span> & <span>Consistency</span> over features. So new features will be few and far between, while we concentrate on making your experience with <span>XeroLinux</span> a pleasant one.</p>
 <h4 id="repos-have-been-moved-">- No more "Monthly" ISOs :</h4><br />
 <p>As of now, release schedule will switch to <span>"Quarterly"</span> as in every 3 months. No more monthly ISOs. In case of delays, for whatever reason, we will let you know...</p>
+<h4 id="repos-have-been-moved-">- What's Next ? </h4><br />
+<p>To know more about what's coming next and more info about the project, you are kindly requested to check this thread => <a href="https://forum.xerolinux.xyz/thread-68.html"><strong>The Future of XeroLinux</strong></a></p>
 <p>Thank you all for your continued support ;)</p>
 
             </div>
