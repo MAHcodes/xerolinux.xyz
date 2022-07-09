@@ -35,9 +35,9 @@ const Hero = ({ countdown }) => {
               <a href="https://alci.online/" target="_blank" rel="noreferrer">
                 ArcoLinux's ALCI
               </a>{" "}
-              build scripts. It uses the awesome, and highly customizable Dektop
-              Environment, known as KDE Plasma. It brings a good balance between
-              Stability and Performance. Oh and it looks so damn sexy too !
+              scripts that is meant to provide you with a stable base, making it simpler to install ArchLinux <a href="https://calamares.io/" target="_blank" rel="noreferrer">
+                (Calamares)</a>
+               with a well optimized & Customized KDE Plasma, that you can shape YOUR way, the easy way... !
               <br />
               <br />I hope you enjoy using it as much as I have creating it ;)
             </P>
