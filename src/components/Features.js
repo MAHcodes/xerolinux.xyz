@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Box from "./Box";
 import Card from "./Card";
 import Title from "./Title";
+import { CONTENT } from "../content/FeaturesContent";
 
 const Features = () => {
   return (
@@ -37,8 +38,8 @@ const Features = () => {
                   />
                 </svg>
               }
-              title="Improved"
-              text="XeroLinux runs faster and better with many fixes and effort under the hood that will save you time and gives you better experience"
+              title={CONTENT[0].title}
+              text={CONTENT[0].text}
             />
             <Card
               icon={
@@ -55,8 +56,8 @@ const Features = () => {
                   />
                 </svg>
               }
-              title={"Stunning"}
-              text="XeroLinux looks great and is Stunning. Using almost everything at our disposal from KDE making it look sexy without compromising performance."
+              title={CONTENT[1].title}
+              text={CONTENT[1].text}
             />
             <Card
               icon={
@@ -73,8 +74,8 @@ const Features = () => {
                   />
                 </svg>
               }
-              title="Powerful"
-              text="With built-in support for AUR (Paru), and being lightweight, XeroLinux gives you the power to do whatever you want on your Linux PC."
+              title={CONTENT[2].title}
+              text={CONTENT[2].text}
             />
           </Cards>
         </Box>
