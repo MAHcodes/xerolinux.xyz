@@ -1,11 +1,18 @@
-import { html } from "../content/ChangelogContent";
+import { useState, useEffect } from "react";
+import { marked } from "marked";
+import ChangelogContent from "../content/ChangelogContent.md";
 
 const Changelog = () => {
-  const createMarkup = () => {
-    return { __html: html };
-  };
+  const [content, setContent] = useState("");
+  useEffect(() => {
+    fetch(ChangelogContent)
+      .then((response) => response.text())
+      .then((content) => {
+        setContent(content);
+      });
+  }, []);
 
-  return <div dangerouslySetInnerHTML={createMarkup()}></div>;
+  return <div dangerouslySetInnerHTML={{ __html: marked.parse(content)}}></div>
 };
 
 export default Changelog;

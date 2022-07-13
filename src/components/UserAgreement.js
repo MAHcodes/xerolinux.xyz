@@ -1,10 +1,17 @@
-import { html } from "../content/UserAgreementContent";
+import UserAgreementContent from "../content/UserAgreementContent.md";
 import styled from "styled-components";
+import { useState, useEffect } from "react";
+import { marked } from "marked";
 
 const Disclaimer = () => {
-  const createMarkup = () => {
-    return { __html: html };
-  };
+  const [content, setContent] = useState("");
+  useEffect(() => {
+    fetch(UserAgreementContent)
+      .then((response) => response.text())
+      .then((content) => {
+        setContent(content);
+      });
+  }, []);
 
   return (
     <>
@@ -17,7 +24,7 @@ const Disclaimer = () => {
         </Svg>
         <h1>End User Agreement</h1>
       </Title>
-      <div dangerouslySetInnerHTML={createMarkup()}></div>
+      <div dangerouslySetInnerHTML={{ __html: marked.parse(content)}}></div>
     </>
   );
 };
