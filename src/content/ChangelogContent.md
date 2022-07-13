@@ -1,7 +1,5 @@
+<h1 id="-xerolinux-changelog-"><center>.:: XeroLinux Changelog ::.</center></h1>
 
-        export const html = `
-            <div>
-            <h1 id="-xerolinux-changelog-"><center>.:: XeroLinux Changelog ::.</center></h1>
 <br />
 
 <p>Below is a list of changes. Fresh install is no longer needed if you are already on 25/05 ISO, just run the <strong>upall</strong> command and you should be good to go.</p>
@@ -77,7 +75,3 @@ for support to get better...</p>
 
 <p>That’s it for now.. Hope you enjoy our latest release of
 <strong>XeroLinux</strong> ;)</p>
-
-            </div>
-        `
-    

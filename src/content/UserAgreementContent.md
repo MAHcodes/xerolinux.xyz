@@ -1,6 +1,3 @@
-
-        export const html = `
-            <div>
 <p>Please read this carefully to understand more about what this project is and what it entails. Setting expectations</p>
 <h1 id="-eol-"><center>~~~~~~~~~~~~ E.U.A ~~~~~~~~~~~~</center></h1>
 <h4 id="troubleshooting">- Main Points.</h4><br />
@@ -22,5 +19,3 @@ If you download without reading, and have issues, it's on you...</strong></cente
 <span>Storage :</span> 25GiB HDD/SSHD/SSD/nVme<br />
 <span>Graphics :</span> AMD(ATI) HD6000/Intel UHD600/nVidia GeForce 500 series
 </p>
-            </div>
-        `
