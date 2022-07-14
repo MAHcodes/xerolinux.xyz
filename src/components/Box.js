@@ -1,6 +1,6 @@
 import styled from "styled-components";
-import lightbg from "../assets/images/lightbg.png";
-import darkbg from "../assets/images/darkbg.png";
+import lightbg from "../assets/images/lightbg.avif";
+import darkbg from "../assets/images/darkbg.avif";
 import { useContext } from "react";
 import { ThemeContext } from "../contexts/ThemeContext";
 
