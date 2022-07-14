@@ -9,14 +9,16 @@ const AgreedOptions = ({ agreed }) => {
     <Div agreed={agreed}>
       <Box>
         <Title text=".: Pick a Download Source :." />
-
         <Wrapper>
           <Center>
-            <P>Provided By{" "}
+            <P>
+              Provided By{" "}
               <a href="http://sf.net" target="_blank" rel="noreferrer">
-                SourceForge<br />
+                SourceForge
+                <br />
               </a>
-            <sub>(Multi-Location)</sub></P>
+              <sub>(Multi-Location)</sub>
+            </P>
             <Buttons mb="1rem">
               <a
                 href="https://sourceforge.net/projects/xerolinux/files/Releases/Main/xerolinux-main-x86_64.iso/download"
@@ -35,7 +37,37 @@ const AgreedOptions = ({ agreed }) => {
               </a>
             </Buttons>
           </Center>
-          <Img><img src="https://i.imgur.com/FcxQ32b.png" alt="Download Icon" /></Img>
+          <Center>
+            <P>
+              Source{" "}
+              <a
+                href="https://fosstorrents.com/distributions/xerolinux/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                FossTorent
+                <br />
+              </a>
+              <sub>(Multi-Location)</sub>
+            </P>
+            <Buttons mb="1rem">
+              <a
+                href="https://fosstorrents.com/files/xerolinux-main-x86_64.iso.torrent"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button
+                  text="Download"
+                  padding=".75em 2em"
+                  fz="var(--fz-5)"
+                  primary
+                  themed
+                  bg="#aa00ff"
+                  clr="rgb(var(--white))"
+                />
+              </a>
+            </Buttons>
+          </Center>
           <Center>
             <P>
               Provided By{" "}
@@ -93,8 +125,8 @@ const Div = styled.div`
 const Wrapper = styled.div`
   display: flex;
   align-items: stretch;
-  justify-content: space-evenly;
-  gap: 0.5rem;
+  justify-content: space-between;
+  gap: 1rem;
 
   @media (max-width: 800px) {
     flex-direction: column;
@@ -121,18 +153,5 @@ const P = styled.p`
     text-decoration: underline;
   }
 `;
-
-const Img = styled.div`
- margin-inline: auto;
- width: 20%;
- object-fit: contain;
- display: flex;
- margin-block: 1rem;
-
- & > img {
-   margin: auto;
-   width: 100%;
- }
-`
 
 export default AgreedOptions;
