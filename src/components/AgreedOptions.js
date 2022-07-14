@@ -8,7 +8,7 @@ const AgreedOptions = ({ agreed }) => {
   return (
     <Div agreed={agreed}>
       <Box>
-        <Title text=".: Pick a Download Source :." />
+        <Title text=".: Pick a Source :." />
         <Wrapper>
           <Center>
             <P>
@@ -39,7 +39,7 @@ const AgreedOptions = ({ agreed }) => {
           </Center>
           <Center>
             <P>
-              Source{" "}
+              Provided By{" "}
               <a
                 href="https://fosstorrents.com/distributions/xerolinux/"
                 target="_blank"
@@ -62,7 +62,7 @@ const AgreedOptions = ({ agreed }) => {
                   fz="var(--fz-5)"
                   primary
                   themed
-                  bg="#aa00ff"
+                  bg="#1746ff"
                   clr="rgb(var(--white))"
                 />
               </a>
