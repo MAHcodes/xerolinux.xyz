@@ -52,7 +52,7 @@ const AgreedOptions = ({ agreed }) => {
             </P>
             <Buttons mb="1rem">
               <a
-                href="https://fosstorrents.com/files/xerolinux-main-x86_64.iso.torrent"
+                href="https://fosstorrents.com/thankyou/?name=xerolinux&cat=Current%20Edition&id=0"
                 target="_blank"
                 rel="noreferrer"
               >
