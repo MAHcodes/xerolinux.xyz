@@ -67,11 +67,11 @@ rel="noreferrer"
 </p>
 <p class="bg">
 *** : You will be able to add
-span> “Wayland Support” </span>
-via the span> “XeroLinux Tool” </span>. Only recommended if you are using
-span>AMD GPU</span>. If you are on <span>nVidia</span> I would recommend you wait
-for support to get better.../p>
-/details>
+<span> “Wayland Support” </span>
+via the <span> “XeroLinux Tool” </span>. Only recommended if you are using
+<span>AMD GPU</span>. If you are on <span>nVidia</span> I would recommend you wait
+for support to get better...</p>
+</details>
 
 That’s it for now.. Hope you enjoy our latest release of
 **XeroLinux** ;)
