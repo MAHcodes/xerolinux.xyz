@@ -107,3 +107,20 @@ img {
   padding: 0 3rem;
   margin-inline: auto;
 }
+
+#s {
+  display: grid;
+  grid-template-columns: 36px auto 3fr;
+  align-items: center;
+  justify-items: start;
+  gap: 1rem;
+}
+
+#s p {
+  margin: 0 !important;
+}
+
+#s .t {
+  grid-column: 1/-1;
+  margin-bottom: .5rem;
+}
