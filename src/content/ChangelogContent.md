@@ -4,45 +4,21 @@
 
 Below is a list of changes. Fresh install is no longer needed if you are already on 25/05 ISO, just run the **upall** command and you should be good to go.  
 
-If you on 25/05 release, once updated, to enable new **Floating Panel**, just right click on it "Edit > More Options > Floating".  
-
 
 #### - Changelog 16/06/2022 :
 <br />
 
-- **KDE Plasma** updated to 5.25.0 initial release expect bugs.(*)  
-- **KDE Frameworks** updated to 5.95 including all packages.  
-- New **QT6 Libraries** added and **QT5 Libraries** updated to latest.  
-- **Floating Panel** enabled by default. Will be applied to all rices soon.  
+- **KDE Plasma** updated to 5.25.2 (second point release).
+- **KDE Frameworks** updated to 5.95 including all packages.
+- **Floating Panel** enabled by default. Has been applied to all rices too.
 - All included packages updated to latest available as of ISO release/upload.  
 
-#### - Changelog 25/05/2022 :  
+#### - Important Changes :
 <br />
 
-- **Calamares** updated to latest.   
-- **YaY** added alongside **Paru** for Y'all.   
-- New revamped tool now called **XeroTool**.
-- New **XeroLinux XL** Repo for larger packages.
-- No more **ArcoLinux** Repos. Just ours.
-- **PipeWire** is now the default Audio Server.
-- Added **nVidia-Prime** Drivers to Calamares.
-- Default FileSystem selection is now **XFS**.
-- No more Package Selection In **Calamares**.
-- New **BTRFS/Snapper** tools in case you use that FS.
-- New Post Install Package Installer (via tool).
-- Tweaked **SDDM** Config for Optimus users.
+- **KDE Plasma** 5.25.2 might still have bugs. Report them please ? (*)
 - **nVidia-dkms-tkg** Driver Stack used instead of Official.(**)
-- New Button in **Calamares** to follow along during install.
-- All **GPU** Drivers moved to Calamares no longer on ISO.
-- Less boot options on **USB Boot**, no more confusion.
-- New **Rice Switcher** via the new **XeroTool**.
-- Tons of under-the-hood tweaks &amp; optimizations.
-- Tweaked the default Rice making it better.
-- New simple **Grub** theme included.
 - **Wayland** Session removed from ISO.(***)
-- **Snaps** Support removed from **Pamac.**
-- **AutoComposer** added for better gaming experience.
-- Added **XeroTool** icon to System Tray for easy access.
 
 <details open>
 <summary>Notes Please read...</summary>
@@ -56,7 +32,7 @@ rel="noreferrer"
 </a>.
 </p>
 <p class="bg">
-** : We opted to use the span>TKG</span> patched versions of the 515 nVidia driver stack. We will stick with those from here on in, as they preform better & are more stable than the Official ones. Available from our new <span>nVidia Repo</span>.
+** : We opted to use the <span>TKG</span> patched versions of the 515 nVidia driver stack. We will stick with those from here on in, as they preform better & are more stable than the Official ones. Available from our new <span>nVidia Repo</span>.
 <a
 href="https://forum.xerolinux.xyz/thread-124.html"
 target="_blank"
