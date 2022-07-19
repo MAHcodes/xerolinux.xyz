@@ -1,6 +1,6 @@
 :root {
   --border: 0.15rem;
-  --border-radius: 10px;
+  --border-radius: 14px;
   --white: 250, 244, 249;
   --black: 10, 10, 25;
   --bar: 30, 43, 86;
@@ -114,6 +114,7 @@ img {
   align-items: center;
   justify-items: start;
   gap: 1rem;
+  border-radius: var( --border-radius);
 }
 
 #s p {
