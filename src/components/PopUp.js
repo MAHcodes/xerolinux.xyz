@@ -142,7 +142,7 @@ const Content = styled.div`
   & .bg {
     background-color: rgb(var(--fg));
     color: rgb(var(--bg));
-    border-radius: var(--border);
+    border-radius: var(--border-radius);
     padding: 1em;
 
     & span {
