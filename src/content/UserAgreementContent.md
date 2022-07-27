@@ -12,7 +12,7 @@ Please read this carefully to understand more about what this project is and wha
 **(2)** **XeroLinux** is based on **ArchLinux**. That's why basic **Linux** knowledge is highly recommended if you are to use this Distro... There's no need to jump directly into deeper waters before learning how to swim, take it slow, test in a VM, jump in only when you feel confident enough ;).
 <br />
 
-**(3)** **XeroLinux** doesn't, nor will it ever force anything on you. Think of it as a *Blank Canvas* that you can shape to suite your needs... Everything it offers is **Optional**, you are the one who decides which ones you prefer.
+**(3)** **XeroLinux** doesn't, nor will it ever force anything on you. Think of it as a *Blank Canvas* that you can shape to suite your needs... Almost every feature it offers is **Optional**, you are the one who decides which one(s) you prefer.
 
 #### - Troubleshooting.
 
