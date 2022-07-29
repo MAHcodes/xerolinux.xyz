@@ -11,7 +11,10 @@ Moving forward, there will only be **KDE Plasma** version, and nothing else. As 
 #### -ArchLinux Tweak Tool :
 <br />
 
-If you still want to use another DE or WM/TWM on **XeroLinux**, you can, that's the beauty of **Linux**. You can either do it manually as shown in **<a href="https://www.youtube.com/watch?v=wNJyaFaEVDs" target="_blank" rel="noreferrer">This Video</a>**, or, soon via Arco's **<a href="https://www.youtube.com/playlist?list=PLlloYVGq5pS70fUzDjgj9Mi4ADMDjXQmG" target="_blank" rel="noreferrer">  ArchLinux Tweak Tool</a>** or A.T.T for short. Note : **Use It At Your Own Risk**, as for support you'll need to join the **<a href="https://discordapp.com/channels/421588918580805642/972085522891673641" target="_blank" rel="noreferrer">  ArcoLinux Discord</a>**...
+If you still want to use another DE or WM/TWM on **XeroLinux**, you can, that's the beauty of **Linux**. You can either do it manually as shown in **<a href="https://www.youtube.com/watch?v=wNJyaFaEVDs" target="_blank" rel="noreferrer">This Video</a>** (**HIGLY** recommended), or by using a thrid party tool, called **<a href="https://www.youtube.com/playlist?list=PLlloYVGq5pS70fUzDjgj9Mi4ADMDjXQmG" target="_blank" rel="noreferrer">  ArchLinux Tweak Tool</a>** or A.T.T for short.
+<br />
+
+**Note :** Please **Use It At Your Own Risk**, we won't provide resolution to issues caused as a direct result of using it. For support you'll need to join the **<a href="https://discordapp.com/channels/421588918580805642/972085522891673641" target="_blank" rel="noreferrer">  ArcoLinux Discord</a>**...
 
 #### - Stability vs Features :
 <br />
