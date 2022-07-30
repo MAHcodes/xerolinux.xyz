@@ -45,7 +45,7 @@ const AgreedOptions = ({ agreed }) => {
                 target="_blank"
                 rel="noreferrer"
               >
-                FossTorents
+                FossTorrents
                 <br />
               </a>
               <sub>(Multi-Location)</sub>
