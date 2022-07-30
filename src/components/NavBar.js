@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import { GoHome } from "react-icons/go";
-import { RiContactsLine, RiUserStarLine } from "react-icons/ri";
+import { RiContactsLine } from "react-icons/ri";
 import { FaTheaterMasks, FaForumbee } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { MdOutlineQuestionAnswer } from "react-icons/md";
@@ -25,12 +25,6 @@ const NavBar = ({ menu, setMenu }) => {
           <li>
             <RiContactsLine />
             <p>Features</p>
-          </li>
-        </a>
-        <a href="#Credit">
-          <li>
-            <RiUserStarLine />
-            <p>Credit</p>
           </li>
         </a>
         <a href="#Customization">

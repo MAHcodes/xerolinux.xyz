@@ -2,7 +2,6 @@ import Announcements from "./components/Announcements";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
 import Features from "./components/Features";
-import Credit from "./components/Credit";
 import Customization from "./components/Customization";
 import Videos from "./components/Videos";
 import FAQ from "./components/FAQ";
@@ -28,7 +27,6 @@ const App = () => {
       <Hero countdown={countdown} />
       { countdown ? <ReleaseCountdown countdown={countdown} /> : <Download />}
       <Features />
-      <Credit />
       <Customization />
       <Videos title="XeroLinux Official Videos" urls={vidsJSON.XeroLinux_Videos} />
       <Videos title="XeroLinux Previews" urls={vidsJSON.XeroLinux_Previews} />
