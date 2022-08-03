@@ -55,15 +55,13 @@ const DateTime = () => {
 };
 
 const Div = styled.div`
-  cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   flex-direction: column;
   gap: 1rem;
   color: rgb(var(--white));
-  padding: 0.5rem 1.5rem;
-  margin-block: auto;
+  padding: 0.25rem 1rem;
   border-radius: var(--border-radius);
   opacity: 0.9;
   height: fit-content;
@@ -75,6 +73,8 @@ const Div = styled.div`
   position: absolute;
   inset: 0;
   margin: auto;
+  margin-top: 5px;
+  transform: translateY(100%);
 
   & img {
     width: var(--icon-size);
@@ -83,7 +83,7 @@ const Div = styled.div`
 `;
 
 const P = styled.p`
-  font-size: var(--fz-5);
+  font-size: 8px;
   white-space: nowrap;
   &.u {
     text-decoration: underline;
