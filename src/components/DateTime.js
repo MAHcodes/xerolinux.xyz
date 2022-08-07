@@ -83,11 +83,14 @@ const Div = styled.div`
 `;
 
 const P = styled.p`
-  font-size: 8px;
+  font-size: 14px;
   white-space: nowrap;
   &.u {
     text-decoration: underline;
   }
+  @media (max-width: 800px) {
+    font-size: 8px;
+  }
 `;
 
 export default DateTime;
