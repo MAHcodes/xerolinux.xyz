@@ -1,10 +1,19 @@
+import { useContext, useEffect } from "react";
 import styled from "styled-components";
+import { ThemeContext } from "../contexts/ThemeContext";
 import Box from "./Box";
 import Button from "./Button";
 import Buttons from "./Buttons";
 import Title from "./Title";
 
 const Donate = () => {
+  const { theme } = useContext(ThemeContext);
+
+  useEffect(() => {
+    document.body.classList = theme ? "light" : "dark";
+    localStorage.setItem("theme", JSON.stringify(theme));
+  }, [theme]);
+
   return (
     <Div className="container">
       <Title text="Donate" />
