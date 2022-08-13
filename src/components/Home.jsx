@@ -1,44 +1,44 @@
+import Announcements from "./Announcements";
+import Header from "./Header";
 import Hero from "./Hero";
 import Features from "./Features";
 import Customization from "./Customization";
+import Videos from "./Videos";
 import FAQ from "./FAQ";
+import Footer from "./Footer";
 import faqsJSON from "../content/FAQs.json";
+import vidsJSON from "../content/YoutubeVideos.json";
 import { useContext } from "react";
+import { PopUpContext } from "../contexts/PopUpContext";
+import PopUp from "./PopUp";
 import { ReleaseCountdownContext } from "../contexts/ReleaseCountdownContext";
 import ReleaseCountdown from "./ReleaseCountdown";
 import Download from "./Download";
-import Message from "./Message";
-import styled from "styled-components";
-import Snowfall from "react-snowfall";
-import Settings from "../content/Settings.json";
-import Lights from "./Lights";
+import Donate from "./Donate";
 
 const Home = () => {
+  const { popUp } = useContext(PopUpContext);
   const countdown = useContext(ReleaseCountdownContext);
 
   return (
     <div className="Home">
-      <Lights />
+      {popUp && <PopUp popUp={popUp} />}
+      <Announcements />
+      <Header />
       <Hero countdown={countdown} />
-      <Message />
+      <Donate />
       {countdown ? <ReleaseCountdown countdown={countdown} /> : <Download />}
       <Features />
       <Customization />
+      <Videos
+        title="XeroLinux Official Videos"
+        urls={vidsJSON.XeroLinux_Videos}
+      />
+      <Videos title="XeroLinux Previews" urls={vidsJSON.XeroLinux_Previews} />
       <FAQ faqs={faqsJSON} />
-      {Settings.snowfall ? (
-        <SnowfallContainer>
-          <Snowfall snowflakeCount={70} speed={[0.5, 2.5]} wind={[-0.5, 3.0]} />
-        </SnowfallContainer>
-      ) : null}
+      <Footer />
     </div>
   );
 };
-
-const SnowfallContainer = styled.div`
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 10100;
-`;
 
 export default Home;
