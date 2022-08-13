@@ -3,7 +3,6 @@ import styled from "styled-components";
 import Box from "./Box";
 import Button from "./Button";
 import Title from "./Title";
-import { marked } from "marked";
 
 const FAQ = ({ faqs }) => {
   const [openedQ, setOpenedQ] = useState(undefined);
@@ -38,8 +37,8 @@ const FAQ = ({ faqs }) => {
                 </svg>
               </Question>
             </Box>
-            <Answer className={`markdown ${openedQ === i ? "active" : undefined}`}>
-              <p dangerouslySetInnerHTML={{ __html: marked.parse(faq.a) }} />
+            <Answer className={openedQ === i ? "active" : undefined}>
+              <p>{faq.a}</p>
               <a href={faq.more} target="_blank" rel="noreferrer">
                 <Button primary themed text="read more" />
               </a>

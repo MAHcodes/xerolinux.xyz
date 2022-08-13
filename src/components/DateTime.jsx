@@ -61,20 +61,19 @@ const Div = styled.div`
   flex-direction: column;
   gap: 1rem;
   color: rgb(var(--white));
-  padding: 0.25rem 6rem;
+  padding: 0.25rem 1rem;
   border-radius: var(--border-radius);
   opacity: 0.9;
   height: fit-content;
   width: fit-content;
   background-color: rgba(var(--bar), 50%);
   backdrop-filter: blur(1rem);
-  box-shadow: 0 0 12px -2px rgb(var(--black));
+  box-shadow: 0 0 12px -5px rgb(var(--black));
 
   position: absolute;
   inset: 0;
   margin: auto;
-  margin-top: -250px;
-  margin-left: -300px;
+  margin-top: 5px;
   transform: translateY(100%);
 
   & img {
@@ -84,7 +83,7 @@ const Div = styled.div`
 `;
 
 const P = styled.p`
-  font-size: 24px;
+  font-size: 14px;
   white-space: nowrap;
   &.u {
     text-decoration: underline;

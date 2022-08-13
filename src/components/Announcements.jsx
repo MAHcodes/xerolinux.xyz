@@ -2,7 +2,6 @@ import styled from "styled-components";
 import Button from "./Button";
 import { useContext } from "react";
 import { PopUpContext } from "../contexts/PopUpContext";
-import Settings from "../content/Settings.json";
 
 const Announcements = () => {
   const { setPopUp } = useContext(PopUpContext);
@@ -11,26 +10,22 @@ const Announcements = () => {
     setPopUp("Announcements");
   };
 
-  const showBar = Settings.announcements
-
-  if (showBar) {
-    return (
-        <Div>
-          <div className="container">
-            <P>Major Project Announcements</P>
-            <Button
-                fz="var(--fz-6)"
-                padding=".5em 1em"
-                primary
-                text="read more"
-                action={announce}
-                bg="rgb(var(--white))"
-                clr="rgb(var(--black))"
-            />
-          </div>
-        </Div>
-    );
-  }
+  return (
+    <Div>
+      <div className="container">
+        <P>Major Project Announcements</P>
+        <Button
+          fz="var(--fz-6)"
+          padding=".5em 1em"
+          primary
+          text="read more"
+          action={announce}
+          bg="rgb(var(--white))"
+          clr="rgb(var(--black))"
+        />
+      </div>
+    </Div>
+  );
 };
 
 const Div = styled.div`

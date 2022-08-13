@@ -8,12 +8,12 @@ const AgreedOptions = ({ agreed }) => {
   return (
     <Div agreed={agreed}>
       <Box>
-        <Title text=".: Download/Build ISO :." />
+        <Title text=".: Pick a Source :." />
         <Wrapper>
           <Center>
             <P>
-              Download From{" "}
-              <a href="http://sf.net/projects/xerolinux/" target="_blank" rel="noreferrer">
+              Provided By{" "}
+              <a href="http://sf.net" target="_blank" rel="noreferrer">
                 SourceForge
                 <br />
               </a>
@@ -21,7 +21,7 @@ const AgreedOptions = ({ agreed }) => {
             </P>
             <Buttons mb="1rem">
               <a
-                href="https://sourceforge.net/settings/mirror_choices?projectname=xerolinux&filename=Releases/xerolinux-2023.07-x86_64.iso&selected=nav"
+                href="https://sourceforge.net/projects/xerolinux/files/Releases/Main/xerolinux-main-x86_64.iso/download"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -39,21 +39,25 @@ const AgreedOptions = ({ agreed }) => {
           </Center>
           <Center>
             <P>
-              Build ISO From{" "}
-              <a href="https://github.com/xerolinux/" target="_blank" rel="noreferrer">
-                Xero Github
+              Provided By{" "}
+              <a
+                href="https://fosstorrents.com/distributions/xerolinux/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                FossTorrents
                 <br />
               </a>
-              <sub>(For Latest Pkgs)</sub>
+              <sub>(Multi-Location)</sub>
             </P>
             <Buttons mb="1rem">
               <a
-                href="https://github.com/xerolinux/xero_iso"
+                href="https://fosstorrents.com/thankyou/?name=xerolinux&cat=Current%20Edition&id=0"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Button
-                  text="Build Repo"
+                  text="Download"
                   padding=".75em 2em"
                   fz="var(--fz-5)"
                   primary
@@ -66,15 +70,15 @@ const AgreedOptions = ({ agreed }) => {
           </Center>
           <Center>
             <P>
-              Download From{" "}
-              <a href="https://fosstorrents.com/distributions/xerolinux" target="_blank" rel="noreferrer">
-                FossTorrents <br />
+              Provided By{" "}
+              <a href="http://Funami.tech" target="_blank" rel="noreferrer">
+                Funami.tech <br />
               </a>
-              <sub>(Multi-Location)</sub>
+              <sub>(South Korea)</sub>
             </P>
             <Buttons mb="1rem">
               <a
-                href="https://fosstorrents.com/thankyou/?name=xerolinux&cat=Current%20Edition&id=0&hybrid=0"
+                href="http://tinyurl.com/xero-mirror"
                 target="_blank"
                 rel="noreferrer"
               >

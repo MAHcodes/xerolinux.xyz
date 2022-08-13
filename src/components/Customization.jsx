@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Title from "./Title";
 import RicesJSON from "../content/Rices.json";
+import GrubJSON from "../content/Grub.json";
 import CustomizationBox from "./CustomizationBox";
 
 const Customization = () => {
@@ -11,6 +12,8 @@ const Customization = () => {
       <Title sec text="Rices/Themes" />
       <CustomizationBox ltr content={RicesJSON} />
 
+      <Title sec text="GRUB Themes" />
+      <CustomizationBox content={GrubJSON} />
     </Div>
   );
 };

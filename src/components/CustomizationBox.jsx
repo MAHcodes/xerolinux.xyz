@@ -3,10 +3,12 @@ import { useState } from "react";
 import Box from "./Box";
 import Img from "./Img";
 import Button from "./Button";
-import { marked } from "marked";
 
 const CustomizationBox = ({ content, ltr }) => {
   const [themeIndex, setThemeIndex] = useState(0);
+  const createMarkup = () => {
+    return { __html: content[themeIndex].description };
+  };
   return (
     <Container ltr={ltr}>
       <List ltr={ltr}>
@@ -29,8 +31,8 @@ const CustomizationBox = ({ content, ltr }) => {
               alt={`${content[themeIndex].name} Preview`}
             />
           </ImgWrapper>
-          <ContentWrapper className="markdown">
-            <P dangerouslySetInnerHTML={{ __html: marked.parse(content[themeIndex].description )}}/>
+          <ContentWrapper>
+            <P dangerouslySetInnerHTML={createMarkup()} />
             <a
               href={content[themeIndex].guide_url}
               target="_blank"
@@ -41,7 +43,7 @@ const CustomizationBox = ({ content, ltr }) => {
                 primary
                 themed
                 fz="var(--fz-6)"
-                padding="1.12em 1.5em"
+                padding=".75em 1.5em"
               />
             </a>
           </ContentWrapper>
@@ -134,7 +136,7 @@ const ContentWrapper = styled.div`
   align-items: end;
   justify-content: space-between;
   flex-direction: column;
-  flex: 0.8;
+  flex: 0.7;
 
   & > p > a {
     text-decoration: underline;

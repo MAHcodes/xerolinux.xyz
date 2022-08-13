@@ -1,12 +1,11 @@
 import styled from "styled-components";
-import { marked } from "marked";
 
 const Card = ({ title, icon, text }) => {
   return (
     <Div>
       {icon}
       <H2>{title}</H2>
-      <P className="markdown" dangerouslySetInnerHTML={{ __html: marked.parse(text) }} />
+      <P>{text}</P>
     </Div>
   );
 };

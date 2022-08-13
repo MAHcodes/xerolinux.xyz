@@ -5,8 +5,7 @@ const ReleaseCountdown = ({ countdown }) => {
   return (
     <Div id="Countdown">
       <div className="container">
-        <Title text="Please be patient," />
-        <Title text="New Release Will be Available in :" />
+        <Title text="Download Available in:" />
         <Wrapper>
           <p>
             <span>{`${countdown.days}`.padStart(2, "0")}</span>
@@ -60,7 +59,7 @@ const Wrapper = styled.div`
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-size: var(--fz-3);
+  font-size: var(--fz-4);
   margin-block: var(--padding-section);
   gap: 1.5rem;
 

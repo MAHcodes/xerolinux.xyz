@@ -3,7 +3,7 @@ import logo from "../assets/images/logo.svg";
 import HamburgerMenu from "./HamburgerMenu";
 import NavBar from "./NavBar";
 import { useState } from "react";
-//import ThemeIcon from "./ThemeIcon";
+import ThemeIcon from "./ThemeIcon";
 
 const Header = () => {
   const [menu, setMenu] = useState(false);
@@ -19,7 +19,7 @@ const Header = () => {
           <HamburgerMenu menu={menu} setMenu={setMenu} />
         </Wrapper>
         <NavBar menu={menu} setMenu={setMenu} />
-        {/* <ThemeIcon /> */}
+        <ThemeIcon />
       </StyledHeader>
     </Div>
   );

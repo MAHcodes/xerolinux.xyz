@@ -11,7 +11,6 @@ const Button = ({
   icon,
   float,
   bg,
-  underline
 }) => {
   return (
     <StyledButton
@@ -24,7 +23,6 @@ const Button = ({
       onClick={action}
       float={float}
       bg={bg}
-      underline={underline}
     >
       {icon && icon}
       {text}
@@ -44,7 +42,6 @@ const StyledButton = styled.button`
   padding: ${(props) => props.padding};
   font-size: ${(props) => props.fz};
   border-color: ${(props) => props.clr || "rgb(var(--bg))"};
-  text-decoration: ${(props) => props.underline ? "underline" : "none"};
   user-select: none;
 
   ${(props) =>
@@ -55,17 +52,9 @@ const StyledButton = styled.button`
       justify-content: center;
     `}
 
-  & img {
-    width: 1.5rem;
-    object-fit: contain;
-    display: block;
-    margin-inline-end: 0.5em;
-  }
-
   & svg {
     margin-inline-end: 0.5em;
     width: 2rem;
-    height: 2rem;
     object-fit: contain;
     & path {
       fill: rgb(var(--bg));
