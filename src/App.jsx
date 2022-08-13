@@ -14,6 +14,7 @@ import PopUp from "./components/PopUp";
 import { ReleaseCountdownContext } from "./contexts/ReleaseCountdownContext";
 import ReleaseCountdown from "./components/ReleaseCountdown";
 import Download  from "./components/Download";
+import Donate from "./components/Donate" ;
 
 const App = () => {
   const { popUp } = useContext(PopUpContext);
