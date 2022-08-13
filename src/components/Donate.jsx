@@ -18,7 +18,8 @@ const Donate = () => {
     <Div className="container">
       <Title text="Donate" />
       <Box>
-        <P>Feel free to support us on the below platforms :</P>
+        <P>Help Us Raise Funds For The Steam Deck<br />
+        Feel free to support us on the below platforms :</P>
         <Buttons justify="center" mb="0">
           <a
             href="https://fnd.us/523mC5"
