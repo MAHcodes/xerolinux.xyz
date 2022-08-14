@@ -29,7 +29,7 @@ const Donate = ({ img }) => {
           <br />
           Feel free to support us on the below platforms :
         </P>
-        <Buttons justify="center" mb="0">
+        <Buttons justify="space-evenly" mb="0">
           <a
             href="https://fnd.us/523mC5"
             target="_blank"
