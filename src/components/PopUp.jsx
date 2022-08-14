@@ -10,6 +10,7 @@ import PCBuild from "./PCBuild";
 import Changelog from "./Changelog";
 import AgreedOptions from "./AgreedOptions";
 import Buttons from "./Buttons";
+import Notes from "./Notes";
 
 const PopUp = () => {
   const [agreed, setAgreed] = useState(false);
@@ -46,6 +47,7 @@ const PopUp = () => {
             {popUp === "Announcements" && <AnnouncementsPopUP />}
             {popUp === "PCBuild" && <PCBuild />}
             {popUp === "Changelog" && <Changelog />}
+            {popUp === "Notes" && <Notes />}
           </Content>
           <Actions>
             {popUp === "PCBuild" ? (

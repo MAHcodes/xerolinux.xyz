@@ -5,6 +5,7 @@ import Box from "./Box";
 import Button from "./Button";
 import Buttons from "./Buttons";
 import Title from "./Title";
+import FundRazrIcon from "../assets/images/fundrazr.png";
 
 const Donate = () => {
   const { theme } = useContext(ThemeContext);
@@ -26,7 +27,8 @@ const Donate = () => {
             target="_blank"
             rel="noreferrer noopener"
           >
-            <Button text="FundRazr" primary themed fz="var(--fz-6)" />
+            <Button text="FundRazr" primary themed fz="var(--fz-6)"
+              icon={<img src={FundRazrIcon} alt="FundRazr Logo" />} />
           </a>
           <a
             href="https://paypal.me/3v3bank661"
