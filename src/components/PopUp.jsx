@@ -10,7 +10,6 @@ import PCBuild from "./PCBuild";
 import Changelog from "./Changelog";
 import AgreedOptions from "./AgreedOptions";
 import Buttons from "./Buttons";
-import Notes from "./Notes";
 
 const PopUp = () => {
   const [agreed, setAgreed] = useState(false);
@@ -36,7 +35,7 @@ const PopUp = () => {
 
   return (
     <>
-      <Div>
+      <Div donate={popUp === "Donate"}>
         <Wrapper>
           <Panel>
             <ThemeIcon dark />
@@ -49,12 +48,12 @@ const PopUp = () => {
             {popUp === "Changelog" && <Changelog />}
             {popUp === "Donate" && (
               <p>
-                "We think it has finally reached "Stable" status when it comes
-                to Desktops and laptops. So we have decided to target other
-                devices, like the new SteamDeck as we feel that SteamOS has too
-                many restrictions, and we want to unleash more power by giving
-                you, the user more freedom when it comes to adding features and
-                using it as a portable Desktop ;)"
+                "We think that XeroLinux has finally reached its potential when
+                it comes to Desktops and laptops. So we have decided to target
+                other devices, like the new SteamDeck as we feel that SteamOS
+                has too many restrictions, and we want to unleash more power by
+                giving you, the user more freedom when it comes to adding
+                features and using it as a portable Desktop ;)"
               </p>
             )}
           </Content>
@@ -255,7 +254,6 @@ const Div = styled.div`
   background-color: rgb(var(--bg));
   width: 85%;
   max-width: 1000px;
-  height: 90%;
   inset: 0;
   margin: auto;
   z-index: 10099;
@@ -265,6 +263,11 @@ const Div = styled.div`
   overflow: hidden;
   animation: ${popIn} var(--transition-duration)
     var(--transition-timing-function);
+  height: ${props => props.donate ? "max-content" : "90%"};
+
+  & p {
+    margin-bottom: ${props => props.donate && "0"}
+  }
 `;
 
 export default PopUp;
