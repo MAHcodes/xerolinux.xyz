@@ -6,8 +6,9 @@ import Button from "./Button";
 import Buttons from "./Buttons";
 import Title from "./Title";
 import FundRazrIcon from "../assets/images/fundrazr.png";
+import SteamDeckImg from "../assets/images/steamdeck.png";
 
-const Donate = () => {
+const Donate = ({img}) => {
   const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
@@ -18,6 +19,7 @@ const Donate = () => {
   return (
     <Div className="container">
       <Title text="Donate" />
+      {img && <Img src={SteamDeckImg} alt="Steam Deck Image" />}
       <Box>
         <P>Help Us Raise Funds For The Steam Deck<br />
         Feel free to support us on the below platforms :</P>
@@ -100,6 +102,7 @@ const Div = styled.div`
   padding-block: var(--padding-section);
   text-align: center;
   color: rgb(var(--fg));
+  height: 100%;
   & button {
     height: 100%;
   }
@@ -111,5 +114,10 @@ const Div = styled.div`
 const P = styled.p`
   margin-block-end: 2rem;
 `;
+
+const Img = styled.img`
+  padding-block: 2rem;
+  object-fit: contain;
+`
 
 export default Donate;
