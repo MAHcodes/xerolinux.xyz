@@ -1,6 +1,7 @@
 import { useContext, useEffect } from "react";
 import styled from "styled-components";
 import { ThemeContext } from "../contexts/ThemeContext";
+import { PopUpContext } from "../contexts/PopUpContext";
 import Box from "./Box";
 import Button from "./Button";
 import Buttons from "./Buttons";
@@ -8,8 +9,9 @@ import Title from "./Title";
 import FundRazrIcon from "../assets/images/fundrazr.png";
 import SteamDeckImg from "../assets/images/steamdeck.png";
 
-const Donate = ({img}) => {
+const Donate = ({ img }) => {
   const { theme } = useContext(ThemeContext);
+  const { setPopUp } = useContext(PopUpContext);
 
   useEffect(() => {
     document.body.classList = theme ? "light" : "dark";
@@ -21,16 +23,26 @@ const Donate = ({img}) => {
       <Title text="Donate" />
       {img && <Img src={SteamDeckImg} alt="Steam Deck Image" />}
       <Box>
-        <P>Help Us Raise Funds For The Steam Deck<br />
-        Feel free to support us on the below platforms :</P>
+        <Info onClick={() => setPopUp("Donate")}>i</Info>
+        <P>
+          Help Us Raise Funds For The Steam Deck
+          <br />
+          Feel free to support us on the below platforms :
+        </P>
         <Buttons justify="center" mb="0">
           <a
             href="https://fnd.us/523mC5"
             target="_blank"
             rel="noreferrer noopener"
           >
-            <Button text="FundRazr" primary themed fz="var(--fz-6)"
-              icon={<img src={FundRazrIcon} alt="FundRazr Logo" />} />
+            <Button
+              padding=".5rem 2rem"
+              text="FundRazr"
+              primary
+              themed
+              fz="var(--fz-6)"
+              icon={<img src={FundRazrIcon} alt="FundRazr Logo" />}
+            />
           </a>
           <a
             href="https://paypal.me/3v3bank661"
@@ -41,6 +53,7 @@ const Donate = ({img}) => {
               text="PayPal"
               primary
               themed
+              padding=".5rem 2rem"
               fz="var(--fz-6)"
               icon={
                 <svg aria-label="PayPal" role="img" viewBox="0 0 512 512">
@@ -67,6 +80,7 @@ const Donate = ({img}) => {
           >
             <Button
               text="Patreon"
+              padding=".5rem 2rem"
               primary
               themed
               fz="var(--fz-6)"
@@ -107,7 +121,26 @@ const Div = styled.div`
     height: 100%;
   }
   & > div {
-    padding:2rem;
+    padding: 2rem;
+    position: relative;
+  }
+`;
+
+const Info = styled.span`
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  border: 2px solid rgb(var(--fg));
+  border-radius: 50%;
+  cursor: pointer;
+  width: 1.75rem;
+  height: 1.75rem;
+  font-weight: bold;
+  z-index: 5;
+
+  &:hover {
+    background-color: rgb(var(--fg));
+    color: rgb(var(--bg));
   }
 `;
 
@@ -118,6 +151,6 @@ const P = styled.p`
 const Img = styled.img`
   padding-block: 2rem;
   object-fit: contain;
-`
+`;
 
 export default Donate;
