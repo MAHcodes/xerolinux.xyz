@@ -52,6 +52,13 @@ const StyledButton = styled.button`
       justify-content: center;
     `}
 
+  & img {
+    width: 1.5rem;
+    object-fit: contain;
+    display: block;
+    margin-inline-end: 0.5em;
+  }
+
   & svg {
     margin-inline-end: 0.5em;
     width: 2rem;

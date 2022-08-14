@@ -5,8 +5,12 @@ import { FaTheaterMasks, FaForumbee } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { MdOutlineQuestionAnswer } from "react-icons/md";
 import darkbg from "../assets/images/darkbg.png";
+import { PopUpContext } from "../contexts/PopUpContext";
+import { useContext } from "react";
+import {CgNotes} from "react-icons/cg"
 
 const NavBar = ({ menu, setMenu }) => {
+  const { setPopUp } = useContext(PopUpContext);
   return (
     <StyledNav className={menu ? undefined : "close"}>
       <Blur />
@@ -45,6 +49,10 @@ const NavBar = ({ menu, setMenu }) => {
             <p>F.A.Q</p>
           </li>
         </a>
+        <Notes onClick={() => setPopUp("Notes")}>
+          <CgNotes />
+          <button>Notes</button>
+        </Notes>
         <a href="https://forum.xerolinux.xyz/" target="_blank" rel="noreferrer">
           <Li>
             <FaForumbee />
@@ -111,6 +119,13 @@ const Li = styled.li`
   & img {
     width: 1.15rem;
     object-fit: contain;
+  }
+`;
+
+const Notes = styled.li`
+  cursor: pointer;
+  & button {
+    cursor: pointer;
   }
 `;
 
