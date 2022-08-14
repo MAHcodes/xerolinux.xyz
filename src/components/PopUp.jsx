@@ -47,7 +47,6 @@ const PopUp = () => {
             {popUp === "Announcements" && <AnnouncementsPopUP />}
             {popUp === "PCBuild" && <PCBuild />}
             {popUp === "Changelog" && <Changelog />}
-            {popUp === "Notes" && <Notes />}
             {popUp === "Donate" && (
               <p>
                 "We think it has finally reached "Stable" status when it comes
