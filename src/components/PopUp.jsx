@@ -48,6 +48,16 @@ const PopUp = () => {
             {popUp === "PCBuild" && <PCBuild />}
             {popUp === "Changelog" && <Changelog />}
             {popUp === "Notes" && <Notes />}
+            {popUp === "Donate" && (
+              <p>
+                "We think it has finally reached "Stable" status when it comes
+                to Desktops and laptops. So we have decided to target other
+                devices, like the new SteamDeck as we feel that SteamOS has too
+                many restrictions, and we want to unleash more power by giving
+                you, the user more freedom when it comes to adding features and
+                using it as a portable Desktop ;)"
+              </p>
+            )}
           </Content>
           <Actions>
             {popUp === "PCBuild" ? (
@@ -61,25 +71,27 @@ const PopUp = () => {
             ) : popUp === "UserAgreement" ? (
               <>
                 <AgreedOptions agreed={agreed} />
-                  <Buttons justify="space-between" mb="0">
-                  {!agreed && <Button
-                  text="Disagree"
-                  clr="rgb(var(--fg))"
-                  padding=".75em 2em"
-                  fz="var(--fz-5)"
-                  action={() => setPopUp("")}
-                />}
-                <Button
-                  padding=".75em 2em"
-                  fz="var(--fz-5)"
-                  text={agreed ? "Close" : "I agree"}
-                  float="right"
-                  primary={!agreed}
-                  clr={agreed ? "inherit" : "rgb(var(--bg))"}
-                  themed
-                  action={() => setAgreed(!agreed)}
-                />
-              </Buttons>
+                <Buttons justify="space-between" mb="0">
+                  {!agreed && (
+                    <Button
+                      text="Disagree"
+                      clr="rgb(var(--fg))"
+                      padding=".75em 2em"
+                      fz="var(--fz-5)"
+                      action={() => setPopUp("")}
+                    />
+                  )}
+                  <Button
+                    padding=".75em 2em"
+                    fz="var(--fz-5)"
+                    text={agreed ? "Close" : "I agree"}
+                    float="right"
+                    primary={!agreed}
+                    clr={agreed ? "inherit" : "rgb(var(--bg))"}
+                    themed
+                    action={() => setAgreed(!agreed)}
+                  />
+                </Buttons>
               </>
             ) : (
               <Button
