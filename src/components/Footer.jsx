@@ -1,31 +1,32 @@
 import styled from "styled-components";
+import Box from "./Box";
 import SocialLinks from "./SocialLinks";
 
 const Footer = () => {
   return (
     <Div>
-      <Container className="container">
-        <p>
-          Made with ❤️ by{" "}
-          <a
-            href="https://github.com/mhmdali102"
-            target="_blank"
-            rel="noreferrer"
-          >
-            Mhmd Ali Hsen
-          </a>
-        </p>
-        <p>XeroLinux all rights reserved &copy; {new Date().getFullYear()}</p>
-        <SocialLinks />
-      </Container>
+      <Box noBR>
+        <Container className="container">
+          <p>
+            Made with ❤️ by{" "}
+            <a
+              href="https://github.com/mhmdali102"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Mhmd Ali Hsen
+            </a>
+          </p>
+          <p>XeroLinux all rights reserved &copy; {new Date().getFullYear()}</p>
+          <SocialLinks />
+        </Container>
+      </Box>
     </Div>
   );
 };
 
 const Div = styled.div`
-  background-color: rgb(var(--bg2));
   color: rgb(var(--low));
-  padding-block: 0.75rem;
 `;
 
 const Container = styled.div`

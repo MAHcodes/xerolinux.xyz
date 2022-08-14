@@ -19,31 +19,31 @@ const NavBar = ({ menu, setMenu }) => {
           setMenu(0);
         }}
       >
-        <a href="#Home">
+        <a href="/#Home">
           <li>
             <GoHome />
             <p>Home</p>
           </li>
         </a>
-        <a href="#Features">
+        <a href="/#Features">
           <li>
             <RiContactsLine />
             <p>Features</p>
           </li>
         </a>
-        <a href="#Customization">
+        <a href="/#Customization">
           <li className="padPlus">
             <FaTheaterMasks />
             <p>Customization</p>
           </li>
         </a>
-        <a href="#Videos">
+        <a href="/#Videos">
           <li>
             <AiOutlineYoutube />
             <p>Videos</p>
           </li>
         </a>
-        <a href="#FAQ">
+        <a href="/#FAQ">
           <li>
             <MdOutlineQuestionAnswer />
             <p>F.A.Q</p>
