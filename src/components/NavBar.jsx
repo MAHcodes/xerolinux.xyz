@@ -5,12 +5,9 @@ import { FaTheaterMasks, FaForumbee } from "react-icons/fa";
 import { AiOutlineYoutube } from "react-icons/ai";
 import { MdOutlineQuestionAnswer } from "react-icons/md";
 import darkbg from "../assets/images/darkbg.png";
-import { PopUpContext } from "../contexts/PopUpContext";
-import { useContext } from "react";
 import { CgNotes } from "react-icons/cg";
 
 const NavBar = ({ menu, setMenu }) => {
-  const { setPopUp } = useContext(PopUpContext);
   return (
     <StyledNav className={menu ? undefined : "close"}>
       <Blur />
@@ -50,7 +47,7 @@ const NavBar = ({ menu, setMenu }) => {
           </li>
         </a>
         <a
-          href="https://xerolinux.xyz/notes/"
+          href="https://notes.xerolinux.xyz/"
           target="_blank"
           rel="noreferrer noopener"
         >
