@@ -27,7 +27,7 @@ const Donate = ({ img }) => {
         <P>
           Help Us Raise Funds For The Steam Deck
           <br />
-          Feel free to support us o00n the below platforms :
+          Feel free to support us on the below platforms :
         </P>
         <Buttons justify="space-evenly" mb="0">
           <a
