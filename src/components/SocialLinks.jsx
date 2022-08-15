@@ -32,31 +32,6 @@ const SocialLinks = ({ clr }) => {
         </svg>
       </a>
       <a
-        href="https://www.patreon.com/XeroLinux"
-        target="_blank"
-        rel="noreferrer"
-      >
-        <svg width="32" height="31" viewBox="0 0 32 31" fill="none">
-          <g clipPath="url(#clip0_82_18)">
-            <path
-              d="M31.6625 11.7689C31.6625 17.889 26.6843 22.8732 20.5582 22.8732C14.414 22.8732 9.41768 17.895 9.41768 11.7689C9.41768 5.63073 14.414 0.634399 20.5582 0.634399C26.6843 0.634399 31.6625 5.63073 31.6625 11.7689ZM0.72998 30.2982H6.16734V0.634399H0.72998V30.2982Z"
-              fill="white"
-            />
-          </g>
-          <defs>
-            <clipPath id="clip0_82_18">
-              <rect
-                width="30.9326"
-                height="30.9326"
-                fill="white"
-                transform="translate(0.72998)"
-              />
-            </clipPath>
-          </defs>
-        </svg>
-      </a>
-
-      <a
         href="https://youtube.com/c/XeroLinuxOfficial"
         target="_blank"
         rel="noreferrer"
