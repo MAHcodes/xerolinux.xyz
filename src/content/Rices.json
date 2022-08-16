@@ -6,12 +6,6 @@
     "img_url": "https://imgur.com/pFR3xuG.png"
   },
   {
-    "name": "XeroCherry",
-    "guide_url": "https://github.com/xerolinux/xero-cherry-git",
-    "description": "This is one of our favourite Rices. Proudly created by 2 guys from Lebanon, me and \"GamerKing64\". We are very proud of this one as it is the lightest yet. <br /> <br /> it's so light on resources, your machine will fly ! we love the color scheme used. credit to  <A href=\"https://github.com/nullxception/cherry-kde-theme\" target=\"_blank\" rel=\"noreferrer\" > NullXception </A> for creating such an awesome theme for us to use.. We hope you like it too 😉\" ",
-    "img_url": "https://imgur.com/3ezALV0.png"
-  },
-  {
     "name": "XeroLayan",
     "guide_url": "https://github.com/xerolinux/xero-layan-git",
     "description": "This rice was the main one used on Xero for a while, uses Latte for both Panels & Dock. It is intended to be mainly used on XeroLinux. <br /> <br /> Test it out and let me know... ",
