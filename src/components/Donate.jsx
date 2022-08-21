@@ -25,8 +25,6 @@ const Donate = ({ img }) => {
       <Box>
         <Info onClick={() => setPopUp("Donate")}>i</Info>
         <P>
-          Help Us Raise Funds For The Steam Deck
-          <br />
           Feel free to support us on the below platforms :
         </P>
         <Buttons justify="space-evenly" mb="0">
