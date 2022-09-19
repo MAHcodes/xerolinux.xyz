@@ -2,52 +2,27 @@
 
 <br />
 
-Below is a list of changes. Fresh install is no longer needed if you are already on 25/05 ISO, just run the **upall** command and you should be good to go.  
+Below is a list of changes. Fresh install is no longer needed if you are already on **XeroLinux**, just run the **upall** command and you should be good to go.
 
-
-#### - Changelog 16/06/2022 :
-<br />
-
-- **KDE Plasma** updated to 5.25.2 (second point release).
-- **KDE Frameworks** updated to 5.95 including all packages.
-- **Floating Panel** enabled by default. Has been applied to all rices too.
-- All included packages updated to latest available as of ISO release/upload.  
 
 #### - Important Changes :
 <br />
 
-- **KDE Plasma** 5.25.2 might still have bugs. Report them please ? (*)
-- **nVidia-dkms-tkg** Driver Stack used instead of Official.(**)
-- **Wayland** Session removed from ISO.(***)
+- **Grub** issue has finally been addressed. See <span><a href="https://forum.xerolinux.xyz/thread-38.html" target="_blank">Detailed Changelog</a></span>
+- **MHWD** (Manjaro's Hardware Detection) Added, for better Driver Install.
+- **XeroLinux Tool** reworked from ground up in rust, now called **Xero Welcome**.
+- **Calamares** no longer uses _NetInstall_ for faster & more stable insall process.
+- **Major** under-the-hood performance optimizations made to the **KDE** Desktop.
+- Offering more **Flatapks** via our new tool, for less *Depency Hell* and more stability.
 
-<details open>
-<summary>Notes Please read...</summary>
-<p class="bg">
-* : Make sure to go over this thread to know more about the current situation with => <a
-href="https://forum.xerolinux.xyz/thread-137.html"
-target="_blank"
-rel="noreferrer"
->
-<span> Plasma 5.25 Realease…</span>
-</a>.
-</p>
-<p class="bg">
-** : We opted to use the <span>TKG</span> patched versions of the 515 nVidia driver stack. We will stick with those from here on in, as they preform better & are more stable than the Official ones. Available from our new <span>nVidia Repo</span>.
-<a
-href="https://forum.xerolinux.xyz/thread-124.html"
-target="_blank"
-rel="noreferrer"
->
-<span> nVidia Driver Troubleshooting</span>
-</a>
-</p>
-<p class="bg">
-*** : You will be able to add
-<span> “Wayland Support” </span>
-via the <span> “XeroLinux Tool” </span>. Only recommended if you are using
-<span>AMD GPU</span>. If you are on <span>nVidia</span> I would recommend you wait
-for support to get better...</p>
-</details>
+#### - Other Changes :
+<br />
 
-That’s it for now.. Hope you enjoy our latest release of
-**XeroLinux** ;)
+- **Arch Kernel** updated to version **5.19.9**.
+- **KDE Plasma** updated to **5.25.5** (Latest as of release).
+- **KDE Frameworks** updated to **5.98** including all packages.
+- **KDE Gear** tools have been updated to latest (as of this upload)
+- Added support for more Printers as well as and Input devices out the box.
+- We can no longer provide support for Hybrid Setups. See <span><a href="https://forum.xerolinux.xyz/thread-38.html" target="_blank">Detailed Changelog</a></span>
+
+That’s it for now.. Hope you enjoy our latest release of **XeroLinux** ;)
