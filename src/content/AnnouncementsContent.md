@@ -3,15 +3,15 @@
 
 Kindly find the latest news &amp; announcements below… Read carefully.
 
-#### - One DE to rule them All :
-<br />
-
-Moving forward, there will only be **KDE Plasma** version, and nothing else. As such, we won't be providing any support for other DEs/WMs/TWMs. You are on your own for that. Sorry, but we can only do so much with such a small team...
-
 #### - Stability vs Features :
 <br />
 
 We are now aiming more towards **Stability** & **Consistency** over features. So new features will be few and far between, while we concentrate on making your experience with **XeroLinux** a pleasant one.
+
+#### - Dual GPU / Hybrid GPU Support :
+<br />
+
+Moving forward, I will not be able to provide you with the required information on how to make such setups work, simply due to the fact that I lack the hardware to test on, by extension the knowledge. You can still use this distro however, but you will have to do the research yourself, just look at it as an opportunity to learn more about how Linux works...
 
 #### - No more "Monthly" ISOs :
 <br />
