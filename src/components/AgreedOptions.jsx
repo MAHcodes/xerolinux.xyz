@@ -21,7 +21,7 @@ const AgreedOptions = ({ agreed }) => {
             </P>
             <Buttons mb="1rem">
               <a
-                href="https://sourceforge.net/projects/xerolinux/files/Releases/Main/xerolinux-main-x86_64.iso/download"
+                href="https://sourceforge.net/projects/xerolinux/files/Releases/xerolinux-2022.09-x86_64.iso/download"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -78,7 +78,7 @@ const AgreedOptions = ({ agreed }) => {
             </P>
             <Buttons mb="1rem">
               <a
-                href="http://tinyurl.com/xero-mirror"
+                href="https://tinyurl.com/XeroSeptember"
                 target="_blank"
                 rel="noreferrer"
               >

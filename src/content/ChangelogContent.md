@@ -24,4 +24,6 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 - **KDE Gear** tools have been updated to latest (as of this upload)
 - Added support for more Printers as well as and Input devices out the box.
 
-# <center><a href="https://forum.xerolinux.xyz/thread-38.html" target="_blank">Detailed Changelog Thread</a>
+# <center><a href="https://forum.xerolinux.xyz/thread-4.html" target="_blank">Detailed Changelog Thread</a>
+<br />
+<center> <img src="https://img.shields.io/sourceforge/dw/xerolinux.svg"> </center>

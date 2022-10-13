@@ -8,19 +8,19 @@
   {
     "name": "XeroLayan",
     "guide_url": "https://github.com/xerolinux/xero-layan-git",
-    "description": "This rice was the main one used on Xero for a while, uses Latte for both Panels & Dock. It is intended to be mainly used on XeroLinux. <br /> <br /> Test it out and let me know... ",
+    "description": "This rice was the main one used on Xero for a while, uses Latte for both Panels & Dock. It is intended to be mainly used on XeroLinux. NOT intended for low-end systems !<br /> <br /> Test it out and let me know... ",
     "img_url": "https://imgur.com/ccvUVtv.jpg"
   },
   {
     "name": "XeroNord",
     "guide_url": "https://github.com/xerolinux/xero-nord-git",
-    "description": "This is where XeroNord Grub Theme will be. Constantly updated so keep coming back. I included a script that makes installing much easier, just follow steps below : ",
+    "description": "This is a Nordic themed rice. Uses the Nord theme with Latte-Dock for panels as well as Dock. Separated into multiple zones. Even Konsole is themed and Grub. Follow steps below. NOT intended for low-end systems !",
     "img_url": "https://imgur.com/VwvRKXU.jpg"
   },
   {
     "name": "XeroSweet",
     "guide_url": "https://github.com/xerolinux/xero-sweet-git",
-    "description": "This rice is super simple, based on the SweetKDE theme with Candy Icons, not very complex easy on resources. It is intended to be mainly used on XeroLinux. Have fun. ",
+    "description": "This rice is super simple, based on the SweetKDE theme with Candy Icons, not very complex easy on resources. It is intended to be mainly used on XeroLinux. Have fun. NOT intended for low-end systems !",
     "img_url": "https://imgur.com/YYO5zIF.jpg"
   }
 ]
