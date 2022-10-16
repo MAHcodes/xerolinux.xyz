@@ -9,6 +9,7 @@ import { useContext } from "react";
 import { ReleaseCountdownContext } from "../contexts/ReleaseCountdownContext";
 import ReleaseCountdown from "./ReleaseCountdown";
 import Download from "./Download";
+import Message from "./Message";
 import Donate from "./Donate";
 
 const Home = () => {
@@ -17,7 +18,7 @@ const Home = () => {
   return (
     <div className="Home">
       <Hero countdown={countdown} />
-      <Donate />
+      <Message />
       {countdown ? <ReleaseCountdown countdown={countdown} /> : <Download />}
       <Features />
       <Customization />
@@ -26,6 +27,7 @@ const Home = () => {
         urls={vidsJSON.XeroLinux_Videos}
       />
       <Videos title="XeroLinux Previews" urls={vidsJSON.XeroLinux_Previews} />
+      <Donate />
       <FAQ faqs={faqsJSON} />
     </div>
   );

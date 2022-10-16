@@ -46,17 +46,7 @@ const P = styled.p`
   transform: translateX(100%);
   white-space: nowrap;
   width: max-content;
-  animation: ${scroll} linear 20s infinite;
-
-  &:active,
-  &:hover {
-    animation-play-state: paused;
-  }
-
-  @media (min-width: 800px) {
-    animation: ${scroll} linear 30s infinite;
-  }
-
+  animation: ${scroll} linear 30s infinite;
 `;
 
 export default Message;
