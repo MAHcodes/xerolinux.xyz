@@ -42,7 +42,7 @@ const PopUp = () => {
             <ThemeIcon dark />
             <Close action={closePopup} />
           </Panel>
-          <Content>
+          <Content className="markdown">
             {popUp === "UserAgreement" && <UserAgreement />}
             {popUp === "Announcements" && <AnnouncementsPopUP />}
             {popUp === "PCBuild" && <PCBuild />}
@@ -125,89 +125,6 @@ const Content = styled.div`
   overflow: hidden auto;
   flex-grow: 2;
   padding: 0 1rem 1rem;
-
-  & center {
-    text-align: center;
-  }
-
-  & p {
-    margin-bottom: 2em;
-  }
-
-  & blockquote,
-  & .bg {
-    background-color: rgb(var(--fg));
-    color: rgb(var(--bg));
-    border-radius: var(--border-radius);
-    padding: 1em;
-
-    & span {
-      color: rgba(var(--bg2), 85%);
-    }
-  }
-
-  & h1,
-  & h2,
-  & h3,
-  & h4,
-  & h5 & h6 {
-    font-weight: bold;
-    color: rgb(var(--fg2));
-  }
-
-  & h1 {
-    font-size: var(--fz-2);
-  }
-  & h2 {
-    font-size: var(--fz-2);
-    text-align: start;
-  }
-  & h3 {
-    font-size: var(--fz-3);
-  }
-  & h4 {
-    font-size: var(--fz-4);
-  }
-  & h5 {
-    font-size: var(--fz-5);
-  }
-  & h6 {
-    font-size: var(--fz-6);
-  }
-
-  & ul {
-    list-style-type: disc;
-  }
-
-  & ol {
-    list-style-type: numbers;
-  }
-
-  & ol,
-  & ul {
-    margin-inline-start: 1rem;
-    margin-bottom: 2em;
-    line-height: 1.7;
-  }
-
-  & span,
-  & strong {
-    font-weight: bold;
-    color: rgba(var(--fg2), 85%);
-  }
-
-  & a {
-    text-decoration: underline;
-  }
-
-  & summary {
-    text-decoration: underline;
-    margin-inline-start: 1rem;
-    margin-block-end: 1rem;
-    cursor: pointer;
-    list-style: revert;
-    font-weight: bold;
-  }
 `;
 
 const overIn = keyframes`

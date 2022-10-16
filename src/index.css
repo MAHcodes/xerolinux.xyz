@@ -114,7 +114,7 @@ img {
   align-items: center;
   justify-items: start;
   gap: 1rem;
-  border-radius: var( --border-radius);
+  border-radius: var(--border-radius);
 }
 
 #s p {
@@ -123,5 +123,5 @@ img {
 
 #s .t {
   grid-column: 1/-1;
-  margin-bottom: .5rem;
+  margin-bottom: 0.5rem;
 }
