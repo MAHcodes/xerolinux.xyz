@@ -6,7 +6,6 @@ import Box from "./Box";
 import Button from "./Button";
 import Buttons from "./Buttons";
 import Title from "./Title";
-import FundRazrIcon from "../assets/images/fundrazr.png";
 import SteamDeckImg from "../assets/images/steamdeck.png";
 
 const Donate = ({ img }) => {
@@ -24,9 +23,7 @@ const Donate = ({ img }) => {
       {img && <Img src={SteamDeckImg} alt="Steam Deck Image" />}
       <Box>
         <Info onClick={() => setPopUp("Donate")}>i</Info>
-        <P>
-          Feel free to support us on the below platforms :
-        </P>
+        <P>Feel free to support us on the below platforms :</P>
         <Buttons justify="space-evenly" mb="0">
           <a
             href="https://fnd.us/523mC5"
@@ -40,7 +37,13 @@ const Donate = ({ img }) => {
               themed
               fz="var(--fz-6)"
               icon={
-                <svg aria-label="PayPal" role="img" viewBox="0 0 512 512">
+                <svg
+                  aria-label="PayPal"
+                  role="img"
+                  viewBox="0 0 512 512"
+                  width="32"
+                  height="32"
+                >
                   <path
                     fill="#002c8a"
                     d="M377 184.8L180.7 399h-72c-5 0-9-5-8-10l48-304c1-7 7-12 14-12h122c84 3 107 46 92 112z"
@@ -69,7 +72,13 @@ const Donate = ({ img }) => {
               padding=".5rem 2rem"
               fz="var(--fz-6)"
               icon={
-                <svg aria-label="PayPal" role="img" viewBox="0 0 512 512">
+                <svg
+                  aria-label="PayPal"
+                  role="img"
+                  viewBox="0 0 512 512"
+                  width="32"
+                  height="32"
+                >
                   <path
                     fill="#002c8a"
                     d="M377 184.8L180.7 399h-72c-5 0-9-5-8-10l48-304c1-7 7-12 14-12h122c84 3 107 46 92 112z"
@@ -98,23 +107,17 @@ const Donate = ({ img }) => {
               themed
               fz="var(--fz-6)"
               icon={
-                <svg width="32" height="31" viewBox="0 0 32 31" fill="none">
-                  <g clipPath="url(#clip0_82_18)">
-                    <path
-                      d="M31.6625 11.7689C31.6625 17.889 26.6843 22.8732 20.5582 22.8732C14.414 22.8732 9.41768 17.895 9.41768 11.7689C9.41768 5.63073 14.414 0.634399 20.5582 0.634399C26.6843 0.634399 31.6625 5.63073 31.6625 11.7689ZM0.72998 30.2982H6.16734V0.634399H0.72998V30.2982Z"
-                      fill="white"
-                    />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0_82_18">
-                      <rect
-                        width="30.9326"
-                        height="30.9326"
-                        fill="white"
-                        transform="translate(0.72998)"
-                      />
-                    </clipPath>
-                  </defs>
+                <svg
+                  width="32"
+                  height="32"
+                  viewBox="0 0 32 32"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M28 13.0086C28 17.9601 24.1375 21.9927 19.3844 21.9927C14.6172 21.9927 10.7406 17.965 10.7406 13.0086C10.7406 8.04237 14.6172 4 19.3844 4C24.1375 4 28 8.04237 28 13.0086ZM4 28H8.21875V4H4V28Z"
+                    fill="white"
+                  />
                 </svg>
               }
             />

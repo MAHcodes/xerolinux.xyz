@@ -3,14 +3,6 @@ import styled from "styled-components";
 const SocialLinks = ({ clr }) => {
   return (
     <Wrapper clr={clr}>
-      <a href="https://t.me/XeroLinux" target="_blank" rel="noreferrer">
-        <svg width="31" height="31" viewBox="0 0 31 31" fill="none">
-          <path
-            d="M28.921 5.9574L24.837 25.2177C24.5286 26.5768 23.7253 26.9152 22.5837 26.2753L16.3605 21.6895L13.3581 24.5778C13.0256 24.9104 12.7481 25.1878 12.1073 25.1878L12.5548 18.8505L24.0878 8.42911C24.5895 7.98252 23.9786 7.73409 23.3087 8.18164L9.05074 17.1598L2.91256 15.2381C1.57763 14.8215 1.55346 13.9032 3.19096 13.2623L27.1994 4.01252C28.3111 3.59589 29.2835 4.25998 28.921 5.95837V5.9574Z"
-            fill="white"
-          />
-        </svg>
-      </a>
       <a href="https://discord.gg/Xg6T78ahtK" target="_blank" rel="noreferrer">
         <svg width="32" height="31" viewBox="0 0 32 31" fill="none">
           <g clipPath="url(#clip0_82_14)">

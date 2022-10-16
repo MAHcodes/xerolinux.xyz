@@ -62,6 +62,7 @@ const StyledButton = styled.button`
   & svg {
     margin-inline-end: 0.5em;
     width: 2rem;
+    height: 2rem;
     object-fit: contain;
     & path {
       fill: rgb(var(--bg));
