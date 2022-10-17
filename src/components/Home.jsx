@@ -22,10 +22,7 @@ const Home = () => {
       {countdown ? <ReleaseCountdown countdown={countdown} /> : <Download />}
       <Features />
       <Customization />
-      <Videos
-        title="XeroLinux Official Videos"
-        urls={vidsJSON.XeroLinux_Videos}
-      />
+      <Videos title="XeroLinux Official Videos" urls={vidsJSON.XeroLinux_Videos} />
       <Videos title="XeroLinux Previews" urls={vidsJSON.XeroLinux_Previews} />
       <Donate />
       <FAQ faqs={faqsJSON} />
