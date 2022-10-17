@@ -12,8 +12,6 @@ const Customization = () => {
       <Title sec text="Rices/Themes" />
       <CustomizationBox ltr content={RicesJSON} />
 
-      <Title sec text="GRUB Themes" />
-      <CustomizationBox content={GrubJSON} />
     </Div>
   );
 };
