@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import Title from "./Title";
 import RicesJSON from "../content/Rices.json";
-import GrubJSON from "../content/Grub.json";
 import CustomizationBox from "./CustomizationBox";
 
 const Customization = () => {

@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { GoHome } from "react-icons/go";
 import { RiContactsLine } from "react-icons/ri";
 import { FaTheaterMasks, FaForumbee } from "react-icons/fa";
-import { AiOutlineYoutube } from "react-icons/ai";
 import { MdOutlineQuestionAnswer } from "react-icons/md";
 import darkbg from "../assets/images/darkbg.png";
 import { CgNotes } from "react-icons/cg";
@@ -63,7 +62,7 @@ const NavBar = ({ menu, setMenu }) => {
             <P>
               Forum
               <svg
-                style={{ marginLeft: "4px" }}
+                style={{ marginLeft: "6px" }}
                 width="30"
                 height="30"
                 viewBox="0 0 38 38"
