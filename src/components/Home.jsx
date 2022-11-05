@@ -1,7 +1,6 @@
 import Hero from "./Hero";
 import Features from "./Features";
 import Customization from "./Customization";
-import Videos from "./Videos";
 import FAQ from "./FAQ";
 import faqsJSON from "../content/FAQs.json";
 import { useContext } from "react";
