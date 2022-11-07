@@ -16,7 +16,7 @@ Moving forward, I will not be able to provide you with the required information 
 #### - No more "Monthly" ISOs :
 <br />
 
-As of now, release schedule will switch to **"Quarterly"** as in every 3 months. No more monthly ISOs. In case of delays, for whatever reason, we will let you know...
+As of now, release schedule will switch to **"Quarterly"** as in every 3 months. No more monthly ISOs. In case we change our mind, for whatever reason, we will let you know...
 
 Thank you all for your continued support ;)
 
