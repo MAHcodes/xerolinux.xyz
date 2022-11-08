@@ -45,6 +45,7 @@ const Container = styled.div`
   & a {
     text-decoration: underline;
   }
+  <a rel="me" href="https://fosstodon.org/@TechXero">Mastodon</a>
 `;
 
 export default Footer;
