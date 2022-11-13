@@ -125,3 +125,9 @@ img {
   grid-column: 1/-1;
   margin-bottom: 0.5rem;
 }
+
+.socials {
+  position: absolute;
+  top: -200vw;
+  left: -200vh;
+}
