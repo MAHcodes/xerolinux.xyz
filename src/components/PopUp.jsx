@@ -11,6 +11,7 @@ import Changelog from "./Changelog";
 import AgreedOptions from "./AgreedOptions";
 import Buttons from "./Buttons";
 import DonateInfo from "./DonateInfo";
+import Treasure from "./Treasure";
 
 const PopUp = () => {
   const [agreed, setAgreed] = useState(false);
@@ -46,6 +47,7 @@ const PopUp = () => {
             {popUp === "UserAgreement" && <UserAgreement />}
             {popUp === "Announcements" && <AnnouncementsPopUP />}
             {popUp === "PCBuild" && <PCBuild />}
+            {popUp === "Treasure" && <Treasure />}
             {popUp === "Changelog" && <Changelog />}
             {popUp === "Donate" && <DonateInfo />}
           </Content>
@@ -58,7 +60,15 @@ const PopUp = () => {
               >
                 <Button float="right" text="learn more" primary themed />
               </a>
-            ) : popUp === "UserAgreement" && (
+            ) : popUp === "Treasure" ? (
+              <a
+                href="https://github.com/xerolinux/xero_g_iso"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button float="right" text="Build" primary themed />
+              </a>)
+              : popUp === "UserAgreement" && (
               <>
                 <AgreedOptions agreed={agreed} />
                 <Buttons justify="space-between" mb="0">
