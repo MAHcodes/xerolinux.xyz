@@ -26,4 +26,4 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 
 # <center><a href="https://forum.xerolinux.xyz/thread-4.html" target="_blank">Detailed Changelog Thread</a>
 <br />
-<center> <img src="https://img.shields.io/sourceforge/dw/xerolinux.svg"> </center>
+<center> <img src="https://img.shields.io/sourceforge/dw/xerolinux.svg?style=for-the-badge&color=FD729A&labelColor=3A4986"> </center>
