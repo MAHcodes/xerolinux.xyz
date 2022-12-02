@@ -48,6 +48,11 @@ const P = styled.p`
   width: max-content;
   animation: ${scroll} linear 20s infinite;
 
+  &:active,
+  &:hover {
+    animation-play-state: paused;
+  }
+
   @media (min-width: 800px) {
     animation: ${scroll} linear 30s infinite;
   }

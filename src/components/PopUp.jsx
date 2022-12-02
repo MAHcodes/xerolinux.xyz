@@ -41,7 +41,7 @@ const PopUp = () => {
 
   return (
     <>
-      <Div fitHight={popUp === "Donate"}>
+      <Div>
         <Wrapper>
           <Panel>
             <ThemeIcon dark />
@@ -222,7 +222,7 @@ const Div = styled.div`
   overflow: hidden;
   animation: ${popIn} var(--transition-duration)
     var(--transition-timing-function);
-  height: ${props => props.fitHight ? "max-content" : "90%"};
+  height: 90%;
 
   & p {
     margin-bottom: ${props => props.fitHight && "0"}

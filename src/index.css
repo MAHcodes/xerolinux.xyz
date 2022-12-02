@@ -94,6 +94,11 @@ body {
 *::-webkit-scrollbar-thumb:hover {
   background-color: rgb(var(--fg));
 }
+
+#root {
+  overflow: hidden;
+}
+
 img {
   user-select: none;
 }
