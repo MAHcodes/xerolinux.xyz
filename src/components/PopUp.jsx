@@ -14,6 +14,7 @@ import DonateInfo from "./DonateInfo";
 import Treasure from "./Treasure";
 import { Fireworks } from "@fireworks-js/react";
 import Settings from "../content/Settings.json";
+import Snowfall from 'react-snowfall'
 
 const PopUp = () => {
   const [agreed, setAgreed] = useState(false);
@@ -54,25 +55,35 @@ const PopUp = () => {
             {popUp === "Treasure" && <Treasure />}
             {popUp === "Changelog" && <Changelog />}
             {popUp === "Donate" && <DonateInfo />}
-            {popUp === "Treasure" && Settings.fireworks && ( <Fireworks
-              ref={ref}
-              options={{
-                rocketsPoint: {
-                  min: 0,
-                  max: 100,
-                },
-              }}
-              style={{
-                top: 0,
-                left: 0,
-                width: "100%",
-                height: "100%",
-                position: "fixed",
-                background: "#0000",
-                opacity: 1,
-                zIndex: 10091,
-              }}
-              />
+            {popUp === "Treasure" && (Settings.fireworks ? 
+              <Fireworks
+                ref={ref}
+                options={{
+                  rocketsPoint: {
+                    min: 0,
+                    max: 100,
+                  },
+                }}
+                style={{
+                  top: 0,
+                  left: 0,
+                  width: "100%",
+                  height: "100%",
+                  position: "fixed",
+                  background: "#0000",
+                  opacity: 1,
+                  zIndex: 10091,
+                  pointerEvents: "none",
+                }}
+                /> : Settings.snowfall ? 
+                <SnowfallContainer>
+                  <Snowfall
+                    snowflakeCount={70}
+                    speed={[0.5, 2.5]}
+                    wind={[-0.5, 3.0]}
+                    /> 
+                </SnowfallContainer>
+                : null
             )}
           </Content>
           <Actions>
@@ -85,44 +96,44 @@ const PopUp = () => {
                 <Button float="right" text="learn more" primary themed />
               </a>
             ) : popUp === "Treasure" ? (
-              <a
-                href="https://github.com/xerolinux/xero_g_iso"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button float="right" text="Build" primary themed />
-              </a>)
-              : popUp === "UserAgreement" && (
-              <>
-                <AgreedOptions agreed={agreed} />
-                <Buttons justify="space-between" mb="0">
-                  {!agreed && (
-                    <Button
-                      text="Disagree"
-                      clr="rgb(var(--fg))"
-                      padding=".75em 2em"
-                      fz="var(--fz-5)"
-                      action={() => setPopUp("")}
-                    />
-                  )}
-                  <Button
-                    padding=".75em 2em"
-                    fz="var(--fz-5)"
-                    text={agreed ? "Close" : "I agree"}
-                    float="right"
-                    primary={!agreed}
-                    clr={agreed ? "inherit" : "rgb(var(--bg))"}
-                    themed
-                    action={() => setAgreed(!agreed)}
-                  />
-                </Buttons>
-              </>
-            )}
+                <a
+                  href="https://github.com/xerolinux/xero_g_iso"
+                  target="_blank"
+                  rel="noreferrer"
+                >
+                  <Button float="right" text="Build" primary themed />
+                </a>)
+                : popUp === "UserAgreement" && (
+                  <>
+                    <AgreedOptions agreed={agreed} />
+                    <Buttons justify="space-between" mb="0">
+                      {!agreed && (
+                        <Button
+                          text="Disagree"
+                          clr="rgb(var(--fg))"
+                          padding=".75em 2em"
+                          fz="var(--fz-5)"
+                          action={() => setPopUp("")}
+                          />
+                      )}
+                      <Button
+                        padding=".75em 2em"
+                        fz="var(--fz-5)"
+                        text={agreed ? "Close" : "I agree"}
+                        float="right"
+                        primary={!agreed}
+                        clr={agreed ? "inherit" : "rgb(var(--bg))"}
+                        themed
+                        action={() => setAgreed(!agreed)}
+                        />
+                    </Buttons>
+                    </>
+                )}
           </Actions>
         </Wrapper>
       </Div>
       <Overlay onClick={closePopup} />
-    </>
+      </>
   );
 };
 
@@ -204,5 +215,12 @@ const Div = styled.div`
     margin-bottom: ${props => props.donate && "0"}
   }
 `;
+
+const SnowfallContainer = styled.div`
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 10091,
+`
 
 export default PopUp;
