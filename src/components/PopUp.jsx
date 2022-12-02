@@ -14,7 +14,7 @@ import DonateInfo from "./DonateInfo";
 import Treasure from "./Treasure";
 import { Fireworks } from "@fireworks-js/react";
 import Settings from "../content/Settings.json";
-import Snowfall from 'react-snowfall'
+import DonateButtons from "./Donate";
 
 const PopUp = () => {
   const [agreed, setAgreed] = useState(false);
@@ -24,7 +24,6 @@ const PopUp = () => {
   const closePopup = () => {
     setPopUp("");
   };
-
 
   useEffect(() => {
     const handleKeyup = (e) => {
@@ -42,7 +41,7 @@ const PopUp = () => {
 
   return (
     <>
-      <Div donate={popUp === "Donate"}>
+      <Div fitHight={popUp === "Donate" || popUp === "Treasure"}>
         <Wrapper>
           <Panel>
             <ThemeIcon dark />
@@ -75,15 +74,7 @@ const PopUp = () => {
                   zIndex: 10091,
                   pointerEvents: "none",
                 }}
-                /> : Settings.snowfall ? 
-                <SnowfallContainer>
-                  <Snowfall
-                    snowflakeCount={70}
-                    speed={[0.5, 2.5]}
-                    wind={[-0.5, 3.0]}
-                    /> 
-                </SnowfallContainer>
-                : null
+                /> : null
             )}
           </Content>
           <Actions>
@@ -103,21 +94,43 @@ const PopUp = () => {
                 >
                   <Button float="right" text="Build" primary themed />
                 </a>)
+                : popUp === "Donate" ?
+                <DonateButtons /> 
+                  : popUp === "Changelog" ? (
+                    <Buttons mb="0">
+                      <Button
+                        text="Back"
+                        clr="rgb(var(--fg))"
+                        padding=".75em 2.15em"
+                        fz="var(--fz-5)"
+                        action={() => setPopUp("UserAgreement")}
+                        />
+                    </Buttons>
+                  )
                 : popUp === "UserAgreement" && (
                   <>
                     <AgreedOptions agreed={agreed} />
                     <Buttons justify="space-between" mb="0">
                       {!agreed && (
+                        <>
                         <Button
                           text="Disagree"
                           clr="rgb(var(--fg))"
-                          padding=".75em 2em"
+                          padding=".75em 2.25em"
                           fz="var(--fz-5)"
                           action={() => setPopUp("")}
                           />
+                        <Button
+                          text="Changelog"
+                          padding=".75em 2em"
+                          fz="var(--fz-5)"
+                          clr="rgb(var(--fg))"
+                          action={() => setPopUp("Changelog")}
+                          />
+                        </>
                       )}
                       <Button
-                        padding=".75em 2em"
+                        padding=".75em 2.5em"
                         fz="var(--fz-5)"
                         text={agreed ? "Close" : "I agree"}
                         float="right"
@@ -209,18 +222,11 @@ const Div = styled.div`
   overflow: hidden;
   animation: ${popIn} var(--transition-duration)
     var(--transition-timing-function);
-  height: ${props => props.donate ? "max-content" : "90%"};
+  height: ${props => props.fitHight ? "max-content" : "90%"};
 
   & p {
-    margin-bottom: ${props => props.donate && "0"}
+    margin-bottom: ${props => props.fitHight && "0"}
   }
 `;
-
-const SnowfallContainer = styled.div`
-  position: fixed;
-  inset: 0;
-  pointer-events: none;
-  z-index: 10091,
-`
 
 export default PopUp;

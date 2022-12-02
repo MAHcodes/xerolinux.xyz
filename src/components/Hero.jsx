@@ -9,12 +9,14 @@ import { PopUpContext } from "../contexts/PopUpContext";
 import { useContext } from "react";
 import SocialLinks from "./SocialLinks";
 import { CONTENT } from "../content/HeroContent";
+import Tux from "./Tux";
+import Settings from "../content/Settings.json";
 
 const Hero = ({ countdown }) => {
   const { setPopUp } = useContext(PopUpContext);
 
-  const openChangeLogPopup = () => {
-    setPopUp("Changelog");
+  const openDonate = () => {
+    setPopUp("Donate");
   };
 
   const openUserAgreement = () => {
@@ -28,7 +30,7 @@ const Hero = ({ countdown }) => {
   return (
     <HeroSection id="Home">
       <div className="container">
-        <Flex>
+        <Flex tux={Settings.tux}>
           <Content>
             <H1>{CONTENT.heading}</H1>
             <P dangerouslySetInnerHTML={{__html: CONTENT.text}}></P>
@@ -57,12 +59,12 @@ const Hero = ({ countdown }) => {
                 />
               )}
               <Button
-                text="Changelog"
+                text="Donate"
                 themed
-                padding=".75em 1.65em"
+                padding=".75em 2.5em"
                 fz="var(--fz-5)"
                 clr="rgb(var(--white))"
-                action={openChangeLogPopup}
+                action={openDonate}
               />
             </Buttons>
             <Origin>
@@ -95,6 +97,7 @@ const Hero = ({ countdown }) => {
               <img src={laptop} alt="XeroLinux" />
             </ImgContainer>
           </MoreWrapper>
+          {Settings.tux ? <Tux /> : null }
         </Flex>
       </div>
     </HeroSection>
@@ -106,7 +109,7 @@ const HeroSection = styled.section`
   min-height: min(80vh, 100vw);
   position: relative;
   margin-top: -3.5rem;
-  overflow-x: hidden;
+  overflow: visible;
 
   @media (max-width: 1200px) {
     padding-block: calc(var(--padding-section) * 1.5);
@@ -232,6 +235,8 @@ const Flex = styled.div`
   align-items: center;
   justify-content: space-between;
   gap: 4rem;
+  position: relative;
+  padding-block: ${props => props.tux ? "3rem 6rem" : 0};
 
   @media (max-width: 1200px) {
     flex-direction: column;
