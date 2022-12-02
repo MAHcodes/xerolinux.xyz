@@ -95,10 +95,6 @@ body {
   background-color: rgb(var(--fg));
 }
 
-#root {
-  overflow: hidden;
-}
-
 img {
   user-select: none;
 }

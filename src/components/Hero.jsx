@@ -109,7 +109,7 @@ const HeroSection = styled.section`
   min-height: min(80vh, 100vw);
   position: relative;
   margin-top: -3.5rem;
-  overflow: visible;
+  overflow: hidden;
 
   @media (max-width: 1200px) {
     padding-block: calc(var(--padding-section) * 1.5);
@@ -236,7 +236,7 @@ const Flex = styled.div`
   justify-content: space-between;
   gap: 4rem;
   position: relative;
-  padding-block: ${props => props.tux ? "3rem 6rem" : 0};
+  margin-block: ${props => props.tux ? "3rem 7rem" : 0};
 
   @media (max-width: 1200px) {
     flex-direction: column;
