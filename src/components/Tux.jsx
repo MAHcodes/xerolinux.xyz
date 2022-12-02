@@ -3,6 +3,7 @@ import tuxImg from "../assets/images/tux.png";
 import { TbChristmasTree  } from "react-icons/tb";
 import { useContext } from "react";
 import { PopUpContext } from "../contexts/PopUpContext";
+import Settings from "../content/Settings.json";
 
 const Tux = () => {
   const { setPopUp } = useContext(PopUpContext);
@@ -10,6 +11,8 @@ const Tux = () => {
   const openGift = () => {
     setPopUp("Treasure");
   }
+
+  if (!Settings.tux) return null;
 
   return <Div>
     <P>
