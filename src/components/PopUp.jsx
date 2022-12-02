@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import UserAgreement from "./UserAgreement";
 import ThemeIcon from "./ThemeIcon";
-import { useContext, useEffect, useState } from "react";
+import { useContext, useEffect, useState, useRef } from "react";
 import { PopUpContext } from "../contexts/PopUpContext";
 import Close from "./Close";
 import Button from "./Button";
@@ -12,14 +12,18 @@ import AgreedOptions from "./AgreedOptions";
 import Buttons from "./Buttons";
 import DonateInfo from "./DonateInfo";
 import Treasure from "./Treasure";
+import { Fireworks } from "@fireworks-js/react";
+import Settings from "../content/Settings.json";
 
 const PopUp = () => {
   const [agreed, setAgreed] = useState(false);
+  const ref = useRef(null);
 
   const { popUp, setPopUp } = useContext(PopUpContext);
   const closePopup = () => {
     setPopUp("");
   };
+
 
   useEffect(() => {
     const handleKeyup = (e) => {
@@ -50,6 +54,26 @@ const PopUp = () => {
             {popUp === "Treasure" && <Treasure />}
             {popUp === "Changelog" && <Changelog />}
             {popUp === "Donate" && <DonateInfo />}
+            {popUp === "Treasure" && Settings.fireworks && ( <Fireworks
+              ref={ref}
+              options={{
+                rocketsPoint: {
+                  min: 0,
+                  max: 100,
+                },
+              }}
+              style={{
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+                position: "fixed",
+                background: "#0000",
+                opacity: 1,
+                zIndex: 10091,
+              }}
+              />
+            )}
           </Content>
           <Actions>
             {popUp === "PCBuild" ? (

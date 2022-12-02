@@ -8,6 +8,7 @@ import DateTime from "./DateTime";
 import { PopUpContext } from "../contexts/PopUpContext";
 import { useContext } from "react";
 import SocialLinks from "./SocialLinks";
+import { CONTENT } from "../content/HeroContent";
 
 const Hero = ({ countdown }) => {
   const { setPopUp } = useContext(PopUpContext);
@@ -24,26 +25,13 @@ const Hero = ({ countdown }) => {
     setPopUp("PCBuild");
   };
 
-  const foundTreasure = () => {
-    setPopUp("Treasure");
-  }
-
   return (
     <HeroSection id="Home">
       <div className="container">
         <Flex>
           <Content>
-            <H1>{"~{ XeroLinux }~"}</H1>
-            <P>
-              A Hobbyist Arch-Based Distro, built using in-house scripts created by your Friendly Human {" "}
-              <a href="https://keyaedisa.carrd.co/" target="_blank" rel="noreferrer">Keyaedisa</a>,
-              a proud contributor to the project, that is meant to provide you awith a stable base, makin<span onClick={foundTreasure}>g</span> it simpler to install ArchLinux {" "}
-              <a href="https://calamares.io/" target="_blank" rel="noreferrer">(Calamares)</a> {" "}
-              with a well optimized & Customized KDE Plasma, that you can shape YOUR way, the easy way... !
-              <br />
-              <br />
-              I hope you enjoy using it as much as I have creating it ;)
-            </P>
+            <H1>{CONTENT.heading}</H1>
+            <P dangerouslySetInnerHTML={{__html: CONTENT.text}}></P>
             <Buttons>
               {countdown ? (
                 <a href="#Countdown">

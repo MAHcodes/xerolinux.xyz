@@ -1,7 +1,3 @@
 {
-  "announcements": false,
-  "snowfall": false,
-  "lights": false,
-  "fireworks": false,
-  "tux": false
+  "fireworks": true
 }
