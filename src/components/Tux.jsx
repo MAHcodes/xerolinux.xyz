@@ -33,10 +33,14 @@ const Div = styled.div`
   position: absolute;
   right: 0;
   bottom: 0;
-  transform: translateY(40%);
   display: flex;
+  transform: translateY(100%);
   align-items: flex-start;
-  gap: 1.25rem;
+  gap: 1rem;
+
+  @media (min-width: 1400px) {
+    transform: translateY(80%);
+  }
 `
 
 const P = styled.p`
