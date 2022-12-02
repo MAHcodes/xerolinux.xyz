@@ -11,12 +11,14 @@ import Message from "./Message";
 import styled from "styled-components";
 import Snowfall from "react-snowfall";
 import Settings from "../content/Settings.json";
+import Lights from "./Lights";
 
 const Home = () => {
   const countdown = useContext(ReleaseCountdownContext);
 
   return (
     <div className="Home">
+      <Lights />
       <Hero countdown={countdown} />
       <Message />
       {countdown ? <ReleaseCountdown countdown={countdown} /> : <Download />}

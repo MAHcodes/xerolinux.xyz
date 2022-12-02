@@ -97,7 +97,7 @@ const Hero = ({ countdown }) => {
               <img src={laptop} alt="XeroLinux" />
             </ImgContainer>
           </MoreWrapper>
-          {Settings.tux ? <Tux /> : null }
+          <Tux />
         </Flex>
       </div>
     </HeroSection>
