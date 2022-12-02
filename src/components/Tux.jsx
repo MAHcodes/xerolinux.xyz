@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import tuxImg from "../assets/images/tux.png";
+import tuxImg from "../assets/images/tux.avif";
 import { TbChristmasTree  } from "react-icons/tb";
 import { useContext } from "react";
 import { PopUpContext } from "../contexts/PopUpContext";
