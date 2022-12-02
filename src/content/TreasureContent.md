@@ -7,5 +7,3 @@ You have discovered the hidden **Christmas** Gift.. As to what it is, well, it m
 ### Xero "G" Release.<br /><br />
 
 labeled as **Xero "G"** for *Gnome*. In order to get it, you will need to build it. Click on the "Build" button below to head on over to project's Github and follow the guide there. Keep in mind that you have to be on an *Arch* based distro to do so.<br /><br />
-
-![XeroG](https://i.imgur.com/ecTOPEm.png)
