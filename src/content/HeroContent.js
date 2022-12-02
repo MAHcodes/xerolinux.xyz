@@ -1,5 +1,5 @@
 export const CONTENT = {
-  heading: "~{ XeroLinux }~",
+  heading: "XeroLinux",
   text: `A Hobbyist Arch-Based Distro, built using in-house scripts created by your Friendly Human
               <a href="https://keyaedisa.carrd.co/" target="_blank" rel="noreferrer">
                 Keyaedisa

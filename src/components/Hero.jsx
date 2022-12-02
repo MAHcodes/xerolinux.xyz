@@ -59,9 +59,9 @@ const Hero = ({ countdown }) => {
                 />
               )}
               <Button
-                text="Donate"
+                text="$ Donate $"
                 themed
-                padding=".75em 2.5em"
+                padding=".75em 2em"
                 fz="var(--fz-5)"
                 clr="rgb(var(--white))"
                 action={openDonate}

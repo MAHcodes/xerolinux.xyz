@@ -41,7 +41,7 @@ const PopUp = () => {
 
   return (
     <>
-      <Div fitHight={popUp === "Donate" || popUp === "Treasure"}>
+      <Div fitHight={popUp === "Donate"}>
         <Wrapper>
           <Panel>
             <ThemeIcon dark />
