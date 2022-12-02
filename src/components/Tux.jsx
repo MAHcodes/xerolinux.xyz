@@ -47,7 +47,7 @@ const P = styled.p`
   position: relative;
   overflow: visible;
   flex: 1;
-  max-height: 250px;
+  white-space: nowrap;
 
   &::after {
     content: "";

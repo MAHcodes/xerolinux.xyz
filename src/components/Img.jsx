@@ -10,9 +10,7 @@ const Img = ({ src, alt, maxWidth }) => {
   };
 
   const closePreview = () => {
-    console.log("clicked");
     setPreviewImg(false);
-    console.log(previewImg);
   };
 
   return (
