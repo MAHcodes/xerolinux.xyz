@@ -11,6 +11,7 @@ const Button = ({
   icon,
   float,
   bg,
+  underline
 }) => {
   return (
     <StyledButton
@@ -23,6 +24,7 @@ const Button = ({
       onClick={action}
       float={float}
       bg={bg}
+      underline={underline}
     >
       {icon && icon}
       {text}
@@ -42,6 +44,7 @@ const StyledButton = styled.button`
   padding: ${(props) => props.padding};
   font-size: ${(props) => props.fz};
   border-color: ${(props) => props.clr || "rgb(var(--bg))"};
+  text-decoration: ${(props) => props.underline ? "underline" : "none"};
   user-select: none;
 
   ${(props) =>
