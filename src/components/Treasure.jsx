@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { marked } from "marked";
 import TreasureContent from "../content/TreasureContent.md";
+import Img from "./Img";
 
 const Changelog = () => {
   const [content, setContent] = useState("");
@@ -13,7 +14,10 @@ const Changelog = () => {
       });
   }, []);
 
-  return <div dangerouslySetInnerHTML={{ __html: marked.parse(content) }}></div>
+  return <div >
+    <div dangerouslySetInnerHTML={{ __html: marked.parse(content) }} />
+    <Img src="https://i.imgur.com/ecTOPEm.png" alt="XeroG" />
+  </div>
 };
 
 export default Changelog;
