@@ -12,7 +12,7 @@ const ThemeIcon = ({ dark }) => {
 
   useEffect(() => {
     document.body.classList = theme ? "light" : "dark";
-    localStorage.setItem("theme", JSON.stringify(theme));
+    localStorage.setItem("xero-theme", JSON.stringify(theme));
   }, [theme]);
 
   return (
