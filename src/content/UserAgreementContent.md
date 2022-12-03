@@ -6,10 +6,10 @@ Please read this carefully to understand more about what this project is and wha
 
 <br />
 
-**(1)** **XeroLinux** is a **Hobby distribution**, Its goal is to offer you an easy way to install **ArchLinux** with a well optimized & Customized **KDE Plasma**. This Distro tries to take the **<a href="https://www.interaction-design.org/literature/article/hick-s-law-making-the-choice-easier-for-users" target="_blank" rel="noreferrer"> Hick’s Law </a>** approach when it comes to choices. **Less is More**...
+**(1)** The ultimate goal of **XeroLinux** is to offer you an easy way to install **ArchLinux** with a well optimized & Customized **KDE Plasma**. We try to take the **<a href="https://www.interaction-design.org/literature/article/hick-s-law-making-the-choice-easier-for-users" target="_blank" rel="noreferrer"> Hick’s Law </a>** approach when it comes to choices. **Less is More**...
 <br />
 
-**(2)** **XeroLinux** is based on **ArchLinux**. That's why basic **Linux** knowledge is highly recommended if you are to use this Distro... There's no need to jump directly into deeper waters before learning how to swim, take it slow, test in a VM, jump in only when you feel confident enough...
+**(2)** With it being based on **ArchLinux**, basic **Linux** knowledge is highly recommended... There's no need to jump directly into deeper waters before learning how to swim, take it slow, test in a VM, jump in only when you feel confident enough...
 <br />
 
 **(3)** **XeroLinux** doesn't, nor will it ever force anything on you. Think of it as a *Blank Canvas* that you can shape to suite your needs... Almost every feature it offers is **Optional**, you are the one who decides which one(s) you prefer...
@@ -20,13 +20,7 @@ Please read this carefully to understand more about what this project is and wha
 
 When it comes to solving issues related to your specific hardware config, we prefer to leave it up to you, the user, since you are the only one who can test the solutions, also this will allow you to learn more about **Linux** and grow...
 
-#### <center>**~~ Important Note ~~**</center>
-
-<br />
-
-This distro is 90% **ArchLinux** & 10% custom. Also, we cannot be held responsible in case of Data-Loss or Corruption. Do your research, test in a VM before taking the plunge on real metal...
-
-**<center>! Do NOT Download Unless You Have Read & Agree with The Above !</center>**
+**<center>! Download Only if you Agree with The Above !</center>**
 
 # <center>~~~~~~~~~~~~ E.U.A ~~~~~~~~~~~~</center>
 
