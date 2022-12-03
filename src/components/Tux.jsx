@@ -19,7 +19,7 @@ const Tux = () => {
       <h4><TbChristmasTree /> Merry Christmas Linux Nerds <TbChristmasTree /></h4>
       <br />
       There be a hidden 
-      <span onClick={openGift}> Gift</span> on this here site, <br />
+      <span onClick={openGift}> Surprise</span> on this here site, <br />
       let the Christmas Hunt Begin.. Ho ! Ho ! Ho !
       <br />
       <br />
