@@ -2,5 +2,5 @@
   "snowfall": true,
   "lights": true,
   "fireworks": false,
-  "tux": true
+  "tux": false
 }
