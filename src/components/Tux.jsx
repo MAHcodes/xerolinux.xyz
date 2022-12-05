@@ -16,11 +16,11 @@ const Tux = () => {
 
   return <Div>
     <P>
-      <h4><TbChristmasTree /> Merry Christmas Linux Nerds <TbChristmasTree /></h4>
+      <h4><TbChristmasTree /> Ho ! Ho ! Ho ! Merry Christmas <TbChristmasTree /></h4>
       <br />
       There be a hidden 
       <span onClick={openGift}> Surprise</span> on this here site, <br />
-      let the Christmas Hunt Begin.. Ho ! Ho ! Ho !
+      find it. Let the <Span>Christmas</Span> Hunt Begin...
       <br />
       <br />
       <Span>The XeroLinux Team</Span>
