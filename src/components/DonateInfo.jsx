@@ -9,9 +9,9 @@ const DonateInfo = () => {
         <strong>- Help project to continue :</strong><br /><br />
 
 
-My country <span>(Lebanon)</span> is currently going through a bad economic crisis. We just got word that Electricity provisioning will drop to 3h a day down from 6h while Generator owners are forcing us to accept their 45% price increase due to Diesel prices skyrocketing, as a result we will not be able to afford having it on for long periods.. Without the essentials I cannot continue working on the project, or at least much less..<br /><br />
+My country, <span>(Lebanon)</span> is currently going through a bad economic & political crisis. In light of the current situation, maintaining the project is harder than it should be. Your contributions will go a long way into sustaining it for a long time to come.<br /><br />
 
-I would love to work on the project full time, but the costs to do so are skyrocketing, making harder and harder to maintain. With your help & support we can make it a reality !<br /><br />
+Select from the options below, how you would like to support the project. Keep in mind that <span>FundRazr</span> and <span>PayPal</span> are one time donations while <span>Patreon</span> will be monthly recurring contributions with various tiers, unlocking early access to future projects & more...
       </p>
     </Div>
   );
