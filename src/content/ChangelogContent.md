@@ -8,22 +8,20 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 #### - Important Changes :
 <br />
 
-- **Grub** issue has finally been addressed. See <span>Detailed Changelog</span>
-- **MHWD** (Manjaro's Hardware Detection) Added, for better Driver Install.
-- **XeroLinux Tool** reworked from ground up in rust, now called **Xero Welcome**.
-- **Calamares** no longer uses _NetInstall_ for faster & more stable insall process.
-- **Major** under-the-hood performance optimizations made to the **KDE** Desktop.
-- Offering more **Flatapks** via our new tool, for less *Depency Hell* and more stability.
+- **MHWD** (Manjaro's Hardware Detection) Removed.
+- **Grub** is now being used for booting Live ISO. No more **Systemd Boot**.
+- **Major** under-the-hood performance optimizations made to **Plasma**.
+- **XeroLinux Hello** updated with more packages & drivers now use a script.
 
-#### - Other Changes :
+#### - System & Package updates :
 <br />
 
-- **Arch Kernel** updated to version **5.19.9**.
-- **KDE Plasma** updated to **5.25.5** (Latest as of release).
-- **KDE Frameworks** updated to **5.98** including all packages.
-- **KDE Gear** tools have been updated to latest (as of this upload)
-- Added support for more Printers as well as and Input devices out the box.
+- **Arch Kernel** updated to version **6.0.11**.
+- **QT** updated to **5.15.7** (Latest as of release).
+- **KDE Plasma** updated to **5.26.4** (Latest as of release).
+- **KDE Frameworks** updated to **5.100** including all packages.
+- **KDE Gear** tools have been updated to latest (as of this upload).
 
-# <center><a href="https://forum.xerolinux.xyz/thread-4.html" target="_blank">Detailed Changelog Thread</a>
+# <center><a href="https://forum.xerolinux.xyz/thread-4.html" target="_blank">Detailed Release Info. Thread</a>
 <br />
 <center> <img src="https://img.shields.io/sourceforge/dw/xerolinux.svg?style=for-the-badge&color=FD729A&labelColor=3A4986"> </center>
