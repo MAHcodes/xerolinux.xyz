@@ -6,7 +6,7 @@ You have discovered the hidden **Christmas** surprise.. **XeroG** the *Gnome* ed
 ### - Xero "G" Release
 <br />
 
-I have spent well over a month optimizing it and making it look good for you guys. Keep in mind that this is not another release, it's an ongoing side project. which means, there will *Never* be a public ISO of it. I will, however be making it available as a [**Patron**](https://patreon.com/XeroLinux) only download ($25 Tier).<br />
+I have spent well over a month optimizing it and making it look good for you guys. Keep in mind that this is not another release, it's an ongoing side project. which means, there will *Never* be a public ISO of it. I will, however be making it available as a <a href="https://patreon.com/XeroLinux" target="_blank" rel="noreferrer">**Patron**</a> only download ($25 Tier). <a href="https://github.com/xerolinux/xero_g_iso/blob/main/support.md" target="_blank" rel="noreferrer"> **Why Paid Though ?** </a><br />
 
 ### - Build it For Free.
 <br />
