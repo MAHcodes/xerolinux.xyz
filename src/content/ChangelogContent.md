@@ -8,7 +8,7 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 #### - Important Changes :
 <br />
 
-- **MHWD** (Manjaro's Hardware Detection) Removed.
+- **MHWD** (Manjaro's Hardware Detection) Removed due to issues.
 - **Grub** is now being used for booting Live ISO. No more **Systemd Boot**.
 - **Major** under-the-hood performance optimizations made to **Plasma**.
 - **XeroLinux Hello** updated with more packages & drivers now use a script.
@@ -16,11 +16,11 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 #### - System & Package updates :
 <br />
 
-- **Arch Kernel** updated to version **6.0.11**.
+- **Arch Kernel** updated to version **6.0.12**.
 - **QT** updated to **5.15.7** (Latest as of release).
 - **KDE Plasma** updated to **5.26.4** (Latest as of release).
-- **KDE Frameworks** updated to **5.100** including all packages.
-- **KDE Gear** tools have been updated to latest (as of this upload).
+- **KDE Frameworks** updated to **5.101** including all packages.
+- **KDE Gear** tools have been updated to **22.12** (Latest as of release).
 
 # <center><a href="https://forum.xerolinux.xyz/thread-4.html" target="_blank">Detailed Release Info. Thread</a>
 <br />
