@@ -5,8 +5,8 @@ const ReleaseCountdown = ({ countdown }) => {
   return (
     <Div id="Countdown">
       <div className="container">
-        <Title text="Due to issues with Arch," />
-        <Title text="XeroLinux Will Now be Available in :" />
+        <Title text="Please be patient," />
+        <Title text="New Release Will be Available in :" />
         <Wrapper>
           <p>
             <span>{`${countdown.days}`.padStart(2, "0")}</span>
