@@ -6,7 +6,7 @@ You have discovered the hidden **Christmas** surprise.. **XeroG**, the *Gnome* e
 ### - Xero "G" Release
 <br />
 
-I have spent well over a month optimizing it and making it look good for you guys <a href="https://github.com/xerolinux/xero_g_iso/" target="_blank" rel="noreferrer"> (**info**) </a>. This is not yet another release, it's an ongoing project. which means, there will be no public ISO of it. I will, however be making one available to all <a href="https://www.patreon.com/XeroLinux/membership" target="_blank" rel="noreferrer">**Platinum Tier Patrons**</a> (monthly), or to anyone who donate to my  <a href="https://fnd.us/523mC5" target="_blank" rel="noreferrer"> **FundRaizr** </a> (One Shot). <a href="https://github.com/xerolinux/xero_g_iso/blob/main/support.md" target="_blank" rel="noreferrer"> **Why Paid ?** </a><br />
+I have spent well over a month optimizing it and making it look good for you guys <a href="https://forum.xerolinux.xyz/thread-201.html" target="_blank" rel="noreferrer"> (**info**) </a>. This is not yet another release, it's an ongoing project. which means, there will be no public ISO of it. I will, however be making one available to all <a href="https://www.patreon.com/XeroLinux/membership" target="_blank" rel="noreferrer">**Platinum Tier Patrons**</a> (monthly), or to anyone who donates to my  <a href="https://fnd.us/523mC5" target="_blank" rel="noreferrer"> **FundRaizr** </a> (One Shot). <a href="https://github.com/xerolinux/xero_g_iso/blob/main/support.md" target="_blank" rel="noreferrer"> **Why Paid ?** </a><br />
 
 ### - How to get it For Free.
 <br />
