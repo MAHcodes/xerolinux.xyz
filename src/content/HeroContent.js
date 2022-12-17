@@ -1,7 +1,7 @@
 export const CONTENT = {
   heading: "XeroLinux",
   text: `A Hobbyist Arch-Based Distro, built using in-house scripts created by your Friendly Human
-              <a href="https://keyaedisa.carrd.co/" target="_blank" rel="noreferrer">
+              <a href="https://keyaedisa.github.io/" target="_blank" rel="noreferrer">
                 Keyaedisa
               </a>,
               a proud contributor to the project, that is meant to provide you with a stable base, making it simpler to install ArchLinux <a href="https://calamares.io/" target="_blank" rel="noreferrer">

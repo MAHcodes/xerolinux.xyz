@@ -13,7 +13,7 @@ const AgreedOptions = ({ agreed }) => {
           <Center>
             <P>
               Provided By{" "}
-              <a href="http://sf.net" target="_blank" rel="noreferrer">
+              <a href="http://sf.net/projects/xerolinux/" target="_blank" rel="noreferrer">
                 SourceForge
                 <br />
               </a>
@@ -21,7 +21,7 @@ const AgreedOptions = ({ agreed }) => {
             </P>
             <Buttons mb="1rem">
               <a
-                href="https://sourceforge.net/projects/xerolinux/files/Releases/xerolinux-2022.09-x86_64.iso/download"
+                href="https://sourceforge.net/projects/xerolinux/files/Releases/xerolinux-2022.12-x86_64.iso/download"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -41,18 +41,18 @@ const AgreedOptions = ({ agreed }) => {
             <P>
               Provided By{" "}
               <a
-                href="https://fosstorrents.com/distributions/xerolinux/"
+                href="https://mirror.accum.se/"
                 target="_blank"
                 rel="noreferrer"
               >
-                FossTorrents
+                Accum.se
                 <br />
               </a>
-              <sub>(Multi-Location)</sub>
+              <sub>(Sweden)</sub>
             </P>
             <Buttons mb="1rem">
               <a
-                href="https://fosstorrents.com/thankyou/?name=xerolinux&cat=Current%20Edition&id=0"
+                href="https://tinyurl.com/XeroEuro"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -71,14 +71,14 @@ const AgreedOptions = ({ agreed }) => {
           <Center>
             <P>
               Provided By{" "}
-              <a href="http://Funami.tech" target="_blank" rel="noreferrer">
-                Funami.tech <br />
+              <a href="https://fosstorrents.com/distributions/xerolinux" target="_blank" rel="noreferrer">
+                FossTorrents <br />
               </a>
-              <sub>(South Korea)</sub>
+              <sub>(Multi-Location)</sub>
             </P>
             <Buttons mb="1rem">
               <a
-                href="https://tinyurl.com/XeroSeptember"
+                href="https://fosstorrents.com/thankyou/?name=xerolinux&cat=Current%20Edition&id=0&hybrid=0"
                 target="_blank"
                 rel="noreferrer"
               >
