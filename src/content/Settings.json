@@ -1,6 +1,6 @@
 {
   "snowfall": true,
   "lights": true,
-  "fireworks": false,
-  "tux": false
+  "fireworks": true,
+  "tux": true
 }
