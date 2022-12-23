@@ -16,4 +16,4 @@ If for whatever reason you can't support me financially, it's fine, not everyone
 ### - Select Method.
 <br />
 
-Please select how you want to get "**XeroG**" below, click on either the "**Build**" button to get redirected to *Github* and build it for free following the guide, or the "**Support**" button to get sent the ISO after pledging/donating to the service of your choice. If you opted for the one-time donation via **Fundraizr**, please leave a message, letting me know that you are interested in getting the ISO. Your support is highly appreciated ;)<br />
+Please select how you want to get "**XeroG**" below, click on the "**Build**" button to get redirected to *Github* and build it for free following the guide. If you want access to the Pre-built ISO, click on the "**Donate**" button on the main page and select the service of your choice. If you opted for the "**FundRazr**" option, please leave a message, letting me know that you are interested in getting the ISO. Your support is highly appreciated ;)<br />
