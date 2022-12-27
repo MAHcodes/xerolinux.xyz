@@ -11,7 +11,7 @@ const DonateInfo = () => {
 
 My country, <span>(Lebanon)</span> is currently going through a bad economic & political crisis. In light of the current situation, maintaining the project, or any extra ones, pro-bono, is harder than it should be. Your contributions will go a long way into sustaining it for a long time to come.<br /><br />
 
-Select from the options below, how you would like to support the project. Opting for the one-time dono <span>Fundrazr</span> will unlock access to the all-new <span>XeroG</span> release Pre-built ISO, Whereas <span>Patreon</span> will give you access to any future projects and much much more...
+Select from the options below, how you would like to support the project. Opting for the one-time dono <span>Fundrazr</span> will unlock access to the all-new <span>XeroG</span> release Pre-built ISO, just make sure to let me know via dono message that you are interested in getting your hands on it. Whereas <span>Patreon</span> will give you access to any future projects and much much more...
       </p>
     </Div>
   );
