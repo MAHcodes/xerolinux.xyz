@@ -1,6 +1,5 @@
 import styled from "styled-components";
-import tuxImg from "../assets/images/tux.avif";
-import { TbChristmasTree  } from "react-icons/tb";
+import tuxImg from "../assets/images/gift.png";
 import { useContext } from "react";
 import { PopUpContext } from "../contexts/PopUpContext";
 import Settings from "../content/Settings.json";
@@ -16,14 +15,13 @@ const Tux = () => {
 
   return <Div>
     <P>
-      <h4><TbChristmasTree /> Ho ! Ho ! Ho ! Merry Christmas <TbChristmasTree /></h4>
+      <h4>A XeroLinux Gift...</h4>
       <br />
-      There be a hidden 
-      <span onClick={openGift}> Surprise</span> on this here site, <br />
-      find it. Let the <Span>Christmas</Span> Hunt Begin...
+      Inside here, there's a Special Gift.<br />
+      We hope you enjoy it...
       <br />
       <br />
-      <Span>The XeroLinux Team</Span>
+      <span onClick={openGift}> Click Here</span> to unwrap...
     </P>
     <Img src={tuxImg} alt="Tux Image" />
   </Div>
@@ -33,6 +31,7 @@ const Div = styled.div`
   position: absolute;
   right: 0;
   bottom: 0;
+
   display: flex;
   transform: translateY(100%);
   align-items: flex-start;
@@ -65,10 +64,6 @@ const P = styled.p`
     box-shadow: 1.5rem .3rem 0 -.25rem rgb(var(--bg2)),
                 2.6rem .6rem 0 -.5rem rgb(var(--bg2));
   }
-`
-
-const Span = styled.span`
-  font-style: italic;
 `
 
 const Img = styled.img`
