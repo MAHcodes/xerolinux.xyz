@@ -16,7 +16,7 @@ const Changelog = () => {
 
   return <div >
     <div dangerouslySetInnerHTML={{ __html: marked.parse(content) }} />
-    <Img src="https://i.imgur.com/wMmedDr.jpeg" alt="XeroG" maxWidth="70%" />
+    <Img src="https://i.imgur.com/BHQWos9.jpg" alt="XeroG" maxWidth="70%" />
   </div>
 };
 

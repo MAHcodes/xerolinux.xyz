@@ -1,6 +1,4 @@
-Please read this carefully to understand more about what this project is and what it entails. Setting expectations.
-
-# <center>~~~~~~~~~~~~ E.U.A ~~~~~~~~~~~~</center>
+Please read this carefully to understand more about what this project is and what it entails. Setting expectations. Or watch the video on home page if you prefer not to read...
 
 #### - Main Points.
 
@@ -19,10 +17,6 @@ With it being based on **Arch**, basic **Linux** knowledge is highly recommended
 When it comes to solving issues related to your specific hardware config, we prefer to leave it up to you, the user, since you are the only one who can test the solutions, also this will allow you to learn more about **Linux** and grow...
 
 **<center>Download Only if you Agree with The Above</center>**
-
-# <center>~~~~~~~~~~~~ E.U.A ~~~~~~~~~~~~</center>
-
-<br />
 
 <div class="bg" id="s">
 <h3 class="t"><span>- Minimum System Requirements:</span></h3>

@@ -22,7 +22,7 @@ const Disclaimer = () => {
             fill="#FFCFF2"
           />
         </Svg>
-        <h1>End User Agreement</h1>
+        <h1>Setting Expectations</h1>
       </Title>
       <div dangerouslySetInnerHTML={{ __html: marked.parse(content)}}></div>
     </>
