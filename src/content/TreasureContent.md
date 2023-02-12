@@ -11,7 +11,7 @@ I have spent the past 3 months optimizing it and making it look good. However, t
 ### - Select Support Method.
 <br />
 
-If you want access to the Pre-built ISO, click on the "**Donate**" button on the main page and select the service of your choice and I will send you a download link that you will be able to flash and install. Your support is highly appreciated ;)<br />
+If you want access to the Pre-built ISO, click on the "**Donate**" button and select the service of your choice and I will send you a download link that you will be able to flash and install. Your support is highly appreciated ;)<br />
 
 ### - Get it For Free.
 <br />
