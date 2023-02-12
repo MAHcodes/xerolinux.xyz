@@ -15,6 +15,7 @@ import Treasure from "./Treasure";
 import { Fireworks } from "@fireworks-js/react";
 import Settings from "../content/Settings.json";
 import DonateButtons from "./Donate";
+import XeroGButtons from "./XeroG";
 
 const PopUp = () => {
   const [agreed, setAgreed] = useState(false);
@@ -87,13 +88,8 @@ const PopUp = () => {
                 <Button float="right" text="learn more" primary themed />
               </a>
             ) : popUp === "Treasure" ? (
-                <a
-                  href="https://github.com/xerolinux/xero_g_iso"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Button float="right" text="Build" primary themed />
-                </a>)
+              <XeroGButtons />
+              )
                 : popUp === "Donate" ?
                 <DonateButtons /> 
                   : popUp === "Changelog" ? (
@@ -114,11 +110,13 @@ const PopUp = () => {
                       {!agreed && (
                         <>
                         <Button
-                          text="Disagree"
-                          clr="rgb(var(--fg))"
-                          padding=".75em 2.25em"
+                          padding=".75em 2.5em"
                           fz="var(--fz-5)"
-                          action={() => setPopUp("")}
+                          text="XeroG"
+                          clr="rgb(var(--fg))"
+                          float="right"
+                          themed
+                          action={() => setPopUp("Treasure")}
                           />
                         <Button
                           text="Changelog"
@@ -132,7 +130,7 @@ const PopUp = () => {
                       <Button
                         padding=".75em 2.5em"
                         fz="var(--fz-5)"
-                        text={agreed ? "Close" : "I agree"}
+                        text={agreed ? "Close" : "XeroKDE"}
                         float="right"
                         primary={!agreed}
                         clr={agreed ? "inherit" : "rgb(var(--bg))"}
