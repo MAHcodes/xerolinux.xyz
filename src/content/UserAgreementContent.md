@@ -18,6 +18,8 @@ When it comes to solving issues related to your specific hardware config, we pre
 
 **<center>Download Only if you Agree with The Above</center>**
 
+<!--
+
 <div class="bg" id="s">
 <h3 class="t"><span>- Minimum System Requirements:</span></h3>
 <svg width="24" height="24" viewBox="0 0 942 942" fill="rgb(var(--bg))">
@@ -54,3 +56,5 @@ When it comes to solving issues related to your specific hardware config, we pre
 </svg>
 <p>Graphics :</p> <p>ATI HD6000/Intel UHD600/nVidia GeForce 600x</p>
 </div>
+
+-->

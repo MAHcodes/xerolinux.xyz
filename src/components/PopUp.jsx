@@ -9,16 +9,17 @@ import AnnouncementsPopUP from "./AnnouncementsPopUp";
 import PCBuild from "./PCBuild";
 import Changelog from "./Changelog";
 import AgreedOptions from "./AgreedOptions";
+import XeroGOptions from "./XeroG";
 import Buttons from "./Buttons";
 import DonateInfo from "./DonateInfo";
 import Treasure from "./Treasure";
 import { Fireworks } from "@fireworks-js/react";
 import Settings from "../content/Settings.json";
 import DonateButtons from "./Donate";
-import XeroGButtons from "./XeroG";
 
 const PopUp = () => {
   const [agreed, setAgreed] = useState(false);
+  const [helping, setHelping] = useState(false);
   const ref = useRef(null);
 
   const { popUp, setPopUp } = useContext(PopUpContext);
@@ -41,109 +42,142 @@ const PopUp = () => {
   }, [setPopUp]);
 
   return (
-    <>
-      <Div fitHight={popUp === "Donate"}>
-        <Wrapper>
-          <Panel>
-            <ThemeIcon dark />
-            <Close action={closePopup} />
-          </Panel>
-          <Content className="markdown">
-            {popUp === "UserAgreement" && <UserAgreement />}
-            {popUp === "Announcements" && <AnnouncementsPopUP />}
-            {popUp === "PCBuild" && <PCBuild />}
-            {popUp === "Treasure" && <Treasure />}
-            {popUp === "Changelog" && <Changelog />}
-            {popUp === "Donate" && <DonateInfo />}
-            {popUp === "Treasure" && (Settings.fireworks ? 
-              <Fireworks
-                ref={ref}
-                options={{
-                  rocketsPoint: {
-                    min: 0,
-                    max: 100,
-                  },
-                }}
-                style={{
-                  top: 0,
-                  left: 0,
-                  width: "100%",
-                  height: "100%",
-                  position: "fixed",
-                  background: "#0000",
-                  opacity: 1,
-                  zIndex: 10091,
-                  pointerEvents: "none",
-                }}
-                /> : null
-            )}
-          </Content>
-          <Actions>
-            {popUp === "PCBuild" ? (
-              <a
-                href="https://pcpartpicker.com/user/TechXero/saved/QCtmgs"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <Button float="right" text="learn more" primary themed />
-              </a>
-            ) : popUp === "Treasure" ? (
-              <XeroGButtons />
-              )
-                : popUp === "Donate" ?
-                <DonateButtons /> 
-                  : popUp === "Changelog" ? (
-                    <Buttons mb="0">
+      <>
+        <Div fitHight={popUp === "Donate"}>
+          <Wrapper>
+            <Panel>
+              <ThemeIcon dark />
+              <Close action={closePopup} />
+            </Panel>
+            <Content className="markdown">
+              {popUp === "UserAgreement" && <UserAgreement />}
+              {popUp === "Announcements" && <AnnouncementsPopUP />}
+              {popUp === "PCBuild" && <PCBuild />}
+              {popUp === "Treasure" && <Treasure />}
+              {popUp === "Changelog" && <Changelog />}
+              {popUp === "Donate" && <DonateInfo />}
+              {popUp === "Treasure" && (Settings.fireworks ?
+                      <Fireworks
+                          ref={ref}
+                          options={{
+                            rocketsPoint: {
+                              min: 0,
+                              max: 100,
+                            },
+                          }}
+                          style={{
+                            top: 0,
+                            left: 0,
+                            width: "100%",
+                            height: "100%",
+                            position: "fixed",
+                            background: "#0000",
+                            opacity: 1,
+                            zIndex: 10091,
+                            pointerEvents: "none",
+                          }}
+                      /> : null
+              )}
+            </Content>
+            <Actions>
+              {popUp === "PCBuild" ? (
+                  <a
+                      href="https://pcpartpicker.com/user/TechXero/saved/QCtmgs"
+                      target="_blank"
+                      rel="noreferrer"
+                  >
+                    <Button float="right" text="learn more" primary themed />
+                  </a>
+              ) : popUp === "Treasure" ? (
                       <Button
-                        text="Back"
-                        clr="rgb(var(--fg))"
-                        padding=".75em 2.15em"
-                        fz="var(--fz-5)"
-                        action={() => setPopUp("UserAgreement")}
-                        />
-                    </Buttons>
-                  )
-                : popUp === "UserAgreement" && (
-                  <>
-                    <AgreedOptions agreed={agreed} />
-                    <Buttons justify="space-between" mb="0">
-                      {!agreed && (
-                        <>
-                        <Button
-                          padding=".75em 2.5em"
-                          fz="var(--fz-5)"
-                          text="XeroG"
+                          text="Back"
                           clr="rgb(var(--fg))"
-                          float="right"
-                          themed
-                          action={() => setPopUp("Treasure")}
-                          />
-                        <Button
-                          text="Changelog"
-                          padding=".75em 2em"
+                          padding=".75em 2.15em"
                           fz="var(--fz-5)"
-                          clr="rgb(var(--fg))"
-                          action={() => setPopUp("Changelog")}
-                          />
-                        </>
+                          action={() => setPopUp("UserAgreement")}
+                      />)
+                  : popUp === "Donate" ?
+                      <DonateButtons />
+                      : popUp === "Changelog" ? (
+                              <Buttons mb="0">
+                                <Button
+                                    text="Back"
+                                    clr="rgb(var(--fg))"
+                                    padding=".75em 2.15em"
+                                    fz="var(--fz-5)"
+                                    action={() => setPopUp("UserAgreement")}
+                                />
+                              </Buttons>
+                          )
+                          : popUp === "UserAgreement" && (
+                          <>
+                            <AgreedOptions agreed={agreed} />
+                            <XeroGOptions helping={helping} />
+                            <Buttons justify="space-between" mb="0">
+                              {!agreed && !helping && (
+                                  <>
+                                    <Button
+                                        padding=".75em 2.5em"
+                                        fz="var(--fz-5)"
+                                        text="XeroG"
+                                        clr="rgb(var(--fg))"
+                                        themed
+                                        action={() => setHelping(!helping)}
+                                    />
+                                    <Button
+                                        text="Changelog"
+                                        padding=".75em 2em"
+                                        fz="var(--fz-5)"
+                                        clr="rgb(var(--fg))"
+                                        action={() => setPopUp("Changelog")}
+                                    />
+                                    <Button
+                                        padding=".75em 2.5em"
+                                        fz="var(--fz-5)"
+                                        text="XeroKDE"
+                                        float="right"
+                                        primary={!agreed}
+                                        clr="rgb(var(--bg))"
+                                        themed
+                                        action={() => setAgreed(!agreed)}
+                                    />
+                                  </>
+                              )}
+                              {helping && (
+                                  <>
+                                    <Button
+                                        padding=".75em 2.5em"
+                                        fz="var(--fz-5)"
+                                        text="Close"
+                                        float="right"
+                                        primary={!helping}
+                                        clr="inherit"
+                                        themed
+                                        action={() => setHelping(!helping)}
+                                    />
+                                  </>
+                              )}
+                              {agreed && (
+                                  <>
+                                    <Button
+                                        padding=".75em 2.5em"
+                                        fz="var(--fz-5)"
+                                        text="Close"
+                                        float="right"
+                                        primary={!agreed}
+                                        clr="inherit"
+                                        themed
+                                        action={() => setAgreed(!agreed)}
+                                    />
+                                  </>
+                              )}
+                            </Buttons>
+                          </>
                       )}
-                      <Button
-                        padding=".75em 2.5em"
-                        fz="var(--fz-5)"
-                        text={agreed ? "Close" : "XeroKDE"}
-                        float="right"
-                        primary={!agreed}
-                        clr={agreed ? "inherit" : "rgb(var(--bg))"}
-                        themed
-                        action={() => setAgreed(!agreed)}
-                        />
-                    </Buttons>
-                    </>
-                )}
-          </Actions>
-        </Wrapper>
-      </Div>
-      <Overlay onClick={closePopup} />
+            </Actions>
+          </Wrapper>
+        </Div>
+        <Overlay onClick={closePopup} />
       </>
   );
 };
@@ -185,7 +219,7 @@ const Content = styled.div`
 
 const overIn = keyframes`
   from {
-  opacity: 0;
+    opacity: 0;
   }
 `;
 
@@ -196,7 +230,7 @@ const Overlay = styled.div`
   z-index: 10090;
   backdrop-filter: blur(1rem);
   animation: ${overIn} var(--transition-duration)
-    var(--transition-timing-function);
+  var(--transition-timing-function);
 `;
 
 const popIn = keyframes`
@@ -219,7 +253,7 @@ const Div = styled.div`
   color: rgb(var(--fg));
   overflow: hidden;
   animation: ${popIn} var(--transition-duration)
-    var(--transition-timing-function);
+  var(--transition-timing-function);
   /* max-height: 90%; */
   height: ${props => props.fitHight ? "fit-content" : "90%"};
 
