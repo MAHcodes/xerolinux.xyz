@@ -15,7 +15,7 @@ const XeroGButtons = () => {
         <Buttons justify="space-evenly" mb="1rem .5rem">
             <a href="https://github.com/xerolinux/xero_g_iso" target="_blank" rel="noreferrer noopener">
             <Button
-                text="Build"
+                text="Build ISO for Free"
                 primary
                 clr="rgb(var(--black))"
                 padding=".75em 1.75em"
@@ -25,7 +25,7 @@ const XeroGButtons = () => {
             />
             </a>
             <Button
-                text="$ Donate $"
+                text="$ Donate for ISO $"
                 themed
                 padding=".75em 1.75em"
                 fz="var(--fz-5)"
