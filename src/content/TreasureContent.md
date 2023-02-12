@@ -17,5 +17,3 @@ If you want access to the Pre-built ISO, click on the "**Donate**" button on the
 <br />
 
 If for whatever reason you can't support me financially, it's fine, not everyone can, especially in light of the current state the world is in. So in order to get it for free, you will have to build it yourselves, it's super simple. Just click on the "**Build**" button below to get redirected to *Github* and build it for free following the included guide.
-
-## <center><a href="https://forum.xerolinux.xyz/thread-201.html" target="_blank" rel="noreferrer"> XeroG Release Notes </a></center><br />
