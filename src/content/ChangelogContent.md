@@ -18,7 +18,7 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 
 - **QT** updated to **5.15.7** (Latest as of release).
 - **KDE Plasma** updated to **5.27.0** (Latest as of release).
-- **KDE Frameworks** updated to **5.101** including all packages.
+- **KDE Frameworks** updated to **5.103** including all packages.
 - **Major** under-the-hood performance optimizations made to **Plasma**.
 - **KDE Gear** tools have been updated to **22.12** (Latest as of release).
 
