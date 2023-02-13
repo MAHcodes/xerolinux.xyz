@@ -46,7 +46,7 @@ const XeroGOptions = ({ helping }) => {
                     </a>
                     <a href="https://github.com/xerolinux/xero_g_iso" target="_blank" rel="noreferrer noopener">
                         <Button
-                            text="Build Gnome ISO"
+                            text="Build It (Free)"
                             padding=".75em 2em"
                             fz="var(--fz-5)"
                             themed
