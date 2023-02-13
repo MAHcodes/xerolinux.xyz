@@ -12,7 +12,7 @@ const AgreedOptions = ({ agreed }) => {
         <Wrapper>
           <Center>
             <P>
-              Provided By{" "}
+              Download From{" "}
               <a href="http://sf.net/projects/xerolinux/" target="_blank" rel="noreferrer">
                 SourceForge
                 <br />
@@ -39,9 +39,11 @@ const AgreedOptions = ({ agreed }) => {
           </Center>
           <Center>
             <P>
-              Build It Yourself{" "}
-              <br />
-              <sub>(Optional/Latest Pkgs)</sub>
+              Build It From{" "}<br />
+              <a href="https://github.com/xerolinux/" target="_blank" rel="noreferrer">
+                Project Github<br />
+              </a>
+              <sub>(For Latest Pkgs)</sub>
             </P>
             <Buttons mb="1rem">
               <a
@@ -50,7 +52,7 @@ const AgreedOptions = ({ agreed }) => {
                 rel="noreferrer"
               >
                 <Button
-                  text="Build ISO"
+                  text="Build The ISO"
                   padding=".75em 2em"
                   fz="var(--fz-5)"
                   primary
@@ -63,7 +65,7 @@ const AgreedOptions = ({ agreed }) => {
           </Center>
           <Center>
             <P>
-              Provided By{" "}
+              Download From{" "}
               <a href="https://fosstorrents.com/distributions/xerolinux" target="_blank" rel="noreferrer">
                 FossTorrents <br />
               </a>
