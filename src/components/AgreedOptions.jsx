@@ -8,7 +8,7 @@ const AgreedOptions = ({ agreed }) => {
   return (
     <Div agreed={agreed}>
       <Box>
-        <Title text=".: Pick a Source :." />
+        <Title text=".: Download/Build ISO :." />
         <Wrapper>
           <Center>
             <P>
@@ -39,25 +39,18 @@ const AgreedOptions = ({ agreed }) => {
           </Center>
           <Center>
             <P>
-              Provided By{" "}
-              <a
-                href="https://mirror.accum.se/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                Accum.se
-                <br />
-              </a>
-              <sub>(Sweden)</sub>
+              Build It Yourself{" "}
+              <br />
+              <sub>(Optional/Latest Pkgs)</sub>
             </P>
             <Buttons mb="1rem">
               <a
-                href="https://tinyurl.com/XeroEuro"
+                href="https://github.com/xerolinux/xero_iso"
                 target="_blank"
                 rel="noreferrer"
               >
                 <Button
-                  text="Download"
+                  text="Build ISO"
                   padding=".75em 2em"
                   fz="var(--fz-5)"
                   primary
