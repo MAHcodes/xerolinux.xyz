@@ -20,7 +20,7 @@ const XeroGOptions = ({ helping }) => {
                 <Title text=".: Select an Option :." />
                 <Wrapper>
                     <P>
-                        Select from the options below, how you would like to support the project. Opting for the one-time dono on Fundrazr will unlock access to the ISO, just make sure to let me know via private message there. Whereas if you decide to support project on a monthly basis use Patreon Tier 2 and above.
+                        Select from the options below, if you would like to build it for free, or support the project. Either the one-time dono on Fundrazr ($5 & above), make sure shoot me a private message there. Or monthly via Patreon, "Silver" Tier and above.
                     </P>
                 </Wrapper>
                 <Buttons justify="space-evenly" mb="1rem .5rem">
@@ -46,7 +46,7 @@ const XeroGOptions = ({ helping }) => {
                     </a>
                     <a href="https://github.com/xerolinux/xero_g_iso" target="_blank" rel="noreferrer noopener">
                         <Button
-                            text="Build"
+                            text="Build Gnome ISO"
                             padding=".75em 2em"
                             fz="var(--fz-5)"
                             themed
