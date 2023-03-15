@@ -5,7 +5,7 @@
     "more": "https://forum.xerolinux.xyz/thread-118.html"
   },
     {
-    "q": "Victim of the recent Grub isue ?",
+    "q": "Victim of the September Grub issue ?",
     "a": "After updating to grub 2.06.r322 many users reported that their machines could fail to boot or booted directly into the BIOS or another OS.. Are you one of those users ? If so solution below...",
     "more": "https://forum.xerolinux.xyz/thread-164.html"
   },
@@ -25,9 +25,9 @@
     "more": "https://forum.xerolinux.xyz/thread-5.html"
   },
   {
-    "q": "Issues with latest nVidia GPU Drivers ?",
-    "a": "Recently, the nVidia-dkms drivers for the 900 Series onwards were updated to the 515 Branch, in case you are having weird issues, click the button below to head on over to the thread I created covering potential fixes...",
-    "more": "https://forum.xerolinux.xyz/thread-124.html"
+    "q": "Want to learn how to Rice KDE Plasma ?",
+    "a": "Some of you have asked me many times how I made KDE look so damn good. Well I followed this guide and did a lot of testing. So without further delay, click the button below to teleport to the forum thread I created regarding this...",
+    "more": "https://forum.xerolinux.xyz/thread-144.html"
   },
   {
     "q": "Stuck with vmlinuz-linux not found ? Fix below.",

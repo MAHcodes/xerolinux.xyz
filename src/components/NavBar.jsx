@@ -4,7 +4,7 @@ import { RiContactsLine } from "react-icons/ri";
 import { FaTheaterMasks, FaForumbee } from "react-icons/fa";
 import { MdOutlineQuestionAnswer } from "react-icons/md";
 import darkbg from "../assets/images/darkbg.png";
-import { CgNotes } from "react-icons/cg";
+import { BiStore } from "react-icons/bi";
 import { ImPodcast } from "react-icons/im";
 
 const NavBar = ({ menu, setMenu }) => {
@@ -47,13 +47,13 @@ const NavBar = ({ menu, setMenu }) => {
           </li>
         </a>
         <a
-          href="https://notes.xerolinux.xyz/"
+          href="https://merch.xerolinux.xyz/"
           target="_blank"
           rel="noreferrer noopener"
         >
           <li>
-            <CgNotes />
-            <p>Notes</p>
+            <BiStore />
+            <p>Merch</p>
           </li>
         </a>
         <a href="https://forum.xerolinux.xyz/" target="_blank" rel="noreferrer">
