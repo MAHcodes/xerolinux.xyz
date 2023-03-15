@@ -14,6 +14,7 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 - **XeroLinux Hello** Renewed & overhauled, with some scripts done by *ChatGPT* AI.
 - **Intel** Drivers removed, so if you are on either Arc GPU or iGPU stick with Mesa.
 - **nVidia** Driver installer now uses **TKG** Script for legacy versions older than 470.xx
+- **Pamac** updated to 10.5.0 which adds update on shutdown option (if automatic updates enabled)
 
 #### - KDE Plasma updates :
 <br />
