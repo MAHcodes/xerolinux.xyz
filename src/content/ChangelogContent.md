@@ -9,12 +9,10 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 <br />
 
 - **Arch Kernel** updated to version **6.2.6**.
+- **nVidia** Driver installer now uses **TKG** Script for legacy GPUs.
+- **Intel** Drivers removed, for either Arc GPU or iGPU stick with Mesa.
+- **Pamac** updated to 10.5.0 which adds update on shutdown option.
 - **Calamares** updated to 3.3.0 Alpha with a brand new look... (KDE Only)
-- **Grub** is now being used for booting Live ISO. No more **Systemd Boot**.
-- **XeroLinux Hello** Renewed & overhauled, with some scripts done by *ChatGPT* AI.
-- **Intel** Drivers removed, so if you are on either Arc GPU or iGPU stick with Mesa.
-- **nVidia** Driver installer now uses **TKG** Script for legacy versions older than 470.xx
-- **Pamac** updated to 10.5.0 which adds update on shutdown option (if automatic updates enabled)
 
 #### - KDE Plasma updates :
 <br />
@@ -22,8 +20,8 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 - **QT** updated to **5.15.8** (Latest as of release).
 - **KDE Plasma** updated to **5.27.3** (Latest as of release).
 - **KDE Frameworks** updated to **5.104** including all packages.
-- **Major** under-the-hood performance optimizations made to **Plasma**.
 - **KDE Gear** tools have been updated to **22.12.3** (Latest as of release).
+- **Major** under-the-hood performance optimizations made to **Plasma**.
 
 #### - Gnome updates :
 <br />
