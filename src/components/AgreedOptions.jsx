@@ -21,7 +21,7 @@ const AgreedOptions = ({ agreed }) => {
             </P>
             <Buttons mb="1rem">
               <a
-                href="https://sourceforge.net/projects/xerolinux/files/Releases/xerolinux-2022.12-x86_64.iso/download"
+                href="https://sourceforge.net/projects/xerolinux/files/Releases/xerolinux-2023.03-x86_64.iso/download"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -39,9 +39,10 @@ const AgreedOptions = ({ agreed }) => {
           </Center>
           <Center>
             <P>
-              Build It From{" "}<br />
+              Build ISO From{" "}
               <a href="https://github.com/xerolinux/" target="_blank" rel="noreferrer">
-                Project Github<br />
+                Xero Github
+                <br />
               </a>
               <sub>(For Latest Pkgs)</sub>
             </P>
@@ -52,7 +53,7 @@ const AgreedOptions = ({ agreed }) => {
                 rel="noreferrer"
               >
                 <Button
-                  text="Build The ISO"
+                  text="Build Repo"
                   padding=".75em 2em"
                   fz="var(--fz-5)"
                   primary
