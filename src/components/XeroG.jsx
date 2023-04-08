@@ -20,14 +20,14 @@ const XeroGOptions = ({ helping }) => {
                 <Title text=".: Select an Option :." />
                 <Wrapper>
                     <P>
-                        Select from the options below, if you would like to build it for free, or support the project. Either the one-time dono on Fundrazr ($5 & above), make sure shoot me a private message there. Or monthly via Patreon, "Silver" Tier and above.
+                        Select from the options below, if you would like to build it for free, or support the project on Fundrazr ($5 & above), make sure shoot me a private message over there letting me know that you want the ISO.
                     </P>
                 </Wrapper>
                 <Buttons justify="space-evenly" mb="1rem .5rem">
-                    <a href="https://fnd.us/523mC5" target="_blank" rel="noreferrer noopener">
+                    <a href="https://ko-fi.com/post/XeroG-Gnome-Spin-Access-Granted-M4M5K7FO7" target="_blank" rel="noreferrer noopener">
                         <Button
                             padding=".5rem 2rem"
-                            text="FundRazr"
+                            text="Donate for ISO"
                             primary
                             themed
                             fz="var(--fz-6)"
@@ -46,39 +46,12 @@ const XeroGOptions = ({ helping }) => {
                     </a>
                     <a href="https://github.com/xerolinux/xero_g_iso" target="_blank" rel="noreferrer noopener">
                         <Button
-                            text="Build It (Free)"
+                            text="Build It Yourself.."
                             padding=".75em 2em"
                             fz="var(--fz-5)"
                             themed
                             primary={false}
                             clr="rgb(var(--#FFCFF2))"
-                        />
-                    </a>
-                    <a
-                        href="https://www.patreon.com/XeroLinux/membership"
-                        target="_blank"
-                        rel="noreferrer noopener"
-                    >
-                        <Button
-                            text="Patreon"
-                            padding=".5rem 2rem"
-                            primary
-                            themed
-                            fz="var(--fz-6)"
-                            icon={
-                                <svg
-                                    width="32"
-                                    height="32"
-                                    viewBox="0 0 32 32"
-                                    fill="none"
-                                    xmlns="http://www.w3.org/2000/svg"
-                                >
-                                    <path
-                                        d="M28 13.0086C28 17.9601 24.1375 21.9927 19.3844 21.9927C14.6172 21.9927 10.7406 17.965 10.7406 13.0086C10.7406 8.04237 14.6172 4 19.3844 4C24.1375 4 28 8.04237 28 13.0086ZM4 28H8.21875V4H4V28Z"
-                                        fill="white"
-                                    />
-                                </svg>
-                            }
                         />
                     </a>
                 </Buttons>

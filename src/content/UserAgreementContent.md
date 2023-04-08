@@ -25,7 +25,7 @@ When it comes to solving issues related to your specific hardware config, we pre
 ### - Support me for Gnome ISO
 <br />
 
-I have spent a long time optimizing it and making it look good. However, there will be no public ISO. Don't worry though, I will be making one available to my **Patrons** (monthly), which includes many perks. Or to anyone who donates to my **FundRaizr** (One Shot), no perks, just ISO. <a href="https://github.com/xerolinux/xero_g_iso/blob/main/support.md" target="_blank" rel="noreferrer"> **Why Paid ?** </a><br />
+I have spent a long time optimizing it and making it look good. However, there will be no public ISO. Don't worry though, I will be making one available to my **Supporters** who donate to my **Ko-Fi** either monthly or one-time. <a href="https://github.com/xerolinux/xero_g_iso/blob/main/support.md" target="_blank" rel="noreferrer"> **Why Paid ?** </a><br />
 
 ### - Get Gnome Edition For Free.
 <br />
