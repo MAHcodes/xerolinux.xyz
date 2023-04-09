@@ -9,5 +9,5 @@
 
 # Spins site design
 
-![Spins](https://i.imgur.com/l7ATzI5.png)
+![Spins](https://i.imgur.com/ez8b5r7.png)
 
