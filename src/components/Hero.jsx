@@ -23,9 +23,9 @@ const Hero = ({ countdown }) => {
     setPopUp("UserAgreement");
   };
 
-  const popUpPcBuild = () => {
-    setPopUp("PCBuild");
-  };
+  // const popUpPcBuild = () => {
+  //   setPopUp("PCBuild");
+  // };
 
   return (
     <HeroSection id="Home">
@@ -74,7 +74,7 @@ const Hero = ({ countdown }) => {
             <SocialLinks clr="rgb(var(--white))" />
           </Content>
           <MoreWrapper>
-            <PCBuild>
+            {/* <PCBuild>
               <p>
                 The Linux Machine
                 <svg
@@ -91,7 +91,7 @@ const Hero = ({ countdown }) => {
                   />
                 </svg>
               </p>
-            </PCBuild>
+            </PCBuild> */}
             <ImgContainer>
               <DateTime />
               <img src={laptop} alt="XeroLinux" />
