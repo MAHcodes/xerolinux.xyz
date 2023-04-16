@@ -1,12 +1,12 @@
 import styled, { keyframes } from "styled-components";
 import UserAgreement from "./UserAgreement";
-import ThemeIcon from "./ThemeIcon";
+//import ThemeIcon from "./ThemeIcon";
 import { useContext, useEffect, useState, useRef } from "react";
 import { PopUpContext } from "../contexts/PopUpContext";
 import Close from "./Close";
 import Button from "./Button";
 import AnnouncementsPopUP from "./AnnouncementsPopUp";
-import PCBuild from "./PCBuild";
+//import PCBuild from "./PCBuild";
 import Changelog from "./Changelog";
 import AgreedOptions from "./AgreedOptions";
 import XeroGOptions from "./XeroG";
@@ -46,13 +46,13 @@ const PopUp = () => {
         <Div fitHight={popUp === "Donate"}>
           <Wrapper>
             <Panel>
-              <ThemeIcon dark />
+              {/* <ThemeIcon dark /> */}
               <Close action={closePopup} />
             </Panel>
             <Content className="markdown">
               {popUp === "UserAgreement" && <UserAgreement />}
               {popUp === "Announcements" && <AnnouncementsPopUP />}
-              {popUp === "PCBuild" && <PCBuild />}
+              {/* {popUp === "PCBuild" && <PCBuild />} */}
               {popUp === "Treasure" && <Treasure />}
               {popUp === "Changelog" && <Changelog />}
               {popUp === "Donate" && <DonateInfo />}
@@ -116,14 +116,14 @@ const PopUp = () => {
                             <Buttons justify="space-between" mb="0">
                               {!agreed && !helping && (
                                   <>
-                                    <Button
+                                    {/* <Button
                                         padding=".75em 2.5em"
                                         fz="var(--fz-5)"
                                         text="XeroG"
                                         clr="rgb(var(--fg))"
                                         themed
                                         action={() => setHelping(!helping)}
-                                    />
+                                    /> */}
                                     <Button
                                         text="Changelog"
                                         padding=".75em 2em"

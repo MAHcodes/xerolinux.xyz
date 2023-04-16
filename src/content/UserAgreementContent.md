@@ -16,20 +16,4 @@ With it being based on **Arch**, basic **Linux** knowledge is highly recommended
 
 When it comes to solving issues related to your specific hardware config, we prefer to leave it up to you, the user, since you are the only one who can test the solutions, also this will allow you to learn more about **Linux** and grow...
 
-# <center>🎉 XeroG "Special Edition" 🎉</center>
-<br />
-
-**XeroG**, the *Gnome* version of **XeroLinux** is back, well, kinda.. **XeroLinux KDE** will forever be our flagship edition, this is just a bonus "*Gift*". Keep reading to know more ...
-<br />
-
-### - Support me for Gnome ISO
-<br />
-
-I have spent a long time optimizing it and making it look good. However, there will be no public ISO. Don't worry though, I will be making one available to my **Supporters** who donate to my **Ko-Fi** either monthly or one-time. <a href="https://github.com/xerolinux/xero_g_iso/blob/main/support.md" target="_blank" rel="noreferrer"> **Why Paid ?** </a><br />
-
-### - Get Gnome Edition For Free.
-<br />
-
-If for whatever reason you can't support me financially, it's fine, not everyone can, especially in light of the current state the world is in. So in order to get it for free, you will have to build it yourselves, it's super simple, just follow the included guide there.
-
-**<center>Download/Build Only if you Agree...</center>**
+**<center>Download Only if you Agree...</center>**

@@ -2,6 +2,7 @@ import UserAgreementContent from "../content/UserAgreementContent.md";
 import styled from "styled-components";
 import { useState, useEffect } from "react";
 import { marked } from "marked";
+import laptop from "../assets/images/laptop.avif";
 
 const Disclaimer = () => {
   const [content, setContent] = useState("");
@@ -22,8 +23,11 @@ const Disclaimer = () => {
             fill="#FFCFF2"
           />
         </Svg>
-        <h1>Expectations / XeroG</h1>
+        <h1>Expectations</h1>
       </Title>
+      <ImgContainer>
+        <img src={laptop} alt="XeroLinux" />
+      </ImgContainer>
       <div dangerouslySetInnerHTML={{ __html: marked.parse(content)}}></div>
     </>
   );
@@ -45,6 +49,14 @@ const Title = styled.div`
   padding: 1rem;
   margin: 0 auto 2em;
   width: fit-content;
+`;
+
+const ImgContainer = styled.div`
+  display: flex;
+  align-items: cener;
+  justify-content: center;
+  position: relative;
+  margin-block-end: 2rem;
 `;
 
 export default Disclaimer;
