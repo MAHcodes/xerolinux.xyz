@@ -13,6 +13,7 @@ export const CONTENT = [
     //XeroXFCE Box
     {
         title: "XeroXFCE",
+        image: "https://i.imgur.com/tKQICRl.png",
         alt: "XeroXFCE",
         text: "This Spin uses the XFCE Desktop, Clean & Optimized for lower-end devices. We stuck to defaults as much as we could, not moving away too much from what XFCE's meant to be. We used elements only from XFCE. Up to you to shape it to fit your needs.",
         buttonLeftText: "Build It Now",

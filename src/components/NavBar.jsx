@@ -5,7 +5,6 @@ import { FaTheaterMasks, FaForumbee } from "react-icons/fa";
 import { MdOutlineQuestionAnswer } from "react-icons/md";
 import darkbg from "../assets/images/darkbg.png";
 import { BiStore } from "react-icons/bi";
-import { ImPodcast } from "react-icons/im";
 import { BsDisc } from "react-icons/bs";
 
 const NavBar = ({ menu, setMenu }) => {
@@ -40,12 +39,6 @@ const NavBar = ({ menu, setMenu }) => {
             <FaTheaterMasks />
             <p>Customization</p>
           </li>
-        </a>
-        <a href="https://bytes.xerolinux.xyz/" target="_blank" rel="noreferrer">
-          <Li>
-            <ImPodcast />
-            <P>Podcast</P>
-          </Li>
         </a>
         <a href="/#FAQ">
           <li>
