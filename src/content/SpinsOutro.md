@@ -4,7 +4,7 @@ Well, as you all know by now, my current situation, in Lebanon, is not great, wi
 
 <div style="text-align: center;">
 
-[![Wny Donation](https://i.imgur.com/8QHSEL6.png)](https://youtu.be/cUxDtW8Zddc "Lebanon Electricity")
+[![Wny Donation](https://i.imgur.com/4JdAIGl.jpeg)](https://youtu.be/cUxDtW8Zddc "Lebanon Electricity")
 
 </div>
 
