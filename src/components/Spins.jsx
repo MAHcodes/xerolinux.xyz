@@ -35,7 +35,7 @@ const Spins= () => {
     return (
         <Spinning id="Home">
             <SpinsIntroSection>
-                <Img src="https://i.imgur.com/4B6IwBb.jpeg" alt="XeroG" maxWidth="40%" />
+                <Img src="https://i.imgur.com/BHiW12e.png" alt="XeroG" maxWidth="50%" />
                 <div className="container">
                     <Box>
                         <P className="container markdown" dangerouslySetInnerHTML={{__html: marked.parse(introContent) }} />
@@ -55,6 +55,7 @@ const Spins= () => {
                                 btn1Text={CONTENT[0].buttonLeftText}
                                 btn2Action={CONTENT[0].buttonRightAction}
                                 btn2Text={CONTENT[0].buttonRightText}
+                                detailsLink={CONTENT[0].detailsAction}
                             />
                             <ImageCard
                                 title={CONTENT[1].title}
@@ -64,6 +65,7 @@ const Spins= () => {
                                 btn1Text={CONTENT[1].buttonLeftText}
                                 btn2Action={CONTENT[1].buttonRightAction}
                                 btn2Text={CONTENT[1].buttonRightText}
+                                detailsLink={CONTENT[1].detailsAction}
                             />
                         </Cards>
                     </Box>
@@ -73,6 +75,18 @@ const Spins= () => {
                 <div className="container">
                     <Box>
                         <P className="container markdown" dangerouslySetInnerHTML={{__html: marked.parse(outroContent)}} />
+                        {/* <IframesWrapper>
+                          <iframe
+                            loading="lazy"
+                            width="560"
+                            height="315"
+                            src={`https://www.youtube.com/embed/${CONTENT[2].video}`}
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                          ></iframe>
+                        </IframesWrapper> */}
                     </Box>
                 </div>
             </SpinsOutroSection>
@@ -134,12 +148,24 @@ const P = styled.p`
   }
 `;
 
-const H2 = styled.h2`
-  color: rgb(var(--fg));
-  font-size: var(--fz-2);
-  font-weight: bold;
+const IframesWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-block: 1em;
-`;
 
+  & > iframe {
+    border: var(--border) solid rgb(var(--fg));
+    border-radius: var(--border-radius);
+    aspect-ratio: 16/9;
+    height: auto;
+    width: 50%;
+    flex-shrink: 4;
+  }
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+  }
+`;
 
 export default Spins

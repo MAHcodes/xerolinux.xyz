@@ -6,6 +6,7 @@ import { MdOutlineQuestionAnswer } from "react-icons/md";
 import darkbg from "../assets/images/darkbg.png";
 import { BiStore } from "react-icons/bi";
 import { ImPodcast } from "react-icons/im";
+import { BsDisc } from "react-icons/bs";
 
 const NavBar = ({ menu, setMenu }) => {
   return (
@@ -30,7 +31,7 @@ const NavBar = ({ menu, setMenu }) => {
         </a>
         <a href="/spins">
           <li>
-            <RiContactsLine />
+            <BsDisc />
             <p>Spins</p>
           </li>
         </a>
