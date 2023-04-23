@@ -23,10 +23,6 @@ const Hero = ({ countdown }) => {
     setPopUp("UserAgreement");
   };
 
-  const popUpPcBuild = () => {
-    setPopUp("PCBuild");
-  };
-
   return (
     <HeroSection id="Home">
       <div className="container">
@@ -74,24 +70,6 @@ const Hero = ({ countdown }) => {
             <SocialLinks clr="rgb(var(--white))" />
           </Content>
           <MoreWrapper>
-            <PCBuild>
-              <p>
-                The Linux Machine
-                <svg
-                  width="321"
-                  height="103"
-                  viewBox="0 0 321 103"
-                  fill="none"
-                  onClick={popUpPcBuild}
-                >
-                  <path
-                    d="M75.11 27.8294H74.4886L74.0493 28.2687L14.7151 87.6029C13.3116 86.2979 11.4303 85.4998 9.36264 85.4998C5.02023 85.4998 1.5 89.02 1.5 93.3625C1.5 97.7049 5.02022 101.225 9.36264 101.225C13.7051 101.225 17.2253 97.7049 17.2253 93.3625C17.2253 91.5874 16.6371 89.9498 15.645 88.6338L16.7859 89.7747L75.7313 30.8294H104.363V53.4173V54.9173H105.863H111.65L110.507 56.0605L117.589 63.1428L118.028 63.5822H118.649H192.182V61.9627L193.181 62.9615L193.62 63.4009H194.241H317.5H319V61.9009V11.6041V10.1041H317.5H259.098L259.841 9.36304L252.429 1.94014L251.989 1.5H251.367H176.913V2.06021L176.912 2.05997L176.473 1.62063H175.852H105.863H104.363V3.12063V27.8294H75.11ZM119.271 60.5822L113.606 54.9173H185.136L190.801 60.5822H119.271ZM256.341 10.1041H184.957L179.353 4.5H250.745L256.341 10.1041Z"
-                    stroke="#FFCFF2"
-                    strokeWidth="3"
-                  />
-                </svg>
-              </p>
-            </PCBuild>
             <ImgContainer>
               <DateTime />
               <img src={laptop} alt="XeroLinux" />
