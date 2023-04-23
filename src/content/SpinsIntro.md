@@ -1,5 +1,3 @@
-# What are Spins ?
+### What Are Spins
 
-Spins are alternate versions of XeroLinux, using other Desktop Environments, for those not into KDE but enjoy my tweaks, they are created & optimized for your consumption. But unlike the Flagship, they'll not change or be modified beyond updating the packages underneath. They'll remain as they are, until their associated Destop Environment gets a major update, for example, the next XeroG release will be once Gnome 45 releases, XFCE 4.19 & so on. Also, spins will receive limited support (Forums, Discord) since I, myself do not use them daily...
- 
-ISOs are available for a small contribution, you can, however, build an ISO following the guide on **Github** yourselves for free, whenever you want, pulling latest packages in, if you do not like waiting. It's very simple.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id. Eget dolor morbi non arcu risus quis varius quam. Lectus mauris ultrices eros in. Sit amet volutpat consequat mauris nunc. Turpis in eu mi bibendum neque egestas congue quisque. Pellentesque nec nam aliquam sem et tortor consequat id porta. Est ante in nibh mauris cursus mattis molestie. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. Ornare arcu dui vivamus arcu felis bibendum ut.

@@ -1,24 +1,24 @@
 export const CONTENT = [
     //XeroG Box
     {
-        title: "XeroG (Gnome)",
+        title: "XEROG (Gnome)",
+        image: "https://i.imgur.com/4B6IwBb.jpeg",
         alt: "XeroG",
-        text: "This Spin uses the Gnome Desktop.",
-        buttonLeftText: "Build It Now",
-        buttonRightText: "Donate For ISO",
-        buttonLeftAction: "https://github.com/xerolinux/xero_g_iso",
-        buttonRightAction: "https://ko-fi.com/post/XeroG-Gnome-Spin-Access-Granted-M4M5K7FO7",
-        detailsAction: "https://forum.xerolinux.xyz/thread-201.html"
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend. Elit ut aliquam purus sit.",
+        buttonLeftText: "Click Me",
+        buttonRightText: "Click Me Too",
+        buttonLeftAction: "",
+        buttonRightAction: ""
     },
     //XeroXFCE Box
     {
-        title: "XeroXFCE",
+        title: "XEROXFCE",
+        image: "https://i.imgur.com/4B6IwBb.jpeg",
         alt: "XeroXFCE",
-        text: "This Spin uses the XFCE Desktop.",
-        buttonLeftText: "Build It Now",
-        buttonRightText: "Donate For ISO",
-        buttonLeftAction: "https://github.com/xerolinux/xero_xfce_iso",
-        buttonRightAction: "https://ko-fi.com/Post/XeroXFCE-Access-Grant-X8X2L5417",
-        detailsAction: "https://forum.xerolinux.xyz/thread-258.html"
+        text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nunc id cursus metus aliquam eleifend. Elit ut aliquam purus sit.",
+        buttonLeftText: "Click Me",
+        buttonRightText: "Click Me Too",
+        buttonLeftAction: "",
+        buttonRightAction: ""
     }
 ]

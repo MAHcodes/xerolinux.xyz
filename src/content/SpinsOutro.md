@@ -1,20 +1,3 @@
-# Why It's Behind a Donation Wall :
- 
-Well, as you all know by now, my current situation, in Lebanon, is not great, with up to 4h or Government provided electricity, I am limited on time & it's much harder to maintain such things. With no other income, to rent Generator power, I rely on your generous contributions. So, as a result I had no choice but to charge for my time.. See video below.
+### Why Behind A Paywall?
 
-<center>
-<div id="lebanon" style="overflow: hidden">
-<iframe
-    id="lebanon-video"
-    width="1088"
-    height="612"
-    src="https://www.youtube.com/embed/cUxDtW8Zddc"
-    frameborder="0"
-    allow="autoplay; encrypted-media"
-    allowfullscreen
->
-</iframe>
-</div>
-</center>
-
-The code is free, will forever be so, on Github, but if you want me to build an ISO for you, coz you aren't familiar with Linux & how things work, you will have to contribute *any* amount which will unlock access to download links.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin nibh nisl condimentum id. Eget dolor morbi non arcu risus quis varius quam. Lectus mauris ultrices eros in. Sit amet volutpat consequat mauris nunc. Turpis in eu mi bibendum neque egestas congue quisque. Pellentesque nec nam aliquam sem et tortor consequat id porta. Est ante in nibh mauris cursus mattis molestie. Sagittis purus sit amet volutpat consequat mauris nunc congue nisi. Ornare arcu dui vivamus arcu felis bibendum ut.
