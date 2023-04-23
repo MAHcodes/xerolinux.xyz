@@ -28,6 +28,12 @@ const NavBar = ({ menu, setMenu }) => {
             <p>Features</p>
           </li>
         </a>
+        <a href="/spins">
+          <li>
+            <RiContactsLine />
+            <p>Spins</p>
+          </li>
+        </a>
         <a href="/#Customization">
           <li className="padPlus">
             <FaTheaterMasks />
