@@ -134,7 +134,7 @@ const PopUp = () => {
                                     <Button
                                         padding=".75em 2.5em"
                                         fz="var(--fz-5)"
-                                        text="XeroKDE"
+                                        text="Download"
                                         float="right"
                                         primary={!agreed}
                                         clr="rgb(var(--bg))"

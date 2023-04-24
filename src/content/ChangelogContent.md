@@ -23,23 +23,8 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 - **KDE Gear** tools have been updated to **22.12.3** (Latest as of release).
 - **Major** under-the-hood performance optimizations made to **Plasma**.
 
-#### - Gnome updates :
-<br />
-
-- **Mutter** & **Gnome** updated to Latest as of release
-- Added a few more useful extension. (Check Release Notes)
-- Fixed a lot of stuff under the hood making Gnome more stable.
-
-**_XeroG Note :_**
-> In case you don't see the Welcome app after booting the Live ISO, kindly log out & back in (No Password), it should launch.
-> Same goes if you don't see the tool on first boot after OS install, only this time login with your chosen password.
-> Or reboot. It's an issue I cannot figure out with Gnome. Still working on it...
-
 <br />
 
 # <center><a href="https://forum.xerolinux.xyz/thread-4.html" target="_blank">KDE Detailed Release Notes.</a>
-<br />
-
-# <center><a href="https://forum.xerolinux.xyz/thread-201.html" target="_blank">Gnome Detailed Release Notes.</a>
 <br />
 <center> <img src="https://img.shields.io/sourceforge/dw/xerolinux.svg?style=for-the-badge&color=FD729A&labelColor=3A4986"> </center>
