@@ -145,4 +145,5 @@ img {
 #lebanon-video {
   border: var(--border) solid rgb(var(--fg));
   border-radius: var(--border-radius);
+  margin-bottom: 40px;
 }

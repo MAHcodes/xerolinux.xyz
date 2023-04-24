@@ -34,7 +34,6 @@ const SpinsGallery = () => {
                     <Carousel
                         autoPlay={true}
                         centerMode={true}
-                        width={1100}
                         infiniteLoop={true}
                         labels={false}
                         showThumbs={true}
@@ -79,6 +78,7 @@ const Carrot = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 40px
 `;
 
 export default SpinsGallery
