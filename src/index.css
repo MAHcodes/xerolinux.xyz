@@ -132,3 +132,7 @@ img {
   top: -200vw;
   left: -200vh;
 }
+
+.carousel {
+  text-align: center;
+}
