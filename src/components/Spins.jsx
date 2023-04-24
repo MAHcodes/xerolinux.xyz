@@ -36,7 +36,7 @@ const Spins= () => {
     const images = [
       {
         img: "https://i.imgur.com/BHiW12e.png",
-
+        alt: "text goes here"
       },
       {
         img: "https://i.imgur.com/1pjR59G.png",
