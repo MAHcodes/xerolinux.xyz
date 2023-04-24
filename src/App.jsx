@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import Donate from "./components/Donate";
 import Home from "./components/Home";
-import Spins from "./components/Spins"
+import SpinsHome from "./components/SpinsHome"
 import Header from "./components/Header";
 import { PopUpContext } from "./contexts/PopUpContext";
 import PopUp from "./components/PopUp";
@@ -20,7 +20,7 @@ const App = () => {
       <Routes>
         <Route path="/donate" element={<Donate img />} />
         <Route path="/" element={<Home />} />
-        <Route path="/spins" element={<Spins />} />
+        <Route path="/spins" element={<SpinsHome />} />
       </Routes>
       <Footer />
     </>
