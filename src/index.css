@@ -132,3 +132,18 @@ img {
   top: -200vw;
   left: -200vh;
 }
+
+.carousel {
+  text-align: center;
+}
+
+.carousel-slider {
+  border: var(--border) solid rgb(255, 255, 255);
+  border-radius: var(--border-radius);
+}
+
+#lebanon-video {
+  border: var(--border) solid rgb(var(--fg));
+  border-radius: var(--border-radius);
+  margin-bottom: 40px;
+}

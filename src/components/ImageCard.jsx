@@ -4,12 +4,11 @@ import Img from "./Img";
 import Button from "./Button";
 import Buttons from "./Buttons";
 
-const ImageCard = ({ title, image, alt, text, btn1Text, btn2Text, btn1Action, btn2Action, detailsLink }) => {
+const ImageCard = ({ title, alt, text, btn1Text, btn2Text, btn1Action, btn2Action, detailsLink }) => {
 
   return (
     <Div>
       <H2>{title}</H2>
-      <Img src={image} alt={alt} maxWidth="65%" />
       <P className="markdown" dangerouslySetInnerHTML={{ __html: marked.parse(text) }} />
       <Buttons justify="center"> 
         <Button

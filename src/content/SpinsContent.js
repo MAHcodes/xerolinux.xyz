@@ -2,7 +2,6 @@ export const CONTENT = [
     //XeroG Box
     {
         title: "XeroG (Gnome)",
-        image: "https://i.imgur.com/1pjR59G.png",
         alt: "XeroG",
         text: "This Spin uses the Gnome Desktop, Clean & Optimized using a small collection of extensions to make your experience a pleasant one. We stuck to defaults as much as we could, not moving away too much from what Gnome was meant to be. Up to you to shape it to fit your needs.",
         buttonLeftText: "Build It Now",
@@ -14,7 +13,6 @@ export const CONTENT = [
     //XeroXFCE Box
     {
         title: "XeroXFCE",
-        image: "https://i.imgur.com/tKQICRl.png",
         alt: "XeroXFCE",
         text: "This Spin uses the XFCE Desktop, Clean & Optimized for lower-end devices. We stuck to defaults as much as we could, not moving away too much from what XFCE's meant to be. We used elements only from XFCE. Up to you to shape it to fit your needs.",
         buttonLeftText: "Build It Now",
