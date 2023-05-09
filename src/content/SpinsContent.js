@@ -18,7 +18,7 @@ export const CONTENT = [
         buttonLeftText: "Build It Now",
         buttonRightText: "Donate For ISO",
         buttonLeftAction: "https://github.com/xerolinux/xero_xfce_iso",
-        buttonRightAction: "https://ko-fi.com/xerolinux",
-        detailsAction: ""
+        buttonRightAction: "https://ko-fi.com/Post/XeroXFCE-Access-Grant-X8X2L5417",
+        detailsAction: "https://forum.xerolinux.xyz/thread-258.html"
     }
 ]
