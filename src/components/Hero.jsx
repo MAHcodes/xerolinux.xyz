@@ -24,7 +24,7 @@ const Hero = ({ countdown }) => {
   };
 
   const openSpinsPage = () => {
-    window.open('/spins', '_blank');
+    window.open('/spins', '_self');
   }
 
   return (
