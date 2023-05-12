@@ -8,19 +8,19 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 #### - Important Changes :
 <br />
 
-- **Arch Kernel** updated to version **6.2.6**.
-- **nVidia** Driver installer now uses **TKG** Script for legacy GPUs.
-- **Intel** Drivers removed, for either Arc GPU or iGPU stick with Mesa.
-- **Pamac** updated to 10.5.0 which adds update on shutdown option.
-- **Calamares** updated to 3.3.0 Alpha with a brand new look... (KDE Only)
+- **KDFONT** Issue Resolved.
+- **Arch Kernel** updated to version **6.3.2**.
+- **nVidia Legacy** GPUs not currently supported on Kernel 6.3.1 (Only LTS).
+- **New Look** Now system uses the **Catppuccin** theme & style for everything.
+- **Memtest86** Will be removed during install due to an ongoing issue with **Grub**
 
 #### - KDE Plasma updates :
 <br />
 
-- **QT** updated to **5.15.8** (Latest as of release).
-- **KDE Plasma** updated to **5.27.3** (Latest as of release).
-- **KDE Frameworks** updated to **5.104** including all packages.
-- **KDE Gear** tools have been updated to **22.12.3** (Latest as of release).
+- **QT** updated to **5.15.9** (Latest as of release).
+- **KDE Plasma** updated to **5.27.5** (Latest as of release).
+- **KDE Frameworks** updated to **5.105** including all packages.
+- **KDE Gear** tools have been updated to **23.04.1** (Latest as of release).
 - **Major** under-the-hood performance optimizations made to **Plasma**.
 
 <br />
