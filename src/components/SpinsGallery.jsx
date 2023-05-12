@@ -32,14 +32,14 @@ const SpinsGallery = () => {
             <div className="container">
                 <Carrot>
                     <Carousel
-                        autoPlay={true}
+                        autoPlay={false}
                         centerMode={true}
                         infiniteLoop={true}
                         labels={false}
                         showThumbs={true}
                         showArrows={true}
                         showStatus={false}
-                        centerSlidePercentage={90}>
+                        centerSlidePercentage={100}>
                         {images.map((URL, index) => (
                             <div className="slide">
                                 <img alt={URL.alt} src={URL.img} key={index} />
@@ -73,7 +73,6 @@ const Spinning = styled.section`
 `;
 
 const Carrot = styled.div`
-  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
