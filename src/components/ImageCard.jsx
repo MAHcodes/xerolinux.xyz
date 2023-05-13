@@ -1,13 +1,13 @@
 import styled from "styled-components";
 import { marked } from "marked";
-import Img from "./Img";
 import Button from "./Button";
 import Buttons from "./Buttons";
 
-const ImageCard = ({ title, alt, text, btn1Text, btn2Text, btn1Action, btn2Action, detailsLink }) => {
+const ImageCard = ({ title, icon, alt, text, btn1Text, btn2Text, btn1Action, btn2Action, detailsLink }) => {
 
   return (
     <Div>
+      <Img src={icon} alt={alt} />
       <H2>{title}</H2>
       <P className="markdown" dangerouslySetInnerHTML={{ __html: marked.parse(text) }} />
       <Buttons justify="center"> 
@@ -50,6 +50,11 @@ const Div = styled.div`
   & > svg > path {
     fill: rgb(var(--fg));
   }
+`;
+
+const Img = styled.img`
+  width: 60%;
+  height: 60%;
 `;
 
 const H2 = styled.h2`
