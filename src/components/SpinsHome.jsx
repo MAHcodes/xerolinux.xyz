@@ -1,5 +1,6 @@
 import SpinsGallery from "./SpinsGallery"
 import SpinsIntroduction from "./SpinsIntro"
+import SpinsSelection from "./SpinsSelection"
 import SpinsReasons from "./SpinsOutro";
 
 const SpinsHome = () => {
@@ -8,6 +9,7 @@ const SpinsHome = () => {
       <div className="Home">
         <SpinsGallery />
         <SpinsIntroduction />
+        <SpinsSelection />
         <SpinsReasons />
       </div>
     );
