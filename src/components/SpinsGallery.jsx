@@ -77,7 +77,8 @@ const Carrot = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 40px
+  margin-top: 40px;
+  overflow:hidden;
 `;
 
 export default SpinsGallery
