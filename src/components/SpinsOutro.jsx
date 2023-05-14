@@ -31,6 +31,7 @@ const SpinsReasons= () => {
 const SpinsOutroSection = styled.div`
   flex: 0.5;
   padding-block: var(--padding-section);
+  width: 100%;
 `;
 
 const P = styled.p`
