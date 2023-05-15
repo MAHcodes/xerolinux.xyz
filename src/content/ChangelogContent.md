@@ -10,7 +10,7 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 
 - **KDFONT** Issue Resolved.
 - **Arch Kernel** updated to version **6.3.2**.
-- **nVidia Legacy** GPUs not currently supported on Kernel 6.3.1 (Only LTS).
+- **PipeWire** USB Headphones issue fixed for the most part. Plz test.
 - **New Look** Now system uses the **Catppuccin** theme & style for everything.
 - **Memtest86** Will be removed during install due to an ongoing issue with **Grub**
 
