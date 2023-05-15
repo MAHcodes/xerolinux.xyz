@@ -67,17 +67,11 @@ const AgreedOptions = ({ agreed }) => {
           <Center>
             <P>
               Download From{" "}
-              <a href="https://fosstorrents.com/distributions/xerolinux" target="_blank" rel="noreferrer">
+
                 FossTorrents <br />
-              </a>
-              <sub>(Multi-Location)</sub>
+              <sub>(Coming Soon)</sub>
             </P>
             <Buttons mb="1rem">
-              <a
-                href="https://fosstorrents.com/thankyou/?name=xerolinux&cat=Current%20Edition&id=0&hybrid=0"
-                target="_blank"
-                rel="noreferrer"
-              >
                 <Button
                   text="Download"
                   padding=".75em 2em"
@@ -87,7 +81,6 @@ const AgreedOptions = ({ agreed }) => {
                   bg="#aa00ff"
                   clr="rgb(var(--white))"
                 />
-              </a>
             </Buttons>
           </Center>
         </Wrapper>
