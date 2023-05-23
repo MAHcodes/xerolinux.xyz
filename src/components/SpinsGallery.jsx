@@ -70,6 +70,13 @@ const Spinning = styled.section`
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
+
+  & > .container {
+    width: 100vw;
+  }
+  & .carousel-root {
+    width: 100%;
+  }
 `;
 
 const Carrot = styled.div`
