@@ -26,16 +26,16 @@ const Disclaimer = () => {
         <h1>Expectations</h1>
       </Title>
       <ImgContainer>
-        <img src={laptop} alt="XeroLinux" />
+        <center><img src="https://i.imgur.com/m3CMdCP.png" alt="XeroLinux" /></center>
       </ImgContainer>
       <div dangerouslySetInnerHTML={{ __html: marked.parse(content)}}></div>
-    </>
+      </>
   );
 };
 
 const Svg = styled.svg`
   position: absolute;
-  inset: auto auto 0 -5rem;
+  inset: auto auto 0 -3rem;
   width: 130%;
   transform: translateY(25%);
 
@@ -52,11 +52,12 @@ const Title = styled.div`
 `;
 
 const ImgContainer = styled.div`
-  display: flex;
-  align-items: cener;
-  justify-content: center;
-  position: relative;
-  margin-block-end: 2rem;
+  width: 75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-block-start: -1rem;
+  margin-block-end: 0rem;
 `;
 
 export default Disclaimer;

@@ -1,5 +1,8 @@
 Please read this carefully to understand more about what this project is and what it entails. Setting expectations. Or watch the video on home page if you prefer not to read...
 
+### <center><a href="https://forum.xerolinux.xyz/thread-4.html" target="_blank">Detailed Release Notes.</a></center>
+<br />
+
 #### - Main Points.
 
 <br />
@@ -17,3 +20,4 @@ With it being based on **Arch**, basic **Linux** knowledge is highly recommended
 When it comes to solving issues related to your specific hardware config, we prefer to leave it up to you, the user, since you are the only one who can test the solutions, also this will allow you to learn more about **Linux** and grow...
 
 **<center>Download Only if you Agree...</center>**
+<center> <img src="https://img.shields.io/sourceforge/dw/xerolinux.svg?style=for-the-badge&color=FD729A&labelColor=3A4986"> </center>
