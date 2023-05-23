@@ -146,4 +146,7 @@ img {
   border: var(--border) solid rgb(var(--fg));
   border-radius: var(--border-radius);
   margin-bottom: 40px;
+  width: 100%;
+  aspect-ratio: 16/9;
+  height: auto;
 }
