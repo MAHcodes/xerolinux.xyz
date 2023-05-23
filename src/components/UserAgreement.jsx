@@ -57,7 +57,7 @@ const ImgContainer = styled.div`
   margin-left: auto;
   margin-right: auto;
   margin-block-start: -1rem;
-  margin-block-end: 0rem;
+  margin-block-end: 1rem;
 `;
 
 export default Disclaimer;
