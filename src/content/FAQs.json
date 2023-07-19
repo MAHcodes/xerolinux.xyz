@@ -1,0 +1,52 @@
+[
+  {
+    "q": "Want to build ISO from Source ?",
+    "a": "Some of you, are LiNux Nerds that might want to build ISO from source to benefit from latest changes, if any, before anyone else. That's why, I have written a guide on how to do just that. Make sure to follow it exactly. Customize it to your liking if need be. Just note that I will not be providing any help adding other DEs/WMs.",
+    "more": "https://forum.xerolinux.xyz/thread-118.html"
+  },
+    {
+    "q": "Having Unbootable Grub Issues ?",
+    "a": "After updating Grub many users reported that their machines could fail to boot or booted directly into the BIOS or another OS.. Are you one of those users ? If so solution below...",
+    "more": "https://forum.xerolinux.xyz/thread-164.html"
+  },
+  {
+    "q": "Want your Flatpaks to use System theme ?",
+    "a": "One of the reasons why some users avoid installing Flatpak apps is that most Flatpak apps don’t change their appearance as per the current system theme. This makes the applications look out of the place in your otherwise beautiful set up..",
+    "more": "https://forum.xerolinux.xyz/thread-152.html"
+  },
+  {
+    "q": "Want to auto mount drives on startup ?",
+    "a": "This has been asked many times on social, so I wrote a guide describing, how, in case you have multiple drives, you can auto-mount them on startup without needing to enter root password every time, this guide uses Gnome-Disks, the simplest method imo...",
+    "more": "https://forum.xerolinux.xyz/thread-95.html"
+  },
+  {
+    "q": "Want to DualBoot with Windows ?",
+    "a": "Not everyone can completely switch to Linux, ditching Windows. I do understand that it can still be needed for some stuff for, say, school or work. That is why, I posted video guides below by Erik Dubois that show you how to Dual-Boot Linux+Windows in both same drive and separate ones...",
+    "more": "https://forum.xerolinux.xyz/thread-5.html"
+  },
+  {
+    "q": "Want to learn how to Rice KDE Plasma ?",
+    "a": "Some of you have asked me many times how I made KDE look so damn good. Well I followed this guide and did a lot of testing. So without further delay, click the button below to teleport to the forum thread I created regarding this...",
+    "more": "https://forum.xerolinux.xyz/thread-144.html"
+  },
+  {
+    "q": "Stuck with vmlinuz-linux not found ? Fix below.",
+    "a": "Sometimes a Kernel update can go wrong, other times you are testing a Custom one and all Hell goes wrong. I have posted videos below, again by Erik that should help you recover from that...",
+    "more": "https://forum.xerolinux.xyz/thread-90.html"
+  },
+  {
+    "q": "Issues updating due to failed mirrors (404)?",
+    "a": "Ok, sometimes I have to move my Repo(s) around, it happens, which might cause updates to fail, heck even a fresh install of the Distro might fail due to them moving around.. Below are the steps to remedy that situation...",
+    "more": "https://forum.xerolinux.xyz/thread-87.html"
+  },
+    {
+    "q": "Issues with Pacman Backend ?",
+    "a": "Sometimes Pacman refuses to behave. Mainly with issues related to Keys. Other times with corrupt packages and so on... Below is a link to a thread with a video by DistroTube going over them with potential fixes...",
+    "more": "https://forum.xerolinux.xyz/thread-115.html"
+  },
+  {
+    "q": "Want To Downgrade A Package ?",
+    "a": "Not all updates on Arch go smoothly, in rare occasions an update might break the app or system, nice thing about Arch is its flexibility, and ability to downgrade broken packages to a previous version. Below is a guide on how to do just that...",
+    "more": "https://forum.xerolinux.xyz/thread-37.html"
+  }
+]
