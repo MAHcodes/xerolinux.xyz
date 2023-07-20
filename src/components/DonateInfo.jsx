@@ -10,7 +10,7 @@ const DonateInfo = () => {
 
 My country, <span>(Lebanon)</span> is currently going through a bad economic & political crisis. In light of the current situation, maintaining the project, or any extra ones, is harder than it should be. Your contributions will go a long way into sustaining it for a long time to come.<br /><br />
 
-<center>Buy me some <span>Ko-Fi</span>, One-Time or Monthly.</center>
+<center>Support me on <span>Ko-Fi</span>, or Become a Github <span>Sponsor</span>.</center>
       </p>
     </Div>
   );

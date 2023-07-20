@@ -5,8 +5,8 @@
     "more": "https://forum.xerolinux.xyz/thread-118.html"
   },
     {
-    "q": "Victim of the September Grub issue ?",
-    "a": "After updating to grub 2.06.r322 many users reported that their machines could fail to boot or booted directly into the BIOS or another OS.. Are you one of those users ? If so solution below...",
+    "q": "Having Unbootable Grub Issues ?",
+    "a": "After updating Grub many users reported that their machines could fail to boot or booted directly into the BIOS or another OS.. Are you one of those users ? If so solution below...",
     "more": "https://forum.xerolinux.xyz/thread-164.html"
   },
   {

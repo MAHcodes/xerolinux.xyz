@@ -8,17 +8,16 @@ Below is a list of changes. Fresh install is no longer needed if you are already
 #### - Important Changes :
 <br />
 
-- **KDFONT** Issue Resolved.
-- **Arch Kernel** updated to version **6.3.2**.
-- **PipeWire** USB Headphones issue fixed for the most part. Plz test.
+- **KDFONT** Issue Resolved (Again..).
+- **Arch Kernel** updated to version **6.4.3**.
+- **Grub** issue addressed held back to r499/New Repo.
 - **New Look** Now system uses the **Catppuccin** theme & style for everything.
 - **Memtest86** Will be removed during install due to an ongoing issue with **Grub**
 
 #### - KDE Plasma updates :
 <br />
 
-- **QT** updated to **5.15.9** (Latest as of release).
-- **KDE Plasma** updated to **5.27.5** (Latest as of release).
-- **KDE Frameworks** updated to **5.106** including all packages.
-- **KDE Gear** tools have been updated to **23.04.1** (Latest as of release).
+- **QT** updated to **5.15.10** (Latest as of release).
+- **KDE Plasma** updated to **5.27.6** (Latest as of release).
+- **KDE Frameworks** updated to **5.108** including all packages.
 - **Major** under-the-hood performance optimizations made to **Plasma**.

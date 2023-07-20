@@ -41,7 +41,7 @@ const CustomizationBox = ({ content, ltr }) => {
                 primary
                 themed
                 fz="var(--fz-6)"
-                padding=".75em 1.5em"
+                padding="1.12em 1.5em"
               />
             </a>
           </ContentWrapper>
@@ -134,7 +134,7 @@ const ContentWrapper = styled.div`
   align-items: end;
   justify-content: space-between;
   flex-direction: column;
-  flex: 0.7;
+  flex: 0.8;
 
   & > p > a {
     text-decoration: underline;

@@ -4,7 +4,7 @@ import Button from "./Button";
 import leb from "../assets/images/leb.svg";
 import bg from "../assets/images/herobg.avif";
 import Buttons from "./Buttons";
-import DateTime from "./DateTime";
+//import DateTime from "./DateTime";
 import { PopUpContext } from "../contexts/PopUpContext";
 import { useContext } from "react";
 import SocialLinks from "./SocialLinks";
@@ -93,7 +93,6 @@ const Hero = ({ countdown }) => {
               </p>
             </SpinBox>
             <ImgContainer>
-              <DateTime />
               <img src={laptop} alt="XeroLinux" />
             </ImgContainer>
           </MoreWrapper>

@@ -13,7 +13,6 @@ export const CONTENT = [
     //XeroXFCE Box
     {
         title: "XeroXFCE",
-        image: "https://i.imgur.com/tKQICRl.png",
         alt: "XeroXFCE",
         text: "This Spin uses the XFCE Desktop.",
         buttonLeftText: "Build It Now",
